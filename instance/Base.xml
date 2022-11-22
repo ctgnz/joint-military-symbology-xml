@@ -28,8 +28,8 @@
     <Amplifier ID="AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" Type="TEXT" Length="3"/>
     <Amplifier ID="AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" Type="TEXT" Length="12"/>
     <Amplifier ID="AG" Label="Auxiliary Equipment Indicator" Description="A graphic modifier for equipment that indicates the presence of a towed sonar array." Type="GRAPHIC"/>
-    <Amplifier ID="AH" Label="Area of Uncertainty" Description="A graphic modifier for units, equipment and installations that indicates the area where an object is most likely to be, based on the object's last report and the reporting accuracty of the sensor that detected the object." Type="GRAPHIC"/>
-    <Amplifier ID="AH2" Label="Headquarters Element" Description="A text modifier for units, equipment and installations that indicates what type of element of a headquarters is being represented, such as TOC, MAIN." Type="TEXT" Length="12" />
+    <Amplifier ID="AH2" Label="Area Of Uncertainty" Description="A graphic modifier for units, equipment and installations that indicates the area where an object is most likely to be, based on the object's last report and the reporting accuracty of the sensor that detected the object." Type="GRAPHIC"/>
+    <Amplifier ID="AH" Label="Headquarters Element" Description="A text modifier for units, equipment and installations that indicates what type of element of a headquarters is being represented, such as TOC, MAIN." Type="TEXT" Length="12" />
     <Amplifier ID="AI" Label="Dead Reckoning Trailer" Description="A graphic amplifier for units and equipment that identifies where an object should be located at present, given its last reported course and speed." Type="GRAPHIC"/>
     <Amplifier ID="AJ" Label="Speed Leader" Description="A graphic amplifier for units, equipment and installations that depicts the speed and direction of movement of an object." Type="GRAPHIC"/>
     <Amplifier ID="AK" Label="Pairing Line" Description="A graphic amplifier for units, equipment and installations that connects two objects and is updated dynamically as the positions of the objects change." Type="GRAPHIC"/>
@@ -330,8 +330,8 @@
     <Amplifier ID="D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." Type="GRAPHIC"/>
     <Amplifier ID="D2" Label="Leadership Identifier" Description="A graphic amplifier that identifies the leadership role for a dismounted individual." Type="GRAPHIC"/>
     <Amplifier ID="E" Label="Frame Shape Modifier" Description="A graphic modifier that displays affiliation, battle dimension, or exercise amplifying descriptors of an object." Type="GRAPHIC"/>
-    <Amplifier ID="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." Type="TEXT" Length="3">
-      <Values ID="F_VALUES" Label="Reinforced or Reduced Values" LabelAlias="Reinforced">
+    <Amplifier ID="F" Label="Reinforced Or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." Type="TEXT" Length="3">
+      <Values ID="F_VALUES" Label="Reinforced Or Reduced Values" LabelAlias="Reinforced">
         <Value Name="REINFORCED" Label="Reinforced" LabelAlias="+"/>
         <Value Name="REDUCED" Label="Reduced" LabelAlias="-"/>
         <Value Name="REINFORCED_REDUCED" Label="Reinforced and Reduced" LabelAlias="+/-"/>
@@ -370,7 +370,7 @@
     <Amplifier ID="M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." Type="TEXT" Length="21"/>
     <Amplifier ID="N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." Type="TEXT" Length="3"/>
     <Amplifier ID="P" Label="IFF/SIF/AIS" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes." Type="TEXT" Length="15"/>
-    <Amplifier ID="Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." Type="GRAPHIC"/>
+    <Amplifier ID="Q" Label="Direction Of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." Type="GRAPHIC"/>
     <Amplifier ID="R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." Type="GRAPHIC"/>
     <Amplifier ID="R2" Label="SIGINT Mobility Indicator" Description="M=Mobile, S=Static, or U=Uncertain" Type="TEXT" Length="1">
       <Values ID="R2_VALUES" Label="SIGINT Mobility Indicator Values" LabelAlias="SIGINTMobility">
@@ -3506,7 +3506,44 @@
       </Amplifiers>
     </AmplifierGroup>
     
-    <AmplifierGroup Name="ECHELON_BDE_BELOW" Label="Echelon at brigade and below" CompatibleSymbolSetIDs="SS_AIR">
+    <AmplifierGroup Name="SERVICE_TIER" Label="Service Tier" CompatibleSymbolSetIDs="SS_LAND_UNIT SS_LAND_EQUIPMENT SS_DISMOUNTED">
+      <AmplifierGroupCode>0</AmplifierGroupCode>
+      <Amplifiers>
+        <Amplifier Name="REGULARS" Label="Regulars" Remarks="#80E0FF">
+          <AmplifierCode>1</AmplifierCode>
+          <Graphics />
+        </Amplifier>
+
+        <Amplifier Name="CONSCRIPTS" Label="Conscripts" Remarks="#FF8080">
+          <AmplifierCode>2</AmplifierCode>
+          <Graphics />
+        </Amplifier>
+
+        <Amplifier Name="RESERVE_L1" Label="Reserve Level 1 (Regulars)" Remarks="#AAFFAA">
+          <AmplifierCode>3</AmplifierCode>
+          <Graphics />
+        </Amplifier>
+
+        <Amplifier Name="RESERVE_L2" Label="Reserve Level 2 (Volunteers)" Remarks="#FFFF80">
+          <AmplifierCode>4</AmplifierCode>
+          <Graphics />
+        </Amplifier>
+
+        <Amplifier Name="RESERVE_L3" Label="Reserve Level 3 (Militia)" Remarks="#E68646">
+          <AmplifierCode>5</AmplifierCode>
+          <Graphics />
+        </Amplifier>
+
+        <Amplifier Name="CONTRACTORS" Label="Civilian Contractors" Remarks="#FFA1FF">
+          <AmplifierCode>6</AmplifierCode>
+          <Graphics />
+        </Amplifier>
+
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
+          <AmplifierCode>0</AmplifierCode>
+        </Amplifier>
+      </Amplifiers>
+    </AmplifierGroup><AmplifierGroup Name="ECHELON_BDE_BELOW" Label="Echelon at brigade and below" CompatibleSymbolSetIDs="SS_LAND_UNIT SS_DISMOUNTED">
       <AmplifierGroupCode>1</AmplifierGroupCode>
       <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="S">-</LegacyModifierCode>
       <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="O">-</LegacyModifierCode>
@@ -3605,7 +3642,7 @@
       </Amplifiers>
     </AmplifierGroup>
 
-    <AmplifierGroup Name="ECHELON_DIV_ABOVE" Label="Echelon at division and above" CompatibleSymbolSetIDs="SS_AIR">
+    <AmplifierGroup Name="ECHELON_DIV_ABOVE" Label="Echelon at division and above" CompatibleSymbolSetIDs="SS_LAND_UNIT SS_DISMOUNTED">
       <AmplifierGroupCode>2</AmplifierGroupCode>
       <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="S">-</LegacyModifierCode>
       <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="O">-</LegacyModifierCode>
@@ -3682,7 +3719,7 @@
       </Amplifiers>
     </AmplifierGroup>
 
-    <AmplifierGroup Name="EQUIP_MOBILITY_LAND" Label="Equipment mobility on land">
+    <AmplifierGroup Name="EQUIP_MOBILITY_LAND" Label="Equipment mobility on land" CompatibleSymbolSetIDs="SS_LAND_EQUIPMENT">
       <AmplifierGroupCode>3</AmplifierGroupCode>
       <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="S">M</LegacyModifierCode>
       <Amplifiers>
@@ -3769,7 +3806,7 @@
       </Amplifiers>
     </AmplifierGroup>
 
-    <AmplifierGroup Name="EQUIP_MOBILITY_SNOW" Label="Equipment mobility on snow">
+    <AmplifierGroup Name="EQUIP_MOBILITY_SNOW" Label="Equipment mobility on snow" CompatibleSymbolSetIDs="SS_LAND_EQUIPMENT">
       <AmplifierGroupCode>4</AmplifierGroupCode>
       <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="S">M</LegacyModifierCode>
       <Amplifiers>
@@ -3796,17 +3833,17 @@
         </Amplifier>
 
         <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
-          <AmplifierCode>9</AmplifierCode>
+          <AmplifierCode>3</AmplifierCode>
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
 
-    <AmplifierGroup Name="EQUIP_MOBILITY_WATER" Label="Equipment mobility on water">
-      <AmplifierGroupCode>5</AmplifierGroupCode>
+    <AmplifierGroup Name="EQUIP_MOBILITY_WATER" Label="Equipment mobility on water" CompatibleSymbolSetIDs="SS_LAND_EQUIPMENT">
+      <AmplifierGroupCode>4</AmplifierGroupCode>
       <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="S">M</LegacyModifierCode>
       <Amplifiers>
         <Amplifier Name="BARGE" Label="Barge">
-          <AmplifierCode>1</AmplifierCode>
+          <AmplifierCode>4</AmplifierCode>
           <LegacyModifierCode Name="2525C">X</LegacyModifierCode>
           <Graphics>
             <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="151.svg"/>
@@ -3817,7 +3854,7 @@
         </Amplifier>
 
         <Amplifier Name="AMPHIB" Label="Amphibious">
-          <AmplifierCode>2</AmplifierCode>
+          <AmplifierCode>5</AmplifierCode>
           <LegacyModifierCode Name="2525C">Y</LegacyModifierCode>
           <Graphics>
             <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="152.svg"/>
@@ -3828,17 +3865,17 @@
         </Amplifier>
 
         <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
-          <AmplifierCode>9</AmplifierCode>
+          <AmplifierCode>6</AmplifierCode>
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
 
     <AmplifierGroup Name="TOWED_ARRAYS" Label="Naval towed array" CompatibleSymbolSetIDs="SS_SEA_SURFACE">
-      <AmplifierGroupCode>6</AmplifierGroupCode>
+      <AmplifierGroupCode>4</AmplifierGroupCode>
       <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="S">N</LegacyModifierCode>
       <Amplifiers>
         <Amplifier Name="SHORT_TOWED_ARRAY" Label="Short towed array">
-          <AmplifierCode>1</AmplifierCode>
+          <AmplifierCode>7</AmplifierCode>
           <LegacyModifierCode Name="2525C" CodingSchemeLetter="S">S</LegacyModifierCode>
           <Graphics>
             <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="161.svg"/>
@@ -3849,7 +3886,7 @@
         </Amplifier>
 
         <Amplifier Name="LONG_TOWED_ARRAY" Label="Long towed array">
-          <AmplifierCode>2</AmplifierCode>
+          <AmplifierCode>8</AmplifierCode>
           <LegacyModifierCode Name="2525C" CodingSchemeLetter="S">L</LegacyModifierCode>
           <Graphics>
             <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="162.svg"/>
@@ -3859,6 +3896,12 @@
           </Graphics>
         </Amplifier>
 
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
+          <AmplifierCode>9</AmplifierCode>
+        </Amplifier>
+      </Amplifiers>
+    </AmplifierGroup>
+    
     <AmplifierGroup Name="LEADERSHIP_INDICATOR" Label="Role for dismounted individuals" CompatibleSymbolSetIDs="SS_DISMOUNTED">
       <AmplifierGroupCode>5</AmplifierGroupCode>
       <Amplifiers>
@@ -3912,66 +3955,371 @@
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
-          <AmplifierCode>9</AmplifierCode>
-        </Amplifier>
-      </Amplifiers>
-    </AmplifierGroup>
 
-    <AmplifierGroup Name="LEADERSHIP_INDICATOR" Label="Role for dismounted individuals" CompatibleSymbolSetIDs="SS_DISMOUNTED">
-      <AmplifierGroupCode>7</AmplifierGroupCode>
+    
+
+    <AmplifierGroup Name="STAFF_ROLE" Label="NATO Staff Branch" CompatibleSymbolSetIDs="SS_DISMOUNTED">
+      <AmplifierGroupCode>6</AmplifierGroupCode>
       <Amplifiers>
-        <Amplifier Name="LEADER_INDIVIDUAL" Label="Leader">
+        <Amplifier Name="STAFF_J1" Label="J1 Personnel/Manpower">
           <AmplifierCode>1</AmplifierCode>
           <Graphics>
-            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="151.svg" />
-            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="351.svg" />
-            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="451.svg" />
-            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="651.svg" />
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="161.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="361.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="461.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="661.svg"/>
           </Graphics>
         </Amplifier>
-        <Amplifier Name="DEPUTY_LEADER_INDIVIDUAL" Label="Deputy Leader">
+        <Amplifier Name="STAFF_J2" Label="J2 Intelligence/Security">
           <AmplifierCode>2</AmplifierCode>
           <Graphics>
-            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="152.svg" />
-            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="352.svg" />
-            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="452.svg" />
-            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="652.svg" />
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="162.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="362.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="462.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="662.svg"/>
           </Graphics>
         </Amplifier>
-        <Amplifier Name="STAFF_INDIVIDUAL" Label="Staff">
+        <Amplifier Name="STAFF_J3" Label="J3 Operations">
           <AmplifierCode>3</AmplifierCode>
           <Graphics>
-            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="153.svg" />
-            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="353.svg" />
-            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="453.svg" />
-            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="653.svg" />
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="163.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="363.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="463.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="663.svg"/>
           </Graphics>
         </Amplifier>
-        <Amplifier Name="ACTING_LEADER_INDIVIDUAL" Label="Acting Leader">
+        <Amplifier Name="STAFF_J4" Label="J4 Logistics">
           <AmplifierCode>4</AmplifierCode>
           <Graphics>
-            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="154.svg" />
-            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="354.svg" />
-            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="454.svg" />
-            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="654.svg" />
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="164.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="364.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="464.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="664.svg"/>
           </Graphics>
         </Amplifier>
-        <Amplifier Name="SENIOR_ENLISTED_ADVISOR" Label="Senior Enlisted Advisor">
+        <Amplifier Name="STAFF_J5" Label="J5 Plans">
           <AmplifierCode>5</AmplifierCode>
           <Graphics>
-            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="155.svg" />
-            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="355.svg" />
-            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="455.svg" />
-            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="655.svg" />
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="165.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="365.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="465.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="665.svg"/>
           </Graphics>
         </Amplifier>
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
+        <Amplifier Name="STAFF_J6" Label="J6 Signals/Communications">
+          <AmplifierCode>6</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="166.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="366.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="466.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="666.svg"/>
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="STAFF_J7" Label="J7 Training/Military Education">
+          <AmplifierCode>7</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="167.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="367.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="467.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="667.svg"/>
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="STAFF_J8" Label="J8 Finance/Contracts">
+          <AmplifierCode>8</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="168.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="368.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="468.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="668.svg"/>
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="STAFF_J9" Label="J9 Civil-Military Co-operation">
           <AmplifierCode>9</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="169.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="369.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="469.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="669.svg"/>
+          </Graphics>
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
     
+    <AmplifierGroup Name="RANK_ENLISTED" Label="Enlisted Ranks" CompatibleSymbolSetIDs="SS_DISMOUNTED">
+      <AmplifierGroupCode>7</AmplifierGroupCode>
+      <Amplifiers>
+        <Amplifier Name="RANK_OR1" Label="OR-1">
+          <AmplifierCode>1</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="171.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="371.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="471.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="671.svg" />
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OR2" Label="OR-2">
+          <AmplifierCode>2</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="172.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="372.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="472.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="672.svg" />
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OR3" Label="OR-3">
+          <AmplifierCode>3</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="173.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="373.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="473.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="673.svg" />
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OR4" Label="OR-4">
+          <AmplifierCode>4</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="174.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="374.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="474.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="674.svg" />
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OR5" Label="OR-5">
+          <AmplifierCode>5</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="175.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="375.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="475.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="675.svg" />
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OR6" Label="OR-6">
+          <AmplifierCode>6</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="176.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="376.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="476.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="676.svg" />
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OR7" Label="OR-7">
+          <AmplifierCode>7</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="177.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="377.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="477.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="677.svg" />
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OR8" Label="OR-8">
+          <AmplifierCode>8</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="178.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="378.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="478.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="678.svg" />
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OR9" Label="OR-9">
+          <AmplifierCode>9</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="179.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="379.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="479.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="679.svg" />
+          </Graphics>
+        </Amplifier>
+
+      </Amplifiers>
+    </AmplifierGroup><AmplifierGroup Name="RANK_WARRANT" Label="Warrant Officer Ranks" CompatibleSymbolSetIDs="SS_DISMOUNTED">
+      <AmplifierGroupCode>8</AmplifierGroupCode>
+      <Amplifiers>
+        <Amplifier Name="RANK_WO1" Label="WO-1">
+          <AmplifierCode>1</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="181.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="381.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="481.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="681.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_WO2" Label="WO-2">
+          <AmplifierCode>2</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="182.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="382.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="482.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="682.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_WO3" Label="WO-3">
+          <AmplifierCode>3</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="183.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="383.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="483.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="683.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_WO4" Label="WO-4">
+          <AmplifierCode>4</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="184.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="384.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="484.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="684.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_WO5" Label="WO-5">
+          <AmplifierCode>5</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="185.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="385.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="485.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="685.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OFD" Label="OF(D)">
+          <AmplifierCode>8</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="188.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="388.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="488.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="688.svg" />
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OF1A" Label="OF-1A">
+          <AmplifierCode>9</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="189.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="389.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="489.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="689.svg" />
+          </Graphics>
+        </Amplifier>
+
+      </Amplifiers>
+    </AmplifierGroup>
+
+    <AmplifierGroup Name="RANK_OFFICER" Label="Officer Ranks" CompatibleSymbolSetIDs="SS_DISMOUNTED">
+      <AmplifierGroupCode>9</AmplifierGroupCode>
+      <Amplifiers>
+        <Amplifier Name="RANK_OF1" Label="OF-1">
+          <AmplifierCode>0</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="190.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="390.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="490.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="690.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OF2" Label="OF-2">
+          <AmplifierCode>1</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="191.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="391.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="491.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="691.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OF3" Label="OF-3">
+          <AmplifierCode>2</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="192.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="392.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="492.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="692.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OF4" Label="OF-4">
+          <AmplifierCode>3</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="193.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="393.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="493.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="693.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OF5" Label="OF-5">
+          <AmplifierCode>4</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="194.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="394.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="494.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="694.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OF6" Label="OF-6">
+          <AmplifierCode>5</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="195.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="395.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="495.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="695.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OF7" Label="OF-7">
+          <AmplifierCode>6</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="196.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="396.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="496.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="696.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OF8" Label="OF-8">
+          <AmplifierCode>7</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="197.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="397.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="497.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="697.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OF9" Label="OF-9">
+          <AmplifierCode>8</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="198.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="398.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="498.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="698.svg"/>
+          </Graphics>
+        </Amplifier>
+
+        <Amplifier Name="RANK_OF10" Label="OF-10">
+          <AmplifierCode>9</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="199.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="399.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="499.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="699.svg"/>
+          </Graphics>
+        </Amplifier>
+      </Amplifiers>
+    </AmplifierGroup>
+
     <AmplifierGroup Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
       <AmplifierGroupCode>9</AmplifierGroupCode>
       <Amplifiers>

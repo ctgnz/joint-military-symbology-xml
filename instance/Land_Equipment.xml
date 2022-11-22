@@ -1197,11 +1197,65 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="PACK_ANIMALS" Label="Pack Animals" Graphic="15180000.svg" Icon="FULL_OCTAGON">
+    <Entity ID="WORKING_ANIMALS" Label="Working Animals" Graphic="15180000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>
       </EntityCode>
+      <EntityTypes>
+        <EntityType ID="PACK_ANIMALS" Label="Pack Animals" Graphic="15180100.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="HORSE" Label="Horse" Graphic="15180101.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MULE" Label="Mule" Graphic="15180102.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="CAMEL" Label="Camel" Graphic="15180103.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="OXEN" Label="Oxen" Graphic="15180104.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="ELEPHANT" Label="Elephant" Graphic="15180105.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="TRAINED_ANIMALS" Label="Trained Animals" Graphic="15180200.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="DOG" Label="Dog" Graphic="15180201.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+      </EntityTypes>
     </Entity>
     <Entity ID="MISSILE_SUPPORT" Label="Missile Support" Graphic="15190000.svg" Icon="FULL_OCTAGON">
       <EntityCode>

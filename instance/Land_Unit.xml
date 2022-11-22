@@ -1247,32 +1247,6 @@
       </EntityTypes>
     </Entity>
   </Entities>
-  <SpecialEntitySubTypes>
-    <EntitySubType ID="HQ_ELEMENT" Label="Headquarters Element" CloverGraphic="10xxxx95_0.svg" DiamondGraphic="10xxxx95_3.svg" RectangleGraphic="10xxxx95_1.svg" SquareGraphic="10xxxx95_2.svg" Icon="SPECIAL" EntityCode="XX" EntityTypeCode="XX">
-      <EntitySubTypeCode>
-        <DigitOne>9</DigitOne>
-        <DigitTwo>5</DigitTwo>
-      </EntitySubTypeCode>
-    </EntitySubType>
-    <EntitySubType ID="DIVISION_AND_BELOW_SUPPORT" Label="Division and Below Support" CloverGraphic="10xxxx96_0.svg" DiamondGraphic="10xxxx96_3.svg" RectangleGraphic="10xxxx96_1.svg" SquareGraphic="10xxxx96_2.svg" Icon="SPECIAL" EntityCode="XX" EntityTypeCode="XX">
-      <EntitySubTypeCode>
-        <DigitOne>9</DigitOne>
-        <DigitTwo>6</DigitTwo>
-      </EntitySubTypeCode>
-    </EntitySubType>
-    <EntitySubType ID="CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10xxxx97_0.svg" DiamondGraphic="10xxxx97_3.svg" RectangleGraphic="10xxxx97_1.svg" SquareGraphic="10xxxx97_2.svg" Icon="SPECIAL" EntityCode="XX" EntityTypeCode="XX">
-      <EntitySubTypeCode>
-        <DigitOne>9</DigitOne>
-        <DigitTwo>7</DigitTwo>
-      </EntitySubTypeCode>
-    </EntitySubType>
-    <EntitySubType ID="ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theater/Echelons Above Corps Support" CloverGraphic="10xxxx98_0.svg" DiamondGraphic="10xxxx98_3.svg" RectangleGraphic="10xxxx98_1.svg" SquareGraphic="10xxxx98_2.svg" Icon="SPECIAL" EntityCode="XX" EntityTypeCode="XX">
-      <EntitySubTypeCode>
-        <DigitOne>9</DigitOne>
-        <DigitTwo>8</DigitTwo>
-      </EntitySubTypeCode>
-    </EntitySubType>
-  </SpecialEntitySubTypes>
   <SectorOneModifiers>
     <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
       <ModifierCode>
@@ -1745,6 +1719,36 @@
     <Modifier ID="AVIATION_MOD" Label="Aviation" Graphic="10781.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="THEATRE_MOD" Label="Theatre" Graphic="10941.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ARMY_MOD" Label="Army" Graphic="10951.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CORPS_MOD" Label="Corps" Graphic="10961.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BRIGADE_MOD" Label="Brigade" Graphic="10971.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="HEADQUARTERS_MOD" Label="Headquarters" Graphic="10981.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
