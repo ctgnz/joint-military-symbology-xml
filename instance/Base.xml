@@ -29,6 +29,7 @@
     <Amplifier ID="AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" Type="TEXT" Length="12"/>
     <Amplifier ID="AG" Label="Auxiliary Equipment Indicator" Description="A graphic modifier for equipment that indicates the presence of a towed sonar array." Type="GRAPHIC"/>
     <Amplifier ID="AH" Label="Area of Uncertainty" Description="A graphic modifier for units, equipment and installations that indicates the area where an object is most likely to be, based on the object's last report and the reporting accuracty of the sensor that detected the object." Type="GRAPHIC"/>
+    <Amplifier ID="AH2" Label="Headquarters Element" Description="A text modifier for units, equipment and installations that indicates what type of element of a headquarters is being represented, such as TOC, MAIN." Type="TEXT" Length="12" />
     <Amplifier ID="AI" Label="Dead Reckoning Trailer" Description="A graphic amplifier for units and equipment that identifies where an object should be located at present, given its last reported course and speed." Type="GRAPHIC"/>
     <Amplifier ID="AJ" Label="Speed Leader" Description="A graphic amplifier for units, equipment and installations that depicts the speed and direction of movement of an object." Type="GRAPHIC"/>
     <Amplifier ID="AK" Label="Pairing Line" Description="A graphic amplifier for units, equipment and installations that connects two objects and is updated dynamically as the positions of the objects change." Type="GRAPHIC"/>
@@ -327,6 +328,7 @@
     <Amplifier ID="B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." Type="GRAPHIC"/>
     <Amplifier ID="C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." Type="TEXT" Length="9"/>
     <Amplifier ID="D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." Type="GRAPHIC"/>
+    <Amplifier ID="D2" Label="Leadership Identifier" Description="A graphic amplifier that identifies the leadership role for a dismounted individual." Type="GRAPHIC"/>
     <Amplifier ID="E" Label="Frame Shape Modifier" Description="A graphic modifier that displays affiliation, battle dimension, or exercise amplifying descriptors of an object." Type="GRAPHIC"/>
     <Amplifier ID="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." Type="TEXT" Length="3">
       <Values ID="F_VALUES" Label="Reinforced or Reduced Values" LabelAlias="Reinforced">
@@ -3857,12 +3859,119 @@
           </Graphics>
         </Amplifier>
 
+    <AmplifierGroup Name="LEADERSHIP_INDICATOR" Label="Role for dismounted individuals" CompatibleSymbolSetIDs="SS_DISMOUNTED">
+      <AmplifierGroupCode>5</AmplifierGroupCode>
+      <Amplifiers>
+        <Amplifier Name="LEADER_INDIVIDUAL" Label="Leader">
+          <AmplifierCode>1</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="151.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="351.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="451.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="651.svg" />
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="DEPUTY_LEADER_INDIVIDUAL" Label="Deputy Leader">
+          <AmplifierCode>2</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="152.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="352.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="452.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="652.svg" />
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="STAFF_INDIVIDUAL" Label="Staff">
+          <AmplifierCode>3</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="153.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="353.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="453.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="653.svg" />
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="ACTING_LEADER_INDIVIDUAL" Label="Acting Leader">
+          <AmplifierCode>4</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="154.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="354.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="454.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="654.svg" />
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="SENIOR_ENLISTED_ADVISOR" Label="Senior Enlisted Advisor">
+          <AmplifierCode>5</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="155.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="355.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="455.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="655.svg" />
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
+          <AmplifierCode>9</AmplifierCode>
+        </Amplifier>
+      </Amplifiers>
+    </AmplifierGroup>
         <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
 
+    <AmplifierGroup Name="LEADERSHIP_INDICATOR" Label="Role for dismounted individuals" CompatibleSymbolSetIDs="SS_DISMOUNTED">
+      <AmplifierGroupCode>7</AmplifierGroupCode>
+      <Amplifiers>
+        <Amplifier Name="LEADER_INDIVIDUAL" Label="Leader">
+          <AmplifierCode>1</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="151.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="351.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="451.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="651.svg" />
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="DEPUTY_LEADER_INDIVIDUAL" Label="Deputy Leader">
+          <AmplifierCode>2</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="152.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="352.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="452.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="652.svg" />
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="STAFF_INDIVIDUAL" Label="Staff">
+          <AmplifierCode>3</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="153.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="353.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="453.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="653.svg" />
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="ACTING_LEADER_INDIVIDUAL" Label="Acting Leader">
+          <AmplifierCode>4</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="154.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="354.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="454.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="654.svg" />
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="SENIOR_ENLISTED_ADVISOR" Label="Senior Enlisted Advisor">
+          <AmplifierCode>5</AmplifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="155.svg" />
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="355.svg" />
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="455.svg" />
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="655.svg" />
+          </Graphics>
+        </Amplifier>
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
+          <AmplifierCode>9</AmplifierCode>
+        </Amplifier>
+      </Amplifiers>
+    </AmplifierGroup>
+    
     <AmplifierGroup Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
       <AmplifierGroupCode>9</AmplifierGroupCode>
       <Amplifiers>
