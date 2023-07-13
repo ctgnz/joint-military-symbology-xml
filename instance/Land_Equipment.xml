@@ -277,7 +277,7 @@
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="AIR_DEFENSE_MISSILE_LIGHT_TELAR" Label="Light Tactical Landing Approach Radar (TELAR)" Graphic="15111103.svg" Icon="FULL_OCTAGON">
+            <EntitySubType ID="AIR_DEFENSE_MISSILE_LIGHT_TELAR" Label="Light Transporter-Erector-Launcher and Radar (TELAR)" Graphic="15111103.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
@@ -295,7 +295,7 @@
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="AIR_DEFENSE_MISSILE_MEDIUM_TELAR" Label="Medium TELAR Air Defense Missile Launcher" Graphic="15111106.svg" Icon="FULL_OCTAGON">
+            <EntitySubType ID="AIR_DEFENSE_MISSILE_MEDIUM_TELAR" Label="Medium TELAR" Graphic="15111106.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>6</DigitTwo>
