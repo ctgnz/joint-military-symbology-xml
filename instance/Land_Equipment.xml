@@ -1539,6 +1539,38 @@
         <DigitTwo>4</DigitTwo>
       </EntityCode>
     </Entity>
+    <Entity ID="HARNESS_VEHICLES" Label="Harness Vehicles" LabelAlias="Harness Vehicles (Draught Animal)" Graphic="15250000.svg" Icon="FULL_OCTAGON">
+      <EntityCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="HORSE_DRAWN_VEHICLE" Label="Horse-Drawn Vehicle" Graphic="15250100.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="OX_DRAWN_VEHICLE" Label="Ox-Drawn Vehicle" Graphic="15250200.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="DOG_DRAWN_VEHICLE" Label="Dog-Drawn Vehicle" Graphic="15250300.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="ANIMAL_DRAWN_VEHICLE" Label="Animal-Drawn Vehicle" Graphic="15250400.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
   </Entities>
   <SectorOneModifiers>
     <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
