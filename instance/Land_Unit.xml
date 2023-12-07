@@ -434,6 +434,18 @@
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
+            <EntitySubType ID="FA_HORSE" Label="Horse Artillery" CloverGraphic="10130303_0.svg" DiamondGraphic="10130303_3.svg" RectangleGraphic="10130303_1.svg" SquareGraphic="10130303_2.svg" Icon="FULL_FRAME">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="FA_SIEGE" Label="Siege Artillery" Graphic="10130304.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
           </EntitySubTypes>
         </EntityType>
         <EntityType ID="FIELD_ARTILLERY_OBSERVER" Label="Field Artillery Observer" Graphic="10130400.svg">
