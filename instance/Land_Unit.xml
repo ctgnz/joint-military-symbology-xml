@@ -2114,6 +2114,12 @@
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
+    <Modifier ID="LIGHT_INFANTRY_MOD" Label="Light Infantry" Graphic="10582.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
   </SectorTwoModifiers>
   <LegacySymbols>
     <LegacySymbol ID="GROUND_TRACK_SYM" Label="S*GP------*****" EntityID="UNSPECIFIED">

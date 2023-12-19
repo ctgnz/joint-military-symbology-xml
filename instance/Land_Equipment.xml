@@ -947,6 +947,18 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
+        <EntityType ID="BICYCLE" Label="Bicycle" Graphic="15141300.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="MOTORBIKE" Label="Motorbike" Graphic="15141400.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="TRAIN" Label="Train" Remarks="No icon is associated with this entity. It is for hierachal purposes only." Icon="NA" GeometryType="NA">
