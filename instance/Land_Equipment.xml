@@ -959,6 +959,18 @@
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
+        <EntityType ID="CRANE" Label="Crane" Graphic="15141500.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="FORKLIFT" Label="Forklift" Graphic="15141600.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="TRAIN" Label="Train" Remarks="No icon is associated with this entity. It is for hierachal purposes only." Icon="NA" GeometryType="NA">
