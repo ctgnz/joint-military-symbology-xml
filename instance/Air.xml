@@ -216,6 +216,18 @@
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
+            <EntitySubType ID="LN" Label="Liaison" Graphic="01110134.svg">
+              <EntitySubTypeCode>
+                <DigitOne>3</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="OBSERVATION" Label="Observation" Graphic="01110135.svg">
+              <EntitySubTypeCode>
+                <DigitOne>3</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
           </EntitySubTypes>
         </EntityType>
         <EntityType ID="ROTARY_WING" Label="Rotary-Wing" Graphic="01110200.svg">
@@ -566,6 +578,18 @@
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="LIAISON_MOD" Label="Liaison" Graphic="01401.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OBSERVATION_MOD" Label="Observation" Graphic="01411.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorOneModifiers>

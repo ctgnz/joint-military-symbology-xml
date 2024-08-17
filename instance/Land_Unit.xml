@@ -210,6 +210,12 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
+            <EntitySubType ID="AVIATION_OBSERVATION" Label="Observation" CloverGraphic="10120602_0.svg" DiamondGraphic="10120602_3.svg" RectangleGraphic="10120602_1.svg" SquareGraphic="10120602_2.svg" Icon="FULL_FRAME">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
           </EntitySubTypes>
         </EntityType>
         <EntityType ID="AVIATION_COMPOSITE" Label="Aviation Composite" Graphic="10120700.svg">
@@ -228,6 +234,12 @@
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AVIATION_FIXED_WING_OBSERVATION" Label="Observation" CloverGraphic="10120802_0.svg" DiamondGraphic="10120802_3.svg" RectangleGraphic="10120802_1.svg" SquareGraphic="10120802_2.svg" Icon="FULL_FRAME">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
           </EntitySubTypes>
@@ -380,6 +392,24 @@
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="AVIATION_LTA" Label="Aviation Lighter Than Air" Graphic="10122000.svg">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="AVIATION_AIRSHIP" Label="Airship" Graphic="10122100.svg">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="AVIATION_TETHERED_LTA" Label="Tethered Lighter Than Air" Graphic="10122200.svg">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
       </EntityTypes>
@@ -1734,6 +1764,96 @@
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
+    <Modifier ID="BOMBER_MOD" Label="Bomber" Graphic="10791.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CARGO_MOD" Label="Cargo" Graphic="10801.svg" Category="Aircraft Type">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="FIGHTER_MOD" Label="Fighter" Graphic="10811.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="INTERCEPTOR_MOD" Label="Interceptor" Remarks="APP-6" Graphic="10821.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TANKER_MOD" Label="Tanker" Graphic="10831.svg" Category="Aircraft Type">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PASSENGER_MOD" Label="Passenger" Graphic="10841.svg" Category="Aircraft Type">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ACP_MOD" Label="Airborne Command Post (ACP)" Graphic="10851.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="AEW_MOD" Label="Airborne Early Warning (AEW)" Graphic="10861.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ESCORT_MOD" Label="Escort" Graphic="10871.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="EC_MOD" Label="Electronic Combat (EC)/Jammer" Graphic="10881.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PATROL_MOD" Label="Patrol" Graphic="10891.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="RECON_MOD" Label="Reconnaissance" Graphic="10901.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TRAINER_MOD" Label="Trainer" Graphic="10911.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ASW_MOD" Label="Antisubmarine Warfare" Graphic="10921.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="LIAISON_MOD" Label="Liaison" Graphic="10931.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="THEATRE_MOD" Label="Theatre" Graphic="10941.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>9</DigitOne>
@@ -1762,6 +1882,12 @@
       <ModifierCode>
         <DigitOne>9</DigitOne>
         <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MULTIMISSION_MOD" Label="Multimission" Graphic="10991.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorOneModifiers>
@@ -2118,6 +2244,90 @@
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="VERY_HEAVY_MOD" Label="Very Heavy" Graphic="10592.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ULTRA_LIGHT_MOD" Label="Ultra Light" Graphic="10602.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DIVE_MOD" Label="Dive" Graphic="10612.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DAY_MOD" Label="Day" Graphic="10622.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NIGHT_MOD" Label="Night" Graphic="10632.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WEATHER_MOD" Label="Weather" Graphic="10642.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="VERY_LONG_RANGE_MOD" Label="Very Long Range" Graphic="10652.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BOMBER_2_MOD" Label="Bomber" Graphic="10662.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CARGO_2_MOD" Label="Cargo" Graphic="10672.svg" Category="Aircraft Type">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="FIGHTER_2_MOD" Label="Fighter" Graphic="10682.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ESCORT_2_MOD" Label="Escort" Graphic="10692.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="INTERCEPTOR_2_MOD" Label="Interceptor" Remarks="APP-6" Graphic="10702.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ALL_WEATHER_MOD" Label="All-Weather" Graphic="10712.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PASSENGER_2_MOD" Label="Passenger" Graphic="10722.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorTwoModifiers>
