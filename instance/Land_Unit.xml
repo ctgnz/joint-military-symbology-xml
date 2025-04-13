@@ -2330,6 +2330,12 @@
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
+    <Modifier ID="HORSE_DRAWN_MOD" Label="Horse-Drawn" Graphic="10732.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
   </SectorTwoModifiers>
   <LegacySymbols>
     <LegacySymbol ID="GROUND_TRACK_SYM" Label="S*GP------*****" EntityID="UNSPECIFIED">
