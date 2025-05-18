@@ -112,9 +112,8 @@
   </xs:complexType>
   
   <xs:simpleType name="SingleDigitType">
-    <xs:restriction base="xs:unsignedShort">
-      <xs:minInclusive value="0"/>
-      <xs:maxInclusive value="9"/>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="0x[0-9A-Fa-f]+|[0-9]+"/>
     </xs:restriction>
   </xs:simpleType>
 

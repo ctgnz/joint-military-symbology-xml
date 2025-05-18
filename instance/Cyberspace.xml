@@ -4,7 +4,6 @@
 		<DigitOne>6</DigitOne>
 		<DigitTwo>0</DigitTwo>
 	</SymbolSetCode>
-	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
 	<Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
       <EntityCode>

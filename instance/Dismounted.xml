@@ -7,7 +7,6 @@
     <DigitOne>2</DigitOne>
     <DigitTwo>7</DigitTwo>
   </SymbolSetCode>
-  <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA" Standard="NATO_APP6">
       <EntityCode>

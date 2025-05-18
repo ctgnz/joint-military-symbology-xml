@@ -4,7 +4,6 @@
     <DigitOne>0</DigitOne>
     <DigitTwo>0</DigitTwo>
   </SymbolSetCode>
-  <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
       <EntityCode>
@@ -13,9 +12,4 @@
       </EntityCode>
     </Entity>
   </Entities>
-  <LegacySymbols>
-    <LegacySymbol ID="UNKNOWN_SYM" Label="S*ZP------*****" EntityID="UNSPECIFIED">
-      <LegacyFunctionCode DimensionOverride="Z" Name="2525C">------</LegacyFunctionCode>
-    </LegacySymbol>
-  </LegacySymbols>
 </SymbolSet>
