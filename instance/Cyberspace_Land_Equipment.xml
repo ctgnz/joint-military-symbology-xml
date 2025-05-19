@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_CYBERSPACE" Label="Cyberspace"
-  DimensionID="AIR SPACE LAND_UNIT LAND_EQUIPMENT LAND_INSTALLATION DISMOUNTED SEA_SURFACE SEA_SUBSURFACE" Geometry="POINT">
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_CYBERSPACE_LAND_EQUIPMENT" Label="Cyberspace" DimensionID="LAND_EQUIPMENT" Geometry="POINT">
   <SymbolSetCode>
     <DigitOne>6</DigitOne>
-    <DigitTwo>0</DigitTwo>
+    <DigitTwo>4</DigitTwo>
   </SymbolSetCode>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
@@ -114,126 +113,90 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="AGENT" Label="Agent" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
+    <Entity ID="END_POINT" Label="End Point" Graphic="60180000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
-        <DigitTwo>4</DigitTwo>
+        <DigitTwo>8</DigitTwo>
       </EntityCode>
       <EntityTypes>
-        <EntityType ID="FIREWALL" Label="Firewall" Graphic="60140100.svg">
+        <EntityType ID="SERVER" Label="Server" Graphic="60180100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="FIRMWARE" Label="Firmware" Graphic="60140200.svg">
+        <EntityType ID="MOBILE_SMARTPHONE" Label="Mobile/Smartphone" Graphic="60180200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-      </EntityTypes>
-    </Entity>
-    <Entity ID="APPLICATION" Label="Application" Graphic="60150000.svg">
-      <EntityCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>5</DigitTwo>
-      </EntityCode>
-      <EntityTypes>
-        <EntityType ID="BANKING" Label="Banking" Graphic="60150100.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>1</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="CLOUD" Label="Cloud" Graphic="60150200.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>2</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="FILESERVER" Label="Fileserver" Graphic="60150300.svg">
+        <EntityType ID="TABLET_MOBILE_PERSONAL_DEVICE" Label="Tablet/Mobile Personal Device" Graphic="60180300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SEARCH_ENGINE" Label="Search Engine" Graphic="60150400.svg">
+        <EntityType ID="WORKSTATION" Label="Workstation" Graphic="60180400.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SOCIAL_MEDIA" Label="Social Media" Graphic="60150500.svg">
+        <EntityType ID="LAPTOP" Label="Laptop" Graphic="60180500.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
+        <EntityType ID="INTERNET_OF_THINGS_DEVICE" Label="Internet of Things Device" Graphic="60180600.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="PRINTER" Label="Printer" Graphic="60180700.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="ROUTER" Label="Router" Graphic="60180800.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SWITCH" Label="Switch" Graphic="60180900.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="THREAT" Label="Threat" Graphic="60160000.svg">
+    <Entity ID="WEARABLE" Label="Wearable" Graphic="60190000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
-        <DigitTwo>6</DigitTwo>
+        <DigitTwo>9</DigitTwo>
       </EntityCode>
       <EntityTypes>
-        <EntityType ID="MALWARE" Label="Malware" Graphic="60160100.svg">
+        <EntityType ID="HEALTH_MONITOR" Label="Health Monitor" Graphic="60190100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="PHISHING" Label="Phishing" Graphic="60160200.svg">
+        <EntityType ID="SMARTVEST" Label="Smartvest" Graphic="60190200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SPEARPHISHING" Label="Spearphishing" Graphic="60160300.svg">
+        <EntityType ID="SMARTWATCH" Label="Smartwatch" Graphic="60190300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-      </EntityTypes>
-    </Entity>
-    <Entity ID="DATA" Label="Data" Graphic="60170000.svg">
-      <EntityCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>7</DigitTwo>
-      </EntityCode>
-      <EntityTypes>
-        <EntityType ID="DIGITAL_CURRENCY" Label="Digital Currency" Graphic="60170100.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>1</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="PERSONA" Label="Persona" Graphic="60170200.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>2</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-      </EntityTypes>
-    </Entity>
-    <Entity ID="PATHS" Label="Paths" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
-      <EntityCode>
-        <DigitOne>2</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </EntityCode>
-      <EntityTypes>
-        <EntityType ID="DATA_PATH_SEGMENT" Label="Data Path Segment" Graphic="60200100.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>1</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="DATA_TUNNEL" Label="Data Tunnel" Graphic="60200200.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
       </EntityTypes>

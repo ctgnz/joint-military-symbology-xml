@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_CYBERSPACE" Label="Cyberspace"
-  DimensionID="AIR SPACE LAND_UNIT LAND_EQUIPMENT LAND_INSTALLATION DISMOUNTED SEA_SURFACE SEA_SUBSURFACE" Geometry="POINT">
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_CYBERSPACE_SPACE" Label="Cyberspace" DimensionID="SPACE" Geometry="POINT">
   <SymbolSetCode>
     <DigitOne>6</DigitOne>
-    <DigitTwo>0</DigitTwo>
+    <DigitTwo>1</DigitTwo>
   </SymbolSetCode>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
@@ -110,130 +109,6 @@
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-      </EntityTypes>
-    </Entity>
-    <Entity ID="AGENT" Label="Agent" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
-      <EntityCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>4</DigitTwo>
-      </EntityCode>
-      <EntityTypes>
-        <EntityType ID="FIREWALL" Label="Firewall" Graphic="60140100.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>1</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="FIRMWARE" Label="Firmware" Graphic="60140200.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>2</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-      </EntityTypes>
-    </Entity>
-    <Entity ID="APPLICATION" Label="Application" Graphic="60150000.svg">
-      <EntityCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>5</DigitTwo>
-      </EntityCode>
-      <EntityTypes>
-        <EntityType ID="BANKING" Label="Banking" Graphic="60150100.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>1</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="CLOUD" Label="Cloud" Graphic="60150200.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>2</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="FILESERVER" Label="Fileserver" Graphic="60150300.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>3</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="SEARCH_ENGINE" Label="Search Engine" Graphic="60150400.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>4</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="SOCIAL_MEDIA" Label="Social Media" Graphic="60150500.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>5</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-      </EntityTypes>
-    </Entity>
-    <Entity ID="THREAT" Label="Threat" Graphic="60160000.svg">
-      <EntityCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>6</DigitTwo>
-      </EntityCode>
-      <EntityTypes>
-        <EntityType ID="MALWARE" Label="Malware" Graphic="60160100.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>1</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="PHISHING" Label="Phishing" Graphic="60160200.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>2</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="SPEARPHISHING" Label="Spearphishing" Graphic="60160300.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>3</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-      </EntityTypes>
-    </Entity>
-    <Entity ID="DATA" Label="Data" Graphic="60170000.svg">
-      <EntityCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>7</DigitTwo>
-      </EntityCode>
-      <EntityTypes>
-        <EntityType ID="DIGITAL_CURRENCY" Label="Digital Currency" Graphic="60170100.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>1</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="PERSONA" Label="Persona" Graphic="60170200.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>2</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-      </EntityTypes>
-    </Entity>
-    <Entity ID="PATHS" Label="Paths" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
-      <EntityCode>
-        <DigitOne>2</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </EntityCode>
-      <EntityTypes>
-        <EntityType ID="DATA_PATH_SEGMENT" Label="Data Path Segment" Graphic="60200100.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>1</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="DATA_TUNNEL" Label="Data Tunnel" Graphic="60200200.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
       </EntityTypes>
