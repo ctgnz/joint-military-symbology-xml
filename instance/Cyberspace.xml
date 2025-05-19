@@ -82,7 +82,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="THREAT_ACTOR" Label="Health and Status" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
+    <Entity ID="THREAT_ACTOR" Label="Threat Actor" Graphic="60130000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -234,6 +234,20 @@
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="TERRAIN" Label="Terrain" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
+      <EntityCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="NETWORK" Label="Network" Graphic="60210100.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
       </EntityTypes>

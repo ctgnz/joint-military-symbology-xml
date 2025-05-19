@@ -81,7 +81,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="THREAT_ACTOR" Label="Health and Status" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
+    <Entity ID="THREAT_ACTOR" Label="Threat Actor" Graphic="60130000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>

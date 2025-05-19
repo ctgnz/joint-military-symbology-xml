@@ -81,7 +81,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="THREAT_ACTOR" Label="Health and Status" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
+    <Entity ID="THREAT_ACTOR" Label="Threat Actor" Graphic="60130000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -113,61 +113,61 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="END_POINT" Label="End Point" Graphic="60180000.svg">
+    <Entity ID="END_POINT" Label="End Point" Graphic="64180000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>
       </EntityCode>
       <EntityTypes>
-        <EntityType ID="SERVER" Label="Server" Graphic="60180100.svg">
+        <EntityType ID="SERVER" Label="Server" Graphic="64180100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="MOBILE_SMARTPHONE" Label="Mobile/Smartphone" Graphic="60180200.svg">
+        <EntityType ID="MOBILE_SMARTPHONE" Label="Mobile/Smartphone" Graphic="64180200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TABLET_MOBILE_PERSONAL_DEVICE" Label="Tablet/Mobile Personal Device" Graphic="60180300.svg">
+        <EntityType ID="TABLET_MOBILE_PERSONAL_DEVICE" Label="Tablet/Mobile Personal Device" Graphic="64180300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="WORKSTATION" Label="Workstation" Graphic="60180400.svg">
+        <EntityType ID="WORKSTATION" Label="Workstation" Graphic="64180400.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="LAPTOP" Label="Laptop" Graphic="60180500.svg">
+        <EntityType ID="LAPTOP" Label="Laptop" Graphic="64180500.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="INTERNET_OF_THINGS_DEVICE" Label="Internet of Things Device" Graphic="60180600.svg">
+        <EntityType ID="INTERNET_OF_THINGS_DEVICE" Label="Internet of Things Device" Graphic="64180600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="PRINTER" Label="Printer" Graphic="60180700.svg">
+        <EntityType ID="PRINTER" Label="Printer" Graphic="64180700.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>7</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="ROUTER" Label="Router" Graphic="60180800.svg">
+        <EntityType ID="ROUTER" Label="Router" Graphic="64180800.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SWITCH" Label="Switch" Graphic="60180900.svg">
+        <EntityType ID="SWITCH" Label="Switch" Graphic="64180900.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>9</DigitTwo>
@@ -175,25 +175,25 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="WEARABLE" Label="Wearable" Graphic="60190000.svg">
+    <Entity ID="WEARABLE" Label="Wearable" Graphic="64190000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>9</DigitTwo>
       </EntityCode>
       <EntityTypes>
-        <EntityType ID="HEALTH_MONITOR" Label="Health Monitor" Graphic="60190100.svg">
+        <EntityType ID="HEALTH_MONITOR" Label="Health Monitor" Graphic="64190100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SMARTVEST" Label="Smartvest" Graphic="60190200.svg">
+        <EntityType ID="SMARTVEST" Label="Smartvest" Graphic="64190200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SMARTWATCH" Label="Smartwatch" Graphic="60190300.svg">
+        <EntityType ID="SMARTWATCH" Label="Smartwatch" Graphic="64190300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>

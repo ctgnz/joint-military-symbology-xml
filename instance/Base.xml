@@ -127,8 +127,8 @@
     <Amplifier ID="AH" Label="Area of Uncertainty Indicator"
       Description="A graphic modifier for units, equipment and installations that indicates the area where an object is most likely to be, based on the object's last report and the reporting accuracty of the sensor that detected the object."
       Type="GRAPHIC" />
-    <Amplifier ID="AH1" Label="Area of Uncertainty Indicator"
-      Description="A graphic modifier for units, equipment and installations that indicates the area where an object is most likely to be, based on the object's last report and the reporting accuracty of the sensor that detected the object."
+    <Amplifier ID="AH1" Label="Area of Uncertainty Indicator Longitude"
+      Description="If AH1 is defined, the value of AH is the latitude radius of uncertainty and AH1 is the longitude radius of uncertainty in metres."
       Type="GRAPHIC" />
     <Amplifier ID="AI" Label="Dead Reckoning Trailer"
       Description="A graphic amplifier for units and equipment that identifies where an object should be located at present, given its last reported course and speed." Type="GRAPHIC" />
@@ -620,7 +620,7 @@
             <DigitTwo>2</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_AIR" Label="Cyberspace (Air)" Instance="Cyberspace_Air.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE_AIR" Label="Cyberspace Air" Instance="Cyberspace_Air.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>2</DigitTwo>
@@ -640,7 +640,7 @@
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_SPACE" Label="Cyberspace (Space)" Instance="Cyberspace_Space.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE_SPACE" Label="Cyberspace Space" Instance="Cyberspace_Space.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -666,7 +666,7 @@
             <DigitTwo>1</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_LAND_UNIT" Label="Cyberspace (Land Unit)" Instance="Cyberspace_Land_Unit.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE_LAND_UNIT" Label="Cyberspace Land Unit" Instance="Cyberspace_Land_Unit.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -686,7 +686,7 @@
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_LAND_EQUIPMENT" Label="Cyberspace (Land Equipment" Instance="Cyberspace_Land_Equipment.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE_LAND_EQUIPMENT" Label="Cyberspace Land Equipment" Instance="Cyberspace_Land_Equipment.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>4</DigitTwo>
@@ -706,7 +706,7 @@
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_LAND_INSTALLATION" Label="Cyberspace (Land Installation)" Instance="Cyberspace_Land_Installation.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE_LAND_INSTALLATION" Label="Cyberspace Land Installation" Instance="Cyberspace_Land_Installation.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>5</DigitTwo>
@@ -726,7 +726,7 @@
             <DigitTwo>7</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_DISMOUNTED" Label="Cyberspace (Dismounted Individual)" Instance="Cyberspace_Dismounted.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE_DISMOUNTED" Label="Cyberspace Dismounted Individual" Instance="Cyberspace_Dismounted.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -746,7 +746,7 @@
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_SEA_SURFACE" Label="Cyberspace (Sea Surface)" Instance="Cyberspace_Sea_Surface.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE_SEA_SURFACE" Label="Cyberspace Sea Surface" Instance="Cyberspace_Sea_Surface.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>7</DigitTwo>
@@ -772,7 +772,7 @@
             <DigitTwo>6</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_SEA_SUBSURFACE" Label="Cyberspace (Sea Subsurface)" Instance="Cyberspace_Sea_Subsurface.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE_SEA_SUBSURFACE" Label="Cyberspace Sea Subsurface" Instance="Cyberspace_Sea_Subsurface.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>8</DigitTwo>
@@ -804,6 +804,20 @@
           <SymbolSetCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>5</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+      </SymbolSets>
+    </Dimension>
+    <Dimension ID="CYBERSPACE" Label="Cyberspace" Geometry="POINT">
+      <DimensionCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </DimensionCode>
+      <SymbolSets>
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="Cyberspace.xml">
+          <SymbolSetCode>
+            <DigitOne>6</DigitOne>
+            <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
       </SymbolSets>
