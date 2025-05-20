@@ -35,19 +35,19 @@
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="ORGANIZATION" Label="Organization or Group" Graphic="11110400.svg">
+        <EntityType ID="GROUP" Label="Group" Graphic="11110400.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="KILLING_VICTIM" Label="Killing Victim" Graphic="11110500.svg">
+        <EntityType ID="KILLING_VICTIM" Label="Individual Victim Killed by Criminal Activity" Graphic="11110500.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="KILLING_VICTIMS" Label="Killing Victims" Graphic="11110600.svg">
+        <EntityType ID="KILLING_VICTIMS" Label="Group of Victims Killed by Criminal Activity" Graphic="11110600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -87,52 +87,10 @@
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ASSASSINATION_MOD" Label="Assassination" LabelAlias="Assassination (Land Civilian)" Graphic="11011.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>1</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="EXECUTION_MOD" Label="Execution (Wrongful Killing)" LabelAlias="Execution (Wrongful Killing) (Land Civilian)" Graphic="11021.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>2</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="MURDER_VICTIMS_MOD" Label="Murder Victims" Graphic="11031.svg" Category="Crime">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="HIJACKING_MOD" Label="Hijacking" LabelAlias="Hijacking (Land Civilian)" Graphic="11041.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>4</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" LabelAlias="Kidnapping (Land Civilian)" Graphic="11051.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>5</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="PIRACY_MOD" Label="Piracy" LabelAlias="Piracy (Land Civilian)" Graphic="11061.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>6</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="RAPE_MOD" Label="Rape" LabelAlias="Rape (Land Civilian)" Graphic="11071.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>7</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="CIVILIAN_MOD" Label="Civilian" LabelAlias="Civilian (Land Civilian)" Graphic="11081.svg" Category="Organization">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="DISPLACED_MOD" Label="Displaced Person(s), Refugee(s) and Evacuee(s)" Graphic="11091.svg" Category="Organization">
@@ -151,12 +109,6 @@
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="GOVERNMENT_ORGANIZATION_MOD" Label="Government Organization" Graphic="11121.svg" Category="Organization">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="LEADER_1_MOD" Label="Leader or Leadership" LabelAlias="Leader or Leadership 1" Graphic="11131.svg" Category="Organization">
@@ -205,18 +157,6 @@
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>0</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="ACCIDENT_MOD" Label="Accident" LabelAlias="Accident (Land Civilian)" Graphic="11211.svg" Category="Composite Loss">
-      <ModifierCode>
-        <DigitOne>2</DigitOne>
-        <DigitTwo>1</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="COMBAT_MOD" Label="Combat" Graphic="11221.svg" Category="Composite Loss">
-      <ModifierCode>
-        <DigitOne>2</DigitOne>
-        <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="OTHER_MOD" Label="Other" LabelAlias="Other (Land Civilian)" Graphic="11231.svg" Category="Composite Loss">

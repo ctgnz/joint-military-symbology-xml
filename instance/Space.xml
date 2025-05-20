@@ -211,6 +211,18 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
+        <EntityType ID="CIV_PLANET_LANDER" Label="Planet Lander" Graphic="05122300.svg">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="CIV_SPACE_VEHICLE" Label="Space Vehicle" Graphic="05121400.svg">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Space)" Graphic="05130000.svg" Icon="FULL_OCTAGON">
@@ -251,7 +263,7 @@
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="GO_MOD" Label="Geostationary Orbit (GO)" Graphic="05051.svg" Category="Orbit">
+    <Modifier ID="GEO_MOD" Label="Geostationary Orbit (GEO)" Graphic="05051.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
@@ -293,6 +305,48 @@
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ELECTRONIC_WARFARE_MOD" Label="Electronic Warfare (ASAT)" Graphic="05062.svg" Category="Capability" LimitUseTo="ANTISATELLITEWEAPON">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="HIGH_POWER_MICROWAVE_MOD" Label="High Power Microwave (ASAT)" Graphic="05072.svg" Category="Capability" LimitUseTo="ANTISATELLITEWEAPON">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="LASER_MOD" Label="Laser (ASAT)" Graphic="05082.svg" Category="Capability" LimitUseTo="ANTISATELLITEWEAPON">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MINE_MOD" Label="Mine (ASAT)" Graphic="05092.svg" Category="Capability" LimitUseTo="ANTISATELLITEWEAPON">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MAINTENANCE_MOD" Label="Maintenance" Graphic="05102.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="REFUEL_MOD" Label="Refuel" Graphic="05102.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TUG_MOD" Label="Tug" Graphic="05102.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorTwoModifiers>

@@ -29,12 +29,6 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="ARSON" Label="Arson" Icon="FULL_OCTAGON" Graphic="40110102.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
             <EntitySubType ID="ATTEMPTED_CRIMINAL_ACTIVITY" Label="Attempted Criminal Activity" Remarks="APP-6C" Graphic="40110103.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
@@ -89,12 +83,6 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="HOME_EVICTION" Label="Home Eviction" Icon="FULL_OCTAGON" Graphic="40110112.svg">
-              <EntitySubTypeCode>
-                <DigitOne>1</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
             <EntitySubType ID="BLACK_MARKETING" Label="Black Marketing" Icon="FULL_OCTAGON" Graphic="40110113.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
@@ -105,12 +93,6 @@
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>4</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="JAIL_BREAK" Label="Jail Break" Icon="FULL_OCTAGON" Graphic="40110115.svg">
-              <EntitySubTypeCode>
-                <DigitOne>1</DigitOne>
-                <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
             <EntitySubType ID="ROBBERY" Label="Robbery" Graphic="40110116.svg">
@@ -135,12 +117,6 @@
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>9</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="ROCK_THROWING" Label="Rock Throwing" Icon="FULL_OCTAGON" Graphic="40110120.svg">
-              <EntitySubTypeCode>
-                <DigitOne>2</DigitOne>
-                <DigitTwo>0</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
             <EntitySubType ID="DEAD_BODY" Label="Dead Body" Icon="FULL_OCTAGON" Graphic="40110121.svg">
@@ -287,6 +263,12 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
+        <EntityType ID="HOUSE" Label="House" Graphic="40110700.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="CIVIL_DISTURBANCE" Label="Civil Disturbance" Icon="FULL_OCTAGON" Graphic="40120000.svg">
@@ -315,7 +297,7 @@
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="MILITARY_INFORMATION_SUPPORT_OPERATION_MISO" Label="Military Information Support Operation (MISO)" Icon="FULL_OCTAGON" Graphic="40130200.svg">
+        <EntityType ID="PSYCHOLOGICAL_OPERATIONS" Label="Psychological Operation (PSYOPS)" Icon="FULL_OCTAGON" Graphic="40130200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
@@ -411,46 +393,10 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="EMERGENCY_COLLECTION_EVACUATION_POINT" Label="Emergency Collection Evacuation Point" Icon="FULL_OCTAGON" Graphic="40131201.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>1</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
             <EntitySubType ID="EMERGENCY_FOOD_DISTRIBUTION" Label="Emergency Food Distribution" CloverGraphic="40131202_0.svg" DiamondGraphic="40131202_3.svg" RectangleGraphic="40131202_1.svg" SquareGraphic="40131202_2.svg" Icon="FULL_FRAME">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="EMERGENCY_INCIDENT_COMMAND_CENTER" Label="Emergency Incident Command Center" Icon="FULL_OCTAGON" Graphic="40131203.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="EMERGENCY_OPERATIONS_CENTER" Label="Emergency Operations Center" Icon="FULL_OCTAGON" Graphic="40131204.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>4</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="EMERGENCY_PUBLIC_INFORMATION_CENTER" Label="Emergency Public Information Center" Icon="FULL_OCTAGON" Graphic="40131205.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="EMERGENCY_SHELTER" Label="Emergency Shelter" Icon="FULL_OCTAGON" Graphic="40131206.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="EMERGENCY_STAGING_AREA" Label="Emergency Staging Area" Icon="FULL_OCTAGON" Graphic="40131207.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>7</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
             <EntitySubType ID="EMERGENCY_WATER_DISTRIBUTION_CENTER" Label="Emergency Water Distribution Center" CloverGraphic="40131208_0.svg" DiamondGraphic="40131208_3.svg" RectangleGraphic="40131208_1.svg" SquareGraphic="40131208_2.svg" Icon="FULL_FRAME">
@@ -467,40 +413,10 @@
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="EMT_STATION_LOCATION" Label="EMT Station Location" Icon="FULL_OCTAGON" Graphic="40131301.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>1</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="HEALTH_DEPARTMENT_FACILITY" Label="Health Department Facility" Icon="FULL_OCTAGON" Graphic="40131302.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="MEDICAL_FACILITIES_OUTPATIENT" Label="Medical Facilities Outpatient" Icon="FULL_OCTAGON" Graphic="40131303.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="MORGUE" Label="Morgue" Icon="FULL_OCTAGON" Graphic="40131304.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>4</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
             <EntitySubType ID="PHARMACY" Label="Pharmacy" Icon="FULL_OCTAGON" Graphic="40131305.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="TRIAGE" Label="Triage" Icon="FULL_OCTAGON" Graphic="40131306.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>6</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
           </EntitySubTypes>
@@ -510,26 +426,6 @@
             <DigitOne>1</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="FIRE_HYDRANT" Label="Fire Hydrant" Icon="FULL_OCTAGON" Graphic="40131401.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>1</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="FIRE_STATION" Label="Fire Station" Icon="FULL_OCTAGON" Graphic="40131402.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="OTHER_WATER_SUPPLY_LOCATION" Label="Other Water Supply Location" Icon="FULL_OCTAGON" Graphic="40131403.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>
         </EntityType>
         <EntityType ID="LAW_ENFORCEMENT_OPERATION" Label="Law Enforcement Operation" Icon="FULL_OCTAGON" Graphic="40131500.svg">
           <EntityTypeCode>
@@ -543,28 +439,10 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="BORDER_PATROL" Label="Border Patrol" Icon="FULL_OCTAGON" Graphic="40131502.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="CUSTOMS_SERVICE" Label="Customs Service" Icon="FULL_OCTAGON" Graphic="40131503.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
             <EntitySubType ID="DRUG_ENFORCEMENT_ADMIN_DEA" Label="Drug Enforcement Administration (DEA)" LabelAlias="DEA" Graphic="40131504.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="JUSTICE_DEPT_DOJ" Label="Department of Justice (DOJ)" LabelAlias="DOJ" Icon="FULL_OCTAGON" Graphic="40131505.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
             <EntitySubType ID="FEDERAL_BUREAU_NVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" LabelAlias="FBI" Graphic="40131506.svg">
@@ -577,12 +455,6 @@
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="PRISON" Label="Prison" Icon="FULL_OCTAGON" Graphic="40131508.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>8</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
             <EntitySubType ID="US_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" LabelAlias="USSS" Graphic="40131509.svg">
@@ -603,12 +475,6 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="US_MARSHALS" Label="US Marshals Service" Icon="FULL_OCTAGON" Graphic="40131512.svg">
-              <EntitySubTypeCode>
-                <DigitOne>1</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
             <EntitySubType ID="INTERNAL_SECURITY_FORCE" Label="Internal Security Force" Graphic="40131513.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
@@ -616,62 +482,6 @@
               </EntitySubTypeCode>
             </EntitySubType>
           </EntitySubTypes>
-        </EntityType>
-      </EntityTypes>
-    </Entity>
-    <Entity ID="FIRE_EVENT" Label="Fire Event" Icon="FULL_OCTAGON" Graphic="40140000.svg">
-      <EntityCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>4</DigitTwo>
-      </EntityCode>
-      <EntityTypes>
-        <EntityType ID="FIRE_ORIGIN" Label="Fire Origin" Icon="FULL_OCTAGON" Graphic="40140100.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>1</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="SMOKE" Label="Smoke" Icon="FULL_OCTAGON" Graphic="40140200.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>2</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="HOT_SPOT" Label="Hot Spot" Icon="FULL_OCTAGON" Graphic="40140300.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>3</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="NON_RESIDENTIAL_FIRE" Label="Non-Residential Fire" Icon="FULL_OCTAGON" Graphic="40140400.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>4</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="RESIDENTIAL_FIRE" Label="Residential Fire" Icon="FULL_OCTAGON" Graphic="40140500.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>5</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="SCHOOL_FIRE" Label="School Fire" Icon="FULL_OCTAGON" Graphic="40140600.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>6</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="SPECIAL_NEEDS_FIRE" Label="Special Needs Fire" Icon="FULL_OCTAGON" Graphic="40140700.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>7</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="WILD_FIRE" Label="Wild Fire" Icon="FULL_OCTAGON" Graphic="40140800.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>8</DigitTwo>
-          </EntityTypeCode>
         </EntityType>
       </EntityTypes>
     </Entity>
@@ -687,90 +497,6 @@
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="CHEMICAL_AGENT" Label="Chemical Agent" Icon="FULL_OCTAGON" Graphic="40150101.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>1</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="CORROSIVE_MATERIAL" Label="Corrosive Material" Icon="FULL_OCTAGON" Graphic="40150102.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="HAZARDOUS_WHEN_WET" Label="Hazardous when Wet" Icon="FULL_OCTAGON" Graphic="40150103.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="EXPLOSIVE_MATERIAL" Label="Explosive Material" Icon="FULL_OCTAGON" Graphic="40150104.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>4</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="FLAMMABLE_GAS" Label="Flammable Gas" Icon="FULL_OCTAGON" Graphic="40150105.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="FLAMMABLE_LIQUID" Label="Flammable Liquid" Icon="FULL_OCTAGON" Graphic="40150106.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="FLAMMABLE_SOLID" Label="Flammable Solid" Icon="FULL_OCTAGON" Graphic="40150107.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="NON_FLAMMABLE_GAS" Label="Non-Flammable Gas" Icon="FULL_OCTAGON" Graphic="40150108.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>8</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="ORGANIC_PEROXIDE" Label="Organic Peroxide" Icon="FULL_OCTAGON" Graphic="40150109.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>9</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="OXIDIZER" Label="Oxidizer" Icon="FULL_OCTAGON" Graphic="40150110.svg">
-              <EntitySubTypeCode>
-                <DigitOne>1</DigitOne>
-                <DigitTwo>0</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="RADIOACTIVE_MATERIAL" Label="Radioactive Material" Icon="FULL_OCTAGON" Graphic="40150111.svg">
-              <EntitySubTypeCode>
-                <DigitOne>1</DigitOne>
-                <DigitTwo>1</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="SPONTANEOUSLY_COMBUSTIBLE_MATERIAL" Label="Spontaneously Combustible Material" Icon="FULL_OCTAGON" Graphic="40150112.svg">
-              <EntitySubTypeCode>
-                <DigitOne>1</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="TOXIC_GAS" Label="Toxic Gas" Icon="FULL_OCTAGON" Graphic="40150113.svg">
-              <EntitySubTypeCode>
-                <DigitOne>1</DigitOne>
-                <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="TOXIC_INFECTIOUS_MATERIAL" Label="Toxic Infectious Material" Icon="FULL_OCTAGON" Graphic="40150114.svg">
-              <EntitySubTypeCode>
-                <DigitOne>1</DigitOne>
-                <DigitTwo>4</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
             <EntitySubType ID="UNEXPLODED_ORDNANCE" Label="Unexploded Ordnance" Icon="FULL_OCTAGON" Graphic="40150115.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
@@ -811,12 +537,6 @@
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="WHEELED_VEHICLE_EXPLOSION" Label="Wheeled Vehicle Explosion" Icon="FULL_OCTAGON" Graphic="40160500.svg">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>5</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="NATURAL_EVENT" Label="Natural Event" Graphic="40170000.svg">
@@ -831,36 +551,6 @@
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="AFTERSHOCK" Label="Aftershock" Icon="FULL_OCTAGON" Graphic="40170101.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>1</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="AVALANCHE" Label="Avalanche" Icon="FULL_OCTAGON" Graphic="40170102.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="EARTHQUAKE_EPICENTER" Label="Earthquake Epicenter" Icon="FULL_OCTAGON" Graphic="40170103.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="LANDSLIDE" Label="Landslide" Icon="FULL_OCTAGON" Graphic="40170104.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>4</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="SUBSIDENCE" Label="Subsidence" Icon="FULL_OCTAGON" Graphic="40170105.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
             <EntitySubType ID="VOLCANIC_ERUPTION" Label="Volcanic Eruption" Icon="FULL_OCTAGON" Graphic="40170106.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
@@ -886,64 +576,12 @@
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="DROUGHT" Label="Drought" Icon="FULL_OCTAGON" Graphic="40170201.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>1</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="FLOOD" Label="Flood" Icon="FULL_OCTAGON" Graphic="40170202.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="TSUNAMI" Label="Tsunami" Icon="FULL_OCTAGON" Graphic="40170203.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>
         </EntityType>
         <EntityType ID="INFESTATION" Label="Infestation" Graphic="40170300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="BIRD" Label="Bird" Icon="FULL_OCTAGON" Graphic="40170301.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>1</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="INSECT" Label="Insect" Icon="FULL_OCTAGON" Graphic="40170302.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="MICROBIAL" Label="Microbial" Icon="FULL_OCTAGON" Graphic="40170303.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="REPTILE" Label="Reptile" Icon="FULL_OCTAGON" Graphic="40170304.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>4</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="RODENT" Label="Rodent" Icon="FULL_OCTAGON" Graphic="40170305.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>
         </EntityType>
       </EntityTypes>
     </Entity>
@@ -975,52 +613,16 @@
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ASSASSINATION_MOD" Label="Assassination" LabelAlias="Assassination (Activities)" Graphic="40011.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>1</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="EXECUTION_WRONGFUL_KILLING_MOD" Label="Execution (Wrongful Killing)" LabelAlias="Execution (Wrongful Killing) (Activities)" Graphic="40021.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>2</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="HIJACKING_MOD" Label="Hijacking/Hijacked" LabelAlias="Hijacking/Hijacked (Activities)" Graphic="40031.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>3</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="HOUSE_TO_HOUSE_MOD" Label="House-to-House" Graphic="40041.svg" Category="Psychological Operations">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" LabelAlias="Kidnapping (Activities)" Graphic="40051.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>5</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="MURDER_MOD" Label="Murder" Graphic="40061.svg" Category="Crime">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="PIRACY_MOD" Label="Piracy" LabelAlias="Piracy (Activities)" Graphic="40071.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>7</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="RAPE_MOD" Label="Rape" LabelAlias="Rape (Activities)" Graphic="40081.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="WRITTEN_PSYCHOLOGICAL_OPERATIONS_MOD" Label="Written Psychological Operations" Graphic="40091.svg" Category="Psychological Operations">
@@ -1065,12 +667,6 @@
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ACCIDENT_MOD" Label="Accident" Graphic="40161.svg" Category="Incident Qualifier">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>6</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="INCIDENT_MOD" Label="Incident" Graphic="40171.svg" Category="Incident Qualifier">
       <ModifierCode>
         <DigitOne>1</DigitOne>
@@ -1081,6 +677,18 @@
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="EVICTION_MOD" Label="Eviction" Graphic="40211.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="RAID_MOD" Label="Raid" Graphic="40221.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorOneModifiers>

@@ -139,6 +139,18 @@
         <DigitTwo>6</DigitTwo>
       </EntityCode>
     </Entity>
+    <Entity ID="SEABED_INSTALLATION_MIL" Label="Seabed Installation, Human-Made, Military" Graphic="35200000.svg">
+      <EntityCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
+    <Entity ID="SEABED_INSTALLATION_NON_MIL" Label="Seabed Installation, Human-Made, Non-Military" Graphic="35210000.svg">
+      <EntityCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
+    </Entity>
   </Entities>
   <SectorOneModifiers>
     <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
@@ -147,75 +159,9 @@
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ANTISUBMARINE_WARFARE_MOD" Label="Antisubmarine Warfare" LabelAlias="Antisubmarine Warfare (Sea Subsurface)" Graphic="35011.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>1</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="AUXILIARY_MOD" Label="Auxiliary" Graphic="35021.svg" Category="Mission Area" LimitUseTo="SUBMARINE">
       <ModifierCode>
         <DigitOne>0</DigitOne>
-        <DigitTwo>2</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="COMMAND_AND_CONTROL_MOD" Label="Command and Control" Graphic="35031.svg" Category="Mission Area" LimitUseTo="SUBMARINE">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>3</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="INTELLIGENCE_SURVEILLANCE_RECONNAISSANCE_MOD" Label="Intelligence Surveillance Reconnaissance" Graphic="35041.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>4</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="MINE_COUNTERMEASURES_MOD" Label="Mine Countermeasures" LabelAlias="Mine Countermeasures (Sea Subsurface)" Graphic="35051.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>5</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="MINE_WARFARE_MOD" Label="Mine Warfare" LabelAlias="Mine Warfare (Sea Subsurface)" Graphic="35061.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>6</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="SURFACE_WARFARE_MOD" Label="Surface Warfare" LabelAlias="Surface Warfare (Sea Subsurface)" Graphic="35071.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>7</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="ATTACK_MOD" Label="Attack" Graphic="35081.svg" Category="Weapons Capability" LimitUseTo="SUBMARINE">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>8</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="BALLISTIC_MISSILE_MOD" Label="Ballistic Missile" LabelAlias="Ballistic Missile (Sea Subsurface)" Graphic="35091.svg" Category="Weapons Capability" LimitUseTo="SUBMARINE">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>9</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="GUIDED_MISSILE_MOD" Label="Guided Missile" LabelAlias="Guided Missile (Sea Subsurface)" Graphic="35101.svg" Category="Weapons Capability" LimitUseTo="SUBMARINE">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="OTHER_GUIDED_MISSILE_MOD" Label="Other Guided Missile" LabelAlias="Other Guided Missile (Sea Subsurface)" Graphic="35111.svg" Category="Weapons Capability" LimitUseTo="SUBMARINE">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>1</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="SPECIAL_OPERATIONS_FORCES_SOF_MOD" Label="Special Operations Forces (SOF)" LabelAlias="SOF (Sea Subsurface)" Graphic="35121.svg" Category="Asset Capability" LimitUseTo="SUBMARINE">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
@@ -259,12 +205,6 @@
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>9</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="HIJACKING_HIGHJACKED_MOD" Label="Hijacking/Highjacked" Graphic="35201.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>2</DigitOne>
-        <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorOneModifiers>
@@ -351,24 +291,6 @@
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="AUTONOMOUS_CONTROL_MOD" Label="Autonomous Control" Graphic="35142.svg" Category="UUV Control" LimitUseTo="AUV_UUV">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>4</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="REMOTELY_PILOTED_MOD" Label="Remotely Piloted" Graphic="35152.svg" Category="UUV Control" LimitUseTo="AUV_UUV">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>5</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="EXPENDABLE_MOD" Label="Expendable" Graphic="35162.svg" Category="UUV Control" LimitUseTo="AUV_UUV">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorTwoModifiers>

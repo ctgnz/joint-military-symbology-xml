@@ -137,7 +137,7 @@
                 <DigitTwo>0</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="ES" Label="Electronic Support (ES)" Graphic="01110121.svg">
+            <EntitySubType ID="ESM" Label="Electronic Support Measures (ESM)" Graphic="01110121.svg">
               <EntitySubTypeCode>
                 <DigitOne>2</DigitOne>
                 <DigitTwo>1</DigitTwo>
@@ -297,6 +297,12 @@
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
+        <EntityType ID="CIV_MEDEVAC" Label="Medical Evacuation (MEDEVAC)" Graphic="01120700.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="WEAPON" Label="Weapon" LabelAlias="Weapon (Air)" Remarks="Reserved for hiearchical purposes." Graphic="01130000.svg">
@@ -333,22 +339,10 @@
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATTACK_STRIKE_MOD" Label="Attack/Strike" Graphic="01011.svg" Category="Military Aircraft Type">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>1</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="BOMBER_MOD" Label="Bomber" Graphic="01021.svg" Category="Military Aircraft Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="CARGO_MOD" Label="Cargo" Graphic="01031.svg" Category="Aircraft Type">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="FIGHTER_MOD" Label="Fighter" Graphic="01041.svg" Category="Military Aircraft Type">
@@ -367,18 +361,6 @@
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="UTILITY_MOD" Label="Utility" Graphic="01071.svg" Category="Aircraft Type">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>7</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="VSTOL_MOD" Label="VSTOL/VTOL" Graphic="01081.svg" Category="Aircraft Type">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="PASSENGER_MOD" Label="Passenger" Graphic="01091.svg" Category="Aircraft Type">
@@ -409,18 +391,6 @@
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="MEDEVAC_MOD" Label="Medical Evacuation (MEDEVAC)" Graphic="01141.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>4</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="ESCORT_MOD" Label="Escort" Graphic="01151.svg" Category="Military Mission Area">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="EC_MOD" Label="Electronic Combat (EC)/Jammer" Graphic="01161.svg" Category="Military Mission Area">
@@ -459,46 +429,16 @@
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ASW_MOD" Label="Antisubmarine Warfare" Graphic="01221.svg" Category="Military Mission Area">
-      <ModifierCode>
-        <DigitOne>2</DigitOne>
-        <DigitTwo>2</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="COMMS_MOD" Label="Communications" Graphic="01231.svg" Category="Mission Area">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ES_MOD" Label="Electronic Support (ES)" Graphic="01241.svg" Category="Military Mission Area">
+    <Modifier ID="ESM_MOD" Label="Electronic Support Measures (ESM)" Graphic="01241.svg" Category="Military Mission Area">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>4</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="MCM_MOD" Label="Mine Countermeasures (MCM)" Graphic="01251.svg" Category="Military Mission Area">
-      <ModifierCode>
-        <DigitOne>2</DigitOne>
-        <DigitTwo>5</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="SAR_MOD" Label="Search and Rescue" Graphic="01261.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>2</DigitOne>
-        <DigitTwo>6</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="SOF_MOD" Label="Special Operations Forces" Graphic="01271.svg" Category="Military Mission Area">
-      <ModifierCode>
-        <DigitOne>2</DigitOne>
-        <DigitTwo>7</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="SURFACE_WARFARE_MOD" Label="Surface Warfare" Graphic="01281.svg" Category="Military Mission Area">
-      <ModifierCode>
-        <DigitOne>2</DigitOne>
-        <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="VIP_MOD" Label="Very Important Person (VIP) Transport" Graphic="01291.svg" Category="Mission Area">
@@ -549,12 +489,6 @@
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HIJACKING_MOD" Label="Hijacking" LabelAlias="Hijacking (Air)" Graphic="01371.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>3</DigitOne>
-        <DigitTwo>7</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="ASW_HELO_LAMPS_MOD" Label="ASW Helo - LAMPS" Graphic="01381.svg" Category="Mission Area" LimitUseTo="ROTARY_WING">
       <ModifierCode>
         <DigitOne>3</DigitOne>
@@ -575,24 +509,6 @@
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HVY_MOD" Label="Heavy" Graphic="01012.svg" Category="Cargo/Transport Capacity">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>1</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="MED_MOD" Label="Medium" Graphic="01022.svg" Category="Cargo/Transport Capacity">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>2</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="LT_MOD" Label="Light" Graphic="01032.svg" Category="Cargo/Transport Capacity">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>3</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="BOOM_MOD" Label="Boom-Only" Graphic="01042.svg" Category="Re-fueling Capability" LimitUseTo="TANKER">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -609,30 +525,6 @@
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="CLOSE_MOD" Label="Close Range" Graphic="01072.svg" Category="Range">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>7</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="SHORT_MOD" Label="Short Range" Graphic="01082.svg" Category="Range">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>8</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="MEDIUM_MOD" Label="Medium Range" Graphic="01092.svg" Category="Range">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>9</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="LONG_MOD" Label="Long Range" Graphic="01102.svg" Category="Range">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="DOWNLINK_MOD" Label="Downlinked" Graphic="01112.svg" Category="Track Link Availability">

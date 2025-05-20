@@ -2339,7 +2339,7 @@
             <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="61C.svg" />
           </Graphics>
         </Amplifier>
-        <Amplifier Name="REGION_THEATER" Label="Region/Theater">
+        <Amplifier Name="REGION_THEATRE" Label="Region/Theatre">
           <AmplifierCode>D</AmplifierCode>
           <Graphics>
             <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="11D.svg" />

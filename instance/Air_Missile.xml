@@ -73,6 +73,12 @@
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
+    <Modifier ID="HYPERSONIC_MOD" Label="Interceptor" LabelAlias="Hypersonic (Air Missile)" Graphic="02091.svg" Category="Missile Class">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
     <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
@@ -109,12 +115,6 @@
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="MISSILE_MOD" Label="Missile" Remarks="APP-6" Graphic="02062.svg" Category="Missile Status">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="PATRIOT_MOD" Label="Patriot" Graphic="02072.svg" Category="Missile Type-BMD" LimitUseTo="INTERCEPTOR_MOD">

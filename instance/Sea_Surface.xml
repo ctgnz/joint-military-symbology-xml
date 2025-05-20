@@ -617,52 +617,10 @@
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ASW_MOD" Label="Antisubmarine Warfare" LabelAlias="Antisubmarine Warfare (Sea Surface)" Graphic="30031.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>3</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="ESCORT_MOD" Label="Escort" Graphic="30041.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>4</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="EW_MOD" Label="Electronic Warfare" Graphic="30051.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>5</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="ISR_MOD" Label="Intelligence, Surveillance, Reconnaissance" Graphic="30061.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>6</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="MCM_MOD" Label="Mine Countermeasures" LabelAlias="Mine Countermeasures (Sea Surface)" Graphic="30071.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>7</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="MD_MOD" Label="Missile Defense" Graphic="30081.svg" Category="Mission Area">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="MED_MOD" Label="Medical" Graphic="30091.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>9</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="MIW_MOD" Label="Mine Warfare" LabelAlias="Mine Warfare (Sea Surface)" Graphic="30101.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="RMV_MOD" Label="Remote Multi-Mission Vehicle (USV-only)" Graphic="30111.svg" Category="Mission Area">
@@ -671,58 +629,10 @@
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SOF_MOD" Label="Special Operations Forces (SOF)" LabelAlias="SOF (Sea Surface)" Graphic="30121.svg" Category="Asset Capability">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>2</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="SUW_MOD" Label="Surface Warfare" LabelAlias="Surface Warfare (Sea Surface)" Graphic="30131.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>3</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="BALLISTIC_MOD" Label="Ballistic Missile" LabelAlias="Ballistic Missile (Sea Surface)" Graphic="30141.svg" Category="Weapons Capability">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>4</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="GUIDED_MOD" Label="Guided Missile" LabelAlias="Guided Missile (Sea Surface)" Graphic="30151.svg" Category="Weapons Capability">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>5</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="OTHER_GUIDED_MOD" Label="Other Guided Missile" LabelAlias="Other Guided Missile (Sea Surface)" Graphic="30161.svg" Category="Weapons Capability">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>6</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="TORPEDO_MOD" Label="Torpedo" Graphic="30171.svg" Category="Weapons Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="DRONE_EQUIP_MOD" Label="Drone-Equipped" Graphic="30181.svg" Category="Asset Capability">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>8</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="HELO_EQUIP_MOD" Label="Helicopter-Equipped/VSTOL" Graphic="30191.svg" Category="Asset Capability">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>9</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="BALLISTIC_DEFENSE_MOD" Label="Ballistic Missile Defense, Shooter" Graphic="30201.svg" Category="Mission Area">
-      <ModifierCode>
-        <DigitOne>2</DigitOne>
-        <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="LRST_MOD" Label="Ballistic Missile Defense, Long-Range Surveillance and Track (LRST)" Graphic="30211.svg" Category="Mission Area">
@@ -737,12 +647,6 @@
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HIJACK_MOD" Label="Hijacking/Hijacked" LabelAlias="Hijacking/Hijacked (Sea Surface)" Graphic="30231.svg" Category="Crime">
-      <ModifierCode>
-        <DigitOne>2</DigitOne>
-        <DigitTwo>3</DigitTwo>
-      </ModifierCode>
-    </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
     <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
@@ -755,24 +659,6 @@
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="HEAVY_MOD" Label="Heavy" Graphic="30022.svg" Category="Ship Capacity">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>2</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="LIGHT_MOD" Label="Light" Graphic="30032.svg" Category="Ship Capacity">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>3</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="MEDIUM_MOD" Label="Medium" Graphic="30042.svg" Category="Ship Capacity">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
     <Modifier ID="DOCK_MOD" Label="Dock" Graphic="30052.svg" Category="Cargo Capacity">
@@ -821,24 +707,6 @@
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="AUTONOMOUS_MOD" Label="Autonomous Control" Graphic="30132.svg" Category="USV Control" LimitUseTo="CIV_USV">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>3</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="RPV_MOD" Label="Remotely Piloted" Graphic="30142.svg" Category="USV Control" LimitUseTo="CIV_USV">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>4</DigitTwo>
-      </ModifierCode>
-    </Modifier>
-    <Modifier ID="EXPENDABLE_MOD" Label="Expendable" Graphic="30152.svg" Category="USV Control" LimitUseTo="CIV_USV">
-      <ModifierCode>
-        <DigitOne>1</DigitOne>
-        <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorTwoModifiers>
