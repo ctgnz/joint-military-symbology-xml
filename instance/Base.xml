@@ -2223,7 +2223,7 @@
     <AmplifierGroup Name="NA" Label="Unknown">
       <AmplifierGroupCode>0</AmplifierGroupCode>
       <Amplifiers>
-        <Amplifier Name="NA" Label="Unknown">
+        <Amplifier Name="NA" Label="Unknown" Remarks="FFFF80">
           <AmplifierCode>0</AmplifierCode>
         </Amplifier>
       </Amplifiers>
