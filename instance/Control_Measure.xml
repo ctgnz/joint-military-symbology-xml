@@ -29,6 +29,24 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
+        <EntityType ID="ENGINEER_WORK_LINE" Label="Engineer Work Line" Graphic="25110300.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="GENERIC_LINE" Label="Line, Generic" Graphic="25110400.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="DECISION_LINE" Label="Decision Line" Graphic="25110500.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="COMMAND_CONTROL_AREAS" Label="Command and Control Areas" Icon="NA" GeometryType="NA">
@@ -59,6 +77,30 @@
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="BASE_CAMP" Label="Base Camp" Graphic="25120500.svg" GeometryType="AREA">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="GUERILLA_BASE" Label="Guerilla Base" Graphic="25120600.svg" GeometryType="AREA">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="GENERIC_AREA" Label="Area, Generic" Graphic="25120700.svg" GeometryType="AREA">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="BRIDGEHEAD" Label="Bridgehead" Graphic="25120800.svg" GeometryType="AREA">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
       </EntityTypes>
@@ -211,6 +253,30 @@
             <DigitTwo>9</DigitTwo>
           </EntityTypeCode>
         </EntityType>
+        <EntityType ID="TARGET_HANDOVER" Label="Target Handover" Graphic="25132000.svg">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="KEY_TERRAIN" Label="Key Terrain" Graphic="25132100.svg">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="CONTROL_POINT" Label="Control Point" Graphic="25132200.svg">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="VITAL_GROUND" Label="Vital Ground" Graphic="25132300.svg">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="MANEUVER_LINES" Label="Maneuver Lines" Icon="NA" GeometryType="NA">
@@ -250,12 +316,6 @@
               </EntitySubTypeCode>
             </EntitySubType>
           </EntitySubTypes>
-        </EntityType>
-        <EntityType ID="LINE_OF_CONTACT" Label="Line of Contact" Remarks="Line of Contact is a doctrinal term and concept for opposing and parallel Forward Lines of Own Troops.  It is not a symbol in its own right." Icon="NA" GeometryType="NA">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>2</DigitTwo>
-          </EntityTypeCode>
         </EntityType>
         <EntityType ID="PHASE_LINE" Label="Phase Line" Graphic="25140300.svg" GeometryType="LINE">
           <EntityTypeCode>
@@ -305,12 +365,6 @@
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="FRIENDLY_PLANNED_ON_ORDER" Label="Friendly Planned or On Order" Graphic="25140604.svg" GeometryType="LINE">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
             <EntitySubType ID="FEINT" Label="Feint" Graphic="25140605.svg" GeometryType="LINE">
@@ -397,6 +451,30 @@
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="HANDOVER_LINE" Label="Handover Line" Graphic="25141800.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="BATTLE_HANDOVER_LINE" Label="Battle Handover Line" Graphic="25141900.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="NAMED_AREA_OF_INTEREST_LINE" Label="Named Area of Interest (NAI) Line" Graphic="25142000.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="MOBILITY_CORRIDOR" Label="Mobility Corridor" Graphic="25142100.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
       </EntityTypes>
@@ -693,6 +771,24 @@
           <EntityTypeCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="AVENUE_OF_APPROACH" Label="Avenue of Approach" Graphic="25152300.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="RESTRICTED_TERRAIN" Label="Restricted Terrain" Graphic="25152400.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SEVERELY_RESTRICTED_TERRAIN" Label="Severely Restricted Terrain" Graphic="25152500.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
       </EntityTypes>
@@ -1043,6 +1139,12 @@
           <EntityTypeCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="ISOLATED_PERSONNEL" Label="Isolated Personnel" Graphic="25182600.svg">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
       </EntityTypes>
@@ -1509,12 +1611,6 @@
           <EntityTypeCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>9</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="FORWARD_OBSERVER_SPOTTER_POSITION" Label="Forward Observer / Spotter Position" Graphic="25214000.svg">
-          <EntityTypeCode>
-            <DigitOne>4</DigitOne>
-            <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
         </EntityType>
         <EntityType ID="VITAL_AREA_CENTER" Label="Vital Area Center" Graphic="25214100.svg">
@@ -2481,6 +2577,18 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
+        <EntityType ID="ARTILLERY_MANOEUVRE_AREA" Label="Artillery Manoeuvre Area" Graphic="25242400.svg" GeometryType="AREA">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="ARTILLERY_RESERVED_AREA" Label="Artillery Reserved Area" Graphic="25242500.svg" GeometryType="AREA">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="FIRES_POINTS" Label="Fires Points" Icon="NA" GeometryType="NA">
@@ -2517,6 +2625,12 @@
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="KNOWN_POINT" Label="Known Point" Graphic="25250600.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
       </EntityTypes>
@@ -2665,36 +2779,6 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="MINEFIELD_PLANNED" Label="Planned" Graphic="25270702.svg" GeometryType="AREA">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="MINEFIELD_KNOWN_ENEMY" Label="Known Enemy" Graphic="25270703.svg" GeometryType="AREA">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="MINEFIELD_SUSPECTED_OR_TEMPLATED_ENEMY" Label="Suspected or Templated Enemy" Graphic="25270704.svg" GeometryType="AREA">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>4</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="MINEFIELD_DUMMY" Label="Dummy" IsAlignable="true" Graphic="25270705.svg">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="MINEFIELD_DUMMY_DYMANIC" Label="Dummy Minefield, Dymanic" Graphic="25270706.svg" GeometryType="AREA">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
             <EntitySubType ID="MINEFIELD_DYNAMIC_DEPICTION" Label="Dynamic Depiction" Graphic="25270707.svg" GeometryType="AREA">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
@@ -2708,14 +2792,8 @@
             <DigitOne>0</DigitOne>
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="DECOY_MINED_AREA" Label="Decoy Mined Area" Graphic="25270900.svg" GeometryType="AREA">
-          <EntityTypeCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>9</DigitTwo>
-          </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="FENCED" Label="Fenced" Graphic="25270901.svg" GeometryType="AREA">
+            <EntitySubType ID="MINED_AREA_FENCED" Label="Mined Area, Fenced" Graphic="25270801.svg" GeometryType="AREA">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
@@ -2771,12 +2849,6 @@
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>3</DigitTwo>
-          </EntityTypeCode>
-        </EntityType>
-        <EntityType ID="BRIDGE" Label="Bridge" Graphic="25271400.svg" GeometryType="LINE">
-          <EntityTypeCode>
-            <DigitOne>1</DigitOne>
-            <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
         <EntityType ID="FORD_EASY" Label="Ford Easy" Graphic="25271500.svg" GeometryType="LINE">
@@ -2844,6 +2916,14 @@
             <DigitOne>2</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="MULTIPLE_STRIKE" Label="Multiple Strike" Graphic="25272101.svg" GeometryType="AREA">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
         </EntityType>
         <EntityType ID="RADIATION_DOSE_RATE_CONTOUR_LINES" Label="Radiation Dose Rate Contour Lines" Graphic="25272200.svg" GeometryType="AREA">
           <EntityTypeCode>
@@ -3120,6 +3200,14 @@
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="MINE_LINE" Label="Mineline" Graphic="25290101.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
         </EntityType>
         <EntityType ID="ANTITANK_OBSTACLES" Label="Antitank Obstacles" IsAlignable="true" Icon="NA" GeometryType="NA">
           <EntityTypeCode>
@@ -3321,6 +3409,12 @@
             <DigitTwo>7</DigitTwo>
           </EntityTypeCode>
         </EntityType>
+        <EntityType ID="CORPS_SUPPORT_AREA" Label="Corps Support Area" Graphic="25310800.svg" GeometryType="AREA">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="SUSTAINMENT_POINTS" Label="Sustainment Points" Icon="NA" GeometryType="NA">
@@ -3329,11 +3423,37 @@
         <DigitTwo>2</DigitTwo>
       </EntityCode>
       <EntityTypes>
-        <EntityType ID="AMBULANCE_EXCHANGE_POINT" Label="Ambulance Exchange Point" Graphic="25320100.svg">
+        <EntityType ID="AMBULANCE_POINTS" Label="Ambulance Point" Graphic="25320100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="AMBULANCE_EXCHANGE_POINT" Label="Ambulance Exchange Point" Graphic="25320101.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AMBULANCE_CONTROL_POINT" Label="Ambulance Control Point" Graphic="25320102.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AMBULANCE_LOAD_POINT" Label="Ambulance Load Point" Graphic="25320103.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AMBULANCE_RELAY_POINT" Label="Ambulance Relay Point" Graphic="25320104.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
         </EntityType>
         <EntityType ID="AMMUNITION_SUPPLY_POINT" Label="Ammunition Supply Point" Graphic="25320200.svg">
           <EntityTypeCode>
@@ -3535,6 +3655,12 @@
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
+        <EntityType ID="MORTUARY_COLLECTION_POINT" Label="Mortuary Collection Point" Graphic="25321900.svg">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="SUSTAINMENT_LINES" Label="Sustainment Lines" Icon="NA" GeometryType="NA">
@@ -3603,6 +3729,26 @@
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="ROUTE" Label="Alternate Supply Route" Graphic="25330500.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="ROUTE_ONE_WAY_TRAFFIC" Label="One Way Traffic" Graphic="25330501.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="ROUTE_ALTERNATING_TRAFFIC" Label="Alternating Traffic" Graphic="25330502.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
           </EntitySubTypes>
@@ -3785,7 +3931,591 @@
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
+        <EntityType ID="CORDON_AND_KNOCK" Label="Cordon and Knock" Graphic="25342600.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="CORDON_AND_SEARCH" Label="Cordon and Search" Graphic="25342700.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SUPPRESS" Label="Suppress" Graphic="25342800.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="ADVANCE_TO_CONTACT" Label="Advance to Contact" Graphic="25342900.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="CAPTURE" Label="Capture" Graphic="25343000.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="EXPLOIT" Label="Exploit" Graphic="25343100.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="CONTROL" Label="Control" Graphic="25343200.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="DEMONSTRATION" Label="Demonstration" Graphic="25343300.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="DENY" Label="Deny" Graphic="25343400.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="ENVELOP" Label="Envelop" Graphic="25343500.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="ESCORT" Label="Escort" Graphic="25343600.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="EXFILTRATION" Label="Exfiltration" Graphic="25343700.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="INFILTRATION" Label="Infiltration" Graphic="25343800.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="LOCATE" Label="Locate" Graphic="25343900.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="PURSUE" Label="Pursue" Graphic="25344000.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="FORWARD_PASSAGE_OF_LINES" Label="Forward Passage of Lines" Graphic="25344100.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="REARWARD_PASSAGE_OF_LINES" Label="Rearward Passage of Lines" Graphic="25344200.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="DEFEAT" Label="Defeat" Graphic="25344300.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="DISENGAGE" Label="Disengage" Graphic="25344400.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="EVACUATE" Label="Evacuate" Graphic="25344500.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="RECOVER" Label="Recover" Graphic="25344600.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="TURN" Label="Turn" Graphic="25344700.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="SPACE_DEBRIS" Label="Space Debris" Icon="NA" GeometryType="NA">
+      <EntityCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="HUMAN_MADE_SPACE_DEBRIS" Label="Human Made Space Debris" Graphic="25350100.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="HMSD_SMALL" Label="Human Made Space Debris, Small" Graphic="25350101.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="HMSD_MEDIUM" Label="Human Made Space Debris, Medium" Graphic="25350102.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="HMSD_BIG" Label="Human Made Space Debris, Big" Graphic="25350103.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="NATURAL_SPACE_DEBRIS" Label="Natural Space Debris" Graphic="25350200.svg" GeometryType="LINE">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="NSD_SMALL" Label="Natural Space Debris, Small" Graphic="25350201.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="NSD_MEDIUM" Label="Natural Space Debris, Medium" Graphic="25350202.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="NSD_BIG" Label="Natural Space Debris, Big" Graphic="25350203.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="PROTECTION_OF_CULTURAL_PROPERTY" Label="Protection Of Cultural Property" Icon="NA" GeometryType="NA">
+      <EntityCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="PCP_GENERAL" Label="Protection Of Cultural Property, General" Graphic="25360100.svg" GeometryType="POINT">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="PCP_SPECIAL" Label="Protection Of Cultural Property, Special" Graphic="25360200.svg" GeometryType="POINT">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="PCP_ENHANCED" Label="Protection Of Cultural Property, Enhanced" Graphic="25360300.svg" GeometryType="POINT">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="INTELLIGENCE_AREAS" Label="Intelligence Areas" Icon="NA" GeometryType="NA">
+      <EntityCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="HUMAN_TERRAIN" Label="Human Terrain" Graphic="25370100.svg" GeometryType="AREA">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
   </Entities>
+  <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="STANDARD_ON_ROAD_MOBILITY_MOD" Label="Standard Mobility/On-Road Mobility" Graphic="40011.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="HIGH_OFF_ROAD_MOBILITY_MOD" Label="High Mobility/Off-Road Mobility" Graphic="40021.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TRACKED_MOD" Label="Tracked" Graphic="40031.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TRACKED_WHEELED_MOD" Label="Tracked and Wheeled Combination (Half-Track)" Graphic="40041.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TOWED_MOD" Label="Towed" Graphic="40051.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="RAILWAY_MOD" Label="Railway" Graphic="40061.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OVER_SNOW_PRIME_MOVER_MOD" Label="Over-Snow (Prime Mover)" Graphic="40071.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SLED_MOD" Label="Sled" Graphic="40081.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PACK_ANIMAL_MOD" Label="Pack Animal" Graphic="40091.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BARGE_MOD" Label="Barge" Graphic="40101.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="AMPHIBIOUS_MOD" Label="Amphibious" Graphic="40111.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NO_VEHICLES_MOD" Label="No Vehicles" Graphic="40121.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="UNSPECIFIED_MINE_MOD" Label="Unspecified Mine" Graphic="40131.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_MOD" Label="Antipersonnel Mine" Graphic="40141.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APMDFX_MOD" Label="Antipersonnel Mine with Directional Effects" Graphic="40151.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ATM_MOD" Label="Antitank Mine" Graphic="40161.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ATMAHD_MOD" Label="Antitank Mine with Antihandling Device" Graphic="40171.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ATMWA_MOD" Label="Wide Area Antitank Mine" Graphic="40181.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CLUSTER_MOD" Label="Mine Cluster" Graphic="40191.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_APMDFX_MOD" Label="Antipersonnel Mine and Antipersonnel Mine with Directional Effects" Graphic="40201.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_ATM_MOD" Label="Antipersonnel Mine and Antitank Mine" Graphic="40211.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_ATMAHD_MOD" Label="Antipersonnel Mine and Antitank Mine with Antihandling Device" Graphic="40221.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_ATMWA_MOD" Label="Antipersonnel Mine and Wide Area Antitank Mine" Graphic="40231.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_CLUSTER_MOD" Label="Antipersonnel Mine and Mine Cluster" Graphic="40241.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APMDFX_ATM_MOD" Label="Antipersonnel Mine with Directional Effects and Antitank Mine" Graphic="40251.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APMDFX_ATMAHD_MOD" Label="Antipersonnel Mine with Directional Effects and Antitank Mine with Antihandling Device" Graphic="40261.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APMDFX_ATMWA_MOD" Label="Antipersonnel Mine with Directional Effects and Wide Area Antitank Mine" Graphic="40271.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APMDFX_CLUSTER_MOD" Label="Antipersonnel Mine with Directional Effects and Mine Cluster" Graphic="40281.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ATM_ATMAHD_MOD" Label="Antitank Mine and Antitank Mine with Antihandling Device" Graphic="40291.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ATM_ATMWA_MOD" Label="Antitank Mine and Wide Area Antitank Mine" Graphic="40301.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ATM_CLUSTER_MOD" Label="Antitank Mine and Mine Cluster" Graphic="40311.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ATMAHD_ATMWA_MOD" Label="Antitank Mine with Antihandling Device and Wide Area Antitank Mine" Graphic="40321.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ATMAHD_CLUSTER_MOD" Label="Antitank Mine with Antihandling Device and Mine Cluster" Graphic="40331.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ATMWA_CLUSTER_MOD" Label="Wide Area Antitank Mine and Mine Cluster" Graphic="40341.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_APMDFX_ATM_MOD" Label="Antipersonnel Mine, Antipersonnel Mine with Directional Effects and Antitank Mine" Graphic="40351.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_APMDFX_ATMAHD_MOD" Label="Antipersonnel Mine, Antipersonnel Mine with Directional Effects and Antitank Mine with Antihandling Device" Graphic="40361.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_APMDFX_ATMWA_MOD" Label="Antipersonnel Mine, Antipersonnel Mine with Directional Effects and Wide Area Antitank Mine" Graphic="40371.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_APMDFX_CLUSTER_MOD" Label="Antipersonnel Mine, Antipersonnel Mine with Directional Effects and Mine Cluster" Graphic="40381.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_ATM_ATMAHD_MOD" Label="Antipersonnel Mine, Antitank Mine and Antitank Mine with Antihandling Device" Graphic="40391.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_ATM_ATMWA_MOD" Label="Antipersonnel Mine, Antitank Mine and Wide Area Antitank Mine" Graphic="40401.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_ATM_CLUSTER_MOD" Label="Antipersonnel Mine, Antitank Mine and Mine Cluster" Graphic="40411.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_ATMAHD_ATMWA_MOD" Label="Antipersonnel Mine, Antitank Mine with Antihandling Device and Wide Area Antitank Mine" Graphic="40421.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_ATMAHD_CLUSTER_MOD" Label="Antipersonnel Mine, Antitank Mine with Antihandling Device and Mine Cluster" Graphic="40431.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APM_ATMWA_CLUSTER_MOD" Label="Antipersonnel Mine, Wide Area Antitank Mine and Mine Cluster" Graphic="40441.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APMDFX_ATM_ATMAHD_MOD" Label="Antipersonnel Mine with Directional Effects, Antitank Mine and Antitank Mine with Antihandling Device" Graphic="40451.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APMDFX_ATM_ATMWA_MOD" Label="Antipersonnel Mine with Directional Effects, Antitank Mine and Wide Area Antitank Mine" Graphic="40461.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APMDFX_ATM_CLUSTER_MOD" Label="Antipersonnel Mine with Directional Effects, Antitank Mine and Mine Cluster" Graphic="40471.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APMDFX_ATMAHD_ATMWA_MOD" Label="Antipersonnel Mine with Directional Effects, Antitank Mine with Antihandling Device and Wide Area Antitank Mine" Graphic="40481.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APMDFX_ATMAHD_CLUSTER_MOD" Label="Antipersonnel Mine with Directional Effects, Antitank Mine with Antihandling Device and Mine Cluster" Graphic="40491.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="APMDFX_ATMWA_CLUSTER_MOD" Label="Antipersonnel Mine with Directional Effects, Wide Area Antitank Mine and Mine Cluster" Graphic="40501.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DISMOUNTED_MOD" Label="Dismounted" Graphic="40511.svg" Category="Mine Type">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorOneModifiers>
+  <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="URBAN_MOD" Label="Urban" Graphic="40012.svg" Category="Terrain">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WATER_MOD" Label="Water" Graphic="40022.svg" Category="Terrain">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="GROUND_MOD" Label="Ground" Graphic="40032.svg" Category="Terrain">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="VEGETATION_MOD" Label="Vegetation" Graphic="40042.svg" Category="Terrain">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OBSTACLES_MOD" Label="Obstacles" Graphic="40052.svg" Category="Terrain">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorTwoModifiers>  
 </SymbolSet>
