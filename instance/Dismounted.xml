@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-           xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="SS_DISMOUNTED" 
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="DISMOUNTED" 
            Label="Dismounted Individual" DimensionID="DISMOUNTED" 
            xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="POINT">
   <SymbolSetCode>

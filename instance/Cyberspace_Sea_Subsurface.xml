@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_CYBERSPACE_SEA_SURFACE" Label="Cyberspace" DimensionID="SEA_SURFACE" Geometry="POINT">
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="CYBERSPACE_SEA_SURFACE" Label="Cyberspace" DimensionID="SEA_SURFACE" Geometry="POINT">
   <SymbolSetCode>
     <DigitOne>6</DigitOne>
     <DigitTwo>7</DigitTwo>

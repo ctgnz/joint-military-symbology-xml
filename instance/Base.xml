@@ -18,28 +18,21 @@
     </LabelRule>
   </LabelRules>
   <Amplifiers>
-    <Amplifier ID="A" Label="Symbol Icon" Description="The innermost part of a symbol that represents a joint military object." Type="GRAPHIC" />
-    <Amplifier ID="B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." Type="GRAPHIC" />
-    <Amplifier ID="C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." Type="ALPHANUMERIC" Length="9" />
-    <Amplifier ID="D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." Type="GRAPHIC" />
-    <Amplifier ID="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced."
-      Type="ALPHANUMERIC" Length="1">
+    <Amplifier ID="A" Label="Symbol Icon" Type="GRAPHIC" Description="The innermost part of a symbol that represents a joint military object." />
+    <Amplifier ID="B" Label="Echelon" Type="GRAPHIC" Description="A graphic amplifier in a unit symbol that identifies command level." />
+    <Amplifier ID="C" Label="Quantity" Type="ALPHANUMERIC" MinLength="1" MaxLength="19" Description="A text amplifier in an equipment symbol that identifies the number of items present." />
+    <Amplifier ID="D" Label="Task Force Indicator" Type="GRAPHIC" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." />
+    <Amplifier ID="F" Label="Reinforced or Reduced" Type="LIST" MinLength="1" MaxLength="1" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced.">
       <Values ID="F_VALUES" Label="Reinforced or Reduced Values" LabelAlias="Reinforced">
         <Value Name="REINFORCED" Label="Reinforced" LabelAlias="+" />
         <Value Name="REDUCED" Label="Reduced" LabelAlias="-" />
         <Value Name="REINFORCED_REDUCED" Label="Reinforced and Reduced" LabelAlias="±" />
       </Values>
     </Amplifier>
-    <Amplifier ID="G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." Type="ALPHANUMERIC"
-      Length="20" />
-    <Amplifier ID="H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." Type="ALPHANUMERIC"
-      Length="20" />
-    <Amplifier ID="H1" Label="Unlisted Point Information"
-      Description="A text amplifier used to provide an up to a three-character letter field acronym to describe a point that is not already listed." Remarks="Content is implementation specific."
-      Type="ALPHANUMERIC" Length="3" />
-    <Amplifier ID="J" Label="Evaluation Rating"
-      Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating."
-      Remarks="Reliability: A-F and Credibility: 1-6" Type="ALPHANUMERIC" Length="2">
+    <Amplifier ID="G" Label="Staff Comments" Type="ALPHANUMERIC" MinLength="1" MaxLength="20" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." />
+    <Amplifier ID="H" Label="Additional Information" Type="ALPHANUMERIC" MinLength="1" MaxLength="20" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." />
+    <Amplifier ID="H1" Label="Unlisted Point Information" Type="ALPHANUMERIC" MinLength="1" MaxLength="3" Description="A text amplifier used to provide an up to a three-character letter field acronym to describe a point that is not already listed." Remarks="Content is implementation specific." />
+    <Amplifier ID="J" Label="Evaluation Rating" Type="LIST" MinLength="2" MaxLength="2" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6">
       <Values ID="RELIABILITY_RATINGS" Label="Reliability Rating" LabelAlias="Reliability">
         <Value Name="COMPLETELY" Label="Completely Reliable" LabelAlias="A" />
         <Value Name="USUALLY" Label="Usually Reliable" LabelAlias="B" />
@@ -57,8 +50,7 @@
         <Value Name="CRED_CANNOT_BE_JUDGED" Label="Truth Cannot Be Judged" LabelAlias="6" />
       </Values>
     </Amplifier>
-    <Amplifier ID="K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Type="TEXT"
-      Length="3">
+    <Amplifier ID="K" Label="Combat Effectiveness" Type="LIST" MinLength="2" MaxLength="3" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." >
       <Values ID="K_VALUES" Label="Combat Effectiveness Values" LabelAlias="CombatEffectiveness">
         <Value Name="FULLY_OPERATIONAL" Label="Fully Operational" LabelAlias="FO" />
         <Value Name="SUBSTANTIALLY_OPERATIONAL" Label="Substantially Operational" LabelAlias="SO" />
@@ -67,47 +59,31 @@
         <Value Name="UNKNOWN_EFFECTIVENESS" Label="Unknown" LabelAlias="UNK" />
       </Values>
     </Amplifier>
-    <Amplifier ID="L" Label="Signature Equipment" Description="A text amplifier for hostile equipment, '!' indicates detectable electronic signatures." Type="ALPHANUMERIC" Length="1" />
-    <Amplifier ID="M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)."
-      Type="ALPHANUMERIC" Length="21" />
-    <Amplifier ID="N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." Type="GRAPHIC" Length="3" />
-    <Amplifier ID="P" Label="IFF/SIF/AIS" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes." Type="ALPHANUMERIC" Length="15" />
-    <Amplifier ID="Q" Label="Direction of Movement Indicator"
-      Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." Type="GRAPHIC" />
-    <Amplifier ID="R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object."
-      Type="GRAPHIC" />
-    <Amplifier ID="R2" Label="SIGINT Mobility Indicator" Description="M=Mobile, S=Static, or U=Uncertain" Type="TEXT" Length="1">
+    <Amplifier ID="L" Label="Signature Equipment" Type="ALPHANUMERIC" MinLength="1" MaxLength="1" Description="A text amplifier for hostile equipment, '!' indicates detectable electronic signatures." />
+    <Amplifier ID="M" Label="Higher Formation" Type="ALPHANUMERIC" MinLength="1" MaxLength="21" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." />
+    <Amplifier ID="N" Label="Hostile (Enemy)" Type="GRAPHIC" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." />
+    <Amplifier ID="P" Label="IFF/SIF/AIS" Type="ALPHANUMERIC" MinLength="8" MaxLength="17" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes." />
+    <Amplifier ID="Q" Label="Direction of Movement Indicator" Type="GRAPHIC" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." />
+    <Amplifier ID="R" Label="Mobility Indicator" Type="GRAPHIC" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." />
+    <Amplifier ID="R2" Label="SIGINT Mobility Indicator" Type="LIST" MinLength="1" MaxLength="1" Description="M=Mobile, S=Static, or U=Uncertain">
       <Values ID="R2_VALUES" Label="SIGINT Mobility Indicator Values" LabelAlias="SIGINTMobility">
         <Value Name="MOBILE_INDICATOR" Label="Mobile" LabelAlias="M" />
         <Value Name="STATIC_INDICATOR" Label="Static" LabelAlias="S" />
         <Value Name="UNCERTAIN_INDICATOR" Label="Uncertain" LabelAlias="U" />
       </Values>
     </Amplifier>
-    <Amplifier ID="S" Label="Headquarters Staff Indicator" Description="A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." Type="GRAPHIC" />
-    <Amplifier ID="S2" Label="Offset Location Indicator" Description="A graphic amplifier for units, equipment and installations used when placing an object away from its actual location."
-      Type="GRAPHIC" />
-    <Amplifier ID="T" Label="Unique Designation" Description="A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number."
-      Remarks="Identifies acquisition number when used with SIGINT symbology." Type="ALPHANUMERIC" Length="30" />
-    <Amplifier ID="T1" Label="Unique Identifier/Primary Purpose"
-      Description="A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number."
-      Remarks="Identifies acquisition number when used with SIGINT symbology." Type="ALPHANUMERIC" Length="30" />
-    <Amplifier ID="T2" Label="Controlling Headquarters" Description="An amplifier used to provide the designation of the Establishing Headquarters for Fire Support Control Measures only."
-      Type="ALPHANUMERIC" Length="7" />
-    <Amplifier ID="V" Label="Type of Equipment" Description="A text amplifier for equipment that indicates types of equipment." Type="ALPHANUMERIC" Length="24" />
-    <Amplifier ID="W" Label="Date/Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group (DDHHMMSSZMONYYYY) or O/O for on order."
-      Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by four digits representing the year."
-      Type="ALPHANUMERIC" Length="16" />
-    <Amplifier ID="W1" Label="Date/Time Group (DTG) (Period)" Description="An alphanumeric designator for displaying a date-time group (DDHHMMSSZMONYYYY) or O/O for on order."
-      Remarks="Field W1 is used to provide the end of a period of time." Type="ALPHANUMERIC" Length="16" />
-    <Amplifier ID="X" Label="Altitude/Depth" Description="A text amplifier for units, equipment, and installations that displays either altitude, flight level, depth for submerged objects."
-      Remarks="Alternatively, used to indicate the height of equipment or structures on the ground." Type="ALPHANUMERIC" Length="14" />
-    <Amplifier ID="Y" Label="Location" Description="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes."
-      Remarks="Alternatively, in MGRS or other applicable display format." Type="ALPHANUMERIC" Length="22"
-      Note="To support homeland security and homeland defense, the federal Geographic Data Committee (FGDC) US National Grid (USNG) standard when referenced to North American Datum 1983 (NAD83) is operationally equivalent to and is an accepted substitute for MGRS coordinates referenced to WGS 84. Note that at mapping scales of 1:5000 and smaller, NAD83 and WGS 84 are considered equivalent." />
-    <Amplifier ID="YP" Label="Symbol References Points"
-      Description="An exchange only amplifier that is repeated as YP, YP1, YP2 to represent the reference points of symbols. Note that these reference points are indicated as centre point, PT 1, PT 2, etc. in the symbol diagram templates and not as YP."
-      Type="ALPHANUMERIC" Length="22" />
-    <Amplifier ID="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD 6040." Type="ALPHANUMERIC" Length="9">
+    <Amplifier ID="S" Label="Headquarters Staff Indicator" Type="GRAPHIC" Description="A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." />
+    <Amplifier ID="S2" Label="Offset Location Indicator" Type="GRAPHIC" Description="A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." />
+    <Amplifier ID="T" Label="Unique Designation" Type="ALPHANUMERIC" MinLength="1" MaxLength="30" Description="A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number." Remarks="Identifies acquisition number when used with SIGINT symbology." />
+    <Amplifier ID="T1" Label="Unique Identifier/Primary Purpose" Type="ALPHANUMERIC" MinLength="1" MaxLength="30" Description="A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number." Remarks="Identifies acquisition number when used with SIGINT symbology." />
+    <Amplifier ID="T2" Label="Controlling Headquarters" Type="ALPHANUMERIC" MinLength="1" MaxLength="7" Description="An amplifier used to provide the designation of the Establishing Headquarters for Fire Support Control Measures only." />
+    <Amplifier ID="V" Label="Type of Equipment" Type="ALPHANUMERIC" MinLength="1" MaxLength="24" Description="A text amplifier for equipment that indicates types of equipment." />
+    <Amplifier ID="W" Label="Date/Time Group (DTG)" Type="ALPHANUMERIC" MinLength="3" MaxLength="16" Description="An alphanumeric designator for displaying a date-time group (DDHHMMSSZMONYYYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by four digits representing the year." />
+    <Amplifier ID="W1" Label="Date/Time Group (DTG) (Period)" Type="ALPHANUMERIC" MinLength="3" MaxLength="16" Description="An alphanumeric designator for displaying a date-time group (DDHHMMSSZMONYYYY) or O/O for on order." Remarks="Field W1 is used to provide the end of a period of time." />
+    <Amplifier ID="X" Label="Altitude/Depth" Type="ALPHANUMERIC" MinLength="2" MaxLength="14" Description="A text amplifier for units, equipment, and installations that displays either altitude, flight level, depth for submerged objects." Remarks="Alternatively, used to indicate the height of equipment or structures on the ground." />
+    <Amplifier ID="Y" Label="Location" Type="ALPHANUMERIC" MinLength="12" MaxLength="22" Description="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." Note="To support homeland security and homeland defense, the federal Geographic Data Committee (FGDC) US National Grid (USNG) standard when referenced to North American Datum 1983 (NAD83) is operationally equivalent to and is an accepted substitute for MGRS coordinates referenced to WGS 84. Note that at mapping scales of 1:5000 and smaller, NAD83 and WGS 84 are considered equivalent." />
+    <Amplifier ID="YP" Label="Symbol References Points" Type="ALPHANUMERIC" MinLength="22" MaxLength="22" Description="An exchange only amplifier that is repeated as YP, YP1, YP2 to represent the reference points of symbols. Note that these reference points are indicated as centre point, PT 1, PT 2, etc. in the symbol diagram templates and not as YP." />
+    <Amplifier ID="Z" Label="Speed" Type="LIST" MinLength="5" MaxLength="9" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD 6040.">
       <Values ID="SPEED_VALUES" Label="Units of Speed" LabelAlias="SpeedUnits">
         <Value Name="KPH" Label="Kilometers Per Hour" LabelAlias="KPH" />
         <Value Name="MPS" Label="Meters Per Second" LabelAlias="MPS" />
@@ -115,32 +91,21 @@
         <Value Name="MPH" Label="Statute Miles Per Hour" LabelAlias="MPH" />
       </Values>
     </Amplifier>
-    <Amplifier ID="AA" Label="Named C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters."
-      Type="ALPHANUMERIC" Length="9" />
-    <Amplifier ID="AB" Label="Feint/Dummy Indicator"
-      Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack."
-      Type="GRAPHIC" />
-    <Amplifier ID="AD" Label="Platform Type" Description="Electronic Intelligence Notation (ELNOT) or Communications Intelligence Notation (CENOT)" Type="TEXT" Length="5" />
-    <Amplifier ID="AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" Type="NUMERIC" Length="3" />
-    <Amplifier ID="AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" Type="ALPHANUMERIC" Length="12" />
-    <Amplifier ID="AG" Label="Auxiliary Equipment Indicator" Description="A graphic modifier for equipment that indicates the presence of a towed sonar array." Type="GRAPHIC" />
-    <Amplifier ID="AH" Label="Area of Uncertainty Indicator"
-      Description="A graphic modifier for units, equipment and installations that indicates the area where an object is most likely to be, based on the object's last report and the reporting accuracty of the sensor that detected the object."
-      Type="GRAPHIC" />
-    <Amplifier ID="AH1" Label="Area of Uncertainty Indicator Longitude"
-      Description="If AH1 is defined, the value of AH is the latitude radius of uncertainty and AH1 is the longitude radius of uncertainty in metres." Type="GRAPHIC" />
-    <Amplifier ID="AI" Label="Dead Reckoning Trailer"
-      Description="A graphic amplifier for units and equipment that identifies where an object should be located at present, given its last reported course and speed." Type="GRAPHIC" />
-    <Amplifier ID="AJ" Label="Speed Leader" Description="A graphic amplifier for units, equipment and installations that depicts the speed and direction of movement of an object."
-      Type="GRAPHIC" />
-    <Amplifier ID="AK" Label="Pairing Line"
-      Description="A graphic amplifier for units, equipment and installations that connects two objects and is updated dynamically as the positions of the objects change." Type="GRAPHIC" />
-    <Amplifier ID="AL" Label="Operational Condition" Description="A graphic amplifier for equipment or installations that indicates operational condition or capacity." Type="GRAPHIC" />
-    <Amplifier ID="AM" Label="Distance" Description="A numeric amplifier that displays a minimum, maximum, or a specific distance (range, radius, width, length, etc.), in meters."
-      Type="ALPHANUMERIC" Length="9" />
-    <Amplifier ID="AN" Label="Azimuth" Description="A numeric amplifier that displays an angle measured from true north to any other line in degrees." Type="ALPHANUMERIC" Length="8" />
-    <Amplifier ID="AO" Label="Engagement Bar" Description="An amplifier placed immediately atop the symbol. May denote, 1) local/remote status; 2) engagement status; and 3) weapon type."
-      Type="ALPHANUMERIC" Length="10">
+    <Amplifier ID="AA" Label="Named C2 Headquarters" Type="ALPHANUMERIC" MinLength="1" MaxLength="9" Description="A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters." />
+    <Amplifier ID="AB" Label="Feint/Dummy Indicator" Type="GRAPHIC" Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack." />
+    <Amplifier ID="AD" Label="Platform Type" Type="TEXT" MinLength="5" MaxLength="5" Description="Electronic Intelligence Notation (ELNOT) or Communications Intelligence Notation (CENOT)" />
+    <Amplifier ID="AE" Label="Equipment Teardown Time" Type="NUMERIC" MinLength="1" MaxLength="3" Description="Equipment teardown time in minutes" />
+    <Amplifier ID="AF" Label="Common Identifier" Type="ALPHANUMERIC" MinLength="1" MaxLength="12" Description="Example: 'Hawk' for Hawk SAM system" />
+    <Amplifier ID="AG" Label="Auxiliary Equipment Indicator" Type="GRAPHIC" Description="A graphic modifier for equipment that indicates the presence of a towed sonar array." />
+    <Amplifier ID="AH" Label="Area of Uncertainty Indicator" Type="GRAPHIC" MinLength="1" MaxLength="6" Description="A graphic modifier for units, equipment and installations that indicates the area where an object is most likely to be, based on the object's last report and the reporting accuracty of the sensor that detected the object." />
+    <Amplifier ID="AH1" Label="Area of Uncertainty Indicator Longitude" MinLength="1" MaxLength="6" Type="GRAPHIC" Description="If AH1 is defined, the value of AH is the latitude radius of uncertainty and AH1 is the longitude radius of uncertainty in metres." />
+    <Amplifier ID="AI" Label="Dead Reckoning Trailer" Type="GRAPHIC" Description="A graphic amplifier for units and equipment that identifies where an object should be located at present, given its last reported course and speed." />
+    <Amplifier ID="AJ" Label="Speed Leader" Type="GRAPHIC" Description="A graphic amplifier for units, equipment and installations that depicts the speed and direction of movement of an object." />
+    <Amplifier ID="AK" Label="Pairing Line" Type="GRAPHIC" Description="A graphic amplifier for units, equipment and installations that connects two objects and is updated dynamically as the positions of the objects change." />
+    <Amplifier ID="AL" Label="Operational Condition" Type="GRAPHIC" Description="A graphic amplifier for equipment or installations that indicates operational condition or capacity." />
+    <Amplifier ID="AM" Label="Distance" Type="ALPHANUMERIC" MinLength="3" MaxLength="9" Description="A numeric amplifier that displays a minimum, maximum, or a specific distance (range, radius, width, length, etc.), in meters." />
+    <Amplifier ID="AN" Label="Azimuth" Type="ALPHANUMERIC" MinLength="7" MaxLength="8" Description="A numeric amplifier that displays an angle measured from true north to any other line in degrees." />
+    <Amplifier ID="AO" Label="Engagement Bar" Type="LIST" MinLength="6" MaxLength="10" Description="An amplifier placed immediately atop the symbol. May denote, 1) local/remote status; 2) engagement status; and 3) weapon type.">
       <Values ID="AO_TYPE_VALUES" Label="Type of Engagement" LabelAlias="A">
         <Value Name="L" Label="Local" LabelAlias="" />
         <Value Name="R" Label="Remote" LabelAlias="R" />
@@ -179,24 +144,18 @@
         <Value Name="VA" Label="Vertical Launch ASROC" LabelAlias="VA" />
       </Values>
     </Amplifier>
-    <Amplifier ID="AO1" Label="Target Designation using the Engagement Bar"
-      Description="An amplifier placed immediately atop the symbol. Indicates if the symbol is: Hostile Target/Hostile Non-Target/Expired" Type="GRAPHIC">
+    <Amplifier ID="AO1" Label="Target Designation" Type="LIST" Remarks="Target Designation using the Engagement Bar" Description="An amplifier placed immediately atop the symbol. Indicates if the symbol is: Hostile Target/Hostile Non-Target/Expired">
       <Values ID="AO1_VALUES" Label="Target Designation" LabelAlias="TD">
         <Value Name="TA" Label="Hostile Target" Remarks="Red fill" LabelAlias="TA" />
         <Value Name="NT" Label="Hostile Non-Target" Remarks="White fill" LabelAlias="TA" />
         <Value Name="EX" Label="Expired" Remarks="Orange fill" LabelAlias="EX" />
       </Values>
     </Amplifier>
-    <Amplifier ID="AP" Label="Target Number"
-      Description="A six character text modifier used in Fire Support operations to uniquely designate targets in accordance with STANAG 2484, where characters 1 and 2 are alphabetic, and characters 3-6 are numeric: AANNNN"
-      Type="ALPHANUMERIC" Length="6" />
-    <Amplifier ID="AP1" Label="Target Number Extension"
-      Description="A 2-3 character amplifier. A target number extension is a sequentially assigned number identifying the individual elements in a target, where character 1 is a dash and characters 2-3 are numeric, from 1 through 15. It is applicable only to the Point or Single Target symbol and is conditional upon the presence of the Target Number amplifier and is visually displayed appended to the Target Number amplifier."
-      Type="NUMERIC" Length="3" />
-    <Amplifier ID="AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Type="ALPHANUMERIC" Length="2" />
-    <Amplifier ID="AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here."
-      Type="ALPHANUMERIC" Length="3" />
-    <Amplifier ID="AS" Label="Country" Description="Identifies the country of the organization being shown." Remarks="Uses the GENC Standard." Type="ALPHANUMERIC" Length="3">
+    <Amplifier ID="AP" Label="Target Number" Type="ALPHANUMERIC" MinLength="6" MaxLength="6" Description="A six character text modifier used in Fire Support operations to uniquely designate targets in accordance with STANAG 2484, where characters 1 and 2 are alphabetic, and characters 3-6 are numeric: AANNNN" />
+    <Amplifier ID="AP1" Label="Target Number Extension" Type="NUMERIC" MinLength="2" MaxLength="3" Description="A 2-3 character amplifier. A target number extension is a sequentially assigned number identifying the individual elements in a target, where character 1 is a dash and characters 2-3 are numeric, from 1 through 15. It is applicable only to the Point or Single Target symbol and is conditional upon the presence of the Target Number amplifier and is visually displayed appended to the Target Number amplifier."/>
+    <Amplifier ID="AQ" Label="Guarded Unit" Type="ALPHANUMERIC" MinLength="2" MaxLength="2" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit."/>
+    <Amplifier ID="AR" Label="Special Designator" Type="ALPHANUMERIC" MinLength="3" MaxLength="3" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here."/>
+    <Amplifier ID="AS" Label="Country" Type="LIST" MinLength="3" MaxLength="3" Description="Identifies the country of the organization being shown." Remarks="Uses the GENC Standard.">
       <Values ID="AS_VALUES" Label="Country Codes" LabelAlias="CountryCodes">
         <Value Name="AF" Label="Afghanistan" LabelAlias="AFG" />
         <Value Name="QZ" Label="Akrotiri" LabelAlias="XQZ" />
@@ -480,23 +439,20 @@
         <Value Name="ZW" Label="Zimbabwe" LabelAlias="ZWE" />
       </Values>
     </Amplifier>
-    <Amplifier ID="AT" Label="Capacity of Installation" Description="Capacity of Installation displayed." Type="ALPHANUMERIC" Length="19" />
-    <Amplifier ID="AV" Label="Leadership Identifier" Description="A graphic amplifier that identifies the leadership role for a dismounted individual." Type="GRAPHIC" />
-    <Amplifier ID="AW" Label="Headquarters Element"
-      Description="A text modifier for units, equipment and installations that indicates what type of element of a headquarters is being represented, such as TOC, MAIN." Type="ALPHANUMERIC"
-      Length="12" />
-    <Amplifier ID="AX" Label="Installation Composition" Description="Indicates the component type of the installation: Development/Research/Production/Service/Storage/Utility."
-      Type="ALPHANUMERIC" Length="19">
+    <Amplifier ID="AT" Label="Capacity of Installation" Type="ALPHANUMERIC" MinLength="2" MaxLength="19" Description="Capacity of Installation displayed." />
+    <Amplifier ID="AV" Label="Leadership Identifier" Type="GRAPHIC" Description="A graphic amplifier that identifies the leadership role for a dismounted individual." />
+    <Amplifier ID="AW" Label="Headquarters Element" Type="ALPHANUMERIC" MinLength="1" MaxLength="8" Description="A text modifier for units, equipment and installations that indicates what type of element of a headquarters is being represented, such as TOC, MAIN." />
+    <Amplifier ID="AX" Label="Installation Composition" Type="LIST" MinLength="3" MaxLength="7" Description="Indicates the component type of the installation: Development/Research/Production/Service/Storage/Utility.">
       <Values ID="AX_VALUES" Label="Installation Composition" LabelAlias="Composition">
-        <Value Name="DEVELOP" Label="Development" LabelAlias="DEVELOP" />
-        <Value Name="RSRCH" Label="Research" LabelAlias="RSRCH" />
-        <Value Name="PROD" Label="Production" LabelAlias="PROD" />
-        <Value Name="SVC" Label="Service" LabelAlias="SVC" />
-        <Value Name="STORE" Label="Storage" LabelAlias="STORE" />
-        <Value Name="UTIL" Label="Utility" LabelAlias="UTIL" />
+        <Value Name="DEVELOPMENT" Label="Development" LabelAlias="DEVELOP" />
+        <Value Name="RESEARCH" Label="Research" LabelAlias="RSRCH" />
+        <Value Name="PRODUCTION" Label="Production" LabelAlias="PROD" />
+        <Value Name="SERVICE" Label="Service" LabelAlias="SVC" />
+        <Value Name="STORAGE" Label="Storage" LabelAlias="STORE" />
+        <Value Name="UTILITY" Label="Utility" LabelAlias="UTIL" />
       </Values>
     </Amplifier>
-    <Amplifier ID="AY" Label="Network Identifier" Description="Indicates the network the entity has privileges within." Type="ALPHANUMERIC" Length="40" />
+    <Amplifier ID="AY" Label="Network Identifier" Type="ALPHANUMERIC" MinLength="1" MaxLength="40" Description="Indicates the network the entity has privileges within." />
   </Amplifiers>
   <CommonModifiers>
     <SectorOneModifiers>
@@ -1093,7 +1049,25 @@
     </SectorTwoModifiers>
   </CommonModifiers>
   <Versions>
-    <Version Name="Base" Description="APP-6(E)/2525E">
+    <Version Name="ORIGINAL" Description="APP-6(D)/MIL-STD-2525D October 2017">
+      <VersionCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </VersionCode>
+    </Version>
+    <Version Name="MS2525D1" Description="MIL-STD-2525D Chg 1 August 2018">
+      <VersionCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </VersionCode>
+    </Version>
+    <Version Name="MS2525E" Description="MIL-STD-2525E December 2022">
+      <VersionCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </VersionCode>
+    </Version>
+    <Version Name="CURRENT" Description="APP-6(E) October 2023">
       <VersionCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
@@ -1173,7 +1147,7 @@
         <DigitTwo>8</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_INTERNAL" Label="Internal" Instance="Internal.xml">
+        <SymbolSetRef ID="INTERNAL" Label="Internal" Instance="Internal.xml">
           <SymbolSetCode>
             <DigitOne>9</DigitOne>
             <DigitTwo>8</DigitTwo>
@@ -1187,7 +1161,7 @@
         <DigitTwo>0</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_UNKNOWN" Label="Unknown" Instance="Unknown.xml">
+        <SymbolSetRef ID="UNKNOWN" Label="Unknown" Instance="Unknown.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -1201,19 +1175,19 @@
         <DigitTwo>1</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_AIR" Label="Air" Instance="Air.xml">
+        <SymbolSetRef ID="AIR" Label="Air" Instance="Air.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_AIR_MISSILE" Label="Air Missile" Instance="Air_Missile.xml">
+        <SymbolSetRef ID="AIR_MISSILE" Label="Air Missile" Instance="Air_Missile.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_AIR" Label="Cyberspace Air" Instance="Cyberspace_Air.xml">
+        <SymbolSetRef ID="CYBERSPACE_AIR" Label="Cyberspace Air" Instance="Cyberspace_Air.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>2</DigitTwo>
@@ -1227,13 +1201,13 @@
         <DigitTwo>5</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_SPACE" Label="Space" Instance="Space.xml">
+        <SymbolSetRef ID="SPACE" Label="Space" Instance="Space.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_SPACE" Label="Cyberspace Space" Instance="Cyberspace_Space.xml">
+        <SymbolSetRef ID="CYBERSPACE_SPACE" Label="Cyberspace Space" Instance="Cyberspace_Space.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -1247,19 +1221,19 @@
         <DigitTwo>0</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_LAND_UNIT" Label="Land Units" Instance="Land_Unit.xml">
+        <SymbolSetRef ID="LAND_UNIT" Label="Land Units" Instance="Land_Unit.xml">
           <SymbolSetCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_LAND_CIVILIAN" Label="Land Civilian" Instance="Land_Civilian.xml">
+        <SymbolSetRef ID="LAND_CIVILIAN" Label="Land Civilian" Instance="Land_Civilian.xml">
           <SymbolSetCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_LAND_UNIT" Label="Cyberspace Land Unit" Instance="Cyberspace_Land_Unit.xml">
+        <SymbolSetRef ID="CYBERSPACE_LAND_UNIT" Label="Cyberspace Land Unit" Instance="Cyberspace_Land_Unit.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -1273,13 +1247,13 @@
         <DigitTwo>5</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_LAND_EQUIPMENT" Label="Land Equipment" Instance="Land_Equipment.xml">
+        <SymbolSetRef ID="LAND_EQUIPMENT" Label="Land Equipment" Instance="Land_Equipment.xml">
           <SymbolSetCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_LAND_EQUIPMENT" Label="Cyberspace Land Equipment" Instance="Cyberspace_Land_Equipment.xml">
+        <SymbolSetRef ID="CYBERSPACE_LAND_EQUIPMENT" Label="Cyberspace Land Equipment" Instance="Cyberspace_Land_Equipment.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>4</DigitTwo>
@@ -1293,13 +1267,13 @@
         <DigitTwo>0</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_LAND_INSTALLATION" Label="Land Installation" Instance="Land_Installation.xml">
+        <SymbolSetRef ID="LAND_INSTALLATION" Label="Land Installation" Instance="Land_Installation.xml">
           <SymbolSetCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_LAND_INSTALLATION" Label="Cyberspace Land Installation" Instance="Cyberspace_Land_Installation.xml">
+        <SymbolSetRef ID="CYBERSPACE_LAND_INSTALLATION" Label="Cyberspace Land Installation" Instance="Cyberspace_Land_Installation.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>5</DigitTwo>
@@ -1313,13 +1287,13 @@
         <DigitTwo>7</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_DISMOUNTED" Label="Dismounted Individual" Instance="Dismounted.xml">
+        <SymbolSetRef ID="DISMOUNTED" Label="Dismounted Individual" Instance="Dismounted.xml">
           <SymbolSetCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>7</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_DISMOUNTED" Label="Cyberspace Dismounted Individual" Instance="Cyberspace_Dismounted.xml">
+        <SymbolSetRef ID="CYBERSPACE_DISMOUNTED" Label="Cyberspace Dismounted Individual" Instance="Cyberspace_Dismounted.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -1333,13 +1307,13 @@
         <DigitTwo>0</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_SEA_SURFACE" Label="Sea Surface" Instance="Sea_Surface.xml">
+        <SymbolSetRef ID="SEA_SURFACE" Label="Sea Surface" Instance="Sea_Surface.xml">
           <SymbolSetCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_SEA_SURFACE" Label="Cyberspace Sea Surface" Instance="Cyberspace_Sea_Surface.xml">
+        <SymbolSetRef ID="CYBERSPACE_SEA_SURFACE" Label="Cyberspace Sea Surface" Instance="Cyberspace_Sea_Surface.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>7</DigitTwo>
@@ -1353,19 +1327,19 @@
         <DigitTwo>5</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_SEA_SUBSURFACE" Label="Sea Subsurface" Instance="Sea_Subsurface.xml">
+        <SymbolSetRef ID="SEA_SUBSURFACE" Label="Sea Subsurface" Instance="Sea_Subsurface.xml">
           <SymbolSetCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_MINE_WARFARE" Label="Mine Warfare" Instance="Mine_Warfare.xml">
+        <SymbolSetRef ID="MINE_WARFARE" Label="Mine Warfare" Instance="Mine_Warfare.xml">
           <SymbolSetCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>6</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_CYBERSPACE_SEA_SUBSURFACE" Label="Cyberspace Sea Subsurface" Instance="Cyberspace_Sea_Subsurface.xml">
+        <SymbolSetRef ID="CYBERSPACE_SEA_SUBSURFACE" Label="Cyberspace Sea Subsurface" Instance="Cyberspace_Sea_Subsurface.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>8</DigitTwo>
@@ -1379,7 +1353,7 @@
         <DigitTwo>0</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_ACTIVITY" Label="Activity" Instance="Activity.xml">
+        <SymbolSetRef ID="ACTIVITY" Label="Activity" Instance="Activity.xml">
           <SymbolSetCode>
             <DigitOne>4</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -1393,7 +1367,7 @@
         <DigitTwo>5</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_CONTROL_MEASURE" Label="Control Measure" Instance="Control_Measure.xml">
+        <SymbolSetRef ID="CONTROL_MEASURE" Label="Control Measure" Instance="Control_Measure.xml">
           <SymbolSetCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>5</DigitTwo>
@@ -1407,7 +1381,7 @@
         <DigitTwo>0</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="Cyberspace.xml">
+        <SymbolSetRef ID="CYBERSPACE" Label="Cyberspace" Instance="Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -1416,381 +1390,6 @@
       </SymbolSets>
     </Dimension>
   </Dimensions>
-  <Affiliations>
-    <!-- Internal Dimension Affiliations -->
-    <Affiliation ID="REALITY_INTERNAL_UNKNOWN" ContextID="REALITY" DimensionID="INTERNAL" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_198_0.svg" />
-    <Affiliation ID="EXERCISE_INTERNAL_UNKNOWN" ContextID="EXERCISE" DimensionID="INTERNAL" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_198_0.svg" />
-    <Affiliation ID="SIMULATED_INTERNAL_UNKNOWN" ContextID="SIMULATION" DimensionID="INTERNAL" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_198_0.svg" />
-    <!-- Unknown Dimension Affiliations -->
-    <Affiliation ID="REALITY_UNKNOWN_PENDING" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_000_0.svg" CivilianGraphic="0_000_0c.svg" />
-    <Affiliation ID="EXERCISE_UNKNOWN_PENDING" ContextID="EXERCISE" DimensionID="UNKNOWN" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_000_0.svg"
-      CivilianGraphic="1_000_0c.svg" />
-    <Affiliation ID="SIMULATED_UNKNOWN_PENDING" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2_000_0.svg"
-      CivilianGraphic="2_000_0c.svg" />
-    <Affiliation ID="REALITY_UNKNOWN_UNKNOWN" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_100_0.svg" PlannedGraphic="0_100_1.svg"
-      CivilianGraphic="0_100_0c.svg" PlannedCivilianGraphic="0_100_1c.svg" />
-    <Affiliation ID="EXERCISE_UNKNOWN_UNKNOWN" ContextID="EXERCISE" DimensionID="UNKNOWN" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_100_0.svg" PlannedGraphic="1_100_1.svg"
-      CivilianGraphic="1_100_0c.svg" PlannedCivilianGraphic="1_100_1c.svg" />
-    <Affiliation ID="SIMULATED_UNKNOWN_UNKNOWN" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_100_0.svg"
-      PlannedGraphic="2_100_1.svg" CivilianGraphic="2_100_0c.svg" PlannedCivilianGraphic="2_100_1c.svg" />
-    <Affiliation ID="REALITY_UNKNOWN_FRIEND" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="0_300_0.svg" PlannedGraphic="0_300_1.svg"
-      CivilianGraphic="0_300_0c.svg" PlannedCivilianGraphic="0_300_1c.svg" />
-    <Affiliation ID="SIMULATED_UNKNOWN_FRIEND" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="2_300_0.svg" PlannedGraphic="2_300_1.svg"
-      CivilianGraphic="2_300_0c.svg" PlannedCivilianGraphic="2_300_1c.svg" />
-    <Affiliation ID="REALITY_UNKNOWN_NEUTRAL" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_400_0.svg" PlannedGraphic="0_400_1.svg"
-      CivilianGraphic="0_400_0c.svg" PlannedCivilianGraphic="0_400_1c.svg" />
-    <Affiliation ID="SIMULATED_UNKNOWN_NEUTRAL" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2_400_0.svg"
-      PlannedGraphic="2_400_1.svg" CivilianGraphic="2_400_0c.svg" PlannedCivilianGraphic="2_400_1c.svg" />
-    <Affiliation ID="REALITY_UNKNOWN_HOSTILE" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0_600_0.svg"
-      PlannedGraphic="0_600_1.svg" />
-    <Affiliation ID="SIMULATED_UNKNOWN_HOSTILE" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2_600_0.svg"
-      PlannedGraphic="2_600_1.svg" />
-    <Affiliation ID="REALITY_UNKNOWN_ASSUMED" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_200_0.svg"
-      CivilianGraphic="0_200_0c.svg" />
-    <Affiliation ID="SIMULATED_UNKNOWN_ASSUMED" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="2_200_0.svg"
-      CivilianGraphic="2_200_0c.svg" />
-    <Affiliation ID="REALITY_UNKNOWN_SUSPECT" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_500_0.svg" />
-    <Affiliation ID="SIMULATED_UNKNOWN_SUSPECT" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2_500_0.svg" />
-    <!-- Air Dimension Affiliations -->
-    <Affiliation ID="REALITY_AIR_PENDING" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_001_0.svg" CivilianGraphic="0_001_0c.svg" />
-    <Affiliation ID="EXERCISE_AIR_PENDING" ContextID="EXERCISE" DimensionID="AIR" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_001_0.svg" CivilianGraphic="1_001_0c.svg" />
-    <Affiliation ID="SIMULATED_AIR_PENDING" ContextID="SIMULATION" DimensionID="AIR" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2_001_0.svg" CivilianGraphic="2_001_0c.svg" />
-    <Affiliation ID="REALITY_AIR_UNKNOWN" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_101_0.svg" PlannedGraphic="0_101_1.svg"
-      CivilianGraphic="0_101_0c.svg" PlannedCivilianGraphic="0_101_1c.svg" />
-    <Affiliation ID="EXERCISE_AIR_UNKNOWN" ContextID="EXERCISE" DimensionID="AIR" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_101_0.svg" PlannedGraphic="1_101_1.svg"
-      CivilianGraphic="1_101_0c.svg" PlannedCivilianGraphic="1_101_1c.svg" />
-    <Affiliation ID="SIMULATED_AIR_UNKNOWN" ContextID="SIMULATION" DimensionID="AIR" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_101_0.svg" PlannedGraphic="2_101_1.svg"
-      CivilianGraphic="2_101_0c.svg" PlannedCivilianGraphic="2_101_1c.svg" />
-    <Affiliation ID="REALITY_AIR_FRIEND" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="0_301_0.svg" PlannedGraphic="0_301_1.svg"
-      CivilianGraphic="0_301_0c.svg" PlannedCivilianGraphic="0_301_1c.svg" />
-    <Affiliation ID="EXERCISE_AIR_FRIEND" ContextID="EXERCISE" DimensionID="AIR" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="1_301_0.svg" PlannedGraphic="1_301_1.svg"
-      CivilianGraphic="1_301_0c.svg" PlannedCivilianGraphic="1_301_1c.svg" />
-    <Affiliation ID="SIMULATED_AIR_FRIEND" ContextID="SIMULATION" DimensionID="AIR" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="2_301_0.svg" PlannedGraphic="2_301_1.svg"
-      CivilianGraphic="2_301_0c.svg" PlannedCivilianGraphic="2_301_1c.svg" />
-    <Affiliation ID="REALITY_AIR_NEUTRAL" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_NEUTRAL" Shape="CURVE" Graphic="0_401_0.svg" PlannedGraphic="0_401_1.svg"
-      CivilianGraphic="0_401_0c.svg" PlannedCivilianGraphic="0_401_1c.svg" />
-    <Affiliation ID="EXERCISE_AIR_NEUTRAL" ContextID="EXERCISE" DimensionID="AIR" StandardIdentityID="SI_NEUTRAL" Shape="CURVE" Graphic="1_401_0.svg" PlannedGraphic="1_401_1.svg"
-      CivilianGraphic="1_401_0c.svg" PlannedCivilianGraphic="1_401_1c.svg" />
-    <Affiliation ID="SIMULATED_AIR_NEUTRAL" ContextID="SIMULATION" DimensionID="AIR" StandardIdentityID="SI_NEUTRAL" Shape="CURVE" Graphic="2_401_0.svg" PlannedGraphic="2_401_1.svg"
-      CivilianGraphic="2_401_0c.svg" PlannedCivilianGraphic="2_401_1c.svg" />
-    <Affiliation ID="REALITY_AIR_HOSTILE" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CURVE" Graphic="0_601_0.svg" PlannedGraphic="0_601_1.svg" />
-    <Affiliation ID="EXERCISE_AIR_HOSTILE" ContextID="EXERCISE" DimensionID="AIR" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CURVE" Graphic="1_601_0.svg" PlannedGraphic="1_601_1.svg" />
-    <Affiliation ID="SIMULATED_AIR_HOSTILE" ContextID="SIMULATION" DimensionID="AIR" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CURVE" Graphic="2_601_0.svg" PlannedGraphic="2_601_1.svg" />
-    <Affiliation ID="REALITY_AIR_ASSUMED" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="0_201_0.svg" CivilianGraphic="0_201_0c.svg" />
-    <Affiliation ID="EXERCISE_AIR_ASSUMED" ContextID="EXERCISE" DimensionID="AIR" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="1_201_0.svg" CivilianGraphic="1_201_0c.svg" />
-    <Affiliation ID="SIMULATED_AIR_ASSUMED" ContextID="SIMULATION" DimensionID="AIR" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="2_201_0.svg"
-      CivilianGraphic="2_201_0c.svg" />
-    <Affiliation ID="REALITY_AIR_SUSPECT" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CURVE" Graphic="0_501_0.svg" />
-    <Affiliation ID="EXERCISE_AIR_SUSPECT" ContextID="EXERCISE" DimensionID="AIR" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CURVE" Graphic="1_501_0.svg" />
-    <Affiliation ID="SIMULATED_AIR_SUSPECT" ContextID="SIMULATION" DimensionID="AIR" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CURVE" Graphic="2_501_0.svg" />
-    <!-- Space Dimension Affiliations -->
-    <Affiliation ID="REALITY_SPACE_PENDING" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_005_0.svg" CivilianGraphic="0_005_0c.svg" />
-    <Affiliation ID="EXERCISE_SPACE_PENDING" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_005_0.svg" CivilianGraphic="1_005_0c.svg" />
-    <Affiliation ID="SIMULATED_SPACE_PENDING" ContextID="SIMULATION" DimensionID="SPACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2_005_0.svg" CivilianGraphic="2_005_0c.svg" />
-    <Affiliation ID="REALITY_SPACE_UNKNOWN" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_105_0.svg" PlannedGraphic="0_105_1.svg"
-      CivilianGraphic="0_105_0c.svg" PlannedCivilianGraphic="0_105_1c.svg" />
-    <Affiliation ID="EXERCISE_SPACE_UNKNOWN" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_105_0.svg" PlannedGraphic="1_105_1.svg"
-      CivilianGraphic="1_105_0c.svg" PlannedCivilianGraphic="1_105_1c.svg" />
-    <Affiliation ID="SIMULATED_SPACE_UNKNOWN" ContextID="SIMULATION" DimensionID="SPACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_105_0.svg" PlannedGraphic="2_105_1.svg"
-      CivilianGraphic="2_105_0c.svg" PlannedCivilianGraphic="2_105_1c.svg" />
-    <Affiliation ID="REALITY_SPACE_FRIEND" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="0_305_0.svg" PlannedGraphic="0_305_1.svg"
-      CivilianGraphic="0_305_0c.svg" PlannedCivilianGraphic="0_305_1c.svg" />
-    <Affiliation ID="EXERCISE_SPACE_FRIEND" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="1_305_0.svg" PlannedGraphic="1_305_1.svg"
-      CivilianGraphic="1_305_0c.svg" PlannedCivilianGraphic="1_305_1c.svg" />
-    <Affiliation ID="SIMULATED_SPACE_FRIEND" ContextID="SIMULATION" DimensionID="SPACE" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="2_305_0.svg" PlannedGraphic="2_305_1.svg"
-      CivilianGraphic="2_305_0c.svg" PlannedCivilianGraphic="2_305_1c.svg" />
-    <Affiliation ID="REALITY_SPACE_NEUTRAL" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_NEUTRAL" Shape="CURVE" Graphic="0_405_0.svg" PlannedGraphic="0_405_1.svg"
-      CivilianGraphic="0_405_0c.svg" PlannedCivilianGraphic="0_405_1c.svg" />
-    <Affiliation ID="EXERCISE_SPACE_NEUTRAL" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_NEUTRAL" Shape="CURVE" Graphic="1_405_0.svg" PlannedGraphic="1_405_1.svg"
-      CivilianGraphic="1_405_0c.svg" PlannedCivilianGraphic="1_405_1c.svg" />
-    <Affiliation ID="SIMULATED_SPACE_NEUTRAL" ContextID="SIMULATION" DimensionID="SPACE" StandardIdentityID="SI_NEUTRAL" Shape="CURVE" Graphic="2_405_0.svg" PlannedGraphic="2_405_1.svg"
-      CivilianGraphic="2_405_0c.svg" PlannedCivilianGraphic="2_405_1c.svg" />
-    <Affiliation ID="REALITY_SPACE_HOSTILE" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CURVE" Graphic="0_605_0.svg" PlannedGraphic="0_605_1.svg" />
-    <Affiliation ID="EXERCISE_SPACE_HOSTILE" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CURVE" Graphic="1_605_0.svg" PlannedGraphic="1_605_1.svg" />
-    <Affiliation ID="SIMULATED_SPACE_HOSTILE" ContextID="SIMULATION" DimensionID="SPACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CURVE" Graphic="2_605_0.svg"
-      PlannedGraphic="2_605_1.svg" />
-    <Affiliation ID="REALITY_SPACE_ASSUMED" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="0_205_0.svg"
-      CivilianGraphic="0_205_0c.svg" />
-    <Affiliation ID="EXERCISE_SPACE_ASSUMED" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="1_205_0.svg"
-      CivilianGraphic="1_205_0c.svg" />
-    <Affiliation ID="SIMULATED_SPACE_ASSUMED" ContextID="SIMULATION" DimensionID="SPACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="2_205_0.svg"
-      CivilianGraphic="2_205_0c.svg" />
-    <Affiliation ID="REALITY_SPACE_SUSPECT" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CURVE" Graphic="0_505_0.svg" />
-    <Affiliation ID="EXERCISE_SPACE_SUSPECT" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CURVE" Graphic="1_505_0.svg" />
-    <Affiliation ID="SIMULATED_SPACE_SUSPECT" ContextID="SIMULATION" DimensionID="SPACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CURVE" Graphic="2_505_0.svg" />
-    <!-- Land Unit Affiliations -->
-    <Affiliation ID="REALITY_LU_PENDING" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_010_0.svg" CivilianGraphic="0_010_0c.svg" />
-    <Affiliation ID="EXERCISE_LU_PENDING" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_010_0.svg" CivilianGraphic="1_010_0c.svg" />
-    <Affiliation ID="SIMULATED_LU_PENDING" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2_010_0.svg"
-      CivilianGraphic="2_010_0c.svg" />
-    <Affiliation ID="REALITY_LU_UNKNOWN" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_110_0.svg" PlannedGraphic="0_110_1.svg"
-      CivilianGraphic="0_110_0c.svg" PlannedCivilianGraphic="0_110_1c.svg" />
-    <Affiliation ID="EXERCISE_LU_UNKNOWN" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_110_0.svg" PlannedGraphic="1_110_1.svg"
-      CivilianGraphic="1_110_0c.svg" PlannedCivilianGraphic="1_110_1c.svg" />
-    <Affiliation ID="SIMULATED_LU_UNKNOWN" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_110_0.svg" PlannedGraphic="2_110_1.svg"
-      CivilianGraphic="2_110_0c.svg" PlannedCivilianGraphic="2_110_1c.svg" />
-    <Affiliation ID="REALITY_LU_FRIEND" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="RECTANGLE" Graphic="0_310_0.svg" PlannedGraphic="0_310_1.svg"
-      CivilianGraphic="0_310_0c.svg" PlannedCivilianGraphic="0_310_1c.svg" />
-    <Affiliation ID="EXERCISE_LU_FRIEND" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="RECTANGLE" Graphic="1_310_0.svg" PlannedGraphic="1_310_1.svg"
-      CivilianGraphic="1_310_0c.svg" PlannedCivilianGraphic="1_310_1c.svg" />
-    <Affiliation ID="SIMULATED_LU_FRIEND" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="RECTANGLE" Graphic="2_310_0.svg" PlannedGraphic="2_310_1.svg"
-      CivilianGraphic="2_310_0c.svg" PlannedCivilianGraphic="2_310_1c.svg" />
-    <Affiliation ID="REALITY_LU_NEUTRAL" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_410_0.svg" PlannedGraphic="0_410_1.svg"
-      CivilianGraphic="0_410_0c.svg" PlannedCivilianGraphic="0_410_1c.svg" />
-    <Affiliation ID="EXERCISE_LU_NEUTRAL" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="1_410_0.svg" PlannedGraphic="1_410_1.svg"
-      CivilianGraphic="1_410_0c.svg" PlannedCivilianGraphic="1_410_1c.svg" />
-    <Affiliation ID="SIMULATED_LU_NEUTRAL" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2_410_0.svg" PlannedGraphic="2_410_1.svg"
-      CivilianGraphic="2_410_0c.svg" PlannedCivilianGraphic="2_410_1c.svg" />
-    <Affiliation ID="REALITY_LU_HOSTILE" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0_610_0.svg"
-      PlannedGraphic="0_610_1.svg" />
-    <Affiliation ID="EXERCISE_LU_HOSTILE" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CIRCLE" Graphic="1_610_0.svg"
-      PlannedGraphic="1_610_1.svg" />
-    <Affiliation ID="SIMULATED_LU_HOSTILE" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2_610_0.svg"
-      PlannedGraphic="2_610_1.svg" />
-    <Affiliation ID="REALITY_LU_ASSUMED" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_210_0.svg"
-      CivilianGraphic="0_210_0c.svg" />
-    <Affiliation ID="EXERCISE_LU_ASSUMED" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1_210_0.svg"
-      CivilianGraphic="1_210_0c.svg" />
-    <Affiliation ID="SIMULATED_LU_ASSUMED" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="2_210_0.svg"
-      CivilianGraphic="2_210_0c.svg" />
-    <Affiliation ID="REALITY_LU_SUSPECT" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_510_0.svg" />
-    <Affiliation ID="EXERCISE_LU_SUSPECT" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1_510_0.svg" />
-    <Affiliation ID="SIMULATED_LU_SUSPECT" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2_510_0.svg" />
-    <!-- Land Equipment Affiliations -->
-    <Affiliation ID="REALITY_LE_PENDING" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_015_0.svg"
-      CivilianGraphic="0_015_0c.svg" />
-    <Affiliation ID="EXERCISE_LE_PENDING" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_015_0.svg"
-      CivilianGraphic="1_015_0c.svg" />
-    <Affiliation ID="SIMULATED_LE_PENDING" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2_015_0.svg"
-      CivilianGraphic="2_015_0c.svg" />
-    <Affiliation ID="REALITY_LE_UNKNOWN" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_115_0.svg" PlannedGraphic="0_115_1.svg"
-      CivilianGraphic="0_115_0c.svg" PlannedCivilianGraphic="0_115_1c.svg" />
-    <Affiliation ID="EXERCISE_LE_UNKNOWN" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_115_0.svg"
-      PlannedGraphic="1_115_1.svg" CivilianGraphic="1_115_0c.svg" PlannedCivilianGraphic="1_115_1c.svg" />
-    <Affiliation ID="SIMULATED_LE_UNKNOWN" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_115_0.svg"
-      PlannedGraphic="2_115_1.svg" CivilianGraphic="2_115_0c.svg" PlannedCivilianGraphic="2_115_1c.svg" />
-    <Affiliation ID="REALITY_LE_FRIEND" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="0_315_0.svg" PlannedGraphic="0_315_1.svg"
-      CivilianGraphic="0_315_0c.svg" PlannedCivilianGraphic="0_315_1c.svg" />
-    <Affiliation ID="EXERCISE_LE_FRIEND" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="1_315_0.svg" PlannedGraphic="1_315_1.svg"
-      CivilianGraphic="1_315_0c.svg" PlannedCivilianGraphic="1_315_1c.svg" />
-    <Affiliation ID="SIMULATED_LE_FRIEND" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="2_315_0.svg"
-      PlannedGraphic="2_315_1.svg" CivilianGraphic="2_315_0c.svg" PlannedCivilianGraphic="2_315_1c.svg" />
-    <Affiliation ID="REALITY_LE_NEUTRAL" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_415_0.svg" PlannedGraphic="0_415_1.svg"
-      CivilianGraphic="0_415_0c.svg" PlannedCivilianGraphic="0_415_1c.svg" />
-    <Affiliation ID="EXERCISE_LE_NEUTRAL" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="1_415_0.svg"
-      PlannedGraphic="1_415_1.svg" CivilianGraphic="1_415_0c.svg" PlannedCivilianGraphic="1_415_1c.svg" />
-    <Affiliation ID="SIMULATED_LE_NEUTRAL" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2_415_0.svg"
-      PlannedGraphic="2_415_1.svg" CivilianGraphic="2_415_0c.svg" PlannedCivilianGraphic="2_415_1c.svg" />
-    <Affiliation ID="REALITY_LE_HOSTILE" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0_615_0.svg"
-      PlannedGraphic="0_615_1.svg" />
-    <Affiliation ID="EXERCISE_LE_HOSTILE" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CIRCLE" Graphic="1_615_0.svg"
-      PlannedGraphic="1_615_1.svg" />
-    <Affiliation ID="SIMULATED_LE_HOSTILE" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2_615_0.svg"
-      PlannedGraphic="2_615_1.svg" />
-    <Affiliation ID="REALITY_LE_ASSUMED" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_215_0.svg"
-      CivilianGraphic="0_215_0c.svg" />
-    <Affiliation ID="EXERCISE_LE_ASSUMED" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1_215_0.svg"
-      CivilianGraphic="1_215_0c.svg" />
-    <Affiliation ID="SIMULATED_LE_ASSUMED" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="2_215_0.svg"
-      CivilianGraphic="2_215_0c.svg" />
-    <Affiliation ID="REALITY_LE_SUSPECT" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_515_0.svg" />
-    <Affiliation ID="EXERCISE_LE_SUSPECT" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1_515_0.svg" />
-    <Affiliation ID="SIMULATED_LE_SUSPECT" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2_515_0.svg" />
-    <!-- Land Installation Affiliations -->
-    <Affiliation ID="REALITY_LI_PENDING" ContextID="REALITY" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_020_0.svg"
-      CivilianGraphic="0_020_0c.svg" />
-    <Affiliation ID="EXERCISE_LI_PENDING" ContextID="EXERCISE" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_020_0.svg"
-      CivilianGraphic="1_020_0c.svg" />
-    <Affiliation ID="SIMULATED_LI_PENDING" ContextID="SIMULATION" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2_020_0.svg"
-      CivilianGraphic="2_020_0c.svg" />
-    <Affiliation ID="REALITY_LI_UNKNOWN" ContextID="REALITY" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_120_0.svg"
-      PlannedGraphic="0_120_1.svg" CivilianGraphic="0_120_0c.svg" PlannedCivilianGraphic="0_120_1c.svg" />
-    <Affiliation ID="EXERCISE_LI_UNKNOWN" ContextID="EXERCISE" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_120_0.svg"
-      PlannedGraphic="1_120_1.svg" CivilianGraphic="1_120_0c.svg" PlannedCivilianGraphic="1_120_1c.svg" />
-    <Affiliation ID="SIMULATED_LI_UNKNOWN" ContextID="SIMULATION" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_120_0.svg"
-      PlannedGraphic="2_120_1.svg" CivilianGraphic="2_120_0c.svg" PlannedCivilianGraphic="2_120_1c.svg" />
-    <Affiliation ID="REALITY_LI_FRIEND" ContextID="REALITY" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="0_320_0.svg" PlannedGraphic="0_320_1.svg"
-      CivilianGraphic="0_320_0c.svg" PlannedCivilianGraphic="0_320_1c.svg" />
-    <Affiliation ID="EXERCISE_LI_FRIEND" ContextID="EXERCISE" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="1_320_0.svg"
-      PlannedGraphic="1_320_1.svg" CivilianGraphic="1_320_0c.svg" PlannedCivilianGraphic="1_320_1c.svg" />
-    <Affiliation ID="SIMULATED_LI_FRIEND" ContextID="SIMULATION" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="2_320_0.svg"
-      PlannedGraphic="2_320_1.svg" CivilianGraphic="2_320_0c.svg" PlannedCivilianGraphic="2_320_1c.svg" />
-    <Affiliation ID="REALITY_LI_NEUTRAL" ContextID="REALITY" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_420_0.svg"
-      PlannedGraphic="0_420_1.svg" CivilianGraphic="0_420_0c.svg" PlannedCivilianGraphic="0_420_1c.svg" />
-    <Affiliation ID="EXERCISE_LI_NEUTRAL" ContextID="EXERCISE" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="1_420_0.svg"
-      PlannedGraphic="1_420_1.svg" CivilianGraphic="1_420_0c.svg" PlannedCivilianGraphic="1_420_1c.svg" />
-    <Affiliation ID="SIMULATED_LI_NEUTRAL" ContextID="SIMULATION" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2_420_0.svg"
-      PlannedGraphic="2_420_1.svg" CivilianGraphic="2_420_0c.svg" PlannedCivilianGraphic="2_420_1c.svg" />
-    <Affiliation ID="REALITY_LI_HOSTILE" ContextID="REALITY" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0_620_0.svg"
-      PlannedGraphic="0_620_1.svg" />
-    <Affiliation ID="EXERCISE_LI_HOSTILE" ContextID="EXERCISE" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CIRCLE" Graphic="1_620_0.svg"
-      PlannedGraphic="1_620_1.svg" />
-    <Affiliation ID="SIMULATED_LI_HOSTILE" ContextID="SIMULATION" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2_620_0.svg"
-      PlannedGraphic="2_620_1.svg" />
-    <Affiliation ID="REALITY_LI_ASSUMED" ContextID="REALITY" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_220_0.svg"
-      CivilianGraphic="0_220_0c.svg" />
-    <Affiliation ID="EXERCISE_LI_ASSUMED" ContextID="EXERCISE" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1_220_0.svg"
-      CivilianGraphic="1_220_0c.svg" />
-    <Affiliation ID="SIMULATED_LI_ASSUMED" ContextID="SIMULATION" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="2_220_0.svg"
-      CivilianGraphic="2_220_0c.svg" />
-    <Affiliation ID="REALITY_LI_SUSPECT" ContextID="REALITY" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_520_0.svg" />
-    <Affiliation ID="EXERCISE_LI_SUSPECT" ContextID="EXERCISE" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="1_520_0.svg" />
-    <Affiliation ID="SIMULATED_LI_SUSPECT" ContextID="SIMULATION" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2_520_0.svg" />
-    <!-- Dismounted Individual Affiliations -->
-    <Affiliation ID="REALITY_DI_PENDING" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_015_0.svg" CivilianGraphic="0_015_0c.svg" />
-    <Affiliation ID="REALITY_DI_UNKNOWN" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_115_0.svg" PlannedGraphic="0_115_1.svg"
-      CivilianGraphic="0_115_0c.svg" PlannedCivilianGraphic="0_115_1c.svg" />
-    <Affiliation ID="REALITY_DI_FRIEND" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_FRIEND" Shape="HEXAGON" Graphic="0_327_0.svg" PlannedGraphic="0_327_1.svg"
-      CivilianGraphic="0_327_0c.svg" PlannedCivilianGraphic="0_327_1c.svg" />
-    <Affiliation ID="REALITY_DI_NEUTRAL" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_415_0.svg" PlannedGraphic="0_415_1.svg"
-      CivilianGraphic="0_415_0c.svg" PlannedCivilianGraphic="0_415_1c.svg" />
-    <Affiliation ID="REALITY_DI_HOSTILE" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0_615_0.svg"
-      PlannedGraphic="0_615_1.svg" />
-    <Affiliation ID="REALITY_DI_ASSUMED" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="HEXAGON" Graphic="0_227_0.svg"
-      CivilianGraphic="0_227_0c.svg" />
-    <Affiliation ID="REALITY_DI_SUSPECT" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_515_0.svg" />
-    <!-- Sea Surface Affiliations -->
-    <Affiliation ID="REALITY_SEA_PENDING" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_030_0.svg" CivilianGraphic="0_030_0c.svg" />
-    <Affiliation ID="EXERCISE_SEA_PENDING" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_030_0.svg"
-      CivilianGraphic="1_030_0c.svg" />
-    <Affiliation ID="SIMULATED_SEA_PENDING" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2_030_0.svg"
-      CivilianGraphic="2_030_0c.svg" />
-    <Affiliation ID="REALITY_SEA_UNKNOWN" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_130_0.svg" PlannedGraphic="0_130_1.svg"
-      CivilianGraphic="0_130_0c.svg" PlannedCivilianGraphic="0_130_1c.svg" />
-    <Affiliation ID="EXERCISE_SEA_UNKNOWN" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_130_0.svg" PlannedGraphic="1_130_1.svg"
-      CivilianGraphic="1_130_0c.svg" PlannedCivilianGraphic="1_130_1c.svg" />
-    <Affiliation ID="SIMULATED_SEA_UNKNOWN" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_130_0.svg"
-      PlannedGraphic="2_130_1.svg" CivilianGraphic="2_130_0c.svg" PlannedCivilianGraphic="2_130_1c.svg" />
-    <Affiliation ID="REALITY_SEA_FRIEND" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="0_330_0.svg" PlannedGraphic="0_330_1.svg"
-      CivilianGraphic="0_330_0c.svg" PlannedCivilianGraphic="0_330_1c.svg" />
-    <Affiliation ID="EXERCISE_SEA_FRIEND" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="1_330_0.svg" PlannedGraphic="1_330_1.svg"
-      CivilianGraphic="1_330_0c.svg" PlannedCivilianGraphic="1_330_1c.svg" />
-    <Affiliation ID="SIMULATED_SEA_FRIEND" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="2_330_0.svg" PlannedGraphic="2_330_1.svg"
-      CivilianGraphic="2_330_0c.svg" PlannedCivilianGraphic="2_330_1c.svg" />
-    <Affiliation ID="REALITY_SEA_NEUTRAL" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_430_0.svg" PlannedGraphic="0_430_1.svg"
-      CivilianGraphic="0_430_0c.svg" PlannedCivilianGraphic="0_430_1c.svg" />
-    <Affiliation ID="EXERCISE_SEA_NEUTRAL" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="1_430_0.svg" PlannedGraphic="1_430_1.svg"
-      CivilianGraphic="1_430_0c.svg" PlannedCivilianGraphic="1_430_1c.svg" />
-    <Affiliation ID="SIMULATED_SEA_NEUTRAL" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2_430_0.svg"
-      PlannedGraphic="2_430_1.svg" CivilianGraphic="2_430_0c.svg" PlannedCivilianGraphic="2_430_1c.svg" />
-    <Affiliation ID="REALITY_SEA_HOSTILE" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0_630_0.svg"
-      PlannedGraphic="0_630_1.svg" />
-    <Affiliation ID="EXERCISE_SEA_HOSTILE" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CIRCLE" Graphic="1_630_0.svg"
-      PlannedGraphic="1_630_1.svg" />
-    <Affiliation ID="SIMULATED_SEA_HOSTILE" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2_630_0.svg"
-      PlannedGraphic="2_630_1.svg" />
-    <Affiliation ID="REALITY_SEA_ASSUMED" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_230_0.svg"
-      CivilianGraphic="0_230_0c.svg" />
-    <Affiliation ID="EXERCISE_SEA_ASSUMED" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1_230_0.svg"
-      CivilianGraphic="1_230_0c.svg" />
-    <Affiliation ID="SIMULATED_SEA_ASSUMED" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="2_230_0.svg"
-      CivilianGraphic="2_230_0c.svg" />
-    <Affiliation ID="REALITY_SEA_SUSPECT" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_530_0.svg" />
-    <Affiliation ID="EXERCISE_SEA_SUSPECT" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1_530_0.svg" />
-    <Affiliation ID="SIMULATED_SEA_SUSPECT" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2_530_0.svg" />
-    <!-- Sea Subsurface Affiliations -->
-    <Affiliation ID="REALITY_SUB_PENDING" ContextID="REALITY" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_035_0.svg"
-      CivilianGraphic="0_035_0c.svg" />
-    <Affiliation ID="EXERCISE_SUB_PENDING" ContextID="EXERCISE" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_035_0.svg"
-      CivilianGraphic="1_035_0c.svg" />
-    <Affiliation ID="SIMULATED_SUB_PENDING" ContextID="SIMULATION" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2_035_0.svg"
-      CivilianGraphic="2_035_0c.svg" />
-    <Affiliation ID="REALITY_SUB_UNKNOWN" ContextID="REALITY" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_135_0.svg" PlannedGraphic="0_135_1.svg"
-      CivilianGraphic="0_135_0c.svg" PlannedCivilianGraphic="0_135_1c.svg" />
-    <Affiliation ID="EXERCISE_SUB_UNKNOWN" ContextID="EXERCISE" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_135_0.svg"
-      PlannedGraphic="1_135_1.svg" CivilianGraphic="1_135_0c.svg" PlannedCivilianGraphic="1_135_1c.svg" />
-    <Affiliation ID="SIMULATED_SUB_UNKNOWN" ContextID="SIMULATION" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_135_0.svg"
-      PlannedGraphic="2_135_1.svg" CivilianGraphic="2_135_0c.svg" PlannedCivilianGraphic="2_135_1c.svg" />
-    <Affiliation ID="REALITY_SUB_FRIEND" ContextID="REALITY" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="0_335_0.svg" PlannedGraphic="0_335_1.svg"
-      CivilianGraphic="0_335_0c.svg" PlannedCivilianGraphic="0_335_1c.svg" />
-    <Affiliation ID="EXERCISE_SUB_FRIEND" ContextID="EXERCISE" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="1_335_0.svg" PlannedGraphic="1_335_1.svg"
-      CivilianGraphic="1_335_0c.svg" PlannedCivilianGraphic="1_335_1c.svg" />
-    <Affiliation ID="SIMULATED_SUB_FRIEND" ContextID="SIMULATION" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="2_335_0.svg"
-      PlannedGraphic="2_335_1.svg" CivilianGraphic="2_335_0c.svg" PlannedCivilianGraphic="2_335_1c.svg" />
-    <Affiliation ID="REALITY_SUB_NEUTRAL" ContextID="REALITY" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_435_0.svg" PlannedGraphic="0_435_1.svg"
-      CivilianGraphic="0_435_0c.svg" PlannedCivilianGraphic="0_435_1c.svg" />
-    <Affiliation ID="EXERCISE_SUB_NEUTRAL" ContextID="EXERCISE" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="1_435_0.svg"
-      PlannedGraphic="1_435_1.svg" CivilianGraphic="1_435_0c.svg" PlannedCivilianGraphic="1_435_1c.svg" />
-    <Affiliation ID="SIMULATED_SUB_NEUTRAL" ContextID="SIMULATION" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2_435_0.svg"
-      PlannedGraphic="2_435_1.svg" CivilianGraphic="2_435_0c.svg" PlannedCivilianGraphic="2_435_1c.svg" />
-    <Affiliation ID="REALITY_SUB_HOSTILE" ContextID="REALITY" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0_635_0.svg"
-      PlannedGraphic="0_635_1.svg" />
-    <Affiliation ID="EXERCISE_SUB_HOSTILE" ContextID="EXERCISE" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CIRCLE" Graphic="1_635_0.svg"
-      PlannedGraphic="1_635_1.svg" />
-    <Affiliation ID="SIMULATED_SUB_HOSTILE" ContextID="SIMULATION" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2_635_0.svg"
-      PlannedGraphic="2_635_1.svg" />
-    <Affiliation ID="REALITY_SUB_ASSUMED" ContextID="REALITY" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_235_0.svg"
-      CivilianGraphic="0_235_0c.svg" />
-    <Affiliation ID="EXERCISE_SUB_ASSUMED" ContextID="EXERCISE" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1_235_0.svg"
-      CivilianGraphic="1_235_0c.svg" />
-    <Affiliation ID="SIMULATED_SUB_ASSUMED" ContextID="SIMULATION" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="2_235_0.svg"
-      CivilianGraphic="2_235_0c.svg" />
-    <Affiliation ID="REALITY_SUB_SUSPECT" ContextID="REALITY" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_535_0.svg" />
-    <Affiliation ID="EXERCISE_SUB_SUSPECT" ContextID="EXERCISE" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1_535_0.svg" />
-    <Affiliation ID="SIMULATED_SUB_SUSPECT" ContextID="SIMULATION" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2_535_0.svg" />
-    <!-- Activity Affiliations -->
-    <Affiliation ID="REALITY_ACTIVITY_PENDING" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_040_0.svg"
-      CivilianGraphic="0_040_0c.svg" />
-    <Affiliation ID="EXERCISE_ACTIVITY_PENDING" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_040_0.svg"
-      CivilianGraphic="1_040_0c.svg" />
-    <Affiliation ID="SIMULATED_ACTIVITY_PENDING" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2_040_0.svg"
-      CivilianGraphic="2_040_0c.svg" />
-    <Affiliation ID="REALITY_ACTIVITY_UNKNOWN" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_140_0.svg" PlannedGraphic="0_140_1.svg"
-      CivilianGraphic="0_140_0c.svg" PlannedCivilianGraphic="0_140_1c.svg" />
-    <Affiliation ID="EXERCISE_ACTIVITY_UNKNOWN" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_140_0.svg"
-      PlannedGraphic="1_140_1.svg" CivilianGraphic="1_140_0c.svg" PlannedCivilianGraphic="1_140_1c.svg" />
-    <Affiliation ID="SIMULATED_ACTIVITY_UNKNOWN" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_140_0.svg"
-      PlannedGraphic="2_140_1.svg" CivilianGraphic="2_140_0c.svg" PlannedCivilianGraphic="2_140_1c.svg" />
-    <Affiliation ID="REALITY_ACTIVITY_FRIEND" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="0_340_0.svg" PlannedGraphic="0_340_1.svg"
-      CivilianGraphic="0_340_0c.svg" PlannedCivilianGraphic="0_340_1c.svg" />
-    <Affiliation ID="EXERCISE_ACTIVITY_FRIEND" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="1_340_0.svg" PlannedGraphic="1_340_1.svg"
-      CivilianGraphic="1_340_0c.svg" PlannedCivilianGraphic="1_340_1c.svg" />
-    <Affiliation ID="SIMULATED_ACTIVITY_FRIEND" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="2_340_0.svg"
-      PlannedGraphic="2_340_1.svg" CivilianGraphic="2_340_0c.svg" PlannedCivilianGraphic="2_340_1c.svg" />
-    <Affiliation ID="REALITY_ACTIVITY_NEUTRAL" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_440_0.svg" PlannedGraphic="0_440_1.svg"
-      CivilianGraphic="0_440_0c.svg" PlannedCivilianGraphic="0_440_1c.svg" />
-    <Affiliation ID="EXERCISE_ACTIVITY_NEUTRAL" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="1_440_0.svg"
-      PlannedGraphic="1_440_1.svg" CivilianGraphic="1_440_0c.svg" PlannedCivilianGraphic="1_440_1c.svg" />
-    <Affiliation ID="SIMULATED_ACTIVITY_NEUTRAL" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2_440_0.svg"
-      PlannedGraphic="2_440_1.svg" CivilianGraphic="2_440_0c.svg" PlannedCivilianGraphic="2_440_1c.svg" />
-    <Affiliation ID="REALITY_ACTIVITY_HOSTILE" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0_640_0.svg"
-      PlannedGraphic="0_640_1.svg" />
-    <Affiliation ID="EXERCISE_ACTIVITY_HOSTILE" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CIRCLE" Graphic="1_640_0.svg"
-      PlannedGraphic="1_640_1.svg" />
-    <Affiliation ID="SIMULATED_ACTIVITY_HOSTILE" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2_640_0.svg"
-      PlannedGraphic="2_640_1.svg" />
-    <Affiliation ID="REALITY_ACTIVITY_ASSUMED" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_240_0.svg"
-      CivilianGraphic="0_240_0c.svg" />
-    <Affiliation ID="EXERCISE_ACTIVITY_ASSUMED" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1_240_0.svg"
-      CivilianGraphic="1_240_0c.svg" />
-    <Affiliation ID="SIMULATED_ACTIVITY_ASSUMED" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="2_240_0.svg"
-      CivilianGraphic="2_240_0c.svg" />
-    <Affiliation ID="REALITY_ACTIVITY_SUSPECT" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_540_0.svg" />
-    <Affiliation ID="EXERCISE_ACTIVITY_SUSPECT" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1_540_0.svg" />
-    <Affiliation ID="SIMULATED_ACTIVITY_SUSPECT" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2_540_0.svg" />
-    <!-- Control Measure Affiliations -->
-    <Affiliation ID="REALITY_CM_PENDING" ContextID="REALITY" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_PENDING" Shape="NA" />
-    <Affiliation ID="EXERCISE_CM_PENDING" ContextID="EXERCISE" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_PENDING" Shape="NA" />
-    <Affiliation ID="SIMULATED_CM_PENDING" ContextID="SIMULATION" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_PENDING" Shape="NA" />
-    <Affiliation ID="REALITY_CM_UNKNOWN" ContextID="REALITY" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_UNKNOWN" Shape="NA" />
-    <Affiliation ID="EXERCISE_CM_UNKNOWN" ContextID="EXERCISE" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_UNKNOWN" Shape="NA" />
-    <Affiliation ID="SIMULATED_CM_UNKNOWN" ContextID="SIMULATION" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_UNKNOWN" Shape="NA" />
-    <Affiliation ID="REALITY_CM_FRIEND" ContextID="REALITY" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_FRIEND" Shape="NA" />
-    <Affiliation ID="EXERCISE_CM_FRIEND" ContextID="EXERCISE" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_FRIEND" Shape="NA" />
-    <Affiliation ID="SIMULATED_CM_FRIEND" ContextID="SIMULATION" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_FRIEND" Shape="NA" />
-    <Affiliation ID="REALITY_CM_NEUTRAL" ContextID="REALITY" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_NEUTRAL" Shape="NA" />
-    <Affiliation ID="EXERCISE_CM_NEUTRAL" ContextID="EXERCISE" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_NEUTRAL" Shape="NA" />
-    <Affiliation ID="SIMULATED_CM_NEUTRAL" ContextID="SIMULATION" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_NEUTRAL" Shape="NA" />
-    <Affiliation ID="REALITY_CM_HOSTILE" ContextID="REALITY" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="NA" />
-    <Affiliation ID="EXERCISE_CM_HOSTILE" ContextID="EXERCISE" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="NA" />
-    <Affiliation ID="SIMULATED_CM_HOSTILE" ContextID="SIMULATION" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="NA" />
-    <Affiliation ID="REALITY_CM_ASSUMED" ContextID="REALITY" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="NA" />
-    <Affiliation ID="EXERCISE_CM_ASSUMED" ContextID="EXERCISE" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="NA" />
-    <Affiliation ID="SIMULATED_CM_ASSUMED" ContextID="SIMULATION" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="NA" />
-    <Affiliation ID="REALITY_CM_SUSPECT" ContextID="REALITY" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="NA" />
-    <Affiliation ID="EXERCISE_CM_SUSPECT" ContextID="EXERCISE" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="NA" />
-    <Affiliation ID="SIMULATED_CM_SUSPECT" ContextID="SIMULATION" DimensionID="CONTROL_MEASURE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="NA" />
-  </Affiliations>
   <Statuses>
     <Status Name="PRESENT" Label="Present">
       <StatusCode>0</StatusCode>
@@ -2228,7 +1827,7 @@
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
-    <AmplifierGroup Name="ECHELON" Label="Echelon" CompatibleSymbolSetIDs="SS_LAND_UNIT">
+    <AmplifierGroup Name="ECHELON" Label="Echelon" CompatibleSymbolSetIDs="LAND_UNIT">
       <AmplifierGroupCode>1</AmplifierGroupCode>
       <Amplifiers>
         <Amplifier Name="TEAM_CREW" Label="Team/Crew">
@@ -2368,7 +1967,7 @@
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
-    <AmplifierGroup Name="EQUIP_MOBILITY" Label="Equipment mobility" CompatibleSymbolSetIDs="SS_LAND_EQUIPMENT">
+    <AmplifierGroup Name="EQUIP_MOBILITY" Label="Equipment mobility" CompatibleSymbolSetIDs="LAND_EQUIPMENT">
       <AmplifierGroupCode>3</AmplifierGroupCode>
       <Amplifiers>
         <Amplifier Name="WHEEL_LIMIT_COUNTRY" Label="Wheeled limited cross country">
@@ -2472,7 +2071,7 @@
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
-    <AmplifierGroup Name="TOWED_ARRAYS" Label="Naval towed array" CompatibleSymbolSetIDs="SS_SEA_SURFACE">
+    <AmplifierGroup Name="TOWED_ARRAYS" Label="Naval towed array" CompatibleSymbolSetIDs="SEA_SURFACE">
       <AmplifierGroupCode>6</AmplifierGroupCode>
       <Amplifiers>
         <Amplifier Name="SHORT_TOWED_ARRAY" Label="Short towed array">
@@ -2495,7 +2094,7 @@
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
-    <AmplifierGroup Name="LEADERSHIP_INDICATOR" Label="Role for dismounted individuals" CompatibleSymbolSetIDs="SS_DISMOUNTED">
+    <AmplifierGroup Name="LEADERSHIP_INDICATOR" Label="Role for dismounted individuals" CompatibleSymbolSetIDs="DISMOUNTED">
       <AmplifierGroupCode>7</AmplifierGroupCode>
       <Amplifiers>
         <Amplifier Name="LEADER_INDIVIDUAL" Label="Leader">

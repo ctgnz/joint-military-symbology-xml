@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="SS_LAND_INSTALLATION" Label="Land Installation" DimensionID="LAND_INSTALLATION" xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="POINT">
+<SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="LAND_INSTALLATION" Label="Land Installation" DimensionID="LAND_INSTALLATION" xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="POINT">
   <SymbolSetCode>
     <DigitOne>2</DigitOne>
     <DigitTwo>0</DigitTwo>

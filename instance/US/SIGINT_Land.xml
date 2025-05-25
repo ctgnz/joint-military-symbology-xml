@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="SS_SIGINT_LAND" Label="Signals Intelligence - Land" DimensionID="LAND_EQUIPMENT" xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="POINT">
+<SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="SIGINT_LAND" Label="Signals Intelligence - Land" DimensionID="LAND_EQUIPMENT" xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="POINT">
   <SymbolSetCode>
     <DigitOne>5</DigitOne>
     <DigitTwo>2</DigitTwo>

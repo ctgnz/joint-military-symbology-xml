@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="SS_CONTROL_MEASURE" Label="Control Measure" DimensionID="CONTROL_MEASURE" xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="MIXED">
+<SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="CONTROL_MEASURE" Label="Control Measure" DimensionID="CONTROL_MEASURE" xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="MIXED">
   <SymbolSetCode>
     <DigitOne>2</DigitOne>
     <DigitTwo>5</DigitTwo>
