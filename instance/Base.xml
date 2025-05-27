@@ -18,21 +18,41 @@
     </LabelRule>
   </LabelRules>
   <Amplifiers>
-    <Amplifier ID="A" Label="Symbol Icon" Type="GRAPHIC" Description="The innermost part of a symbol that represents a joint military object." />
-    <Amplifier ID="B" Label="Echelon" Type="GRAPHIC" Description="A graphic amplifier in a unit symbol that identifies command level." />
-    <Amplifier ID="C" Label="Quantity" Type="ALPHANUMERIC" MinLength="1" MaxLength="19" Description="A text amplifier in an equipment symbol that identifies the number of items present." />
-    <Amplifier ID="D" Label="Task Force Indicator" Type="GRAPHIC" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." />
-    <Amplifier ID="F" Label="Reinforced or Reduced" Type="LIST" MinLength="1" MaxLength="1" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced.">
+    <Amplifier ID="A" Label="Symbol Icon" Type="GRAPHIC" Source="SIDC">
+      <Description>The innermost part of a symbol that represents a joint military object.</Description>
+    </Amplifier>
+    <Amplifier ID="B" Label="Echelon" Type="GRAPHIC" Source="SIDC" AmplifierGroup="ECHELON">
+      <Description>A graphic amplifier in a unit symbol that identifies command level.</Description>
+    </Amplifier>
+    <Amplifier ID="C" Label="Quantity" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="19">
+      <Description>A text amplifier in an equipment symbol that identifies the number of items present.</Description>
+    </Amplifier>
+    <Amplifier ID="D" Label="Task Force Indicator" Type="GRAPHIC" Source="SIDC">
+      <Description>A graphic amplifier that identifies a unit or stability operations symbol as a task force.</Description>
+    </Amplifier>
+    <Amplifier ID="F" Label="Reinforced or Reduced" Type="LIST" Source="USER" MinLength="1" MaxLength="1" >
+      <Description>A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced.</Description>
       <Values ID="F_VALUES" Label="Reinforced or Reduced Values" LabelAlias="Reinforced">
         <Value Name="REINFORCED" Label="Reinforced" LabelAlias="+" />
         <Value Name="REDUCED" Label="Reduced" LabelAlias="-" />
         <Value Name="REINFORCED_REDUCED" Label="Reinforced and Reduced" LabelAlias="±" />
       </Values>
     </Amplifier>
-    <Amplifier ID="G" Label="Staff Comments" Type="ALPHANUMERIC" MinLength="1" MaxLength="20" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." />
-    <Amplifier ID="H" Label="Additional Information" Type="ALPHANUMERIC" MinLength="1" MaxLength="20" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." />
-    <Amplifier ID="H1" Label="Unlisted Point Information" Type="ALPHANUMERIC" MinLength="1" MaxLength="3" Description="A text amplifier used to provide an up to a three-character letter field acronym to describe a point that is not already listed." Remarks="Content is implementation specific." />
-    <Amplifier ID="J" Label="Evaluation Rating" Type="LIST" MinLength="2" MaxLength="2" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6">
+    <Amplifier ID="G" Label="Staff Comments" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="20">
+      <Remarks>Content is implementation specific.</Remarks>
+      <Description>A text amplifier for units, equipment, and installations.</Description>
+    </Amplifier>
+    <Amplifier ID="H" Label="Additional Information" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="20" >
+      <Remarks>Content is implementation specific.</Remarks>
+      <Description>A text amplifier for units, equipment, and installations.</Description>
+    </Amplifier>
+    <Amplifier ID="H1" Label="Unlisted Point Information" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="3" >
+      <Remarks>Content is implementation specific.</Remarks>
+      <Description>A text amplifier used to provide an up to a three-character letter field acronym to describe a point that is not already listed.</Description>
+    </Amplifier>
+    <Amplifier ID="J" Label="Evaluation Rating" Type="LIST" Source="USER" MinLength="2" MaxLength="2" >
+      <Remarks>Reliability: A-F and Credibility: 1-6</Remarks>
+      <Description>A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating.</Description>
       <Values ID="RELIABILITY_RATINGS" Label="Reliability Rating" LabelAlias="Reliability">
         <Value Name="COMPLETELY" Label="Completely Reliable" LabelAlias="A" />
         <Value Name="USUALLY" Label="Usually Reliable" LabelAlias="B" />
@@ -50,7 +70,8 @@
         <Value Name="CRED_CANNOT_BE_JUDGED" Label="Truth Cannot Be Judged" LabelAlias="6" />
       </Values>
     </Amplifier>
-    <Amplifier ID="K" Label="Combat Effectiveness" Type="LIST" MinLength="2" MaxLength="3" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." >
+    <Amplifier ID="K" Label="Combat Effectiveness" Type="LIST" Source="USER" MinLength="2" MaxLength="3" >
+      <Description>A text amplifier for units and installations that indicates unit effectiveness or installation capability.</Description>
       <Values ID="K_VALUES" Label="Combat Effectiveness Values" LabelAlias="CombatEffectiveness">
         <Value Name="FULLY_OPERATIONAL" Label="Fully Operational" LabelAlias="FO" />
         <Value Name="SUBSTANTIALLY_OPERATIONAL" Label="Substantially Operational" LabelAlias="SO" />
@@ -59,31 +80,74 @@
         <Value Name="UNKNOWN_EFFECTIVENESS" Label="Unknown" LabelAlias="UNK" />
       </Values>
     </Amplifier>
-    <Amplifier ID="L" Label="Signature Equipment" Type="ALPHANUMERIC" MinLength="1" MaxLength="1" Description="A text amplifier for hostile equipment, '!' indicates detectable electronic signatures." />
-    <Amplifier ID="M" Label="Higher Formation" Type="ALPHANUMERIC" MinLength="1" MaxLength="21" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." />
-    <Amplifier ID="N" Label="Hostile (Enemy)" Type="GRAPHIC" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." />
-    <Amplifier ID="P" Label="IFF/SIF/AIS" Type="ALPHANUMERIC" MinLength="8" MaxLength="17" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes." />
-    <Amplifier ID="Q" Label="Direction of Movement Indicator" Type="GRAPHIC" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." />
-    <Amplifier ID="R" Label="Mobility Indicator" Type="GRAPHIC" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." />
-    <Amplifier ID="R2" Label="SIGINT Mobility Indicator" Type="LIST" MinLength="1" MaxLength="1" Description="M=Mobile, S=Static, or U=Uncertain">
+    <Amplifier ID="L" Label="Signature Equipment" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="1">
+      <Description>A text amplifier for hostile equipment, '!' indicates detectable electronic signatures.</Description>
+    </Amplifier>
+    <Amplifier ID="M" Label="Higher Formation" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="21">
+      <Description>A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals).</Description>
+    </Amplifier>
+    <Amplifier ID="N" Label="Hostile (Enemy)" Type="GRAPHIC" Source="SIDC">
+      <Description>A text amplifier for equipment, letters 'ENY' denote hostile symbols.</Description>
+    </Amplifier>
+    <Amplifier ID="P" Label="IFF/SIF/AIS" Type="ALPHANUMERIC" Source="USER" MinLength="8" MaxLength="17">
+      <Description>A text amplifier displaying IFF/SIF/AIS identification modes and codes.</Description>
+    </Amplifier>
+    <Amplifier ID="Q" Label="Direction of Movement Indicator" Source="USER" Type="GRAPHIC">
+      <Description>A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object.</Description>
+    </Amplifier>
+    <Amplifier ID="R" Label="Mobility Indicator" Type="GRAPHIC" Source="SIDC" AmplifierGroup="EQUIP_MOBILITY">
+      <Description>A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object.</Description>
+    </Amplifier>
+    <Amplifier ID="R2" Label="SIGINT Mobility Indicator" Type="LIST" Source="USER" MinLength="1" MaxLength="1" >
+      <Description>M=Mobile, S=Static, or U=Uncertain</Description>
       <Values ID="R2_VALUES" Label="SIGINT Mobility Indicator Values" LabelAlias="SIGINTMobility">
         <Value Name="MOBILE_INDICATOR" Label="Mobile" LabelAlias="M" />
         <Value Name="STATIC_INDICATOR" Label="Static" LabelAlias="S" />
         <Value Name="UNCERTAIN_INDICATOR" Label="Uncertain" LabelAlias="U" />
       </Values>
     </Amplifier>
-    <Amplifier ID="S" Label="Headquarters Staff Indicator" Type="GRAPHIC" Description="A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." />
-    <Amplifier ID="S2" Label="Offset Location Indicator" Type="GRAPHIC" Description="A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." />
-    <Amplifier ID="T" Label="Unique Designation" Type="ALPHANUMERIC" MinLength="1" MaxLength="30" Description="A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number." Remarks="Identifies acquisition number when used with SIGINT symbology." />
-    <Amplifier ID="T1" Label="Unique Identifier/Primary Purpose" Type="ALPHANUMERIC" MinLength="1" MaxLength="30" Description="A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number." Remarks="Identifies acquisition number when used with SIGINT symbology." />
-    <Amplifier ID="T2" Label="Controlling Headquarters" Type="ALPHANUMERIC" MinLength="1" MaxLength="7" Description="An amplifier used to provide the designation of the Establishing Headquarters for Fire Support Control Measures only." />
-    <Amplifier ID="V" Label="Type of Equipment" Type="ALPHANUMERIC" MinLength="1" MaxLength="24" Description="A text amplifier for equipment that indicates types of equipment." />
-    <Amplifier ID="W" Label="Date/Time Group (DTG)" Type="ALPHANUMERIC" MinLength="3" MaxLength="16" Description="An alphanumeric designator for displaying a date-time group (DDHHMMSSZMONYYYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by four digits representing the year." />
-    <Amplifier ID="W1" Label="Date/Time Group (DTG) (Period)" Type="ALPHANUMERIC" MinLength="3" MaxLength="16" Description="An alphanumeric designator for displaying a date-time group (DDHHMMSSZMONYYYY) or O/O for on order." Remarks="Field W1 is used to provide the end of a period of time." />
-    <Amplifier ID="X" Label="Altitude/Depth" Type="ALPHANUMERIC" MinLength="2" MaxLength="14" Description="A text amplifier for units, equipment, and installations that displays either altitude, flight level, depth for submerged objects." Remarks="Alternatively, used to indicate the height of equipment or structures on the ground." />
-    <Amplifier ID="Y" Label="Location" Type="ALPHANUMERIC" MinLength="12" MaxLength="22" Description="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." Note="To support homeland security and homeland defense, the federal Geographic Data Committee (FGDC) US National Grid (USNG) standard when referenced to North American Datum 1983 (NAD83) is operationally equivalent to and is an accepted substitute for MGRS coordinates referenced to WGS 84. Note that at mapping scales of 1:5000 and smaller, NAD83 and WGS 84 are considered equivalent." />
-    <Amplifier ID="YP" Label="Symbol References Points" Type="ALPHANUMERIC" MinLength="22" MaxLength="22" Description="An exchange only amplifier that is repeated as YP, YP1, YP2 to represent the reference points of symbols. Note that these reference points are indicated as centre point, PT 1, PT 2, etc. in the symbol diagram templates and not as YP." />
-    <Amplifier ID="Z" Label="Speed" Type="LIST" MinLength="5" MaxLength="9" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD 6040.">
+    <Amplifier ID="S" Label="Headquarters Staff Indicator" Type="GRAPHIC" Source="SIDC">
+      <Description>A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters.</Description>
+    </Amplifier>
+    <Amplifier ID="S2" Label="Offset Location Indicator" Type="GRAPHIC" Source="USER">
+      <Description>A graphic amplifier for units, equipment and installations used when placing an object away from its actual location.</Description>
+    </Amplifier>
+    <Amplifier ID="T" Label="Unique Designation" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="30" >
+      <Remarks>Identifies acquisition number when used with SIGINT symbology.</Remarks>
+      <Description>A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number.</Description>
+    </Amplifier>
+    <Amplifier ID="T1" Label="Unique Identifier/Primary Purpose" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="30" >
+      <Remarks>Identifies acquisition number when used with SIGINT symbology.</Remarks>
+      <Description>A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number.</Description>
+    </Amplifier>
+    <Amplifier ID="T2" Label="Controlling Headquarters" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="7">
+      <Description>An amplifier used to provide the designation of the Establishing Headquarters for Fire Support Control Measures only.</Description>
+    </Amplifier>
+    <Amplifier ID="V" Label="Type of Equipment" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="24">
+      <Description>A text amplifier for equipment that indicates types of equipment.</Description>
+    </Amplifier>
+    <Amplifier ID="W" Label="Date/Time Group (DTG)" Type="ALPHANUMERIC" Source="USER" MinLength="3" MaxLength="16" >
+      <Remarks>The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by four digits representing the year.</Remarks>
+      <Description>An alphanumeric designator for displaying a date-time group (DDHHMMSSZMONYYYY) or O/O for on order.</Description>
+    </Amplifier>
+    <Amplifier ID="W1" Label="Date/Time Group (DTG) (Period)" Type="ALPHANUMERIC" Source="USER" MinLength="3" MaxLength="16" >
+      <Remarks>Field W1 is used to provide the end of a period of time.</Remarks>
+      <Description>An alphanumeric designator for displaying a date-time group (DDHHMMSSZMONYYYY) or O/O for on order.</Description>
+    </Amplifier>
+    <Amplifier ID="X" Label="Altitude/Depth" Type="ALPHANUMERIC" Source="USER" MinLength="2" MaxLength="14" >
+      <Remarks>Alternatively, used to indicate the height of equipment or structures on the ground.</Remarks>
+      <Description>A text amplifier for units, equipment, and installations that displays either altitude, flight level, depth for submerged objects.</Description>
+    </Amplifier>
+    <Amplifier ID="Y" Label="Location" Type="ALPHANUMERIC" Source="USER" MinLength="12" MaxLength="22">
+      <Remarks>Alternatively, in MGRS or other applicable display format.</Remarks>
+      <Description>A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes.</Description>
+      <Note>To support homeland security and homeland defense, the federal Geographic Data Committee (FGDC) US National Grid (USNG) standard when referenced to North American Datum 1983 (NAD83) is operationally equivalent to and is an accepted substitute for MGRS coordinates referenced to WGS 84. Note that at mapping scales of 1:5000 and smaller, NAD83 and WGS 84 are considered equivalent."</Note>
+    </Amplifier>
+    <Amplifier ID="YP" Label="Symbol References Points" Type="ALPHANUMERIC" Source="USER" MinLength="22" MaxLength="22">
+      <Description>An exchange only amplifier that is repeated as YP, YP1, YP2 to represent the reference points of symbols. Note that these reference points are indicated as centre point, PT 1, PT 2, etc. in the symbol diagram templates and not as YP.</Description>
+    </Amplifier>
+    <Amplifier ID="Z" Label="Speed" Type="LIST" Source="USER" MinLength="5" MaxLength="9" >
+      <Description>A text amplifier for units and equipment that displays velocity as set forth in MIL-STD 6040.</Description>
       <Values ID="SPEED_VALUES" Label="Units of Speed" LabelAlias="SpeedUnits">
         <Value Name="KPH" Label="Kilometers Per Hour" LabelAlias="KPH" />
         <Value Name="MPS" Label="Meters Per Second" LabelAlias="MPS" />
@@ -91,27 +155,61 @@
         <Value Name="MPH" Label="Statute Miles Per Hour" LabelAlias="MPH" />
       </Values>
     </Amplifier>
-    <Amplifier ID="AA" Label="Named C2 Headquarters" Type="ALPHANUMERIC" MinLength="1" MaxLength="9" Description="A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters." />
-    <Amplifier ID="AB" Label="Feint/Dummy Indicator" Type="GRAPHIC" Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack." />
-    <Amplifier ID="AD" Label="Platform Type" Type="TEXT" MinLength="5" MaxLength="5" Description="Electronic Intelligence Notation (ELNOT) or Communications Intelligence Notation (CENOT)" />
-    <Amplifier ID="AE" Label="Equipment Teardown Time" Type="NUMERIC" MinLength="1" MaxLength="3" Description="Equipment teardown time in minutes" />
-    <Amplifier ID="AF" Label="Common Identifier" Type="ALPHANUMERIC" MinLength="1" MaxLength="12" Description="Example: 'Hawk' for Hawk SAM system" />
-    <Amplifier ID="AG" Label="Auxiliary Equipment Indicator" Type="GRAPHIC" Description="A graphic modifier for equipment that indicates the presence of a towed sonar array." />
-    <Amplifier ID="AH" Label="Area of Uncertainty Indicator" Type="GRAPHIC" MinLength="1" MaxLength="6" Description="A graphic modifier for units, equipment and installations that indicates the area where an object is most likely to be, based on the object's last report and the reporting accuracty of the sensor that detected the object." />
-    <Amplifier ID="AH1" Label="Area of Uncertainty Indicator Longitude" MinLength="1" MaxLength="6" Type="GRAPHIC" Description="If AH1 is defined, the value of AH is the latitude radius of uncertainty and AH1 is the longitude radius of uncertainty in metres." />
-    <Amplifier ID="AI" Label="Dead Reckoning Trailer" Type="GRAPHIC" Description="A graphic amplifier for units and equipment that identifies where an object should be located at present, given its last reported course and speed." />
-    <Amplifier ID="AJ" Label="Speed Leader" Type="GRAPHIC" Description="A graphic amplifier for units, equipment and installations that depicts the speed and direction of movement of an object." />
-    <Amplifier ID="AK" Label="Pairing Line" Type="GRAPHIC" Description="A graphic amplifier for units, equipment and installations that connects two objects and is updated dynamically as the positions of the objects change." />
-    <Amplifier ID="AL" Label="Operational Condition" Type="GRAPHIC" Description="A graphic amplifier for equipment or installations that indicates operational condition or capacity." />
-    <Amplifier ID="AM" Label="Distance" Type="ALPHANUMERIC" MinLength="3" MaxLength="9" Description="A numeric amplifier that displays a minimum, maximum, or a specific distance (range, radius, width, length, etc.), in meters." />
-    <Amplifier ID="AN" Label="Azimuth" Type="ALPHANUMERIC" MinLength="7" MaxLength="8" Description="A numeric amplifier that displays an angle measured from true north to any other line in degrees." />
-    <Amplifier ID="AO" Label="Engagement Bar" Type="LIST" MinLength="6" MaxLength="10" Description="An amplifier placed immediately atop the symbol. May denote, 1) local/remote status; 2) engagement status; and 3) weapon type.">
+    <Amplifier ID="AA" Label="Named C2 Headquarters" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="9">
+      <Description>A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters.</Description>
+    </Amplifier>
+    <Amplifier ID="AB" Label="Feint/Dummy Indicator" Type="GRAPHIC" Source="SIDC">
+      <Description>A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack.</Description>
+    </Amplifier>
+    <Amplifier ID="AD" Label="Platform Type" Type="LIST" Source="USER" MinLength="5" MaxLength="5" >
+      <Description>Electronic Intelligence Notation (ELNOT) or Communications Intelligence Notation (CENOT)</Description>
+      <Values ID="AD_VALUES" Label="Platform Type" LabelAlias="PlatformType">
+        <Value Name="ELNOT" Label="Electronic Intelligence Notation" LabelAlias="ELNOT" />
+        <Value Name="CENOT" Label="Communications Intelligence Notation" LabelAlias="CENOT" />
+      </Values>
+    </Amplifier>
+    <Amplifier ID="AE" Label="Equipment Teardown Time" Type="NUMERIC" Source="USER" MinLength="1" MaxLength="3">
+      <Description>Equipment teardown time in minutes</Description>
+    </Amplifier>
+    <Amplifier ID="AF" Label="Common Identifier" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="12">
+      <Description>Example: 'Hawk' for Hawk SAM system</Description>
+    </Amplifier>
+    <Amplifier ID="AG" Label="Auxiliary Equipment Indicator" Type="GRAPHIC" Source="SIDC" AmplifierGroup="TOWED_ARRAYS">
+      <Description>A graphic modifier for equipment that indicates the presence of a towed sonar array.</Description>
+    </Amplifier>
+    <Amplifier ID="AH" Label="Area of Uncertainty Indicator" Type="GRAPHIC" Source="USER" MinLength="1" MaxLength="6">
+      <Description>A graphic modifier for units, equipment and installations that indicates the area where an object is most likely to be, based on the object's last report and the reporting accuracty of the sensor that detected the object.</Description>
+    </Amplifier>
+    <Amplifier ID="AH1" Label="Area of Uncertainty Indicator Longitude" Source="USER" MinLength="1" MaxLength="6" Type="GRAPHIC">
+      <Description>If AH1 is defined, the value of AH is the latitude radius of uncertainty and AH1 is the longitude radius of uncertainty in metres.</Description>
+    </Amplifier>
+    <Amplifier ID="AI" Label="Dead Reckoning Trailer" Type="GRAPHIC" Source="USER">
+      <Description>A graphic amplifier for units and equipment that identifies where an object should be located at present, given its last reported course and speed.</Description>
+    </Amplifier>
+    <Amplifier ID="AJ" Label="Speed Leader" Type="GRAPHIC" Source="USER">
+      <Description>A graphic amplifier for units, equipment and installations that depicts the speed and direction of movement of an object.</Description>
+    </Amplifier>
+    <Amplifier ID="AK" Label="Pairing Line" Type="GRAPHIC" Source="USER">
+      <Description>A graphic amplifier for units, equipment and installations that connects two objects and is updated dynamically as the positions of the objects change.</Description>
+    </Amplifier>
+    <Amplifier ID="AL" Label="Operational Condition" Type="GRAPHIC" Source="SIDC">
+      <Description>A graphic amplifier for equipment or installations that indicates operational condition or capacity.</Description>
+    </Amplifier>
+    <Amplifier ID="AM" Label="Distance" Type="ALPHANUMERIC" Source="USER" MinLength="3" MaxLength="9">
+      <Description>A numeric amplifier that displays a minimum, maximum, or a specific distance (range, radius, width, length, etc.), in meters.</Description>
+    </Amplifier>
+    <Amplifier ID="AN" Label="Azimuth" Type="ALPHANUMERIC" Source="USER" MinLength="7" MaxLength="8">
+      <Description>A numeric amplifier that displays an angle measured from true north to any other line in degrees.</Description>
+    </Amplifier>
+    <Amplifier ID="AO" Label="Engagement Bar" Type="LIST" Source="USER" MinLength="6" MaxLength="10" >
+      <Description>An amplifier placed immediately atop the symbol. May denote, 1) local/remote status; 2) engagement status; and 3) weapon type. Format A:BBB-CC</Description>
       <Values ID="AO_TYPE_VALUES" Label="Type of Engagement" LabelAlias="A">
         <Value Name="L" Label="Local" LabelAlias="" />
-        <Value Name="R" Label="Remote" LabelAlias="R" />
-        <Value Name="B" Label="Both" LabelAlias="B" />
+        <Value Name="R" Label="Remote" LabelAlias="R:" />
+        <Value Name="B" Label="Both" LabelAlias="B:" />
       </Values>
       <Values ID="AO_STAGE_VALUES" Label="Engagement Stage Code" LabelAlias="BBB">
+        <Value Name="NA" Label="Unspecified" LabelAlias="" />
         <Value Name="ASN" Label="Assign/Cover" LabelAlias="ASN" />
         <Value Name="ENG" Label="Engage" LabelAlias="ENG" />
         <Value Name="MIF" Label="Missile in Flight" LabelAlias="MIF" />
@@ -124,325 +222,383 @@
         <Value Name="MT" Label="MBE Less Than Threshold" LabelAlias="MT" />
         <Value Name="MLT" Label="Multiple Engagements" LabelAlias="MLT" />
       </Values>
-      <Values ID="AO_WEAPON_VALUES" Label="Type of Engagement" LabelAlias="CCC">
-        <Value Name="M" Label="Missile" LabelAlias="M" />
-        <Value Name="BM" Label="Ballistic Missile" LabelAlias="BM" />
-        <Value Name="CM" Label="Cruise Missile" LabelAlias="CM" />
-        <Value Name="GN" Label="Gun" LabelAlias="GN" />
-        <Value Name="T" Label="Torpedo" LabelAlias="T" />
-        <Value Name="A" Label="Attack Aircraft" LabelAlias="A" />
-        <Value Name="C" Label="Combat Air Patrol" LabelAlias="C" />
-        <Value Name="D" Label="Defensive Counter Air" LabelAlias="D" />
-        <Value Name="UW" Label="Undersea Warfare (USW)/Antisubmarine Warfare (ASW)Engagement" LabelAlias="UW" />
-        <Value Name="MW" Label="Mine Warfare (MW) Engagement" LabelAlias="MW" />
-        <Value Name="SW" Label="Surface Warfare (SUW) Engagement" LabelAlias="SW" />
-        <Value Name="EA" Label="Electronic Attack" LabelAlias="EA" />
-        <Value Name="ED" Label="Electronic Defence" LabelAlias="ED" />
-        <Value Name="UV" Label="Unmanned Vehicle" LabelAlias="UV" />
-        <Value Name="CW" Label="Close in Weapon System" LabelAlias="CW" />
-        <Value Name="L3" Label="Lamps" LabelAlias="L3" />
-        <Value Name="VA" Label="Vertical Launch ASROC" LabelAlias="VA" />
+      <Values ID="AO_WEAPON_VALUES" Label="Type of Engagement" LabelAlias="CC">
+        <Value Name="NA" Label="Unspecified" LabelAlias="" />
+        <Value Name="M" Label="Missile" LabelAlias="-M" />
+        <Value Name="BM" Label="Ballistic Missile" LabelAlias="-BM" />
+        <Value Name="CM" Label="Cruise Missile" LabelAlias="-CM" />
+        <Value Name="GN" Label="Gun" LabelAlias="-GN" />
+        <Value Name="T" Label="Torpedo" LabelAlias="-T" />
+        <Value Name="A" Label="Attack Aircraft" LabelAlias="-A" />
+        <Value Name="C" Label="Combat Air Patrol" LabelAlias="-C" />
+        <Value Name="D" Label="Defensive Counter Air" LabelAlias="-D" />
+        <Value Name="UW" Label="Undersea Warfare (USW)/Antisubmarine Warfare (ASW)Engagement" LabelAlias="-UW" />
+        <Value Name="MW" Label="Mine Warfare (MW) Engagement" LabelAlias="-MW" />
+        <Value Name="SW" Label="Surface Warfare (SUW) Engagement" LabelAlias="-SW" />
+        <Value Name="EA" Label="Electronic Attack" LabelAlias="-EA" />
+        <Value Name="ED" Label="Electronic Defence" LabelAlias="-ED" />
+        <Value Name="UV" Label="Unmanned Vehicle" LabelAlias="-UV" />
+        <Value Name="CW" Label="Close in Weapon System" LabelAlias="-CW" />
+        <Value Name="L3" Label="Lamps" LabelAlias="-L3" />
+        <Value Name="VA" Label="Vertical Launch ASROC" LabelAlias="-VA" />
       </Values>
     </Amplifier>
-    <Amplifier ID="AO1" Label="Target Designation" Type="LIST" Remarks="Target Designation using the Engagement Bar" Description="An amplifier placed immediately atop the symbol. Indicates if the symbol is: Hostile Target/Hostile Non-Target/Expired">
+    <Amplifier ID="AO1" Label="Target Designation" Type="LIST" Source="USER" Remarks="Target Designation using the Engagement Bar" >
+      <Description>An amplifier placed immediately atop the symbol. Indicates if the symbol is: Hostile Target/Hostile Non-Target/Expired</Description>
       <Values ID="AO1_VALUES" Label="Target Designation" LabelAlias="TD">
-        <Value Name="TA" Label="Hostile Target" Remarks="Red fill" LabelAlias="TA" />
-        <Value Name="NT" Label="Hostile Non-Target" Remarks="White fill" LabelAlias="TA" />
-        <Value Name="EX" Label="Expired" Remarks="Orange fill" LabelAlias="EX" />
+        <Value Name="TA" Label="Hostile Target" Description="Red fill" LabelAlias="TA" />
+        <Value Name="NT" Label="Hostile Non-Target" Description="White fill" LabelAlias="TA" />
+        <Value Name="EX" Label="Expired" Description="Orange fill" LabelAlias="EX" />
       </Values>
     </Amplifier>
-    <Amplifier ID="AP" Label="Target Number" Type="ALPHANUMERIC" MinLength="6" MaxLength="6" Description="A six character text modifier used in Fire Support operations to uniquely designate targets in accordance with STANAG 2484, where characters 1 and 2 are alphabetic, and characters 3-6 are numeric: AANNNN" />
-    <Amplifier ID="AP1" Label="Target Number Extension" Type="NUMERIC" MinLength="2" MaxLength="3" Description="A 2-3 character amplifier. A target number extension is a sequentially assigned number identifying the individual elements in a target, where character 1 is a dash and characters 2-3 are numeric, from 1 through 15. It is applicable only to the Point or Single Target symbol and is conditional upon the presence of the Target Number amplifier and is visually displayed appended to the Target Number amplifier."/>
-    <Amplifier ID="AQ" Label="Guarded Unit" Type="ALPHANUMERIC" MinLength="2" MaxLength="2" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit."/>
-    <Amplifier ID="AR" Label="Special Designator" Type="ALPHANUMERIC" MinLength="3" MaxLength="3" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here."/>
-    <Amplifier ID="AS" Label="Country" Type="LIST" MinLength="3" MaxLength="3" Description="Identifies the country of the organization being shown." Remarks="Uses the GENC Standard.">
+    <Amplifier ID="AP" Label="Target Number" Type="ALPHANUMERIC" Source="USER" MinLength="6" MaxLength="6">
+      <Description>A six character text modifier used in Fire Support operations to uniquely designate targets in accordance with STANAG 2484, where characters 1 and 2 are alphabetic, and characters 3-6 are numeric: AANNNN</Description>
+    </Amplifier>
+    <Amplifier ID="AP1" Label="Target Number Extension" Type="NUMERIC" Source="USER" MinLength="2" MaxLength="3">
+      <Description>A 2-3 character amplifier. A target number extension is a sequentially assigned number identifying the individual elements in a target, where character 1 is a dash and characters 2-3 are numeric, from 1 through 15. It is applicable only to the Point or Single Target symbol and is conditional upon the presence of the Target Number amplifier and is visually displayed appended to the Target Number amplifier.</Description>
+    </Amplifier>
+    <Amplifier ID="AQ" Label="Guarded Unit" Type="ALPHANUMERIC" Source="USER" MinLength="2" MaxLength="2" >
+      <Description>During ballistic missile defense, some tracks are designated as guarded by a particular unit.</Description>
+      <Values ID="AQ_VALUES" Label="Guarded Unit" LabelAlias="GU">
+        <Value Name="BG" Label="Guarded Unit" LabelAlias="BG" />
+      </Values>
+    </Amplifier>
+    <Amplifier ID="AR" Label="Special Designator" Type="ALPHANUMERIC" Source="USER" MinLength="3" MaxLength="3" >
+      <Description>Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here.</Description>
+      <Values ID="AR_VALUES" Label="Special Designator" LabelAlias="SD">
+        <Value Name="NRT" Label="Non-Real Time" LabelAlias="NRT" />
+        <Value Name="SIG" Label="Tactically Significant Tracks" LabelAlias="SIG" />
+      </Values>
+    </Amplifier>
+    <Amplifier ID="AS" Label="Country" Type="LIST" Source="SIDC" MinLength="3" MaxLength="3" >
+      <Remarks>Uses the GENC Standard.</Remarks>
+      <Description>Identifies the country of the organization being shown.</Description>
       <Values ID="AS_VALUES" Label="Country Codes" LabelAlias="CountryCodes">
-        <Value Name="AF" Label="Afghanistan" LabelAlias="AFG" />
-        <Value Name="QZ" Label="Akrotiri" LabelAlias="XQZ" />
-        <Value Name="AL" Label="Albania" LabelAlias="ALB" />
-        <Value Name="DZ" Label="Algeria" LabelAlias="DZA" />
-        <Value Name="AS" Label="American Samoa" LabelAlias="ASM" />
-        <Value Name="AD" Label="Andorra" LabelAlias="AND" />
-        <Value Name="AO" Label="Angola" LabelAlias="AGO" />
-        <Value Name="AI" Label="Anguilla" LabelAlias="AIA" />
-        <Value Name="AQ" Label="Antarctica" LabelAlias="ATA" />
-        <Value Name="AG" Label="Antigua and Barbuda" LabelAlias="ATG" />
-        <Value Name="AR" Label="Argentina" LabelAlias="ARG" />
-        <Value Name="AM" Label="Armenia" LabelAlias="ARM" />
-        <Value Name="AW" Label="Aruba" LabelAlias="ABW" />
-        <Value Name="XA" Label="Ashmore and Cartier Islands" LabelAlias="XAC" />
-        <Value Name="AU" Label="Australia" LabelAlias="AUS" />
-        <Value Name="AT" Label="Austria" LabelAlias="AUT" />
-        <Value Name="AZ" Label="Azerbaijan" LabelAlias="AZE" />
-        <Value Name="BS" Label="Bahamas, The" LabelAlias="BHS" />
-        <Value Name="BH" Label="Bahrain" LabelAlias="BHR" />
-        <Value Name="XB" Label="Baker Island" LabelAlias="XBK" />
-        <Value Name="BD" Label="Bangladesh" LabelAlias="BGD" />
-        <Value Name="BB" Label="Barbados" LabelAlias="BRB" />
-        <Value Name="QS" Label="Bassas Da India" LabelAlias="XBI" />
-        <Value Name="BY" Label="Belarus" LabelAlias="BLR" />
-        <Value Name="BE" Label="Belgium" LabelAlias="BEL" />
-        <Value Name="BZ" Label="Belize" LabelAlias="BLZ" />
-        <Value Name="BJ" Label="Benin" LabelAlias="BEN" />
-        <Value Name="BM" Label="Bermuda" LabelAlias="BMU" />
-        <Value Name="BT" Label="Bhutan" LabelAlias="BTN" />
-        <Value Name="BO" Label="Bolivia" LabelAlias="BOL" />
-        <Value Name="BQ" Label="Bonaire, Sint Eustatius, and Saba" LabelAlias="BES" />
-        <Value Name="BA" Label="Bosnia and Herzegovina" LabelAlias="BIH" />
-        <Value Name="BW" Label="Botswana" LabelAlias="BWA" />
-        <Value Name="BV" Label="Bouvet Island" LabelAlias="BVT" />
-        <Value Name="BR" Label="Brazil" LabelAlias="BRA" />
-        <Value Name="IO" Label="British Indian Ocean Territory" LabelAlias="IOT" />
-        <Value Name="BN" Label="Brunei" LabelAlias="BRN" />
-        <Value Name="BG" Label="Bulgaria" LabelAlias="BGR" />
-        <Value Name="BF" Label="Burkina Faso" LabelAlias="BFA" />
-        <Value Name="MM" Label="Burma" LabelAlias="MMR" />
-        <Value Name="BI" Label="Burundi" LabelAlias="BDI" />
-        <Value Name="CV" Label="Cabo Verde" LabelAlias="CPV" />
-        <Value Name="KH" Label="Cambodia" LabelAlias="KHM" />
-        <Value Name="CM" Label="Cameroon" LabelAlias="CMR" />
-        <Value Name="CA" Label="Canada" LabelAlias="CAN" />
-        <Value Name="KY" Label="Cayman Islands" LabelAlias="CYM" />
-        <Value Name="CF" Label="Central African Republic" LabelAlias="CAF" />
-        <Value Name="TD" Label="Chad" LabelAlias="TCD" />
-        <Value Name="CL" Label="Chile" LabelAlias="CHL" />
-        <Value Name="CN" Label="China" LabelAlias="CHN" />
-        <Value Name="CX" Label="Christmas Island" LabelAlias="CXR" />
-        <Value Name="CP" Label="Clipperton Island" LabelAlias="CPT" />
-        <Value Name="CC" Label="Cocos (Keeling) Islands" LabelAlias="CCK" />
-        <Value Name="CO" Label="Colombia" LabelAlias="COL" />
-        <Value Name="KM" Label="Comoros" LabelAlias="COM" />
-        <Value Name="CG" Label="Congo (Brazzaville)" LabelAlias="COG" />
-        <Value Name="CD" Label="Congo (Kinshasa)" LabelAlias="COD" />
-        <Value Name="CK" Label="Cook Islands" LabelAlias="COK" />
-        <Value Name="XC" Label="Coral Sea Islands" LabelAlias="XCS" />
-        <Value Name="CR" Label="Costa Rica" LabelAlias="CRI" />
-        <Value Name="CI" Label="Côte d’Ivoire" LabelAlias="CIV" />
-        <Value Name="HR" Label="Croatia" LabelAlias="HRV" />
-        <Value Name="CU" Label="Cuba" LabelAlias="CUB" />
-        <Value Name="CW" Label="Curaçao" LabelAlias="CUW" />
-        <Value Name="CY" Label="Cyprus" LabelAlias="CYP" />
-        <Value Name="CZ" Label="Czech Republic" LabelAlias="CZE" />
-        <Value Name="DK" Label="Denmark" LabelAlias="DNK" />
-        <Value Name="XD" Label="Dhekelia" LabelAlias="XXD" />
-        <Value Name="DG" Label="Diego Garcia" LabelAlias="DGA" />
-        <Value Name="DJ" Label="Djibouti" LabelAlias="DJI" />
-        <Value Name="DM" Label="Dominica" LabelAlias="DMA" />
-        <Value Name="DO" Label="Dominican Republic" LabelAlias="DOM" />
-        <Value Name="EC" Label="Ecuador" LabelAlias="ECU" />
-        <Value Name="EG" Label="Egypt" LabelAlias="EGY" />
-        <Value Name="SV" Label="El Salvador" LabelAlias="SLV" />
-        <Value Name="X1" Label="Entity 1" LabelAlias="XAZ" />
-        <Value Name="X2" Label="Entity 2" LabelAlias="XCR" />
-        <Value Name="X3" Label="Entity 3" LabelAlias="XCY" />
-        <Value Name="X4" Label="Entity 4" LabelAlias="XKM" />
-        <Value Name="X5" Label="Entity 5" LabelAlias="XKN" />
-        <Value Name="A3" Label="Entity 6" LabelAlias="AX3" />
-        <Value Name="GQ" Label="Equatorial Guinea" LabelAlias="GNQ" />
-        <Value Name="ER" Label="Eritrea" LabelAlias="ERI" />
-        <Value Name="EE" Label="Estonia" LabelAlias="EST" />
-        <Value Name="ET" Label="Ethiopia" LabelAlias="ETH" />
-        <Value Name="XE" Label="Europa Island" LabelAlias="XEU" />
-        <Value Name="FK" Label="Falkland Islands (Islas Malvinas)" LabelAlias="FLK" />
-        <Value Name="FO" Label="Faroe Islands" LabelAlias="FRO" />
-        <Value Name="FJ" Label="Fiji" LabelAlias="FJI" />
-        <Value Name="FI" Label="Finland" LabelAlias="FIN" />
-        <Value Name="FR" Label="France" LabelAlias="FRA" />
-        <Value Name="GF" Label="French Guiana" LabelAlias="GUF" />
-        <Value Name="PF" Label="French Polynesia" LabelAlias="PYF" />
-        <Value Name="TF" Label="French Southern and Antarctic Lands" LabelAlias="ATF" />
-        <Value Name="GA" Label="Gabon" LabelAlias="GAB" />
-        <Value Name="GM" Label="Gambia, The" LabelAlias="GMB" />
-        <Value Name="XG" Label="Gaza Strip" LabelAlias="XGZ" />
-        <Value Name="GE" Label="Georgia" LabelAlias="GEO" />
-        <Value Name="DE" Label="Germany" LabelAlias="DEU" />
-        <Value Name="GH" Label="Ghana" LabelAlias="GHA" />
-        <Value Name="GI" Label="Gibraltar" LabelAlias="GIB" />
-        <Value Name="QX" Label="Glorioso Islands" LabelAlias="XGL" />
-        <Value Name="GR" Label="Greece" LabelAlias="GRC" />
-        <Value Name="GL" Label="Greenland" LabelAlias="GRL" />
-        <Value Name="GD" Label="Grenada" LabelAlias="GRD" />
-        <Value Name="GP" Label="Guadeloupe" LabelAlias="GLP" />
-        <Value Name="GU" Label="Guam" LabelAlias="GUM" />
-        <Value Name="A2" Label="Guantanamo Bay Naval Base" LabelAlias="AX2" />
-        <Value Name="GT" Label="Guatemala" LabelAlias="GTM" />
-        <Value Name="GG" Label="Guernsey" LabelAlias="GGY" />
-        <Value Name="GN" Label="Guinea" LabelAlias="GIN" />
-        <Value Name="GW" Label="Guinea-Bissau" LabelAlias="GNB" />
-        <Value Name="GY" Label="Guyana" LabelAlias="GUY" />
-        <Value Name="HT" Label="Haiti" LabelAlias="HTI" />
-        <Value Name="HM" Label="Heard Island and Mcdonald Islands" LabelAlias="HMD" />
-        <Value Name="HN" Label="Honduras" LabelAlias="HND" />
-        <Value Name="HK" Label="Hong Kong" LabelAlias="HKG" />
-        <Value Name="XH" Label="Howland Island" LabelAlias="XHO" />
-        <Value Name="HU" Label="Hungary" LabelAlias="HUN" />
-        <Value Name="IS" Label="Iceland" LabelAlias="ISL" />
-        <Value Name="IN" Label="India" LabelAlias="IND" />
-        <Value Name="ID" Label="Indonesia" LabelAlias="IDN" />
-        <Value Name="IR" Label="Iran" LabelAlias="IRN" />
-        <Value Name="IQ" Label="Iraq" LabelAlias="IRQ" />
-        <Value Name="IE" Label="Ireland" LabelAlias="IRL" />
-        <Value Name="IM" Label="Isle Of Man" LabelAlias="IMN" />
-        <Value Name="IL" Label="Israel" LabelAlias="ISR" />
-        <Value Name="IT" Label="Italy" LabelAlias="ITA" />
-        <Value Name="JM" Label="Jamaica" LabelAlias="JAM" />
-        <Value Name="XJ" Label="Jan Mayen" LabelAlias="XJM" />
-        <Value Name="JP" Label="Japan" LabelAlias="JPN" />
-        <Value Name="XQ" Label="Jarvis Island" LabelAlias="XJV" />
-        <Value Name="JE" Label="Jersey" LabelAlias="JEY" />
-        <Value Name="XU" Label="Johnston Atoll" LabelAlias="XJA" />
-        <Value Name="JO" Label="Jordan" LabelAlias="JOR" />
-        <Value Name="QU" Label="Juan De Nova Island" LabelAlias="XJN" />
-        <Value Name="KZ" Label="Kazakhstan" LabelAlias="KAZ" />
-        <Value Name="KE" Label="Kenya" LabelAlias="KEN" />
-        <Value Name="XM" Label="Kingman Reef" LabelAlias="XKR" />
-        <Value Name="KI" Label="Kiribati" LabelAlias="KIR" />
-        <Value Name="KP" Label="Korea, North" LabelAlias="PRK" />
-        <Value Name="KR" Label="Korea, South" LabelAlias="KOR" />
-        <Value Name="XK" Label="Kosovo" LabelAlias="XKS" />
-        <Value Name="KW" Label="Kuwait" LabelAlias="KWT" />
-        <Value Name="KG" Label="Kyrgyzstan" LabelAlias="KGZ" />
-        <Value Name="LA" Label="Laos" LabelAlias="LAO" />
-        <Value Name="LV" Label="Latvia" LabelAlias="LVA" />
-        <Value Name="LB" Label="Lebanon" LabelAlias="LBN" />
-        <Value Name="LS" Label="Lesotho" LabelAlias="LSO" />
-        <Value Name="LR" Label="Liberia" LabelAlias="LBR" />
-        <Value Name="LY" Label="Libya" LabelAlias="LBY" />
-        <Value Name="LI" Label="Liechtenstein" LabelAlias="LIE" />
-        <Value Name="LT" Label="Lithuania" LabelAlias="LTU" />
-        <Value Name="LU" Label="Luxembourg" LabelAlias="LUX" />
-        <Value Name="MO" Label="Macau" LabelAlias="MAC" />
-        <Value Name="MK" Label="Macedonia" LabelAlias="MKD" />
-        <Value Name="MG" Label="Madagascar" LabelAlias="MDG" />
-        <Value Name="MW" Label="Malawi" LabelAlias="MWI" />
-        <Value Name="MY" Label="Malaysia" LabelAlias="MYS" />
-        <Value Name="MV" Label="Maldives" LabelAlias="MDV" />
-        <Value Name="ML" Label="Mali" LabelAlias="MLI" />
-        <Value Name="MT" Label="Malta" LabelAlias="MLT" />
-        <Value Name="MH" Label="Marshall Islands" LabelAlias="MHL" />
-        <Value Name="MQ" Label="Martinique" LabelAlias="MTQ" />
-        <Value Name="MR" Label="Mauritania" LabelAlias="MRT" />
-        <Value Name="MU" Label="Mauritius" LabelAlias="MUS" />
-        <Value Name="YT" Label="Mayotte" LabelAlias="MYT" />
-        <Value Name="MX" Label="Mexico" LabelAlias="MEX" />
-        <Value Name="FM" Label="Micronesia, Federated States Of" LabelAlias="FSM" />
-        <Value Name="QM" Label="Midway Islands" LabelAlias="XMW" />
-        <Value Name="MD" Label="Moldova" LabelAlias="MDA" />
-        <Value Name="MC" Label="Monaco" LabelAlias="MCO" />
-        <Value Name="MN" Label="Mongolia" LabelAlias="MNG" />
-        <Value Name="ME" Label="Montenegro" LabelAlias="MNE" />
-        <Value Name="MS" Label="Montserrat" LabelAlias="MSR" />
-        <Value Name="MA" Label="Morocco" LabelAlias="MAR" />
-        <Value Name="MZ" Label="Mozambique" LabelAlias="MOZ" />
-        <Value Name="NA" Label="Namibia" LabelAlias="NAM" />
-        <Value Name="NR" Label="Nauru" LabelAlias="NRU" />
-        <Value Name="XV" Label="Navassa Island" LabelAlias="XNV" />
-        <Value Name="NP" Label="Nepal" LabelAlias="NPL" />
-        <Value Name="NL" Label="Netherlands" LabelAlias="NLD" />
-        <Value Name="NC" Label="New Caledonia" LabelAlias="NCL" />
-        <Value Name="NZ" Label="New Zealand" LabelAlias="NZL" />
-        <Value Name="NI" Label="Nicaragua" LabelAlias="NIC" />
-        <Value Name="NE" Label="Niger" LabelAlias="NER" />
-        <Value Name="NG" Label="Nigeria" LabelAlias="NGA" />
-        <Value Name="NU" Label="Niue" LabelAlias="NIU" />
-        <Value Name="NF" Label="Norfolk Island" LabelAlias="NFK" />
-        <Value Name="MP" Label="Northern Mariana Islands" LabelAlias="MNP" />
-        <Value Name="NO" Label="Norway" LabelAlias="NOR" />
-        <Value Name="OM" Label="Oman" LabelAlias="OMN" />
-        <Value Name="PK" Label="Pakistan" LabelAlias="PAK" />
-        <Value Name="PW" Label="Palau" LabelAlias="PLW" />
-        <Value Name="XL" Label="Palmyra Atoll" LabelAlias="XPL" />
-        <Value Name="PA" Label="Panama" LabelAlias="PAN" />
-        <Value Name="PG" Label="Papua New Guinea" LabelAlias="PNG" />
-        <Value Name="XP" Label="Paracel Islands" LabelAlias="XPR" />
-        <Value Name="PY" Label="Paraguay" LabelAlias="PRY" />
-        <Value Name="PE" Label="Peru" LabelAlias="PER" />
-        <Value Name="PH" Label="Philippines" LabelAlias="PHL" />
-        <Value Name="PN" Label="Pitcairn Islands" LabelAlias="PCN" />
-        <Value Name="PL" Label="Poland" LabelAlias="POL" />
-        <Value Name="PT" Label="Portugal" LabelAlias="PRT" />
-        <Value Name="PR" Label="Puerto Rico" LabelAlias="PRI" />
-        <Value Name="QA" Label="Qatar" LabelAlias="QAT" />
-        <Value Name="RE" Label="Reunion" LabelAlias="REU" />
-        <Value Name="RO" Label="Romania" LabelAlias="ROU" />
-        <Value Name="RU" Label="Russia" LabelAlias="RUS" />
-        <Value Name="RW" Label="Rwanda" LabelAlias="RWA" />
-        <Value Name="BL" Label="Saint Barthelemy" LabelAlias="BLM" />
-        <Value Name="SH" Label="Saint Helena, Ascension, and Tristan Da Cunha" LabelAlias="SHN" />
-        <Value Name="KN" Label="Saint Kitts and Nevis" LabelAlias="KNA" />
-        <Value Name="LC" Label="Saint Lucia" LabelAlias="LCA" />
-        <Value Name="MF" Label="Saint Martin" LabelAlias="MAF" />
-        <Value Name="PM" Label="Saint Pierre and Miquelon" LabelAlias="SPM" />
-        <Value Name="VC" Label="Saint Vincent and The Grenadines" LabelAlias="VCT" />
-        <Value Name="WS" Label="Samoa" LabelAlias="WSM" />
-        <Value Name="SM" Label="San Marino" LabelAlias="SMR" />
-        <Value Name="ST" Label="Sao Tome and Principe" LabelAlias="STP" />
-        <Value Name="SA" Label="Saudi Arabia" LabelAlias="SAU" />
-        <Value Name="SN" Label="Senegal" LabelAlias="SEN" />
-        <Value Name="RS" Label="Serbia" LabelAlias="SRB" />
-        <Value Name="SC" Label="Seychelles" LabelAlias="SYC" />
-        <Value Name="SL" Label="Sierra Leone" LabelAlias="SLE" />
-        <Value Name="SG" Label="Singapore" LabelAlias="SGP" />
-        <Value Name="SX" Label="Sint Maarten" LabelAlias="SXM" />
-        <Value Name="SK" Label="Slovakia" LabelAlias="SVK" />
-        <Value Name="SI" Label="Slovenia" LabelAlias="SVN" />
-        <Value Name="SB" Label="Solomon Islands" LabelAlias="SLB" />
-        <Value Name="SO" Label="Somalia" LabelAlias="SOM" />
-        <Value Name="ZA" Label="South Africa" LabelAlias="ZAF" />
-        <Value Name="GS" Label="South Georgia and South Sandwich Islands" LabelAlias="SGS" />
-        <Value Name="SS" Label="South Sudan" LabelAlias="SSD" />
-        <Value Name="ES" Label="Spain" LabelAlias="ESP" />
-        <Value Name="XS" Label="Spratly Islands" LabelAlias="XSP" />
-        <Value Name="LK" Label="Sri Lanka" LabelAlias="LKA" />
-        <Value Name="SD" Label="Sudan" LabelAlias="SDN" />
-        <Value Name="SR" Label="Suriname" LabelAlias="SUR" />
-        <Value Name="XR" Label="Svalbard" LabelAlias="XSV" />
-        <Value Name="SZ" Label="Swaziland" LabelAlias="SWZ" />
-        <Value Name="SE" Label="Sweden" LabelAlias="SWE" />
-        <Value Name="CH" Label="Switzerland" LabelAlias="CHE" />
-        <Value Name="SY" Label="Syria" LabelAlias="SYR" />
-        <Value Name="TW" Label="Taiwan" LabelAlias="TWN" />
-        <Value Name="TJ" Label="Tajikistan" LabelAlias="TJK" />
-        <Value Name="TZ" Label="Tanzania" LabelAlias="TZA" />
-        <Value Name="TH" Label="Thailand" LabelAlias="THA" />
-        <Value Name="TL" Label="Timor-Leste" LabelAlias="TLS" />
-        <Value Name="TG" Label="Togo" LabelAlias="TGO" />
-        <Value Name="TK" Label="Tokelau" LabelAlias="TKL" />
-        <Value Name="TO" Label="Tonga" LabelAlias="TON" />
-        <Value Name="TT" Label="Trinidad and Tobago" LabelAlias="TTO" />
-        <Value Name="XT" Label="Tromelin Island" LabelAlias="XTR" />
-        <Value Name="TN" Label="Tunisia" LabelAlias="TUN" />
-        <Value Name="TR" Label="Turkey" LabelAlias="TUR" />
-        <Value Name="TM" Label="Turkmenistan" LabelAlias="TKM" />
-        <Value Name="TC" Label="Turks and Caicos Islands" LabelAlias="TCA" />
-        <Value Name="TV" Label="Tuvalu" LabelAlias="TUV" />
-        <Value Name="UG" Label="Uganda" LabelAlias="UGA" />
-        <Value Name="UA" Label="Ukraine" LabelAlias="UKR" />
-        <Value Name="AE" Label="United Arab Emirates" LabelAlias="ARE" />
-        <Value Name="GB" Label="United Kingdom" LabelAlias="GBR" />
-        <Value Name="US" Label="United States" LabelAlias="USA" />
-        <Value Name="A1" Label="Unknown" LabelAlias="AX1" />
-        <Value Name="UY" Label="Uruguay" LabelAlias="URY" />
-        <Value Name="UZ" Label="Uzbekistan" LabelAlias="UZB" />
-        <Value Name="VU" Label="Vanuatu" LabelAlias="VUT" />
-        <Value Name="VA" Label="Vatican City" LabelAlias="VAT" />
-        <Value Name="VE" Label="Venezuela" LabelAlias="VEN" />
-        <Value Name="VN" Label="Vietnam" LabelAlias="VNM" />
-        <Value Name="VG" Label="Virgin Islands, British" LabelAlias="VGB" />
-        <Value Name="VI" Label="Virgin Islands, U.S." LabelAlias="VIR" />
-        <Value Name="QW" Label="Wake Island" LabelAlias="XWK" />
-        <Value Name="WF" Label="Wallis and Futuna" LabelAlias="WLF" />
-        <Value Name="XW" Label="West Bank" LabelAlias="XWB" />
-        <Value Name="EH" Label="Western Sahara" LabelAlias="ESH" />
-        <Value Name="YE" Label="Yemen" LabelAlias="YEM" />
-        <Value Name="ZM" Label="Zambia" LabelAlias="ZMB" />
-        <Value Name="ZW" Label="Zimbabwe" LabelAlias="ZWE" />
+        <Value Name="UNDEFINED" Label="Undefined" LabelAlias="UNDEFINED" Remarks="000" />
+        <Value Name="AF" Label="Afghanistan" LabelAlias="AFG" Remarks="004" />
+        <Value Name="AL" Label="Albania" LabelAlias="ALB" Remarks="008" />
+        <Value Name="AQ" Label="Antarctica" LabelAlias="ATA" Remarks="010" />
+        <Value Name="DZ" Label="Algeria" LabelAlias="DZA" Remarks="012" />
+        <Value Name="AS" Label="American Samoa" LabelAlias="ASM" Remarks="016" />
+        <Value Name="AD" Label="Andorra" LabelAlias="AND" Remarks="020" />
+        <Value Name="AO" Label="Angola" LabelAlias="AGO" Remarks="024" />
+        <Value Name="AG" Label="Antigua and Barbuda" LabelAlias="ATG" Remarks="028" />
+        <Value Name="AZ" Label="Azerbaijan" LabelAlias="AZE" Remarks="031" />
+        <Value Name="AR" Label="Argentina" LabelAlias="ARG" Remarks="032" />
+        <Value Name="AU" Label="Australia" LabelAlias="AUS" Remarks="036" />
+        <Value Name="AT" Label="Austria" LabelAlias="AUT" Remarks="040" />
+        <Value Name="BS" Label="Bahamas" LabelAlias="BHS" Remarks="044" />
+        <Value Name="BH" Label="Bahrain" LabelAlias="BHR" Remarks="048" />
+        <Value Name="BD" Label="Bangladesh" LabelAlias="BGD" Remarks="050" />
+        <Value Name="AM" Label="Armenia" LabelAlias="ARM" Remarks="051" />
+        <Value Name="BB" Label="Barbados" LabelAlias="BRB" Remarks="052" />
+        <Value Name="BE" Label="Belgium" LabelAlias="BEL" Remarks="056" />
+        <Value Name="BM" Label="Bermuda" LabelAlias="BMU" Remarks="060" />
+        <Value Name="BT" Label="Bhutan" LabelAlias="BTN" Remarks="064" />
+        <Value Name="BO" Label="Bolivia, Plurinational State of" LabelAlias="BOL" Remarks="068" />
+        <Value Name="BA" Label="Bosnia and Herzegovina" LabelAlias="BIH" Remarks="070" />
+        <Value Name="BW" Label="Botswana" LabelAlias="BWA" Remarks="072" />
+        <Value Name="BV" Label="Bouvet Island" LabelAlias="BVT" Remarks="074" />
+        <Value Name="BR" Label="Brazil" LabelAlias="BRA" Remarks="076" />
+        <Value Name="BZ" Label="Belize" LabelAlias="BLZ" Remarks="084" />
+        <Value Name="IO" Label="British Indian Ocean Territory" LabelAlias="IOT" Remarks="086" />
+        <Value Name="SB" Label="Solomon Islands" LabelAlias="SLB" Remarks="090" />
+        <Value Name="VG" Label="Virgin Islands, British" LabelAlias="VGB" Remarks="092" />
+        <Value Name="BN" Label="Brunei Darussalam" LabelAlias="BRN" Remarks="096" />
+        <Value Name="BG" Label="Bulgaria" LabelAlias="BGR" Remarks="100" />
+        <Value Name="BU" Label="Burma" LabelAlias="BUR" Remarks="104" />
+        <Value Name="MM" Label="Myanmar" LabelAlias="MMR" Remarks="104" />
+        <Value Name="BI" Label="Burundi" LabelAlias="BDI" Remarks="108" />
+        <Value Name="BY" Label="Belarus" LabelAlias="BLR" Remarks="112" />
+        <Value Name="KH" Label="Cambodia" LabelAlias="KHM" Remarks="116" />
+        <Value Name="CM" Label="Cameroon" LabelAlias="CMR" Remarks="120" />
+        <Value Name="CA" Label="Canada" LabelAlias="CAN" Remarks="124" />
+        <Value Name="CV" Label="Cape Verde" LabelAlias="CPV" Remarks="132" />
+        <Value Name="KY" Label="Cayman Islands" LabelAlias="CYM" Remarks="136" />
+        <Value Name="CF" Label="Central African Republic" LabelAlias="CAF" Remarks="140" />
+        <Value Name="LK" Label="Sri Lanka" LabelAlias="LKA" Remarks="144" />
+        <Value Name="TD" Label="Chad" LabelAlias="TCD" Remarks="148" />
+        <Value Name="CL" Label="Chile" LabelAlias="CHL" Remarks="152" />
+        <Value Name="CN" Label="China" LabelAlias="CHN" Remarks="156" />
+        <Value Name="TW" Label="Taiwan, Province of China" LabelAlias="TWN" Remarks="158" />
+        <Value Name="CX" Label="Christmas Island" LabelAlias="CXR" Remarks="162" />
+        <Value Name="CC" Label="Cocos (Keeling) Islands" LabelAlias="CCK" Remarks="166" />
+        <Value Name="CO" Label="Colombia" LabelAlias="COL" Remarks="170" />
+        <Value Name="KM" Label="Comoros" LabelAlias="COM" Remarks="174" />
+        <Value Name="YT" Label="Mayotte" LabelAlias="MYT" Remarks="175" />
+        <Value Name="CG" Label="Congo" LabelAlias="COG" Remarks="178" />
+        <Value Name="CD" Label="Congo, the Democratic Republic of the" LabelAlias="COD" Remarks="180" />
+        <Value Name="ZR" Label="Zaire" LabelAlias="ZAR" Remarks="180" />
+        <Value Name="CK" Label="Cook Islands" LabelAlias="COK" Remarks="184" />
+        <Value Name="CR" Label="Costa Rica" LabelAlias="CRI" Remarks="188" />
+        <Value Name="HR" Label="Croatia" LabelAlias="HRV" Remarks="191" />
+        <Value Name="CU" Label="Cuba" LabelAlias="CUB" Remarks="192" />
+        <Value Name="CY" Label="Cyprus" LabelAlias="CYP" Remarks="196" />
+        <Value Name="CZ" Label="Czech Republic" LabelAlias="CZE" Remarks="203" />
+        <Value Name="BJ" Label="Benin" LabelAlias="BEN" Remarks="204" />
+        <Value Name="DK" Label="Denmark" LabelAlias="DNK" Remarks="208" />
+        <Value Name="DM" Label="Dominica" LabelAlias="DMA" Remarks="212" />
+        <Value Name="DO" Label="Dominican Republic" LabelAlias="DOM" Remarks="214" />
+        <Value Name="EC" Label="Ecuador" LabelAlias="ECU" Remarks="218" />
+        <Value Name="SV" Label="El Salvador" LabelAlias="SLV" Remarks="222" />
+        <Value Name="GQ" Label="Equatorial Guinea" LabelAlias="GNQ" Remarks="226" />
+        <Value Name="ET" Label="Ethiopia" LabelAlias="ETH" Remarks="231" />
+        <Value Name="ER" Label="Eritrea" LabelAlias="ERI" Remarks="232" />
+        <Value Name="EE" Label="Estonia" LabelAlias="EST" Remarks="233" />
+        <Value Name="FO" Label="Faroe Islands" LabelAlias="FRO" Remarks="234" />
+        <Value Name="FK" Label="Falkland Islands" LabelAlias="FLK" Remarks="238" />
+        <Value Name="GS" Label="South Georgia and the South Sandwich Islands" LabelAlias="SGS" Remarks="239" />
+        <Value Name="FJ" Label="Fiji" LabelAlias="FJI" Remarks="242" />
+        <Value Name="FI" Label="Finland" LabelAlias="FIN" Remarks="246" />
+        <Value Name="SF" Label="Finland" LabelAlias="FIN" Remarks="246" />
+        <Value Name="AX" Label="Åland Islands" LabelAlias="ALA" Remarks="248" />
+        <Value Name="FX" Label="France, Metropolitan" LabelAlias="FXX" Remarks="249" />
+        <Value Name="FR" Label="France" LabelAlias="FRA" Remarks="250" />
+        <Value Name="GF" Label="French Guiana" LabelAlias="GUF" Remarks="254" />
+        <Value Name="PF" Label="French Polynesia" LabelAlias="PYF" Remarks="258" />
+        <Value Name="TF" Label="French Southern Territories" LabelAlias="ATF" Remarks="260" />
+        <Value Name="DJ" Label="Djibouti" LabelAlias="DJI" Remarks="262" />
+        <Value Name="GA" Label="Gabon" LabelAlias="GAB" Remarks="266" />
+        <Value Name="GE" Label="Georgia" LabelAlias="GEO" Remarks="268" />
+        <Value Name="GM" Label="Gambia, The" LabelAlias="GMB" Remarks="270" />
+        <Value Name="PS" Label="Palestine, State of" LabelAlias="PSE" Remarks="275" />
+        <Value Name="DE" Label="Germany" LabelAlias="DEU" Remarks="276" />
+        <Value Name="GH" Label="Ghana" LabelAlias="GHA" Remarks="288" />
+        <Value Name="GI" Label="Gibraltar" LabelAlias="GIB" Remarks="292" />
+        <Value Name="KI" Label="Kiribati" LabelAlias="KIR" Remarks="296" />
+        <Value Name="GR" Label="Greece" LabelAlias="GRC" Remarks="300" />
+        <Value Name="GL" Label="Greenland" LabelAlias="GRL" Remarks="304" />
+        <Value Name="GD" Label="Grenada" LabelAlias="GRD" Remarks="308" />
+        <Value Name="GP" Label="Guadeloupe" LabelAlias="GLP" Remarks="312" />
+        <Value Name="GU" Label="Guam" LabelAlias="GUM" Remarks="316" />
+        <Value Name="GT" Label="Guatemala" LabelAlias="GTM" Remarks="320" />
+        <Value Name="GN" Label="Guinea" LabelAlias="GIN" Remarks="324" />
+        <Value Name="GY" Label="Guyana" LabelAlias="GUY" Remarks="328" />
+        <Value Name="HT" Label="Haiti" LabelAlias="HTI" Remarks="332" />
+        <Value Name="HM" Label="Heard Island and McDonald Islands" LabelAlias="HMD" Remarks="334" />
+        <Value Name="VA" Label="Holy See (Vatican City State)" LabelAlias="VAT" Remarks="336" />
+        <Value Name="HN" Label="Honduras" LabelAlias="HND" Remarks="340" />
+        <Value Name="HK" Label="Hong Kong" LabelAlias="HKG" Remarks="344" />
+        <Value Name="HU" Label="Hungary" LabelAlias="HUN" Remarks="348" />
+        <Value Name="IS" Label="Iceland" LabelAlias="ISL" Remarks="352" />
+        <Value Name="IN" Label="India" LabelAlias="IND" Remarks="356" />
+        <Value Name="ID" Label="Indonesia" LabelAlias="IDN" Remarks="360" />
+        <Value Name="IR" Label="Iran, Islamic Republic of" LabelAlias="IRN" Remarks="364" />
+        <Value Name="IQ" Label="Iraq" LabelAlias="IRQ" Remarks="368" />
+        <Value Name="IE" Label="Ireland" LabelAlias="IRL" Remarks="372" />
+        <Value Name="IL" Label="Israel" LabelAlias="ISR" Remarks="376" />
+        <Value Name="IT" Label="Italy" LabelAlias="ITA" Remarks="380" />
+        <Value Name="CI" Label="Côte d'Ivoire" LabelAlias="CIV" Remarks="384" />
+        <Value Name="JM" Label="Jamaica" LabelAlias="JAM" Remarks="388" />
+        <Value Name="JP" Label="Japan" LabelAlias="JPN" Remarks="392" />
+        <Value Name="KZ" Label="Kazakhstan" LabelAlias="KAZ" Remarks="398" />
+        <Value Name="JO" Label="Jordan" LabelAlias="JOR" Remarks="400" />
+        <Value Name="KE" Label="Kenya" LabelAlias="KEN" Remarks="404" />
+        <Value Name="KP" Label="Korea, Democratic People's Republic of" LabelAlias="PRK" Remarks="408" />
+        <Value Name="KR" Label="Korea, Republic of" LabelAlias="KOR" Remarks="410" />
+        <Value Name="KW" Label="Kuwait" LabelAlias="KWT" Remarks="414" />
+        <Value Name="KG" Label="Kyrgyzstan" LabelAlias="KGZ" Remarks="417" />
+        <Value Name="LA" Label="Lao People's Democratic Republic" LabelAlias="LAO" Remarks="418" />
+        <Value Name="LB" Label="Lebanon" LabelAlias="LBN" Remarks="422" />
+        <Value Name="LS" Label="Lesotho" LabelAlias="LSO" Remarks="426" />
+        <Value Name="LV" Label="Latvia" LabelAlias="LVA" Remarks="428" />
+        <Value Name="LR" Label="Liberia" LabelAlias="LBR" Remarks="430" />
+        <Value Name="LY" Label="Libya" LabelAlias="LBY" Remarks="434" />
+        <Value Name="LI" Label="Liechtenstein" LabelAlias="LIE" Remarks="438" />
+        <Value Name="LT" Label="Lithuania" LabelAlias="LTU" Remarks="440" />
+        <Value Name="LU" Label="Luxembourg" LabelAlias="LUX" Remarks="442" />
+        <Value Name="MO" Label="Macao" LabelAlias="MAC" Remarks="446" />
+        <Value Name="MG" Label="Madagascar" LabelAlias="MDG" Remarks="450" />
+        <Value Name="MW" Label="Malawi" LabelAlias="MWI" Remarks="454" />
+        <Value Name="MY" Label="Malaysia" LabelAlias="MYS" Remarks="458" />
+        <Value Name="MV" Label="Maldives" LabelAlias="MDV" Remarks="462" />
+        <Value Name="ML" Label="Mali" LabelAlias="MLI" Remarks="466" />
+        <Value Name="MT" Label="Malta" LabelAlias="MLT" Remarks="470" />
+        <Value Name="MQ" Label="Martinique" LabelAlias="MTQ" Remarks="474" />
+        <Value Name="MR" Label="Mauritania" LabelAlias="MRT" Remarks="478" />
+        <Value Name="MU" Label="Mauritius" LabelAlias="MUS" Remarks="480" />
+        <Value Name="MX" Label="Mexico" LabelAlias="MEX" Remarks="484" />
+        <Value Name="MC" Label="Monaco" LabelAlias="MCO" Remarks="492" />
+        <Value Name="MN" Label="Mongolia" LabelAlias="MNG" Remarks="496" />
+        <Value Name="MD" Label="Moldova, Republic of" LabelAlias="MDA" Remarks="498" />
+        <Value Name="ME" Label="Montenegro" LabelAlias="MNE" Remarks="499" />
+        <Value Name="MS" Label="Montserrat" LabelAlias="MSR" Remarks="500" />
+        <Value Name="MA" Label="Morocco" LabelAlias="MAR" Remarks="504" />
+        <Value Name="MZ" Label="Mozambique" LabelAlias="MOZ" Remarks="508" />
+        <Value Name="OM" Label="Oman" LabelAlias="OMN" Remarks="512" />
+        <Value Name="NA" Label="Namibia" LabelAlias="NAM" Remarks="516" />
+        <Value Name="NR" Label="Nauru" LabelAlias="NRU" Remarks="520" />
+        <Value Name="NP" Label="Nepal" LabelAlias="NPL" Remarks="524" />
+        <Value Name="NL" Label="Netherlands" LabelAlias="NLD" Remarks="528" />
+        <Value Name="AN" Label="Netherlands Antilles" LabelAlias="ANT" Remarks="530" />
+        <Value Name="CW" Label="Curaçao" LabelAlias="CUW" Remarks="531" />
+        <Value Name="AW" Label="Aruba" LabelAlias="ABW" Remarks="533" />
+        <Value Name="SX" Label="Sint Maarten (Dutch part)" LabelAlias="SXM" Remarks="534" />
+        <Value Name="BQ" Label="Bonaire, Sint Eustatius and Saba" LabelAlias="BES" Remarks="535" />
+        <Value Name="NT" Label="Neutral Zone" LabelAlias="NTZ" Remarks="536" />
+        <Value Name="NC" Label="New Caledonia" LabelAlias="NCL" Remarks="540" />
+        <Value Name="VU" Label="Vanuatu" LabelAlias="VUT" Remarks="548" />
+        <Value Name="NZ" Label="New Zealand" LabelAlias="NZL" Remarks="554" />
+        <Value Name="NI" Label="Nicaragua" LabelAlias="NIC" Remarks="558" />
+        <Value Name="NE" Label="Niger" LabelAlias="NER" Remarks="562" />
+        <Value Name="NG" Label="Nigeria" LabelAlias="NGA" Remarks="566" />
+        <Value Name="NU" Label="Niue" LabelAlias="NIU" Remarks="570" />
+        <Value Name="NF" Label="Norfolk Island" LabelAlias="NFK" Remarks="574" />
+        <Value Name="NO" Label="Norway" LabelAlias="NOR" Remarks="578" />
+        <Value Name="MP" Label="Northern Mariana Islands" LabelAlias="MNP" Remarks="580" />
+        <Value Name="UM" Label="United States Minor Outlying Islands" LabelAlias="UMI" Remarks="581" />
+        <Value Name="FM" Label="Micronesia, Federated States of" LabelAlias="FSM" Remarks="583" />
+        <Value Name="MH" Label="Marshall Islands" LabelAlias="MHL" Remarks="584" />
+        <Value Name="PW" Label="Palau" LabelAlias="PLW" Remarks="585" />
+        <Value Name="PK" Label="Pakistan" LabelAlias="PAK" Remarks="586" />
+        <Value Name="PA" Label="Panama" LabelAlias="PAN" Remarks="591" />
+        <Value Name="PG" Label="Papua New Guinea" LabelAlias="PNG" Remarks="598" />
+        <Value Name="PY" Label="Paraguay" LabelAlias="PRY" Remarks="600" />
+        <Value Name="PE" Label="Peru" LabelAlias="PER" Remarks="604" />
+        <Value Name="PH" Label="Philippines" LabelAlias="PHL" Remarks="608" />
+        <Value Name="PN" Label="Pitcairn Islands" LabelAlias="PCN" Remarks="612" />
+        <Value Name="PL" Label="Poland" LabelAlias="POL" Remarks="616" />
+        <Value Name="PT" Label="Portugal" LabelAlias="PRT" Remarks="620" />
+        <Value Name="GW" Label="Guinea-Bissau" LabelAlias="GNB" Remarks="624" />
+        <Value Name="TL" Label="Timor-Leste" LabelAlias="TLS" Remarks="626" />
+        <Value Name="TP" Label="East Timor" LabelAlias="TMP" Remarks="626" />
+        <Value Name="PR" Label="Puerto Rico" LabelAlias="PRI" Remarks="630" />
+        <Value Name="QA" Label="Qatar" LabelAlias="QAT" Remarks="634" />
+        <Value Name="RE" Label="Réunion" LabelAlias="REU" Remarks="638" />
+        <Value Name="RO" Label="Romania" LabelAlias="ROU" Remarks="642" />
+        <Value Name="RU" Label="Russian Federation" LabelAlias="RUS" Remarks="643" />
+        <Value Name="RW" Label="Rwanda" LabelAlias="RWA" Remarks="646" />
+        <Value Name="BL" Label="Saint Barthélemy" LabelAlias="BLM" Remarks="652" />
+        <Value Name="SH" Label="Saint Helena, Ascension and Tristan da Cunha" LabelAlias="SHN" Remarks="654" />
+        <Value Name="KN" Label="Saint Kitts and Nevis" LabelAlias="KNA" Remarks="659" />
+        <Value Name="AI" Label="Anguilla" LabelAlias="AIA" Remarks="660" />
+        <Value Name="LC" Label="Saint Lucia" LabelAlias="LCA" Remarks="662" />
+        <Value Name="MF" Label="Saint Martin (French part)" LabelAlias="MAF" Remarks="663" />
+        <Value Name="PM" Label="Saint Pierre and Miquelon" LabelAlias="SPM" Remarks="666" />
+        <Value Name="VC" Label="Saint Vincent and the Grenadines" LabelAlias="VCT" Remarks="670" />
+        <Value Name="SM" Label="San Marino" LabelAlias="SMR" Remarks="674" />
+        <Value Name="ST" Label="Sao Tome and Principe" LabelAlias="STP" Remarks="678" />
+        <Value Name="SA" Label="Saudi Arabia" LabelAlias="SAU" Remarks="682" />
+        <Value Name="SN" Label="Senegal" LabelAlias="SEN" Remarks="686" />
+        <Value Name="RS" Label="Serbia" LabelAlias="SRB" Remarks="688" />
+        <Value Name="SC" Label="Seychelles" LabelAlias="SYC" Remarks="690" />
+        <Value Name="SL" Label="Sierra Leone" LabelAlias="SLE" Remarks="694" />
+        <Value Name="SG" Label="Singapore" LabelAlias="SGP" Remarks="702" />
+        <Value Name="SK" Label="Slovakia" LabelAlias="SVK" Remarks="703" />
+        <Value Name="VN" Label="Viet Nam" LabelAlias="VNM" Remarks="704" />
+        <Value Name="SI" Label="Slovenia" LabelAlias="SVN" Remarks="705" />
+        <Value Name="SO" Label="Somalia" LabelAlias="SOM" Remarks="706" />
+        <Value Name="ZA" Label="South Africa" LabelAlias="ZAF" Remarks="710" />
+        <Value Name="ZW" Label="Zimbabwe" LabelAlias="ZWE" Remarks="716" />
+        <Value Name="ES" Label="Spain" LabelAlias="ESP" Remarks="724" />
+        <Value Name="SS" Label="South Sudan" LabelAlias="SSD" Remarks="728" />
+        <Value Name="SD" Label="Sudan" LabelAlias="SDN" Remarks="729" />
+        <Value Name="EH" Label="Western Sahara" LabelAlias="ESH" Remarks="732" />
+        <Value Name="SR" Label="Suriname" LabelAlias="SUR" Remarks="740" />
+        <Value Name="SJ" Label="Svalbard and Jan Mayen" LabelAlias="SJM" Remarks="744" />
+        <Value Name="SZ" Label="Eswatini" LabelAlias="SWZ" Remarks="748" />
+        <Value Name="SE" Label="Sweden" LabelAlias="SWE" Remarks="752" />
+        <Value Name="CH" Label="Switzerland" LabelAlias="CHE" Remarks="756" />
+        <Value Name="SY" Label="Syrian Arab Republic" LabelAlias="SYR" Remarks="760" />
+        <Value Name="TJ" Label="Tajikistan" LabelAlias="TJK" Remarks="762" />
+        <Value Name="TH" Label="Thailand" LabelAlias="THA" Remarks="764" />
+        <Value Name="TG" Label="Togo" LabelAlias="TGO" Remarks="768" />
+        <Value Name="TK" Label="Tokelau" LabelAlias="TKL" Remarks="772" />
+        <Value Name="TO" Label="Tonga" LabelAlias="TON" Remarks="776" />
+        <Value Name="TT" Label="Trinidad and Tobago" LabelAlias="TTO" Remarks="780" />
+        <Value Name="AE" Label="United Arab Emirates" LabelAlias="ARE" Remarks="784" />
+        <Value Name="TN" Label="Tunisia" LabelAlias="TUN" Remarks="788" />
+        <Value Name="TR" Label="Turkey" LabelAlias="TUR" Remarks="792" />
+        <Value Name="TM" Label="Turkmenistan" LabelAlias="TKM" Remarks="795" />
+        <Value Name="TC" Label="Turks and Caicos Islands" LabelAlias="TCA" Remarks="796" />
+        <Value Name="TV" Label="Tuvalu" LabelAlias="TUV" Remarks="798" />
+        <Value Name="UG" Label="Uganda" LabelAlias="UGA" Remarks="800" />
+        <Value Name="UA" Label="Ukraine" LabelAlias="UKR" Remarks="804" />
+        <Value Name="MK" Label="North Macedonia, Republic of" LabelAlias="MKD" Remarks="807" />
+        <Value Name="SU" Label="USSR" LabelAlias="SUN" Remarks="810" />
+        <Value Name="EG" Label="Egypt" LabelAlias="EGY" Remarks="818" />
+        <Value Name="GB" Label="United Kingdom" LabelAlias="GBR" Remarks="826" />
+        <Value Name="UK" Label="United Kingdom" LabelAlias="UKG" Remarks="826" />
+        <Value Name="XA" Label="Scotland" LabelAlias="XAL" Remarks="827" />
+        <Value Name="XY" Label="Wales" LabelAlias="XCY" Remarks="828" />
+        <Value Name="XI" Label="Northern Ireland" LabelAlias="XXI" Remarks="829" />
+        <Value Name="GG" Label="Guernsey" LabelAlias="GGY" Remarks="831" />
+        <Value Name="JE" Label="Jersey" LabelAlias="JEY" Remarks="832" />
+        <Value Name="IM" Label="Isle of Man" LabelAlias="IMN" Remarks="833" />
+        <Value Name="TZ" Label="Tanzania, United Republic of" LabelAlias="TZA" Remarks="834" />
+        <Value Name="US" Label="United States" LabelAlias="USA" Remarks="840" />
+        <Value Name="VI" Label="Virgin Islands, U.S." LabelAlias="VIR" Remarks="850" />
+        <Value Name="BF" Label="Burkina Faso" LabelAlias="BFA" Remarks="854" />
+        <Value Name="UY" Label="Uruguay" LabelAlias="URY" Remarks="858" />
+        <Value Name="UZ" Label="Uzbekistan" LabelAlias="UZB" Remarks="860" />
+        <Value Name="VE" Label="Venezuela, Bolivarian Republic of" LabelAlias="VEN" Remarks="862" />
+        <Value Name="WF" Label="Wallis and Futuna" LabelAlias="WLF" Remarks="876" />
+        <Value Name="WS" Label="Samoa" LabelAlias="WSM" Remarks="882" />
+        <Value Name="YE" Label="Yemen" LabelAlias="YEM" Remarks="887" />
+        <Value Name="YU" Label="Yugoslavia" LabelAlias="YUG" Remarks="890" />
+        <Value Name="CS" Label="Serbia and Montenegro" LabelAlias="SCG" Remarks="891" />
+        <Value Name="ZM" Label="Zambia" LabelAlias="ZMB" Remarks="894" />
+        <Value Name="EU" Label="European Union" LabelAlias="EUN" Remarks="900" />
+        <Value Name="EZ" Label="Eurozone" LabelAlias="EUZ" Remarks="901" />
+        <Value Name="XK" Label="Kosovo, Republic of" LabelAlias="XKS" Remarks="920" />
+        <Value Name="QZ" Label="Akrotiri" LabelAlias="XQZ" Remarks="941" />
+        <Value Name="AC" Label="Ascension Island" LabelAlias="ASC" Remarks="942" />
+        <Value Name="XZ" Label="Ashmore and Cartier Islands" LabelAlias="XAC" Remarks="943" />
+        <Value Name="XB" Label="Baker Island" LabelAlias="XBK" Remarks="944" />
+        <Value Name="QS" Label="Bassas Da India" LabelAlias="XBI" Remarks="945" />
+        <Value Name="IC" Label="Canary Islands" LabelAlias="ESC" Remarks="946" />
+        <Value Name="EA" Label="Ceuta, Melilla" LabelAlias="ESA" Remarks="947" />
+        <Value Name="CP" Label="Clipperton Island" LabelAlias="CPT" Remarks="948" />
+        <Value Name="XC" Label="Coral Sea Islands" LabelAlias="XCS" Remarks="949" />
+        <Value Name="XD" Label="Dhekelia" LabelAlias="XXD" Remarks="950" />
+        <Value Name="DG" Label="Diego Garcia" LabelAlias="DGA" Remarks="951" />
+        <Value Name="XE" Label="Europa Island" LabelAlias="XEU" Remarks="952" />
+        <Value Name="XG" Label="Gaza Strip" LabelAlias="XGZ" Remarks="953" />
+        <Value Name="QX" Label="Glorioso Islands" LabelAlias="XGL" Remarks="954" />
+        <Value Name="A2" Label="Guantanamo Bay Naval Base" LabelAlias="AX2" Remarks="955" />
+        <Value Name="XH" Label="Howland Island" LabelAlias="XHO" Remarks="956" />
+        <Value Name="XJ" Label="Jan Mayen" LabelAlias="XJM" Remarks="957" />
+        <Value Name="XQ" Label="Jarvis Island" LabelAlias="XJV" Remarks="958" />
+        <Value Name="XU" Label="Johnston Atoll" LabelAlias="XJA" Remarks="959" />
+        <Value Name="QU" Label="Juan De Nova Island" LabelAlias="XJN" Remarks="960" />
+        <Value Name="XM" Label="Kingman Reef" LabelAlias="XKR" Remarks="961" />
+        <Value Name="QM" Label="Midway Islands" LabelAlias="XMW" Remarks="962" />
+        <Value Name="XV" Label="Navassa Island" LabelAlias="XNV" Remarks="963" />
+        <Value Name="XL" Label="Palmyra Atoll" LabelAlias="XPL" Remarks="964" />
+        <Value Name="XP" Label="Paracel Islands" LabelAlias="XPR" Remarks="965" />
+        <Value Name="XS" Label="Spratly Islands" LabelAlias="XSP" Remarks="966" />
+        <Value Name="XR" Label="Svalbard" LabelAlias="XSV" Remarks="967" />
+        <Value Name="TA" Label="Tristan da Cunha" LabelAlias="TAA" Remarks="968" />
+        <Value Name="XT" Label="Tromelin Island" LabelAlias="XTR" Remarks="969" />
+        <Value Name="A1" Label="Unknown" LabelAlias="AX1" Remarks="970" />
+        <Value Name="QW" Label="Wake Island" LabelAlias="XWK" Remarks="971" />
+        <Value Name="XW" Label="West Bank" LabelAlias="XWB" Remarks="972" />
+        <Value Name="X1" Label="Entity 1" LabelAlias="XAZ" Remarks="981" />
+        <Value Name="X2" Label="Entity 2" LabelAlias="XCR" Remarks="982" />
+        <Value Name="X3" Label="Entity 3" LabelAlias="XCY" Remarks="983" />
+        <Value Name="X4" Label="Entity 4" LabelAlias="XKM" Remarks="984" />
+        <Value Name="X5" Label="Entity 5" LabelAlias="XKN" Remarks="985" />
+        <Value Name="A3" Label="Entity 6" LabelAlias="AX3" Remarks="986" />
+        <Value Name="HX" Label="Roman Empire" LabelAlias="HRO" Remarks="990" />
+        <Value Name="X7" Label="Ruritania" LabelAlias="XRU" Remarks="991" />
+        <Value Name="HD" Label="German Empire" LabelAlias="HDK" Remarks="993" />
+        <Value Name="HW" Label="Kingdom of Württemberg" LabelAlias="HWB" Remarks="994" />
+        <Value Name="HS" Label="Kingdom of Saxony" LabelAlias="HSX" Remarks="995" />
+        <Value Name="HB" Label="Kingdom of Bavaria" LabelAlias="HBV" Remarks="996" />
+        <Value Name="HP" Label="Kingdom of Prussia" LabelAlias="HPR" Remarks="997" />
       </Values>
     </Amplifier>
-    <Amplifier ID="AT" Label="Capacity of Installation" Type="ALPHANUMERIC" MinLength="2" MaxLength="19" Description="Capacity of Installation displayed." />
-    <Amplifier ID="AV" Label="Leadership Identifier" Type="GRAPHIC" Description="A graphic amplifier that identifies the leadership role for a dismounted individual." />
-    <Amplifier ID="AW" Label="Headquarters Element" Type="ALPHANUMERIC" MinLength="1" MaxLength="8" Description="A text modifier for units, equipment and installations that indicates what type of element of a headquarters is being represented, such as TOC, MAIN." />
-    <Amplifier ID="AX" Label="Installation Composition" Type="LIST" MinLength="3" MaxLength="7" Description="Indicates the component type of the installation: Development/Research/Production/Service/Storage/Utility.">
+    <Amplifier ID="AT" Label="Capacity of Installation" Type="ALPHANUMERIC" Source="USER" MinLength="2" MaxLength="19">
+      <Description>Capacity of Installation displayed.</Description>
+    </Amplifier>
+    <Amplifier ID="AV" Label="Leadership Identifier" Type="GRAPHIC" Source="SIDC" AmplifierGroup="LEADERSHIP_INDICATOR">
+      <Description>A graphic amplifier that identifies the leadership role for a dismounted individual.</Description>
+    </Amplifier>
+    <Amplifier ID="AW" Label="Headquarters Element" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="8">
+      <Description>A text modifier for units, equipment and installations that indicates what type of element of a headquarters is being represented, such as TOC, MAIN.</Description>
+    </Amplifier>
+    <Amplifier ID="AX" Label="Installation Composition" Type="LIST" Source="USER" MinLength="3" MaxLength="7" >
+      <Description>Indicates the component type of the installation: Development/Research/Production/Service/Storage/Utility.</Description>
       <Values ID="AX_VALUES" Label="Installation Composition" LabelAlias="Composition">
         <Value Name="DEVELOPMENT" Label="Development" LabelAlias="DEVELOP" />
         <Value Name="RESEARCH" Label="Research" LabelAlias="RSRCH" />
@@ -452,7 +608,9 @@
         <Value Name="UTILITY" Label="Utility" LabelAlias="UTIL" />
       </Values>
     </Amplifier>
-    <Amplifier ID="AY" Label="Network Identifier" Type="ALPHANUMERIC" MinLength="1" MaxLength="40" Description="Indicates the network the entity has privileges within." />
+    <Amplifier ID="AY" Label="Network Identifier" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="40">
+      <Description>Indicates the network the entity has privileges within.</Description>
+    </Amplifier>
   </Amplifiers>
   <CommonModifiers>
     <SectorOneModifiers>
@@ -1406,7 +1564,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_UNIT" Graphic="011022.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_EQUIPMENT" Graphic="011522.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_INSTALLATION" Graphic="012022.svg" />
-        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="011522.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="012722.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="013022.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013522.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014022.svg" />
@@ -1416,7 +1574,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_UNIT" Graphic="031022.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_EQUIPMENT" Graphic="031522.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_INSTALLATION" Graphic="032022.svg" />
-        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="031522.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="032722.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="033022.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033522.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034022.svg" />
@@ -1426,7 +1584,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_UNIT" Graphic="041022.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_EQUIPMENT" Graphic="041522.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_INSTALLATION" Graphic="042022.svg" />
-        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="041522.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="042722.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="043022.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043522.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044022.svg" />
@@ -1436,7 +1594,7 @@
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_UNIT" Graphic="061022.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_EQUIPMENT" Graphic="061522.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_INSTALLATION" Graphic="062022.svg" />
-        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="061522.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="062722.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SURFACE" Graphic="063022.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="063522.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="ACTIVITY" Graphic="064022.svg" />
@@ -1451,7 +1609,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_UNIT" Graphic="011032.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_EQUIPMENT" Graphic="011532.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_INSTALLATION" Graphic="012032.svg" />
-        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="011532.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="012732.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="013032.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013532.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014032.svg" />
@@ -1461,7 +1619,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_UNIT" Graphic="031032.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_EQUIPMENT" Graphic="031532.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_INSTALLATION" Graphic="032032.svg" />
-        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="031532.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="032732.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="033032.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033532.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034032.svg" />
@@ -1471,7 +1629,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_UNIT" Graphic="041032.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_EQUIPMENT" Graphic="041532.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_INSTALLATION" Graphic="042032.svg" />
-        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="041532.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="042732.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="043032.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043532.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044032.svg" />
@@ -1481,7 +1639,7 @@
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_UNIT" Graphic="061032.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_EQUIPMENT" Graphic="061532.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_INSTALLATION" Graphic="062032.svg" />
-        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="061532.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="062732.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SURFACE" Graphic="063032.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="063532.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="ACTIVITY" Graphic="064032.svg" />
@@ -1496,7 +1654,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_UNIT" Graphic="011042.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_EQUIPMENT" Graphic="011542.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_INSTALLATION" Graphic="012042.svg" />
-        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="011542.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="012742.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="013042.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013542.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014042.svg" />
@@ -1506,7 +1664,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_UNIT" Graphic="031042.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_EQUIPMENT" Graphic="031542.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_INSTALLATION" Graphic="032042.svg" />
-        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="031542.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="032742.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="033042.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033542.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034042.svg" />
@@ -1516,7 +1674,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_UNIT" Graphic="041042.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_EQUIPMENT" Graphic="041542.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_INSTALLATION" Graphic="042042.svg" />
-        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="041542.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="042742.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="043042.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043542.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044042.svg" />
@@ -1526,7 +1684,7 @@
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_UNIT" Graphic="061042.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_EQUIPMENT" Graphic="061542.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_INSTALLATION" Graphic="062042.svg" />
-        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="061542.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="062742.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SURFACE" Graphic="063042.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="063542.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="ACTIVITY" Graphic="064042.svg" />
@@ -1541,7 +1699,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_UNIT" Graphic="011052.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_EQUIPMENT" Graphic="011552.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_INSTALLATION" Graphic="012052.svg" />
-        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="011552.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="012752.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="013052.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013552.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014052.svg" />
@@ -1551,7 +1709,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_UNIT" Graphic="031052.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_EQUIPMENT" Graphic="031552.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_INSTALLATION" Graphic="032052.svg" />
-        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="031552.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="032752.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="033052.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033552.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034052.svg" />
@@ -1561,7 +1719,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_UNIT" Graphic="041052.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_EQUIPMENT" Graphic="041552.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_INSTALLATION" Graphic="042052.svg" />
-        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="041552.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="042752.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="043052.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043552.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044052.svg" />
@@ -1571,7 +1729,7 @@
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_UNIT" Graphic="061052.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_EQUIPMENT" Graphic="061552.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_INSTALLATION" Graphic="062052.svg" />
-        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="061552.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="062752.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SURFACE" Graphic="063052.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="063552.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="ACTIVITY" Graphic="064052.svg" />
@@ -1605,10 +1763,10 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_INSTALLATION" Graphic="3201.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_INSTALLATION" Graphic="4201.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_INSTALLATION" Graphic="6201.svg" />
-        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="1151.svg" />
-        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="3151.svg" />
-        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="4151.svg" />
-        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="6151.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="1271.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="3271.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="4271.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="6271.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="1301.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="3301.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="4301.svg" />
@@ -1827,7 +1985,7 @@
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
-    <AmplifierGroup Name="ECHELON" Label="Echelon" CompatibleSymbolSetIDs="LAND_UNIT">
+    <AmplifierGroup Name="ECHELON" Label="Echelon" CompatibleSymbolSetIDs="LAND_UNIT CONTROL_MEASURE CYBERSPACE">
       <AmplifierGroupCode>1</AmplifierGroupCode>
       <Amplifiers>
         <Amplifier Name="TEAM_CREW" Label="Team/Crew">
@@ -1967,7 +2125,7 @@
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
-    <AmplifierGroup Name="EQUIP_MOBILITY" Label="Equipment mobility" CompatibleSymbolSetIDs="LAND_EQUIPMENT">
+    <AmplifierGroup Name="EQUIP_MOBILITY" Label="Equipment mobility" CompatibleSymbolSetIDs="LAND_UNIT LAND_EQUIPMENT LAND_INSTALLATION DISMOUNTED">
       <AmplifierGroupCode>3</AmplifierGroupCode>
       <Amplifiers>
         <Amplifier Name="WHEEL_LIMIT_COUNTRY" Label="Wheeled limited cross country">

@@ -4,6 +4,24 @@
     <DigitOne>3</DigitOne>
     <DigitTwo>0</DigitTwo>
   </SymbolSetCode>
+  <Amplifiers>
+    <AmplifierRef ID="G" Type="RECTANGLE" Points="478, 440, 134, 96" />
+    <AmplifierRef ID="H" Type="RECTANGLE" Points="478, 440, 134, 96" />
+    <AmplifierRef ID="P" Type="RECTANGLE" Points="478, 344, 134, 96" />
+    <AmplifierRef ID="T" Type="RECTANGLE" Points="478, 152, 134, 96" />
+    <AmplifierRef ID="V" Type="RECTANGLE" Points="478, 248, 134, 96" />
+    <AmplifierRef ID="Y" Type="RECTANGLE" Points="478, 536, 134, 96" />
+    <AmplifierRef ID="Z" Type="RECTANGLE" Points="478, 536, 134, 96" />
+    <AmplifierRef ID="AH" Type="SYSTEM" />
+    <AmplifierRef ID="AH1" Type="SYSTEM" />
+    <AmplifierRef ID="AJ" Type="LINE" Points="178.565, 467.976, 17.069, 557.214" />
+    <AmplifierRef ID="AL" Type="RECTANGLE" Points="142, 542, 328, 96" />
+    <AmplifierRef ID="AO" Type="RECTANGLE" Points="134, 152, 344, 96" />
+    <AmplifierRef ID="AO1" Type="SYSTEM" />
+    <AmplifierRef ID="AQ" Type="RECTANGLE" Points="0, 152, 134, 96" />
+    <AmplifierRef ID="AR" Type="RECTANGLE" Points="0, 152, 134, 96" />
+    <AmplifierRef ID="AS" Type="RECTANGLE" Points="478, 152, 134, 96" />
+  </Amplifiers>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
       <EntityCode>

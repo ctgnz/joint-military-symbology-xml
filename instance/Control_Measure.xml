@@ -4,6 +4,30 @@
     <DigitOne>2</DigitOne>
     <DigitTwo>5</DigitTwo>
   </SymbolSetCode>
+  <Amplifiers>
+    <AmplifierRef ID="B" Type="SYSTEM" />
+    <AmplifierRef ID="C" Type="SYSTEM" />
+    <AmplifierRef ID="H" Type="SYSTEM" />
+    <AmplifierRef ID="H1" Type="SYSTEM" />
+    <AmplifierRef ID="N" Type="SYSTEM" />
+    <AmplifierRef ID="Q" Type="SYSTEM" />
+    <AmplifierRef ID="S2" Type="SYSTEM" />
+    <AmplifierRef ID="T" Type="SYSTEM" />
+    <AmplifierRef ID="T1" Type="SYSTEM" />
+    <AmplifierRef ID="T2" Type="SYSTEM" />
+    <AmplifierRef ID="V" Type="SYSTEM" />
+    <AmplifierRef ID="W" Type="SYSTEM" />
+    <AmplifierRef ID="W1" Type="SYSTEM" />
+    <AmplifierRef ID="X" Type="SYSTEM" />
+    <AmplifierRef ID="Y" Type="SYSTEM" />
+    <AmplifierRef ID="AH" Type="SYSTEM" />
+    <AmplifierRef ID="AH1" Type="SYSTEM" />
+    <AmplifierRef ID="AM" Type="SYSTEM" />
+    <AmplifierRef ID="AN" Type="SYSTEM" />
+    <AmplifierRef ID="AP" Type="SYSTEM" />
+    <AmplifierRef ID="AP1" Type="SYSTEM" />
+    <AmplifierRef ID="AS" Type="SYSTEM" />
+  </Amplifiers>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
       <EntityCode>

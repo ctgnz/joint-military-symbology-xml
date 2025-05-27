@@ -4,6 +4,7 @@
     <DigitOne>0</DigitOne>
     <DigitTwo>0</DigitTwo>
   </SymbolSetCode>
+  <Amplifiers />
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
       <EntityCode>

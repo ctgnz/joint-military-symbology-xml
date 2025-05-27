@@ -4,6 +4,9 @@
     <DigitOne>1</DigitOne>
     <DigitTwo>1</DigitTwo>
   </SymbolSetCode>
+  <Amplifiers>
+    <AmplifierRef ID="C" Type="RECTANGLE" Points="205, 192, 200, 80" />
+  </Amplifiers>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
       <EntityCode>
