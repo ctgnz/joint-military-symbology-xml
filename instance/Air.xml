@@ -5,20 +5,20 @@
     <DigitTwo>1</DigitTwo>
   </SymbolSetCode>
   <Amplifiers>
-    <AmplifierRef ID="G" Type="RECTANGLE" Points="478, 476, 134, 80" />
-    <AmplifierRef ID="H" Type="RECTANGLE" Points="478, 476, 134, 80" />
-    <AmplifierRef ID="P" Type="RECTANGLE" Points="478, 236, 134, 80" />
-    <AmplifierRef ID="T" Type="RECTANGLE" Points="478, 156, 134, 80" />
-    <AmplifierRef ID="V" Type="RECTANGLE" Points="478, 316, 134, 80" />
-    <AmplifierRef ID="X" Type="RECTANGLE" Points="478, 396, 134, 80" />
-    <AmplifierRef ID="Z" Type="RECTANGLE" Points="478, 396, 134, 80" />
+    <AmplifierRef ID="G" Type="RECTANGLE" Points="478.000 476.000 134.000 80.000" />
+    <AmplifierRef ID="H" Type="RECTANGLE" Points="478.000 476.000 134.000 80.000" />
+    <AmplifierRef ID="P" Type="RECTANGLE" Points="478.000 236.000 134.000 80.000" />
+    <AmplifierRef ID="T" Type="RECTANGLE" Points="478.000 156.000 134.000 80.000" />
+    <AmplifierRef ID="V" Type="RECTANGLE" Points="478.000 316.000 134.000 80.000" />
+    <AmplifierRef ID="X" Type="RECTANGLE" Points="478.000 396.000 134.000 80.000" />
+    <AmplifierRef ID="Z" Type="RECTANGLE" Points="478.000 396.000 134.000 80.000" />
     <AmplifierRef ID="AH" Type="SYSTEM" />
     <AmplifierRef ID="AH1" Type="SYSTEM" />
-    <AmplifierRef ID="AJ" Type="LINE" Points="176.341, 469.248, 17.069, 557.214" />
-    <AmplifierRef ID="AL" Type="RECTANGLE" Points="142, 518, 328, 80" />
-    <AmplifierRef ID="AO" Type="RECTANGLE" Points="132, 118, 346, 80" />
+    <AmplifierRef ID="AJ" Type="LINE" Points="176.341 469.248 17.069 557.214" />
+    <AmplifierRef ID="AL" Type="RECTANGLE" Points="142.000 518.000 328.000 80.000" />
+    <AmplifierRef ID="AO" Type="RECTANGLE" Points="132.000 118.000 346.000 80.000" />
     <AmplifierRef ID="AO1" Type="SYSTEM" />
-    <AmplifierRef ID="AS" Type="RECTANGLE" Points="478, 156, 134, 80" />
+    <AmplifierRef ID="AS" Type="RECTANGLE" Points="478.000 156.000 134.000 80.000" />
   </Amplifiers>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">

@@ -5,7 +5,7 @@
     <DigitTwo>1</DigitTwo>
   </SymbolSetCode>
   <Amplifiers>
-    <AmplifierRef ID="C" Type="RECTANGLE" Points="205, 192, 200, 80" />
+    <AmplifierRef ID="C" Type="RECTANGLE" Points="205.000 192.000 200.000 80.000" />
   </Amplifiers>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">

@@ -5,34 +5,34 @@
     <DigitTwo>5</DigitTwo>
   </SymbolSetCode>
   <Amplifiers>
-    <AmplifierRef ID="C" Type="RECTANGLE" Points="205, 190, 200, 60" />
-    <AmplifierRef ID="G" Type="RECTANGLE" Points="486, 250, 126, 90" />
-    <AmplifierRef ID="H" Type="RECTANGLE" Points="486, 340, 126, 90" />
-    <AmplifierRef ID="J" Type="RECTANGLE" Points="486, 520, 126, 90" />
-    <AmplifierRef ID="K" Type="RECTANGLE" Points="486, 520, 126, 90" />
-    <AmplifierRef ID="L" Type="RECTANGLE" Points="486, 520, 126, 90" />
-    <AmplifierRef ID="M" Type="RECTANGLE" Points="486, 430, 126, 90" />
-    <AmplifierRef ID="N" Type="RECTANGLE" Points="486, 520, 126, 90" />
-    <AmplifierRef ID="P" Type="RECTANGLE" Points="486, 520, 126, 90" />
-    <AmplifierRef ID="Q" Type="POLYLINE" Points="305.105, 622, 305.105, 765, 218.428, 774.077" />
-    <AmplifierRef ID="R" Type="RECTANGLE" Points="185, 542, 240, 90" />
-    <AmplifierRef ID="S2" Type="POLYLINE" Points="191.707, 488.132, 92.754, 702.340, 28.614, 739.366" />
-    <AmplifierRef ID="T" Type="RECTANGLE" Points="0, 430, 126, 90" />
-    <AmplifierRef ID="V" Type="RECTANGLE" Points="0, 340, 126, 90" />
-    <AmplifierRef ID="W" Type="RECTANGLE" Points="0, 160, 126, 90" />
-    <AmplifierRef ID="X" Type="RECTANGLE" Points="0, 250, 126, 90" />
-    <AmplifierRef ID="Y" Type="RECTANGLE" Points="0, 250, 126, 90" />
-    <AmplifierRef ID="Z" Type="RECTANGLE" Points="0, 520, 126, 90" />
-    <AmplifierRef ID="AB" Type="POLYGON" Points="126, 251, 305, 85, 486, 251" />
-    <AmplifierRef ID="AD" Type="RECTANGLE" Points="0, 340, 126, 90" />
-    <AmplifierRef ID="AE" Type="RECTANGLE" Points="486, 340, 126, 90" />
-    <AmplifierRef ID="AF" Type="RECTANGLE" Points="0, 340, 126, 90" />
+    <AmplifierRef ID="C" Type="RECTANGLE" Points="205.000 190.000 200.000 60.000" />
+    <AmplifierRef ID="G" Type="RECTANGLE" Points="486.000 250.000 126.000 90.000" />
+    <AmplifierRef ID="H" Type="RECTANGLE" Points="486.000 340.000 126.000 90.000" />
+    <AmplifierRef ID="J" Type="RECTANGLE" Points="486.000 520.000 126.000 90.000" />
+    <AmplifierRef ID="K" Type="RECTANGLE" Points="486.000 520.000 126.000 90.000" />
+    <AmplifierRef ID="L" Type="RECTANGLE" Points="486.000 520.000 126.000 90.000" />
+    <AmplifierRef ID="M" Type="RECTANGLE" Points="486.000 430.000 126.000 90.000" />
+    <AmplifierRef ID="N" Type="RECTANGLE" Points="486.000 520.000 126.000 90.000" />
+    <AmplifierRef ID="P" Type="RECTANGLE" Points="486.000 520.000 126.000 90.000" />
+    <AmplifierRef ID="Q" Type="POLYLINE" Points="305.105 622.000 305.105 765.000 218.428 774.077" />
+    <AmplifierRef ID="R" Type="RECTANGLE" Points="185.000 542.000 240.000 90.000" />
+    <AmplifierRef ID="S2" Type="POLYLINE" Points="191.707 488.132 92.754 702.340 28.614 739.366" />
+    <AmplifierRef ID="T" Type="RECTANGLE" Points="0.000 430.000 126.000 90.000" />
+    <AmplifierRef ID="V" Type="RECTANGLE" Points="0.000 340.000 126.000 90.000" />
+    <AmplifierRef ID="W" Type="RECTANGLE" Points="0.000 160.000 126.000 90.000" />
+    <AmplifierRef ID="X" Type="RECTANGLE" Points="0.000 250.000 126.000 90.000" />
+    <AmplifierRef ID="Y" Type="RECTANGLE" Points="0.000 250.000 126.000 90.000" />
+    <AmplifierRef ID="Z" Type="RECTANGLE" Points="0.000 520.000 126.000 90.000" />
+    <AmplifierRef ID="AB" Type="POLYGON" Points="126.000 251.000 305.000 85.000 486.000 251.000" />
+    <AmplifierRef ID="AD" Type="RECTANGLE" Points="0.000 340.000 126.000 90.000" />
+    <AmplifierRef ID="AE" Type="RECTANGLE" Points="486.000 340.000 126.000 90.000" />
+    <AmplifierRef ID="AF" Type="RECTANGLE" Points="0.000 340.000 126.000 90.000" />
     <AmplifierRef ID="AH" Type="SYSTEM" />
     <AmplifierRef ID="AH1" Type="SYSTEM" />
-    <AmplifierRef ID="AL" Type="RECTANGLE" Points="142, 542, 328, 80" />
-    <AmplifierRef ID="AO" Type="RECTANGLE" Points="132, 5, 344, 80" />
+    <AmplifierRef ID="AL" Type="RECTANGLE" Points="142.000 542.000 328.000 80.000" />
+    <AmplifierRef ID="AO" Type="RECTANGLE" Points="132.000 5.000 344.000 80.000" />
     <AmplifierRef ID="AO1" Type="SYSTEM" />
-    <AmplifierRef ID="AS" Type="RECTANGLE" Points="486, 160, 126, 90" />
+    <AmplifierRef ID="AS" Type="RECTANGLE" Points="486.000 160.000 126.000 90.000" />
   </Amplifiers>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">

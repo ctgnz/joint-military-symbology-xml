@@ -8,27 +8,27 @@
     <DigitTwo>7</DigitTwo>
   </SymbolSetCode>
   <Amplifiers>
-    <AmplifierRef ID="C" Type="RECTANGLE" Points="205, 546, 200, 96" />
-    <AmplifierRef ID="G" Type="RECTANGLE" Points="478, 248, 134, 96" />
-    <AmplifierRef ID="H" Type="RECTANGLE" Points="478, 344, 134, 96" />
-    <AmplifierRef ID="J" Type="RECTANGLE" Points="478, 536, 134, 96" />
-    <AmplifierRef ID="K" Type="RECTANGLE" Points="478, 536, 134, 96" />
-    <AmplifierRef ID="M" Type="RECTANGLE" Points="478, 440, 134, 96" />
-    <AmplifierRef ID="P" Type="RECTANGLE" Points="478, 536, 134, 96" />
-    <AmplifierRef ID="Q" Type="POLYLINE" Points="304.754, 641.628, 304.754, 702.084, 380.942, 734.447" />
-    <AmplifierRef ID="S2" Type="POLYLINE" Points="180.082, 470, 180.082, 693.086, 62.332, 757.333" />
-    <AmplifierRef ID="T" Type="RECTANGLE" Points="0, 440, 134, 96" />
-    <AmplifierRef ID="V" Type="RECTANGLE" Points="0, 344, 134, 96" />
-    <AmplifierRef ID="W" Type="RECTANGLE" Points="0, 152, 134, 96" />
-    <AmplifierRef ID="X" Type="RECTANGLE" Points="0, 248, 134, 96" />
-    <AmplifierRef ID="Y" Type="RECTANGLE" Points="0, 248, 134, 96" />
-    <AmplifierRef ID="Z" Type="RECTANGLE" Points="0, 536, 134, 96" />
-    <AmplifierRef ID="AB" Type="POLYGON" Points="134, 302, 305, 150, 478, 302" />
-    <AmplifierRef ID="AF" Type="RECTANGLE" Points="0, 344, 134, 96" />
+    <AmplifierRef ID="C" Type="RECTANGLE" Points="205.000 546.000 200.000 96.000" />
+    <AmplifierRef ID="G" Type="RECTANGLE" Points="478.000 248.000 134.000 96.000" />
+    <AmplifierRef ID="H" Type="RECTANGLE" Points="478.000 344.000 134.000 96.000" />
+    <AmplifierRef ID="J" Type="RECTANGLE" Points="478.000 536.000 134.000 96.000" />
+    <AmplifierRef ID="K" Type="RECTANGLE" Points="478.000 536.000 134.000 96.000" />
+    <AmplifierRef ID="M" Type="RECTANGLE" Points="478.000 440.000 134.000 96.000" />
+    <AmplifierRef ID="P" Type="RECTANGLE" Points="478.000 536.000 134.000 96.000" />
+    <AmplifierRef ID="Q" Type="POLYLINE" Points="304.754 641.628 304.754 702.084 380.942 734.447" />
+    <AmplifierRef ID="S2" Type="POLYLINE" Points="180.082 470.000 180.082 693.086 62.332 757.333" />
+    <AmplifierRef ID="T" Type="RECTANGLE" Points="0.000 440.000 134.000 96.000" />
+    <AmplifierRef ID="V" Type="RECTANGLE" Points="0.000 344.000 134.000 96.000" />
+    <AmplifierRef ID="W" Type="RECTANGLE" Points="0.000 152.000 134.000 96.000" />
+    <AmplifierRef ID="X" Type="RECTANGLE" Points="0.000 248.000 134.000 96.000" />
+    <AmplifierRef ID="Y" Type="RECTANGLE" Points="0.000 248.000 134.000 96.000" />
+    <AmplifierRef ID="Z" Type="RECTANGLE" Points="0.000 536.000 134.000 96.000" />
+    <AmplifierRef ID="AB" Type="POLYGON" Points="134.000 302.000 305.000 150.000 478.000 302.000" />
+    <AmplifierRef ID="AF" Type="RECTANGLE" Points="0.000 344.000 134.000 96.000" />
     <AmplifierRef ID="AH" Type="SYSTEM" />
     <AmplifierRef ID="AH1" Type="SYSTEM" />
-    <AmplifierRef ID="AS" Type="RECTANGLE" Points="478, 152, 134, 96" />
-    <AmplifierRef ID="AV" Type="POLYGON" Points="150, 302, 305, 205, 460, 302" />
+    <AmplifierRef ID="AS" Type="RECTANGLE" Points="478.000 152.000 134.000 96.000" />
+    <AmplifierRef ID="AV" Type="POLYGON" Points="150.000 302.000 305.000 205.000 460.000 302.000" />
   </Amplifiers>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">

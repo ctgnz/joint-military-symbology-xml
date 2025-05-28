@@ -5,7 +5,7 @@
     <DigitTwo>2</DigitTwo>
   </SymbolSetCode>
   <Amplifiers>
-    <AmplifierRef ID="AJ" Type="LINE" Points="176.341, 469.248, 17.069, 557.214" />
+    <AmplifierRef ID="AJ" Type="LINE" Points="176.341 469.248 17.069 557.214" />
   </Amplifiers>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
