@@ -26,6 +26,7 @@
     </Amplifier>
     <Amplifier ID="C" Label="Quantity" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="19">
       <Description>A text amplifier in an equipment symbol that identifies the number of items present.</Description>
+      <Remarks>Two-part composite field. Where # is the numeric value [1-999999999], and X is the unit of measure. Examples include: 100 Beds; 500 Litres</Remarks>
     </Amplifier>
     <Amplifier ID="D" Label="Task Force Indicator" Type="GRAPHIC" Source="SIDC">
       <Description>A graphic amplifier that identifies a unit or stability operations symbol as a task force.</Description>
@@ -39,20 +40,20 @@
       </Values>
     </Amplifier>
     <Amplifier ID="G" Label="Staff Comments" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="20">
-      <Remarks>Content is implementation specific.</Remarks>
       <Description>A text amplifier for units, equipment, and installations.</Description>
+      <Remarks>Content is implementation specific.</Remarks>
     </Amplifier>
     <Amplifier ID="H" Label="Additional Information" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="20" >
-      <Remarks>Content is implementation specific.</Remarks>
       <Description>A text amplifier for units, equipment, and installations.</Description>
+      <Remarks>Content is implementation specific.</Remarks>
     </Amplifier>
     <Amplifier ID="H1" Label="Unlisted Point Information" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="3" >
-      <Remarks>Content is implementation specific.</Remarks>
       <Description>A text amplifier used to provide an up to a three-character letter field acronym to describe a point that is not already listed.</Description>
+      <Remarks>Content is implementation specific.</Remarks>
     </Amplifier>
     <Amplifier ID="J" Label="Evaluation Rating" Type="LIST" Source="USER" MinLength="2" MaxLength="2" >
-      <Remarks>Reliability: A-F and Credibility: 1-6</Remarks>
       <Description>A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating.</Description>
+      <Remarks>Reliability: A-F and Credibility: 1-6</Remarks>
       <Values ID="RELIABILITY_RATINGS" Label="Reliability Rating" LabelAlias="Reliability">
         <Value Name="COMPLETELY" Label="Completely Reliable" LabelAlias="A" />
         <Value Name="USUALLY" Label="Usually Reliable" LabelAlias="B" />
@@ -113,12 +114,12 @@
       <Description>A graphic amplifier for units, equipment and installations used when placing an object away from its actual location.</Description>
     </Amplifier>
     <Amplifier ID="T" Label="Unique Designation" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="30" >
-      <Remarks>Identifies acquisition number when used with SIGINT symbology.</Remarks>
       <Description>A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number.</Description>
+      <Remarks>Identifies acquisition number when used with SIGINT symbology.</Remarks>
     </Amplifier>
     <Amplifier ID="T1" Label="Unique Identifier/Primary Purpose" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="30" >
-      <Remarks>Identifies acquisition number when used with SIGINT symbology.</Remarks>
       <Description>A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number.</Description>
+      <Remarks>Identifies acquisition number when used with SIGINT symbology.</Remarks>
     </Amplifier>
     <Amplifier ID="T2" Label="Controlling Headquarters" Type="ALPHANUMERIC" Source="USER" MinLength="1" MaxLength="7">
       <Description>An amplifier used to provide the designation of the Establishing Headquarters for Fire Support Control Measures only.</Description>
@@ -127,20 +128,20 @@
       <Description>A text amplifier for equipment that indicates types of equipment.</Description>
     </Amplifier>
     <Amplifier ID="W" Label="Date/Time Group (DTG)" Type="ALPHANUMERIC" Source="USER" MinLength="3" MaxLength="16" >
-      <Remarks>The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by four digits representing the year.</Remarks>
       <Description>An alphanumeric designator for displaying a date-time group (DDHHMMSSZMONYYYY) or O/O for on order.</Description>
+      <Remarks>The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by four digits representing the year.</Remarks>
     </Amplifier>
     <Amplifier ID="W1" Label="Date/Time Group (DTG) (Period)" Type="ALPHANUMERIC" Source="USER" MinLength="3" MaxLength="16" >
-      <Remarks>Field W1 is used to provide the end of a period of time.</Remarks>
       <Description>An alphanumeric designator for displaying a date-time group (DDHHMMSSZMONYYYY) or O/O for on order.</Description>
+      <Remarks>Field W1 is used to provide the end of a period of time.</Remarks>
     </Amplifier>
     <Amplifier ID="X" Label="Altitude/Depth" Type="ALPHANUMERIC" Source="USER" MinLength="2" MaxLength="14" >
-      <Remarks>Alternatively, used to indicate the height of equipment or structures on the ground.</Remarks>
       <Description>A text amplifier for units, equipment, and installations that displays either altitude, flight level, depth for submerged objects.</Description>
+      <Remarks>Alternatively, used to indicate the height of equipment or structures on the ground.</Remarks>
     </Amplifier>
     <Amplifier ID="Y" Label="Location" Type="ALPHANUMERIC" Source="USER" MinLength="12" MaxLength="22">
-      <Remarks>Alternatively, in MGRS or other applicable display format.</Remarks>
       <Description>A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes.</Description>
+      <Remarks>Alternatively, in MGRS or other applicable display format.</Remarks>
       <Note>To support homeland security and homeland defense, the federal Geographic Data Committee (FGDC) US National Grid (USNG) standard when referenced to North American Datum 1983 (NAD83) is operationally equivalent to and is an accepted substitute for MGRS coordinates referenced to WGS 84. Note that at mapping scales of 1:5000 and smaller, NAD83 and WGS 84 are considered equivalent."</Note>
     </Amplifier>
     <Amplifier ID="YP" Label="Symbol References Points" Type="ALPHANUMERIC" Source="USER" MinLength="22" MaxLength="22">
@@ -271,8 +272,8 @@
       </Values>
     </Amplifier>
     <Amplifier ID="AS" Label="Country" Type="LIST" Source="SIDC" MinLength="3" MaxLength="3" >
-      <Remarks>Uses the GENC Standard.</Remarks>
       <Description>Identifies the country of the organization being shown.</Description>
+      <Remarks>Uses the GENC Standard.</Remarks>
       <Values ID="AS_VALUES" Label="Country Codes" LabelAlias="CountryCodes">
         <Value Name="UNDEFINED" Label="Undefined" LabelAlias="UNDEFINED" Remarks="000" />
         <Value Name="AF" Label="Afghanistan" LabelAlias="AFG" Remarks="004" />
