@@ -520,8 +520,8 @@
         <Value Name="EG" Label="Egypt" LabelAlias="EGY" Remarks="818" />
         <Value Name="GB" Label="United Kingdom" LabelAlias="GBR" Remarks="826" />
         <Value Name="UK" Label="United Kingdom" LabelAlias="UKG" Remarks="826" />
-        <Value Name="XA" Label="Scotland" LabelAlias="XAL" Remarks="827" />
-        <Value Name="XY" Label="Wales" LabelAlias="XCY" Remarks="828" />
+        <Value Name="XA" Label="Scotland" LabelAlias="XAL" Remarks="827" Extension="true" />
+        <Value Name="XY" Label="Wales" LabelAlias="XCY" Remarks="828" Extension="true" />
         <Value Name="XI" Label="Northern Ireland" LabelAlias="XXI" Remarks="829" />
         <Value Name="GG" Label="Guernsey" LabelAlias="GGY" Remarks="831" />
         <Value Name="JE" Label="Jersey" LabelAlias="JEY" Remarks="832" />
@@ -580,13 +580,13 @@
         <Value Name="X4" Label="Entity 4" LabelAlias="XKM" Remarks="984" />
         <Value Name="X5" Label="Entity 5" LabelAlias="XKN" Remarks="985" />
         <Value Name="A3" Label="Entity 6" LabelAlias="AX3" Remarks="986" />
-        <Value Name="HX" Label="Roman Empire" LabelAlias="HRO" Remarks="990" />
-        <Value Name="X7" Label="Ruritania" LabelAlias="XRU" Remarks="991" />
-        <Value Name="HD" Label="German Empire" LabelAlias="HDK" Remarks="993" />
-        <Value Name="HW" Label="Kingdom of Württemberg" LabelAlias="HWB" Remarks="994" />
-        <Value Name="HS" Label="Kingdom of Saxony" LabelAlias="HSX" Remarks="995" />
-        <Value Name="HB" Label="Kingdom of Bavaria" LabelAlias="HBV" Remarks="996" />
-        <Value Name="HP" Label="Kingdom of Prussia" LabelAlias="HPR" Remarks="997" />
+        <Value Name="HX" Label="Roman Empire" LabelAlias="HRO" Remarks="990" Extension="true" />
+        <Value Name="X7" Label="Ruritania" LabelAlias="XRU" Remarks="991" Extension="true" />
+        <Value Name="HD" Label="German Empire" LabelAlias="HDK" Remarks="993" Extension="true" />
+        <Value Name="HW" Label="Kingdom of Württemberg" LabelAlias="HWB" Remarks="994" Extension="true" />
+        <Value Name="HS" Label="Kingdom of Saxony" LabelAlias="HSX" Remarks="995" Extension="true" />
+        <Value Name="HB" Label="Kingdom of Bavaria" LabelAlias="HBV" Remarks="996" Extension="true" />
+        <Value Name="HP" Label="Kingdom of Prussia" LabelAlias="HPR" Remarks="997" Extension="true" />
       </Values>
     </Amplifier>
     <Amplifier ID="AT" Label="Capacity of Installation" Type="ALPHANUMERIC" Source="USER" MinLength="2" MaxLength="19">
@@ -2115,7 +2115,7 @@
             <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="61E.svg" />
           </Graphics>
         </Amplifier>
-        <Amplifier Name="STAFFEL" Label="Staffel">
+        <Amplifier Name="STAFFEL" Label="Staffel" Extension="true">
           <AmplifierCode>F</AmplifierCode>
           <Graphics>
             <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="11F.svg" />
