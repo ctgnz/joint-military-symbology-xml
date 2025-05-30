@@ -2126,7 +2126,7 @@
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
-    <AmplifierGroup Name="EQUIP_MOBILITY" Label="Equipment mobility" CompatibleSymbolSetIDs="LAND_UNIT LAND_EQUIPMENT LAND_INSTALLATION DISMOUNTED">
+    <AmplifierGroup Name="EQUIP_MOBILITY" Label="Equipment mobility" CompatibleSymbolSetIDs="LAND_UNIT LAND_EQUIPMENT LAND_INSTALLATION">
       <AmplifierGroupCode>3</AmplifierGroupCode>
       <Amplifiers>
         <Amplifier Name="WHEEL_LIMIT_COUNTRY" Label="Wheeled limited cross country">
