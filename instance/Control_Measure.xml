@@ -753,25 +753,11 @@
             <DigitTwo>7</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="ENCIRCLEMENT" Label="Encirclement" Icon="NA" GeometryType="NA">
+        <EntityType ID="ENCIRCLEMENT" Label="Encirclement" Graphic="25151800.svg" GeometryType="AREA">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="FRIENDLY" Label="Friendly" Graphic="25151801.svg" GeometryType="AREA">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>1</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="ENEMY" Label="Enemy" Graphic="25151802.svg" GeometryType="AREA">
-              <EntitySubTypeCode>
-                <DigitOne>0</DigitOne>
-                <DigitTwo>2</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>
         </EntityType>
         <EntityType ID="PENETRATION_BOX" Label="Penetration Box" Graphic="25151900.svg" GeometryType="AREA">
           <EntityTypeCode>
