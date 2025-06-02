@@ -309,7 +309,7 @@
         <DigitTwo>4</DigitTwo>
       </EntityCode>
       <EntityTypes>
-        <EntityType ID="FORWARD_LINE_OF_TROOPS" Label="Forward Line of Troops" Icon="NA" GeometryType="NA">
+        <EntityType ID="FORWARD_LINE_OF_TROOPS" Label="Forward Line of Troops"  Graphic="25140100.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
