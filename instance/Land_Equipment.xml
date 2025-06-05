@@ -1091,7 +1091,7 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TENT" Label="Tent" Graphic="15201300.svg" Icon="FULL_OCTAGON">
+        <EntityType ID="TENT" Label="Tent" Remarks="No icon is associated with this entity. It is for hierachal purposes only." Icon="NA" GeometryType="NA">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>3</DigitTwo>

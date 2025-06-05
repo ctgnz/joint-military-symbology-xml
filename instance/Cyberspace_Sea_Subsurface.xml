@@ -69,7 +69,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="CYBERSPACE_UNIT" Label="Cyberspace Unit" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
+    <Entity ID="CYBERSPACE_UNIT" Label="Cyberspace Unit"  Graphic="60120000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>

@@ -144,12 +144,6 @@
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="SUSPICIOUS_ACTIVITY" Label="Suspicious Activity" Icon="FULL_OCTAGON" Graphic="40110123.svg">
-              <EntitySubTypeCode>
-                <DigitOne>2</DigitOne>
-                <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
           </EntitySubTypes>
         </EntityType>
         <EntityType ID="BOMB_BOMBING" Label="Bomb/Bombing" Graphic="40110200.svg">
@@ -198,7 +192,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="SHOOTING" Label="Shooting" Icon="FULL_OCTAGON" Graphic="40110400.svg">
+        <EntityType ID="SHOOTING" Label="Shooting" GeometryType="NA" Icon="NA">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>

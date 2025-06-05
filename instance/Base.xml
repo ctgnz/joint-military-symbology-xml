@@ -1346,7 +1346,7 @@
             <DigitTwo>2</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="CYBERSPACE_AIR" Label="Cyberspace Air" Instance="Cyberspace_Air.xml">
+        <SymbolSetRef ID="CYBERSPACE_AIR" Label="Cyberspace Air" Instance="Cyberspace_Air.xml" Base="CYBERSPACE">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>2</DigitTwo>
@@ -1366,7 +1366,7 @@
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="CYBERSPACE_SPACE" Label="Cyberspace Space" Instance="Cyberspace_Space.xml">
+        <SymbolSetRef ID="CYBERSPACE_SPACE" Label="Cyberspace Space" Instance="Cyberspace_Space.xml" Base="CYBERSPACE">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -1392,7 +1392,7 @@
             <DigitTwo>1</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="CYBERSPACE_LAND_UNIT" Label="Cyberspace Land Unit" Instance="Cyberspace_Land_Unit.xml">
+        <SymbolSetRef ID="CYBERSPACE_LAND_UNIT" Label="Cyberspace Land Unit" Instance="Cyberspace_Land_Unit.xml" Base="CYBERSPACE">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -1412,7 +1412,7 @@
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="CYBERSPACE_LAND_EQUIPMENT" Label="Cyberspace Land Equipment" Instance="Cyberspace_Land_Equipment.xml">
+        <SymbolSetRef ID="CYBERSPACE_LAND_EQUIPMENT" Label="Cyberspace Land Equipment" Instance="Cyberspace_Land_Equipment.xml" Base="CYBERSPACE">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>4</DigitTwo>
@@ -1432,7 +1432,7 @@
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="CYBERSPACE_LAND_INSTALLATION" Label="Cyberspace Land Installation" Instance="Cyberspace_Land_Installation.xml">
+        <SymbolSetRef ID="CYBERSPACE_LAND_INSTALLATION" Label="Cyberspace Land Installation" Instance="Cyberspace_Land_Installation.xml" Base="CYBERSPACE">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>5</DigitTwo>
@@ -1452,7 +1452,7 @@
             <DigitTwo>7</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="CYBERSPACE_DISMOUNTED" Label="Cyberspace Dismounted Individual" Instance="Cyberspace_Dismounted.xml">
+        <SymbolSetRef ID="CYBERSPACE_DISMOUNTED" Label="Cyberspace Dismounted Individual" Instance="Cyberspace_Dismounted.xml" Base="CYBERSPACE">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -1472,7 +1472,7 @@
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="CYBERSPACE_SEA_SURFACE" Label="Cyberspace Sea Surface" Instance="Cyberspace_Sea_Surface.xml">
+        <SymbolSetRef ID="CYBERSPACE_SEA_SURFACE" Label="Cyberspace Sea Surface" Instance="Cyberspace_Sea_Surface.xml" Base="CYBERSPACE">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>7</DigitTwo>
@@ -1498,7 +1498,7 @@
             <DigitTwo>6</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="CYBERSPACE_SEA_SUBSURFACE" Label="Cyberspace Sea Subsurface" Instance="Cyberspace_Sea_Subsurface.xml">
+        <SymbolSetRef ID="CYBERSPACE_SEA_SUBSURFACE" Label="Cyberspace Sea Subsurface" Instance="Cyberspace_Sea_Subsurface.xml" Base="CYBERSPACE">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>8</DigitTwo>
@@ -1569,6 +1569,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="013022.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013522.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014022.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="016022.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="UNKNOWN" Graphic="030022.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="030122.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SPACE" Graphic="030522.svg" />
@@ -1579,6 +1580,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="033022.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033522.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034022.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="036022.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="UNKNOWN" Graphic="040022.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="AIR" Graphic="040122.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SPACE" Graphic="040522.svg" />
@@ -1589,6 +1591,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="043022.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043522.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044022.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="046022.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="UNKNOWN" Graphic="060022.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="AIR" Graphic="060122.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SPACE" Graphic="060522.svg" />
@@ -1599,6 +1602,7 @@
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SURFACE" Graphic="063022.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="063522.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="ACTIVITY" Graphic="064022.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="CYBERSPACE" Graphic="066022.svg" />
       </Graphics>
     </Status>
     <Status Name="DAMAGED" Label="Present/Damaged" LabelAlias="Damaged" Graphic="3.svg">
@@ -1614,6 +1618,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="013032.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013532.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014032.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="016032.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="UNKNOWN" Graphic="030032.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="030132.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SPACE" Graphic="030532.svg" />
@@ -1624,6 +1629,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="033032.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033532.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034032.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="036032.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="UNKNOWN" Graphic="040032.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="AIR" Graphic="040132.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SPACE" Graphic="040532.svg" />
@@ -1634,6 +1640,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="043032.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043532.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044032.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="046032.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="UNKNOWN" Graphic="060032.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="AIR" Graphic="060132.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SPACE" Graphic="060532.svg" />
@@ -1644,6 +1651,7 @@
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SURFACE" Graphic="063032.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="063532.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="ACTIVITY" Graphic="064032.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="CYBERSPACE" Graphic="066032.svg" />
       </Graphics>
     </Status>
     <Status Name="DESTROYED" Label="Present/Destroyed" LabelAlias="Destroyed" Graphic="4.svg">
@@ -1659,6 +1667,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="013042.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013542.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014042.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="016042.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="UNKNOWN" Graphic="030042.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="030142.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SPACE" Graphic="030542.svg" />
@@ -1669,6 +1678,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="033042.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033542.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034042.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="036042.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="UNKNOWN" Graphic="040042.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="AIR" Graphic="040142.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SPACE" Graphic="040542.svg" />
@@ -1679,6 +1689,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="043042.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043542.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044042.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="046042.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="UNKNOWN" Graphic="060042.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="AIR" Graphic="060142.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SPACE" Graphic="060542.svg" />
@@ -1689,6 +1700,7 @@
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SURFACE" Graphic="063042.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="063542.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="ACTIVITY" Graphic="064042.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="CYBERSPACE" Graphic="066042.svg" />
       </Graphics>
     </Status>
     <Status Name="FULL" Label="Present/Full to Capacity" LabelAlias="Full">
@@ -1704,6 +1716,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="013052.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013552.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014052.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="016052.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="UNKNOWN" Graphic="030052.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="030152.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SPACE" Graphic="030552.svg" />
@@ -1714,6 +1727,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="033052.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033552.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034052.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="036052.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="UNKNOWN" Graphic="040052.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="AIR" Graphic="040152.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SPACE" Graphic="040552.svg" />
@@ -1724,6 +1738,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="043052.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043552.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044052.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="046052.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="UNKNOWN" Graphic="060052.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="AIR" Graphic="060152.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SPACE" Graphic="060552.svg" />
@@ -1734,6 +1749,7 @@
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SURFACE" Graphic="063052.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="063552.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="ACTIVITY" Graphic="064052.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="CYBERSPACE" Graphic="066052.svg" />
       </Graphics>
     </Status>
   </Statuses>
@@ -1776,6 +1792,10 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="3351.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="4351.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="6351.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="1601.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="3601.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="4601.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="CYBERSPACE" Graphic="6601.svg" />
       </Graphics>
     </HQTFDummy>
     <HQTFDummy Name="HQ" Label="Headquarters">
@@ -1809,6 +1829,10 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="3352.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="4352.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="6352.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="1602.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="3602.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="4602.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="CYBERSPACE" Graphic="6602.svg" />
       </Graphics>
     </HQTFDummy>
     <HQTFDummy Name="FEINT_DUMMY_HQ" Label="Feint/Dummy Headquarters">
@@ -1842,6 +1866,10 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="3353.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="4353.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="6353.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="1603.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="3603.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="4603.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="CYBERSPACE" Graphic="6603.svg" />
       </Graphics>
     </HQTFDummy>
     <HQTFDummy Name="TF" Label="Task Force">
@@ -1875,6 +1903,10 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="3354.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="4354.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="6354.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="1604.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="3604.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="4604.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="CYBERSPACE" Graphic="6604.svg" />
       </Graphics>
     </HQTFDummy>
     <HQTFDummy Name="FEINT_DUMMY_TF" Label="Feint/Dummy Task Force">
@@ -1908,6 +1940,10 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="3355.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="4355.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="6355.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="1605.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="3605.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="4605.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="CYBERSPACE" Graphic="6605.svg" />
       </Graphics>
     </HQTFDummy>
     <HQTFDummy Name="TF_HQ" Label="Task Force Headquarters">
@@ -1941,6 +1977,10 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="3356.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="4356.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="6356.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="1606.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="3606.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="4606.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="CYBERSPACE" Graphic="6606.svg" />
       </Graphics>
     </HQTFDummy>
     <HQTFDummy Name="FEINT_DUMMY_TF_HQ" Label="Feint/Dummy Task Force Headquarters" LabelAlias="Feint/Dummy Task Force HQ">
@@ -1974,6 +2014,10 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="3357.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="4357.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="6357.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="1607.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="3607.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="4607.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="CYBERSPACE" Graphic="6607.svg" />
       </Graphics>
     </HQTFDummy>
   </HQTFDummies>

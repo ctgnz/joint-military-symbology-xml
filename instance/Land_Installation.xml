@@ -182,7 +182,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="LAW_ENFORCEMENT" Label="Law Enforcement" Graphic="20112100.svg" Icon="FULL_OCTAGON">
+        <EntityType ID="LAW_ENFORCEMENT" Label="Law Enforcement" Remarks="No icon is associated with this entity. It is for hierachal purposes only." Icon="NA" GeometryType="NA">
           <EntityTypeCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>1</DigitTwo>

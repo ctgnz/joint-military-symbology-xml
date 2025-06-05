@@ -2027,6 +2027,12 @@
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
+            <EntitySubType ID="PAA_IRREGULAR" Label="Irregular" Graphic="25240503.svg" GeometryType="AREA">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
           </EntitySubTypes>
         </EntityType>
         <EntityType ID="POINT_TARGETS" Label="Point Targets" Icon="NA" GeometryType="NA">
