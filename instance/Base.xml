@@ -1263,39 +1263,39 @@
     </Context>
   </Contexts>
   <StandardIdentities>
-    <StandardIdentity ID="SI_PENDING" Label="Pending">
+    <StandardIdentity ID="SI_PENDING" Label="Pending" GroupID="SIG_UNKNOWN">
       <StandardIdentityCode>0</StandardIdentityCode>
     </StandardIdentity>
-    <StandardIdentity ID="SI_UNKNOWN" Label="Unknown">
+    <StandardIdentity ID="SI_UNKNOWN" Label="Unknown" GroupID="SIG_UNKNOWN">
       <StandardIdentityCode>1</StandardIdentityCode>
     </StandardIdentity>
-    <StandardIdentity ID="SI_ASSUMED_FRIEND" Label="Assumed Friend">
+    <StandardIdentity ID="SI_ASSUMED_FRIEND" Label="Assumed Friend" GroupID="SIG_FRIEND">
       <StandardIdentityCode>2</StandardIdentityCode>
     </StandardIdentity>
-    <StandardIdentity ID="SI_FRIEND" Label="Friend">
+    <StandardIdentity ID="SI_FRIEND" Label="Friend" GroupID="SIG_FRIEND">
       <StandardIdentityCode>3</StandardIdentityCode>
     </StandardIdentity>
-    <StandardIdentity ID="SI_NEUTRAL" Label="Neutral">
+    <StandardIdentity ID="SI_NEUTRAL" Label="Neutral" GroupID="SIG_NEUTRAL">
       <StandardIdentityCode>4</StandardIdentityCode>
     </StandardIdentity>
-    <StandardIdentity ID="SI_SUSPECT_JOKER" Label="Suspect/Joker">
+    <StandardIdentity ID="SI_SUSPECT_JOKER" Label="Suspect/Joker" GroupID="SIG_HOSTILE">
       <StandardIdentityCode>5</StandardIdentityCode>
     </StandardIdentity>
-    <StandardIdentity ID="SI_HOSTILE_FAKER" Label="Hostile/Faker">
+    <StandardIdentity ID="SI_HOSTILE_FAKER" Label="Hostile/Faker" GroupID="SIG_HOSTILE">
       <StandardIdentityCode>6</StandardIdentityCode>
     </StandardIdentity>
   </StandardIdentities>
   <StandardIdentityGroups>
-    <StandardIdentityGroup ID="SIG_UNKNOWN" Label="Unknown" StandardIdentityIDs="SI_PENDING SI_UNKNOWN" GraphicSuffix="_0">
+    <StandardIdentityGroup ID="SIG_UNKNOWN" Label="Unknown" GraphicSuffix="_0">
       <StandardIdentityGroupCode>1</StandardIdentityGroupCode>
     </StandardIdentityGroup>
-    <StandardIdentityGroup ID="SIG_FRIEND" Label="Friend" StandardIdentityIDs="SI_ASSUMED_FRIEND SI_FRIEND" GraphicSuffix="_1">
+    <StandardIdentityGroup ID="SIG_FRIEND" Label="Friend" GraphicSuffix="_1">
       <StandardIdentityGroupCode>3</StandardIdentityGroupCode>
     </StandardIdentityGroup>
-    <StandardIdentityGroup ID="SIG_NEUTRAL" Label="Neutral" StandardIdentityIDs="SI_NEUTRAL" GraphicSuffix="_2">
+    <StandardIdentityGroup ID="SIG_NEUTRAL" Label="Neutral" GraphicSuffix="_2">
       <StandardIdentityGroupCode>4</StandardIdentityGroupCode>
     </StandardIdentityGroup>
-    <StandardIdentityGroup ID="SIG_HOSTILE" Label="Hostile" StandardIdentityIDs="SI_HOSTILE_FAKER SI_SUSPECT_JOKER" GraphicSuffix="_3">
+    <StandardIdentityGroup ID="SIG_HOSTILE" Label="Hostile" GraphicSuffix="_3">
       <StandardIdentityGroupCode>6</StandardIdentityGroupCode>
     </StandardIdentityGroup>
   </StandardIdentityGroups>
