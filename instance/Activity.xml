@@ -8,8 +8,8 @@
     <AmplifierRef ID="G" Type="RECTANGLE" Points="486.000 276.000 126.000 80.000" />
     <AmplifierRef ID="H" Type="RECTANGLE" Points="486.000 356.000 126.000 80.000" />
     <AmplifierRef ID="J" Type="RECTANGLE" Points="486.000 516.000 126.000 80.000" />
-    <AmplifierRef ID="Q" Type="RECTANGLE" Points="306.602 518.205 306.602 578.661 210.072 637.723" />
-    <AmplifierRef ID="S2" Type="RECTANGLE" Points="126.082 514.750 126.082 759.796 0.000 792.000" />
+    <AmplifierRef ID="Q" Type="POLYLINE" Points="306.602 518.205 306.602 578.661 210.072 637.723" />
+    <AmplifierRef ID="S2" Type="POLYLINE" Points="126.082 514.750 126.082 759.796 0.000 792.000" />
     <AmplifierRef ID="T" Type="RECTANGLE" Points="0.000 356.000 126.000 80.000" />
     <AmplifierRef ID="W" Type="RECTANGLE" Points="0.000 196.000 126.000 80.000" />
     <AmplifierRef ID="Y" Type="RECTANGLE" Points="0.000 276.000 126.000 80.000" />
@@ -144,12 +144,6 @@
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="SUSPICIOUS_ACTIVITY" Label="Suspicious Activity" Icon="FULL_OCTAGON" Graphic="40110123.svg">
-              <EntitySubTypeCode>
-                <DigitOne>2</DigitOne>
-                <DigitTwo>3</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
           </EntitySubTypes>
         </EntityType>
         <EntityType ID="BOMB_BOMBING" Label="Bomb/Bombing" Graphic="40110200.svg">
@@ -198,7 +192,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="SHOOTING" Label="Shooting" Icon="FULL_OCTAGON" Graphic="40110400.svg">
+        <EntityType ID="SHOOTING" Label="Shooting" GeometryType="NA" Icon="NA">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
