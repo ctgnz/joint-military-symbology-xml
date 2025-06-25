@@ -76,7 +76,7 @@
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="RECONNAISSANCE_LIAISON_ELEMENT" Label="Reconnaissance and Liaison Element" Graphic="10110501.svg" Icon="FULL_FRAME">
+            <EntitySubType ID="RECONNAISSANCE_LIAISON_ELEMENT" Label="Reconnaissance and Liaison Element" CloverGraphic="10110501_0.svg" DiamondGraphic="10110501_3.svg" RectangleGraphic="10110501_1.svg" SquareGraphic="10110501_2.svg" Icon="FULL_FRAME">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>

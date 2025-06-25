@@ -28,7 +28,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="INVALID" Label="Invalid Symbol" Graphic="00100000.svg" Icon="FULL_OCTAGON">
+    <Entity ID="INVALID" Label="Invalid Symbol" CloverGraphic="00100000_0.svg" DiamondGraphic="00100000_3.svg" CircleGraphic="00100000_1.svg" SquareGraphic="00100000_2.svg" Icon="FULL_FRAME">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
