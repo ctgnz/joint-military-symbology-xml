@@ -275,7 +275,6 @@
       <Description>Identifies the country of the organization being shown.</Description>
       <Remarks>Uses the GENC Standard.</Remarks>
       <Values ID="AS_VALUES" Label="Country Codes" LabelAlias="CountryCodes">
-        <Value Name="UNDEFINED" Label="Undefined" LabelAlias="UNDEFINED" Remarks="000" />
         <Value Name="AF" Label="Afghanistan" LabelAlias="AFG" Remarks="004" />
         <Value Name="AL" Label="Albania" LabelAlias="ALB" Remarks="008" />
         <Value Name="AQ" Label="Antarctica" LabelAlias="ATA" Remarks="010" />
