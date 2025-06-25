@@ -604,614 +604,6 @@
       <Description>Indicates the network the entity has privileges within.</Description>
     </Amplifier>
   </Amplifiers>
-  <CommonModifiers>
-    <SectorOneModifiers>
-      <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
-        <ExtensionCode>0</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>0</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="UAV_DRONE_MOD" Label="UAV/Drone Equipped/Drone" Graphic="C1100.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>0</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="ROBOTIC_MOD" Label="Robotic" Graphic="C1101.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>1</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="FIXED_WING_MOD" Label="Fixed Wing" Graphic="C1102.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>2</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="ROTARY_WING_MOD" Label="Rotary Wing" Graphic="C1103.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>3</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="TILT_ROTOR_MOD" Label="Tilt Rotor" Graphic="C1104.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>4</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="VSTOL_VTOL_MOD" Label="VSTOL/VTOL or Helicopter Equipped" Graphic="C1105.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>5</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="ATTACK_MOD" Label="Attack or Attack/Strike" Graphic="C1106.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>6</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="ARMOURED_MOD" Label="Armoured" Graphic="C1107.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>7</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="BALLISTIC_MISSILE_MOD" Label="Ballistic Missile/Ballistic Missile Defence Shooter" Graphic="C1108.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>8</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="BRIDGE_MOD" Label="Bridge/Bridging" Graphic="C1109.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>9</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="CARGO_MOD" Label="Cargo" Graphic="C1110.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>0</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="UTILITY_MOD" Label="Utility" Graphic="C1111.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>1</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="LIGHT_MOD" Label="Light" Graphic="C1112.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>2</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="MEDIUM_MOD" Label="Medium" Graphic="C1113.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>3</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="HEAVY_MOD" Label="Heavy" Graphic="C1114.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>4</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="CYBERSPACE_MOD" Label="Cyberspace" Graphic="C1115.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>5</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="COMMAND_POST_NODE_MOD" Label="Command Post Node" Graphic="C1116.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>6</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="JOINT_NETWORK_NODE_MOD" Label="Joint Network Node" Graphic="C1117.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>7</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="RETRANSMISSION_MOD" Label="Retransmission" Graphic="C1118.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>8</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="BRIGADE_MOD" Label="Brigade" Graphic="C1119.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>9</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="CLOSE_PROTECTION_MOD" Label="Close Protection" Graphic="C1120.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>0</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="COMBAT_MOD" Label="Combat" Graphic="C1121.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>1</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="COMMAND_CONTROL_MOD" Label="Command and Control" Graphic="C1122.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>2</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="CROWD_RIOT_CONTROL_MOD" Label="Crowd and Riot Control" Graphic="C1123.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>3</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="EXPLOSIVE_ORDNANCE_DISPOSAL_MOD" Label="Explosive Ordnance Disposal (EOD)" Graphic="C1124.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>4</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="INTELLIGENCE_SURVEILLANCE_RECONNAISSANCE_MOD" Label="Intelligence, Surveillance, Reconnaissance" Graphic="C1125.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>5</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="MAINTENANCE_MOD" Label="Maintenance" Graphic="C1126.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>6</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="MEDEVAC_MEDICAL_MOD" Label="MEDEVAC/Medic/Medical" Graphic="C1127.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>7</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="SEARCH_RESCUE_MOD" Label="Search and Rescue" Graphic="C1128.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>8</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="SECURITY_MOD" Label="Security" Graphic="C1129.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>9</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="SNIPER_MOD" Label="Sniper" Graphic="C1130.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>3</DigitOne>
-          <DigitTwo>0</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="SPECIAL_OPERATIONS_FORCES_MOD" Label="Special Operations Forces" Graphic="C1131.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>3</DigitOne>
-          <DigitTwo>1</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="SPECIAL_WEAPONS_TACTICS_MOD" Label="Special Weapons and Tactics (SWAT)" Graphic="C1132.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>3</DigitOne>
-          <DigitTwo>2</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="GUIDED_MISSILE_MOD" Label="Guided Missile" Graphic="C1133.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>3</DigitOne>
-          <DigitTwo>3</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="OTHER_GUIDED_MISSILE_MOD" Label="Other Guided Missile" Graphic="C1134.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>3</DigitOne>
-          <DigitTwo>4</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="POL_MOD" Label="Petroleum, Oil and Lubricants" Graphic="C1135.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>3</DigitOne>
-          <DigitTwo>5</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="WATER_MOD" Label="Water" Graphic="C1136.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>3</DigitOne>
-          <DigitTwo>6</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="WEAPONS_MOD" Label="Weapon or Weapons" Graphic="C1137.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>3</DigitOne>
-          <DigitTwo>7</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="CHEMICAL_MOD" Label="Chemical" Graphic="C1138.svg" Category="CBRN">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>3</DigitOne>
-          <DigitTwo>8</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="BIOLOGICAL_MOD" Label="Biological" Graphic="C1139.svg" Category="CBRN">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>3</DigitOne>
-          <DigitTwo>9</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="RADIOLOGICAL_MOD" Label="Radiological" Graphic="C1140.svg" Category="CBRN">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>4</DigitOne>
-          <DigitTwo>0</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="NUCLEAR_MOD" Label="Nuclear" Graphic="C1141.svg" Category="CBRN">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>4</DigitOne>
-          <DigitTwo>1</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="DECONTAMINATION_MOD" Label="Decontamination" Graphic="C1142.svg" Category="CBRN">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>4</DigitOne>
-          <DigitTwo>2</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="CIVILIAN_MOD" Label="Civilian" Graphic="C1143.svg" Category="Organization">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>4</DigitOne>
-          <DigitTwo>3</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="GOVERNMENT_ORGANIZATION_MOD" Label="Government Organization/Government Organization Member" Graphic="C1144.svg" Category="Organization">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>4</DigitOne>
-          <DigitTwo>4</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="ACCIDENT_MOD" Label="Accident" Graphic="C1145.svg" Category="Composite Loss or Incident Qualifier">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>4</DigitOne>
-          <DigitTwo>5</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="ASSASSINATION_MOD" Label="Assassination" Graphic="C1146.svg" Category="Crime">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>4</DigitOne>
-          <DigitTwo>6</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="EXECUTION_MOD" Label="Execution" Graphic="C1147.svg" Category="Crime">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>4</DigitOne>
-          <DigitTwo>7</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" Graphic="C1148.svg" Category="Crime">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>4</DigitOne>
-          <DigitTwo>8</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="PIRACY_MOD" Label="Piracy" Graphic="C1149.svg" Category="Crime">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>4</DigitOne>
-          <DigitTwo>9</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="RAPE_MOD" Label="Rape" Graphic="C1150.svg" Category="Crime">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>5</DigitOne>
-          <DigitTwo>0</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="ANTISUBMARINE_WARFARE_MOD" Label="Antisubmarine Warfare" Graphic="C1151.svg" Category="Mission Area">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>5</DigitOne>
-          <DigitTwo>1</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="ESCORT_MOD" Label="Escort" Graphic="C1152.svg" Category="Mission Area">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>5</DigitOne>
-          <DigitTwo>2</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="MINE_COUNTERMEASURES_MOD" Label="Mine Countermeasures" Graphic="C1153.svg" Category="Mission Area">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>5</DigitOne>
-          <DigitTwo>3</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="MINE_WARFARE_MOD" Label="Mine Warfare" Graphic="C1154.svg" Category="Mission Area">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>5</DigitOne>
-          <DigitTwo>4</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="SURFACE_WARFARE_MOD" Label="Surface Warfare" Graphic="C1155.svg" Category="Mission Area">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>5</DigitOne>
-          <DigitTwo>5</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="HIJACK_MOD" Label="Hijack/Hijacking/Hijacker" Graphic="C1165.svg" Category="Crime">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>6</DigitOne>
-          <DigitTwo>5</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="ELECTROMAGNETIC_WARFARE_MOD" Label="Electromagnetic Warfare" Graphic="C1166.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>6</DigitOne>
-          <DigitTwo>6</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-    </SectorOneModifiers>
-    <SectorTwoModifiers>
-      <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
-        <ExtensionCode>0</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>0</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="AIRBORNE_2_MOD" Label="Airborne" Graphic="C2100.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>0</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="BICYCLE_EQUIPPED_2_MOD" Label="Bicycle Equipped" Graphic="C2101.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>1</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="RAILROAD_RAILWAY_2_MOD" Label="Railroad/Railway" Graphic="C2102.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>2</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="SKI_2_MOD" Label="Ski" Graphic="C2103.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>3</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="TRACKED_2_MOD" Label="Tracked" Graphic="C2104.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>4</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="STANDARD_ON_ROAD_MOBILITY_2_MOD" Label="Standard Mobility/On-Road Mobility" Graphic="C2105.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>5</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="HIGH_OFF_ROAD_MOBILITY_2_MOD" Label="High Mobility/Off-Road Mobility" Graphic="C2106.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>6</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="FIXED_WING_2_MOD" Label="Fixed Wing" Graphic="C2107.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>7</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="ROTARY_WING_2_MOD" Label="Rotary Wing" Graphic="C2108.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>8</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="ROBOTIC_2_MOD" Label="Robotic" Graphic="C2109.svg" Category="Mobility">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>0</DigitOne>
-          <DigitTwo>9</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="AUTONOMOUS_CONTROL_2_MOD" Label="Autonomous Control" Graphic="C2110.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>0</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="REMOTELY_PILOTED_2_MOD" Label="Remotely Piloted" Graphic="C2111.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>1</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="EXPENDABLE_2_MOD" Label="Expendable" Graphic="C2112.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>2</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="MOUNTAIN_2_MOD" Label="Mountain" Graphic="C2113.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>3</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="LONG_RANGE_2_MOD" Label="Long Range" Graphic="C2114.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>4</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="MEDIUM_RANGE_2_MOD" Label="Medium Range" Graphic="C2115.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>5</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="SHORT_RANGE_2_MOD" Label="Short Range" Graphic="C2116.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>6</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="CLOSE RANGE_2_MOD" Label="Close Range" Graphic="C2117.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>7</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="HEAVY_2_MOD" Label="Heavy" Graphic="C2118.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>8</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="MEDIUM_2_MOD" Label="Medium" Graphic="C2119.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>1</DigitOne>
-          <DigitTwo>9</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="LIGHT_MEDIUM_2_MOD" Label="Light and Medium" Graphic="C2120.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>0</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="LIGHT_2_MOD" Label="Light" Graphic="C2121.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>1</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="CYBERSPACE_2_MOD" Label="Cyberspace" Graphic="C2122.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>2</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="SECURITY_FORCE_ASSISTANCE_2_MOD" Label="Security Force Assistance" Graphic="C2123.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>3</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="MEDICAL_BED_2_MOD" Label="Medical Bed" Graphic="C2124.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>4</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-      <Modifier ID="MULTIFUNCTIONAL_2_MOD" Label="Multifunctional" Graphic="C2125.svg" Category="Capability">
-        <ExtensionCode>1</ExtensionCode>
-        <ModifierCode>
-          <DigitOne>2</DigitOne>
-          <DigitTwo>5</DigitTwo>
-        </ModifierCode>
-      </Modifier>
-    </SectorTwoModifiers>
-  </CommonModifiers>
   <Versions>
     <Version Name="ORIGINAL" Description="APP-6(D)/MIL-STD-2525D October 2017">
       <VersionCode>
@@ -1305,27 +697,13 @@
     </StandardIdentityGroup>
   </StandardIdentityGroups>
   <Dimensions>
-    <Dimension ID="INTERNAL" Label="Internal" Geometry="POINT">
-      <DimensionCode>
-        <DigitOne>9</DigitOne>
-        <DigitTwo>8</DigitTwo>
-      </DimensionCode>
-      <SymbolSets>
-        <SymbolSetRef ID="INTERNAL" Label="Internal" Instance="Internal.xml">
-          <SymbolSetCode>
-            <DigitOne>9</DigitOne>
-            <DigitTwo>8</DigitTwo>
-          </SymbolSetCode>
-        </SymbolSetRef>
-      </SymbolSets>
-    </Dimension>
-    <Dimension ID="UNKNOWN" Label="Unknown" Geometry="POINT">
+    <Dimension ID="COMMON" Label="Common" Geometry="POINT">
       <DimensionCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>0</DigitTwo>
       </DimensionCode>
       <SymbolSets>
-        <SymbolSetRef ID="UNKNOWN" Label="Unknown" Instance="Unknown.xml">
+        <SymbolSetRef ID="COMMON" Label="Common" Instance="Common.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -1564,7 +942,7 @@
     <Status Name="FULLY_CAPABLE" Label="Present/Fully Capable" LabelAlias="Fully Capable">
       <StatusCode>2</StatusCode>
       <Graphics>
-        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="UNKNOWN" Graphic="010022.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="COMMON" Graphic="010022.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="AIR" Graphic="010122.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SPACE" Graphic="010522.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_UNIT" Graphic="011022.svg" />
@@ -1575,7 +953,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013522.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014022.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="016022.svg" />
-        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="UNKNOWN" Graphic="030022.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="COMMON" Graphic="030022.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="030122.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SPACE" Graphic="030522.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_UNIT" Graphic="031022.svg" />
@@ -1586,7 +964,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033522.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034022.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="036022.svg" />
-        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="UNKNOWN" Graphic="040022.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="COMMON" Graphic="040022.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="AIR" Graphic="040122.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SPACE" Graphic="040522.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_UNIT" Graphic="041022.svg" />
@@ -1597,7 +975,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043522.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044022.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="046022.svg" />
-        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="UNKNOWN" Graphic="060022.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="COMMON" Graphic="060022.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="AIR" Graphic="060122.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SPACE" Graphic="060522.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_UNIT" Graphic="061022.svg" />
@@ -1613,7 +991,7 @@
     <Status Name="DAMAGED" Label="Present/Damaged" LabelAlias="Damaged" Graphic="3.svg">
       <StatusCode>3</StatusCode>
       <Graphics>
-        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="UNKNOWN" Graphic="010032.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="COMMON" Graphic="010032.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="AIR" Graphic="010132.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SPACE" Graphic="010532.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_UNIT" Graphic="011032.svg" />
@@ -1624,7 +1002,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013532.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014032.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="016032.svg" />
-        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="UNKNOWN" Graphic="030032.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="COMMON" Graphic="030032.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="030132.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SPACE" Graphic="030532.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_UNIT" Graphic="031032.svg" />
@@ -1635,7 +1013,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033532.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034032.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="036032.svg" />
-        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="UNKNOWN" Graphic="040032.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="COMMON" Graphic="040032.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="AIR" Graphic="040132.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SPACE" Graphic="040532.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_UNIT" Graphic="041032.svg" />
@@ -1646,7 +1024,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043532.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044032.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="046032.svg" />
-        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="UNKNOWN" Graphic="060032.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="COMMON" Graphic="060032.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="AIR" Graphic="060132.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SPACE" Graphic="060532.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_UNIT" Graphic="061032.svg" />
@@ -1662,7 +1040,7 @@
     <Status Name="DESTROYED" Label="Present/Destroyed" LabelAlias="Destroyed" Graphic="4.svg">
       <StatusCode>4</StatusCode>
       <Graphics>
-        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="UNKNOWN" Graphic="010042.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="COMMON" Graphic="010042.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="AIR" Graphic="010142.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SPACE" Graphic="010542.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_UNIT" Graphic="011042.svg" />
@@ -1673,7 +1051,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013542.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014042.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="016042.svg" />
-        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="UNKNOWN" Graphic="030042.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="COMMON" Graphic="030042.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="030142.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SPACE" Graphic="030542.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_UNIT" Graphic="031042.svg" />
@@ -1684,7 +1062,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033542.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034042.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="036042.svg" />
-        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="UNKNOWN" Graphic="040042.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="COMMON" Graphic="040042.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="AIR" Graphic="040142.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SPACE" Graphic="040542.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_UNIT" Graphic="041042.svg" />
@@ -1695,7 +1073,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043542.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044042.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="046042.svg" />
-        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="UNKNOWN" Graphic="060042.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="COMMON" Graphic="060042.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="AIR" Graphic="060142.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SPACE" Graphic="060542.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_UNIT" Graphic="061042.svg" />
@@ -1711,7 +1089,7 @@
     <Status Name="FULL" Label="Present/Full to Capacity" LabelAlias="Full">
       <StatusCode>5</StatusCode>
       <Graphics>
-        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="UNKNOWN" Graphic="010052.svg" />
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="COMMON" Graphic="010052.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="AIR" Graphic="010152.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SPACE" Graphic="010552.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_UNIT" Graphic="011052.svg" />
@@ -1722,7 +1100,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013552.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014052.svg" />
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="CYBERSPACE" Graphic="016052.svg" />
-        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="UNKNOWN" Graphic="030052.svg" />
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="COMMON" Graphic="030052.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="030152.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SPACE" Graphic="030552.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_UNIT" Graphic="031052.svg" />
@@ -1733,7 +1111,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033552.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034052.svg" />
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="CYBERSPACE" Graphic="036052.svg" />
-        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="UNKNOWN" Graphic="040052.svg" />
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="COMMON" Graphic="040052.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="AIR" Graphic="040152.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SPACE" Graphic="040552.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_UNIT" Graphic="041052.svg" />
@@ -1744,7 +1122,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043552.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044052.svg" />
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="CYBERSPACE" Graphic="046052.svg" />
-        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="UNKNOWN" Graphic="060052.svg" />
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="COMMON" Graphic="060052.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="AIR" Graphic="060152.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SPACE" Graphic="060552.svg" />
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_UNIT" Graphic="061052.svg" />

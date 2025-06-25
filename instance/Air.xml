@@ -21,12 +21,6 @@
     <AmplifierRef ID="AS" Type="RECTANGLE" Points="478.000 156.000 134.000 80.000" />
   </Amplifiers>
   <Entities>
-    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
-      <EntityCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </EntityCode>
-    </Entity>
     <Entity ID="MILITARY" Label="Military" LabelAlias="Military (Air)" Remarks="Reserved for hiearchical purposes." Graphic="01110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -349,12 +343,6 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="NOT_APPLICABLE_MOD" Label="Not Applicable">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="BOMBER_MOD" Label="Bomber" Graphic="01021.svg" Category="Military Aircraft Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -519,12 +507,6 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
-    <Modifier ID="NOT_APPLICABLE_2_MOD" Label="Not Applicable">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="BOOM_MOD" Label="Boom-Only" Graphic="01042.svg" Category="Re-fueling Capability" LimitUseTo="TANKER">
       <ModifierCode>
         <DigitOne>0</DigitOne>

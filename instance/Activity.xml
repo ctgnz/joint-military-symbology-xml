@@ -18,12 +18,6 @@
     <AmplifierRef ID="AS" Type="RECTANGLE" Points="486.000 196.000 126.000 80.000" />
   </Amplifiers>
   <Entities>
-    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
-      <EntityCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </EntityCode>
-    </Entity>
     <Entity ID="INCIDENT" Label="Incident" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -614,12 +608,6 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="HOUSE_TO_HOUSE_MOD" Label="House-to-House" Graphic="40041.svg" Category="Psychological Operations">
       <ModifierCode>
         <DigitOne>0</DigitOne>

@@ -31,12 +31,6 @@
     <AmplifierRef ID="AV" Type="POLYGON" Points="150.000 302.000 305.000 205.000 460.000 302.000" />
   </Amplifiers>
   <Entities>
-    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
-      <EntityCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </EntityCode>
-    </Entity>
     <Entity ID="MILITARY" Label="Military" GeometryType="NA" Icon="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -345,12 +339,6 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="UNSPECIFIED_ONE_MOD" Label="Unspecified">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="NGO_MOD" Label="Non-Governmental Organization Member" Graphic="27071.svg" Category="Organization">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -491,12 +479,6 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
-    <Modifier ID="UNSPECIFIED_TWO_MOD" Label="Unspecified">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="VIDEO_IMAGERY_MOD" Label="Video Imagery (Combat Camera)" Graphic="27032.svg" Category="Task">
       <ModifierCode>
         <DigitOne>0</DigitOne>
