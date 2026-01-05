@@ -38,12 +38,6 @@
     <AmplifierRef ID="AY" Type="RECTANGLE" Points="0.000 516.000 126.000 80.000" />
   </Amplifiers>
   <Entities>
-    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
-      <EntityCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </EntityCode>
-    </Entity>
     <Entity ID="MISSION_FORCE" Label="Mission Force" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -286,12 +280,6 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="DEFENSIVE_CYBERSPACE" Label="Defensive Cyberspace">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -348,12 +336,6 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
-    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="SECURED_MOD" Label="Secured">
       <ModifierCode>
         <DigitOne>0</DigitOne>

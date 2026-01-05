@@ -35,12 +35,6 @@
     <AmplifierRef ID="AS" Type="RECTANGLE" Points="486.000 160.000 126.000 90.000" />
   </Amplifiers>
   <Entities>
-    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
-      <EntityCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </EntityCode>
-    </Entity>
     <Entity ID="WEAPON_SYSTEM" Label="Weapon/Weapon System" Graphic="15110000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>

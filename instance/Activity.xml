@@ -8,8 +8,8 @@
     <AmplifierRef ID="G" Type="RECTANGLE" Points="486.000 276.000 126.000 80.000" />
     <AmplifierRef ID="H" Type="RECTANGLE" Points="486.000 356.000 126.000 80.000" />
     <AmplifierRef ID="J" Type="RECTANGLE" Points="486.000 516.000 126.000 80.000" />
-    <AmplifierRef ID="Q" Type="RECTANGLE" Points="306.602 518.205 306.602 578.661 210.072 637.723" />
-    <AmplifierRef ID="S2" Type="RECTANGLE" Points="126.082 514.750 126.082 759.796 0.000 792.000" />
+    <AmplifierRef ID="Q" Type="POLYLINE" Points="306.602 518.205 306.602 578.661 210.072 637.723" />
+    <AmplifierRef ID="S2" Type="POLYLINE" Points="126.082 514.750 126.082 759.796 0.000 792.000" />
     <AmplifierRef ID="T" Type="RECTANGLE" Points="0.000 356.000 126.000 80.000" />
     <AmplifierRef ID="W" Type="RECTANGLE" Points="0.000 196.000 126.000 80.000" />
     <AmplifierRef ID="Y" Type="RECTANGLE" Points="0.000 276.000 126.000 80.000" />
@@ -18,12 +18,6 @@
     <AmplifierRef ID="AS" Type="RECTANGLE" Points="486.000 196.000 126.000 80.000" />
   </Amplifiers>
   <Entities>
-    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
-      <EntityCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </EntityCode>
-    </Entity>
     <Entity ID="INCIDENT" Label="Incident" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -614,12 +608,6 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
-      <ModifierCode>
-        <DigitOne>0</DigitOne>
-        <DigitTwo>0</DigitTwo>
-      </ModifierCode>
-    </Modifier>
     <Modifier ID="HOUSE_TO_HOUSE_MOD" Label="House-to-House" Graphic="40041.svg" Category="Psychological Operations">
       <ModifierCode>
         <DigitOne>0</DigitOne>
