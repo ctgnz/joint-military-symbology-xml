@@ -225,6 +225,24 @@
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
+            <EntitySubType ID="ES" Label="Electronic Surveillance Measures (ES)" Graphic="011101A1.svg">
+              <EntitySubTypeCode>
+                <DigitOne>10</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="LN" Label="Liaison (LN)" Graphic="011101A2.svg">
+              <EntitySubTypeCode>
+                <DigitOne>10</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="OBSERVATION" Label="Observation" Graphic="011101A3.svg">
+              <EntitySubTypeCode>
+                <DigitOne>10</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
           </EntitySubTypes>
         </EntityType>
         <EntityType ID="ROTARY_WING" Label="Rotary-Wing" Graphic="01110200.svg">
@@ -505,6 +523,30 @@
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
+    <Modifier ID="LIAISON_MOD" Label="Liaison" Graphic="01A11.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WEATHER_MOD" Label="Weather" Graphic="01A21.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ES_MOD" Label="Electronic Surveillance Measures (ES)" Graphic="01A31.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OBSERVATION_MOD" Label="Observation" Graphic="01A41.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
     <Modifier ID="BOOM_MOD" Label="Boom-Only" Graphic="01042.svg" Category="Re-fueling Capability" LimitUseTo="TANKER">
@@ -529,6 +571,210 @@
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BOMBER_2_MOD" Label="Bomber" Graphic="01A12.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="FIGHTER_2_MOD" Label="Fighter" Graphic="01A22.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="INTERCEPTOR_2_MOD" Label="Interceptor" Remarks="APP-6" Graphic="01A32.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TANKER_2_MOD" Label="Tanker" Graphic="01A42.svg" Category="Aircraft Type">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PASSENGER_2_MOD" Label="Passenger" Graphic="01A52.svg" Category="Aircraft Type">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ULTRA_LIGHT_2_MOD" Label="Ultra Light" Graphic="01A62.svg" Category="Aircraft Type">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ACP_2_MOD" Label="Airborne Command Post (ACP)" Graphic="01A72.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="AEW_2_MOD" Label="Airborne Early Warning (AEW)" Graphic="01A82.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="GOV_2_MOD" Label="Government" Graphic="01A92.svg" Category="Aircraft Type">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="EC_2_MOD" Label="Electronic Combat (EC)/Jammer" Graphic="01AA2.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>10</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PATROL_2_MOD" Label="Patrol" Graphic="01AB2.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>11</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="RECON_2_MOD" Label="Reconnaissance" Graphic="01AC2.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>12</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TRAINER_2_MOD" Label="Trainer" Graphic="01AD2.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>13</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PHOTO_2_MOD" Label="Photographic (Reconnaissance)" Graphic="01AR2.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>14</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PERSONNEL_RECOVERY_2_MOD" Label="Personnel Recovery" Graphic="01AF2.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>10</DigitOne>
+        <DigitTwo>15</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="COMMS_2_MOD" Label="Communications" Graphic="01B12.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ESM_2_MOD" Label="Electronic Support Measures (ESM)" Graphic="01B22.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="VIP_2_MOD" Label="Very Important Person (VIP) Transport" Graphic="01B32.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CSAR_2_MOD" Label="Combat Search and Rescue (CSAR)" Graphic="01B42.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SUPP_EAD_2_MOD" Label="Suppression of Enemy Air Defenses" Remarks="APP-6" Graphic="01B52.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ASUW_2_MOD" Label="Antisurface Warfare" Graphic="01B62.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="FB_2_MOD" Label="Fighter/Bomber" Graphic="01B72.svg" Category="Military Aircraft Type">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="IC_2_MOD" Label="Intensive Care" Graphic="01B82.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="EA_2_MOD" Label="Electronic Attack (EA)" Graphic="01B92.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MULTIMISSION_2_MOD" Label="Multimission" Graphic="01BA2.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>10</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="LIAISON_2_MOD" Label="Liaison" Graphic="01BB2.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>11</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ESCORT_2_MOD" Label="Escort" Graphic="01BC2.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>12</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CARGO_2_MOD" Label="Cargo/Transport" Graphic="01BD2.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>13</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WEATHER_2_MOD" Label="Weather" Graphic="01BE2.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>14</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OBSERVATION_2_MOD" Label="Observation" Graphic="01BF1.svg" Category="Military Mission Area">
+      <ModifierCode>
+        <DigitOne>11</DigitOne>
+        <DigitTwo>15</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DAY_2_MOD" Label="Day" Graphic="01C12.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>12</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NIGHT_2_MOD" Label="Night" Graphic="01C22.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>12</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ALL_WEATHER_2_MOD" Label="All Weather" Graphic="01C32.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>12</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DIVE_2_MOD" Label="Dive" Graphic="01C42.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>12</DigitOne>
+        <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorTwoModifiers>
