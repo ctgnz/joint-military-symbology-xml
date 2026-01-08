@@ -611,43 +611,43 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="OWN_MOD" Label="Own Ship" Graphic="30011.svg" Category="Mission Area">
+    <Modifier ID="OWN" Label="Own Ship" Graphic="30011.svg" Category="Mission Area">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="AA_MOD" Label="Antiair Warfare" Graphic="30021.svg" Category="Mission Area">
+    <Modifier ID="AA" Label="Antiair Warfare" Graphic="30021.svg" Category="Mission Area">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MD_MOD" Label="Missile Defense" Graphic="30081.svg" Category="Mission Area">
+    <Modifier ID="MD" Label="Missile Defense" Graphic="30081.svg" Category="Mission Area">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RMV_MOD" Label="Remote Multi-Mission Vehicle (USV-only)" Graphic="30111.svg" Category="Mission Area">
+    <Modifier ID="RMV" Label="Remote Multi-Mission Vehicle (USV-only)" Graphic="30111.svg" Category="Mission Area">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TORPEDO_MOD" Label="Torpedo" Graphic="30171.svg" Category="Weapons Capability">
+    <Modifier ID="TORPEDO" Label="Torpedo" Graphic="30171.svg" Category="Weapons Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="LRST_MOD" Label="Ballistic Missile Defense, Long-Range Surveillance and Track (LRST)" Graphic="30211.svg" Category="Mission Area">
+    <Modifier ID="LRST" Label="Ballistic Missile Defense, Long-Range Surveillance and Track (LRST)" Graphic="30211.svg" Category="Mission Area">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SEA_BASED_X_MOD" Label="Sea-Base X-Band" Graphic="30221.svg" Category="Mission Area">
+    <Modifier ID="SEA_BASED_X" Label="Sea-Base X-Band" Graphic="30221.svg" Category="Mission Area">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>2</DigitTwo>
@@ -655,55 +655,55 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
-    <Modifier ID="NUCLEAR_MOD" Label="Nuclear Powered" Graphic="30012.svg" Category="Ship Propulsion">
+    <Modifier ID="NUCLEAR" Label="Nuclear Powered" Graphic="30012.svg" Category="Ship Propulsion">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DOCK_MOD" Label="Dock" Graphic="30052.svg" Category="Cargo Capacity">
+    <Modifier ID="DOCK" Label="Dock" Graphic="30052.svg" Category="Cargo Capacity">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="LOGISTICS_MOD" Label="Logistics" Graphic="30062.svg" Category="Cargo Capacity">
+    <Modifier ID="LOGISTICS" Label="Logistics" Graphic="30062.svg" Category="Cargo Capacity">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TANK_MOD" Label="Tank" Graphic="30072.svg" Category="Cargo Capacity">
+    <Modifier ID="TANK" Label="Tank" Graphic="30072.svg" Category="Cargo Capacity">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="VEHICLE_MOD" Label="Vehicle" Graphic="30082.svg" Category="Cargo Capacity">
+    <Modifier ID="VEHICLE" Label="Vehicle" Graphic="30082.svg" Category="Cargo Capacity">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="FAST_MOD" Label="Fast" Graphic="30092.svg" Category="Ship Mobility">
+    <Modifier ID="FAST" Label="Fast" Graphic="30092.svg" Category="Ship Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="COMBINE_GEV_MOD" Label="Air-Cushioned (US)" Graphic="30102.svg" Category="Ship Mobility">
+    <Modifier ID="COMBINE_GEV" Label="Air-Cushioned (US)" Graphic="30102.svg" Category="Ship Mobility">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="PANEURO_GEV_MOD" Label="Air-Cushioned (NATO)" Graphic="30112.svg" Category="Ship Mobility">
+    <Modifier ID="PANEURO_GEV" Label="Air-Cushioned (NATO)" Graphic="30112.svg" Category="Ship Mobility">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HYDROFOIL_MOD" Label="Hydrofoil" Graphic="30122.svg" Category="Ship Mobility">
+    <Modifier ID="HYDROFOIL" Label="Hydrofoil" Graphic="30122.svg" Category="Ship Mobility">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>

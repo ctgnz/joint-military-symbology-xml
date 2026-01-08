@@ -4023,307 +4023,307 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="STANDARD_ON_ROAD_MOBILITY_MOD" Label="Standard Mobility/On-Road Mobility" Graphic="25011.svg" Category="Mobility">
+    <Modifier ID="STANDARD_ON_ROAD_MOBILITY" Label="Standard Mobility/On-Road Mobility" Graphic="25011.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HIGH_OFF_ROAD_MOBILITY_MOD" Label="High Mobility/Off-Road Mobility" Graphic="25021.svg" Category="Mobility">
+    <Modifier ID="HIGH_OFF_ROAD_MOBILITY" Label="High Mobility/Off-Road Mobility" Graphic="25021.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TRACKED_MOD" Label="Tracked" Graphic="25031.svg" Category="Mobility">
+    <Modifier ID="TRACKED" Label="Tracked" Graphic="25031.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TRACKED_WHEELED_MOD" Label="Tracked and Wheeled Combination (Half-Track)" Graphic="25041.svg" Category="Mobility">
+    <Modifier ID="TRACKED_WHEELED" Label="Tracked and Wheeled Combination (Half-Track)" Graphic="25041.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TOWED_MOD" Label="Towed" Graphic="25051.svg" Category="Mobility">
+    <Modifier ID="TOWED" Label="Towed" Graphic="25051.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RAILWAY_MOD" Label="Railway" Graphic="25061.svg" Category="Mobility">
+    <Modifier ID="RAILWAY" Label="Railway" Graphic="25061.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OVER_SNOW_PRIME_MOVER_MOD" Label="Over-Snow (Prime Mover)" Graphic="25071.svg" Category="Mobility">
+    <Modifier ID="OVER_SNOW_PRIME_MOVER" Label="Over-Snow (Prime Mover)" Graphic="25071.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SLED_MOD" Label="Sled" Graphic="25081.svg" Category="Mobility">
+    <Modifier ID="SLED" Label="Sled" Graphic="25081.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="PACK_ANIMAL_MOD" Label="Pack Animal" Graphic="25091.svg" Category="Mobility">
+    <Modifier ID="PACK_ANIMAL" Label="Pack Animal" Graphic="25091.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="BARGE_MOD" Label="Barge" Graphic="25101.svg" Category="Mobility">
+    <Modifier ID="BARGE" Label="Barge" Graphic="25101.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="AMPHIBIOUS_MOD" Label="Amphibious" Graphic="25111.svg" Category="Mobility">
+    <Modifier ID="AMPHIBIOUS" Label="Amphibious" Graphic="25111.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NO_VEHICLES_MOD" Label="No Vehicles" Graphic="25121.svg" Category="Mobility">
+    <Modifier ID="NO_VEHICLES" Label="No Vehicles" Graphic="25121.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="UNSPECIFIED_MINE_MOD" Label="Unspecified Mine" Graphic="25131.svg" Category="Mine Type">
+    <Modifier ID="UNSPECIFIED_MINE" Label="Unspecified Mine" Graphic="25131.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_MOD" Label="Antipersonnel Mine" Graphic="25141.svg" Category="Mine Type">
+    <Modifier ID="APM" Label="Antipersonnel Mine" Graphic="25141.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APMDFX_MOD" Label="Antipersonnel Mine with Directional Effects" Graphic="25151.svg" Category="Mine Type">
+    <Modifier ID="APMDFX" Label="Antipersonnel Mine with Directional Effects" Graphic="25151.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATM_MOD" Label="Antitank Mine" Graphic="25161.svg" Category="Mine Type">
+    <Modifier ID="ATM" Label="Antitank Mine" Graphic="25161.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATMAHD_MOD" Label="Antitank Mine with Antihandling Device" Graphic="25171.svg" Category="Mine Type">
+    <Modifier ID="ATMAHD" Label="Antitank Mine with Antihandling Device" Graphic="25171.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATMWA_MOD" Label="Wide Area Antitank Mine" Graphic="25181.svg" Category="Mine Type">
+    <Modifier ID="ATMWA" Label="Wide Area Antitank Mine" Graphic="25181.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CLUSTER_MOD" Label="Mine Cluster" Graphic="25191.svg" Category="Mine Type">
+    <Modifier ID="CLUSTER" Label="Mine Cluster" Graphic="25191.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_APMDFX_MOD" Label="Antipersonnel Mine and Antipersonnel Mine with Directional Effects" Graphic="25201.svg" Category="Mine Type">
+    <Modifier ID="APM_APMDFX" Label="Antipersonnel Mine and Antipersonnel Mine with Directional Effects" Graphic="25201.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_ATM_MOD" Label="Antipersonnel Mine and Antitank Mine" Graphic="25211.svg" Category="Mine Type">
+    <Modifier ID="APM_ATM" Label="Antipersonnel Mine and Antitank Mine" Graphic="25211.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_ATMAHD_MOD" Label="Antipersonnel Mine and Antitank Mine with Antihandling Device" Graphic="25221.svg" Category="Mine Type">
+    <Modifier ID="APM_ATMAHD" Label="Antipersonnel Mine and Antitank Mine with Antihandling Device" Graphic="25221.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_ATMWA_MOD" Label="Antipersonnel Mine and Wide Area Antitank Mine" Graphic="25231.svg" Category="Mine Type">
+    <Modifier ID="APM_ATMWA" Label="Antipersonnel Mine and Wide Area Antitank Mine" Graphic="25231.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_CLUSTER_MOD" Label="Antipersonnel Mine and Mine Cluster" Graphic="25241.svg" Category="Mine Type">
+    <Modifier ID="APM_CLUSTER" Label="Antipersonnel Mine and Mine Cluster" Graphic="25241.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APMDFX_ATM_MOD" Label="Antipersonnel Mine with Directional Effects and Antitank Mine" Graphic="25251.svg" Category="Mine Type">
+    <Modifier ID="APMDFX_ATM" Label="Antipersonnel Mine with Directional Effects and Antitank Mine" Graphic="25251.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APMDFX_ATMAHD_MOD" Label="Antipersonnel Mine with Directional Effects and Antitank Mine with Antihandling Device" Graphic="25261.svg" Category="Mine Type">
+    <Modifier ID="APMDFX_ATMAHD" Label="Antipersonnel Mine with Directional Effects and Antitank Mine with Antihandling Device" Graphic="25261.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APMDFX_ATMWA_MOD" Label="Antipersonnel Mine with Directional Effects and Wide Area Antitank Mine" Graphic="25271.svg" Category="Mine Type">
+    <Modifier ID="APMDFX_ATMWA" Label="Antipersonnel Mine with Directional Effects and Wide Area Antitank Mine" Graphic="25271.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APMDFX_CLUSTER_MOD" Label="Antipersonnel Mine with Directional Effects and Mine Cluster" Graphic="25281.svg" Category="Mine Type">
+    <Modifier ID="APMDFX_CLUSTER" Label="Antipersonnel Mine with Directional Effects and Mine Cluster" Graphic="25281.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATM_ATMAHD_MOD" Label="Antitank Mine and Antitank Mine with Antihandling Device" Graphic="25291.svg" Category="Mine Type">
+    <Modifier ID="ATM_ATMAHD" Label="Antitank Mine and Antitank Mine with Antihandling Device" Graphic="25291.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATM_ATMWA_MOD" Label="Antitank Mine and Wide Area Antitank Mine" Graphic="25301.svg" Category="Mine Type">
+    <Modifier ID="ATM_ATMWA" Label="Antitank Mine and Wide Area Antitank Mine" Graphic="25301.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATM_CLUSTER_MOD" Label="Antitank Mine and Mine Cluster" Graphic="25311.svg" Category="Mine Type">
+    <Modifier ID="ATM_CLUSTER" Label="Antitank Mine and Mine Cluster" Graphic="25311.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATMAHD_ATMWA_MOD" Label="Antitank Mine with Antihandling Device and Wide Area Antitank Mine" Graphic="25321.svg" Category="Mine Type">
+    <Modifier ID="ATMAHD_ATMWA" Label="Antitank Mine with Antihandling Device and Wide Area Antitank Mine" Graphic="25321.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATMAHD_CLUSTER_MOD" Label="Antitank Mine with Antihandling Device and Mine Cluster" Graphic="25331.svg" Category="Mine Type">
+    <Modifier ID="ATMAHD_CLUSTER" Label="Antitank Mine with Antihandling Device and Mine Cluster" Graphic="25331.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATMWA_CLUSTER_MOD" Label="Wide Area Antitank Mine and Mine Cluster" Graphic="25341.svg" Category="Mine Type">
+    <Modifier ID="ATMWA_CLUSTER" Label="Wide Area Antitank Mine and Mine Cluster" Graphic="25341.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_APMDFX_ATM_MOD" Label="Antipersonnel Mine, Antipersonnel Mine with Directional Effects and Antitank Mine" Graphic="25351.svg" Category="Mine Type">
+    <Modifier ID="APM_APMDFX_ATM" Label="Antipersonnel Mine, Antipersonnel Mine with Directional Effects and Antitank Mine" Graphic="25351.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_APMDFX_ATMAHD_MOD" Label="Antipersonnel Mine, Antipersonnel Mine with Directional Effects and Antitank Mine with Antihandling Device" Graphic="25361.svg" Category="Mine Type">
+    <Modifier ID="APM_APMDFX_ATMAHD" Label="Antipersonnel Mine, Antipersonnel Mine with Directional Effects and Antitank Mine with Antihandling Device" Graphic="25361.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_APMDFX_ATMWA_MOD" Label="Antipersonnel Mine, Antipersonnel Mine with Directional Effects and Wide Area Antitank Mine" Graphic="25371.svg" Category="Mine Type">
+    <Modifier ID="APM_APMDFX_ATMWA" Label="Antipersonnel Mine, Antipersonnel Mine with Directional Effects and Wide Area Antitank Mine" Graphic="25371.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_APMDFX_CLUSTER_MOD" Label="Antipersonnel Mine, Antipersonnel Mine with Directional Effects and Mine Cluster" Graphic="25381.svg" Category="Mine Type">
+    <Modifier ID="APM_APMDFX_CLUSTER" Label="Antipersonnel Mine, Antipersonnel Mine with Directional Effects and Mine Cluster" Graphic="25381.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_ATM_ATMAHD_MOD" Label="Antipersonnel Mine, Antitank Mine and Antitank Mine with Antihandling Device" Graphic="25391.svg" Category="Mine Type">
+    <Modifier ID="APM_ATM_ATMAHD" Label="Antipersonnel Mine, Antitank Mine and Antitank Mine with Antihandling Device" Graphic="25391.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_ATM_ATMWA_MOD" Label="Antipersonnel Mine, Antitank Mine and Wide Area Antitank Mine" Graphic="25401.svg" Category="Mine Type">
+    <Modifier ID="APM_ATM_ATMWA" Label="Antipersonnel Mine, Antitank Mine and Wide Area Antitank Mine" Graphic="25401.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_ATM_CLUSTER_MOD" Label="Antipersonnel Mine, Antitank Mine and Mine Cluster" Graphic="25411.svg" Category="Mine Type">
+    <Modifier ID="APM_ATM_CLUSTER" Label="Antipersonnel Mine, Antitank Mine and Mine Cluster" Graphic="25411.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_ATMAHD_ATMWA_MOD" Label="Antipersonnel Mine, Antitank Mine with Antihandling Device and Wide Area Antitank Mine" Graphic="25421.svg" Category="Mine Type">
+    <Modifier ID="APM_ATMAHD_ATMWA" Label="Antipersonnel Mine, Antitank Mine with Antihandling Device and Wide Area Antitank Mine" Graphic="25421.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_ATMAHD_CLUSTER_MOD" Label="Antipersonnel Mine, Antitank Mine with Antihandling Device and Mine Cluster" Graphic="25431.svg" Category="Mine Type">
+    <Modifier ID="APM_ATMAHD_CLUSTER" Label="Antipersonnel Mine, Antitank Mine with Antihandling Device and Mine Cluster" Graphic="25431.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APM_ATMWA_CLUSTER_MOD" Label="Antipersonnel Mine, Wide Area Antitank Mine and Mine Cluster" Graphic="25441.svg" Category="Mine Type">
+    <Modifier ID="APM_ATMWA_CLUSTER" Label="Antipersonnel Mine, Wide Area Antitank Mine and Mine Cluster" Graphic="25441.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APMDFX_ATM_ATMAHD_MOD" Label="Antipersonnel Mine with Directional Effects, Antitank Mine and Antitank Mine with Antihandling Device" Graphic="25451.svg" Category="Mine Type">
+    <Modifier ID="APMDFX_ATM_ATMAHD" Label="Antipersonnel Mine with Directional Effects, Antitank Mine and Antitank Mine with Antihandling Device" Graphic="25451.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APMDFX_ATM_ATMWA_MOD" Label="Antipersonnel Mine with Directional Effects, Antitank Mine and Wide Area Antitank Mine" Graphic="25461.svg" Category="Mine Type">
+    <Modifier ID="APMDFX_ATM_ATMWA" Label="Antipersonnel Mine with Directional Effects, Antitank Mine and Wide Area Antitank Mine" Graphic="25461.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APMDFX_ATM_CLUSTER_MOD" Label="Antipersonnel Mine with Directional Effects, Antitank Mine and Mine Cluster" Graphic="25471.svg" Category="Mine Type">
+    <Modifier ID="APMDFX_ATM_CLUSTER" Label="Antipersonnel Mine with Directional Effects, Antitank Mine and Mine Cluster" Graphic="25471.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APMDFX_ATMAHD_ATMWA_MOD" Label="Antipersonnel Mine with Directional Effects, Antitank Mine with Antihandling Device and Wide Area Antitank Mine" Graphic="25481.svg" Category="Mine Type">
+    <Modifier ID="APMDFX_ATMAHD_ATMWA" Label="Antipersonnel Mine with Directional Effects, Antitank Mine with Antihandling Device and Wide Area Antitank Mine" Graphic="25481.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APMDFX_ATMAHD_CLUSTER_MOD" Label="Antipersonnel Mine with Directional Effects, Antitank Mine with Antihandling Device and Mine Cluster" Graphic="25491.svg" Category="Mine Type">
+    <Modifier ID="APMDFX_ATMAHD_CLUSTER" Label="Antipersonnel Mine with Directional Effects, Antitank Mine with Antihandling Device and Mine Cluster" Graphic="25491.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="APMDFX_ATMWA_CLUSTER_MOD" Label="Antipersonnel Mine with Directional Effects, Wide Area Antitank Mine and Mine Cluster" Graphic="25501.svg" Category="Mine Type">
+    <Modifier ID="APMDFX_ATMWA_CLUSTER" Label="Antipersonnel Mine with Directional Effects, Wide Area Antitank Mine and Mine Cluster" Graphic="25501.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DISMOUNTED_MOD" Label="Dismounted" Graphic="25511.svg" Category="Mine Type">
+    <Modifier ID="DISMOUNTED" Label="Dismounted" Graphic="25511.svg" Category="Mine Type">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>1</DigitTwo>
@@ -4331,31 +4331,31 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
-    <Modifier ID="URBAN_MOD" Label="Urban" Graphic="25012.svg" Category="Terrain">
+    <Modifier ID="URBAN" Label="Urban" Graphic="25012.svg" Category="Terrain">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="WATER_MOD" Label="Water" Graphic="25022.svg" Category="Terrain">
+    <Modifier ID="WATER" Label="Water" Graphic="25022.svg" Category="Terrain">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="GROUND_MOD" Label="Ground" Graphic="25032.svg" Category="Terrain">
+    <Modifier ID="GROUND" Label="Ground" Graphic="25032.svg" Category="Terrain">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="VEGETATION_MOD" Label="Vegetation" Graphic="25042.svg" Category="Terrain">
+    <Modifier ID="VEGETATION" Label="Vegetation" Graphic="25042.svg" Category="Terrain">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OBSTACLES_MOD" Label="Obstacles" Graphic="25052.svg" Category="Terrain">
+    <Modifier ID="OBSTACLES" Label="Obstacles" Graphic="25052.svg" Category="Terrain">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>

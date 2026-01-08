@@ -339,139 +339,139 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="NGO_MOD" Label="Non-Governmental Organization Member" Graphic="27071.svg" Category="Organization">
+    <Modifier ID="NGO" Label="Non-Governmental Organization Member" Graphic="27071.svg" Category="Organization">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="FAO_MOD" Label="Field Artillery Observer" Graphic="27111.svg" Category="Task">
+    <Modifier ID="FAO" Label="Field Artillery Observer" Graphic="27111.svg" Category="Task">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="JOINT_FIRE_SUPPORT_MOD" Label="Joint Fire Support" Graphic="27121.svg" Category="Task">
+    <Modifier ID="JOINT_FIRE_SUPPORT" Label="Joint Fire Support" Graphic="27121.svg" Category="Task">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="LIAISON_MOD" Label="Liaison" Graphic="27131.svg" Category="Task">
+    <Modifier ID="LIAISON" Label="Liaison" Graphic="27131.svg" Category="Task">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MESSENGER_MOD" Label="Messenger" Graphic="27141.svg" Category="Task">
+    <Modifier ID="MESSENGER" Label="Messenger" Graphic="27141.svg" Category="Task">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MILITARY_POLICE_MOD" Label="Military Police (MP)" Graphic="27151.svg" Category="Task">
+    <Modifier ID="MILITARY_POLICE" Label="Military Police (MP)" Graphic="27151.svg" Category="Task">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OBSERVER_MOD" Label="Observer" Graphic="27161.svg" Category="Task">
+    <Modifier ID="OBSERVER" Label="Observer" Graphic="27161.svg" Category="Task">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DESIGNATED_MARKSMAN_MOD" Label="Designated Marksman (DM)" Graphic="27171.svg" Category="Task">
+    <Modifier ID="DESIGNATED_MARKSMAN" Label="Designated Marksman (DM)" Graphic="27171.svg" Category="Task">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SIGNALLER_MOD" Label="Signaller" Graphic="27201.svg" Category="Service">
+    <Modifier ID="SIGNALLER" Label="Signaller" Graphic="27201.svg" Category="Service">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RECONNAISSANCE_MOD" Label="Reconnaissance" Graphic="27211.svg" Category="Service">
+    <Modifier ID="RECONNAISSANCE" Label="Reconnaissance" Graphic="27211.svg" Category="Service">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="INFANTRY_MOD" Label="Infantry" Graphic="27221.svg" Category="Service">
+    <Modifier ID="INFANTRY" Label="Infantry" Graphic="27221.svg" Category="Service">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="COMMANDER_MOD" Label="Commander (CDR)" Graphic="27231.svg" Category="Task">
+    <Modifier ID="COMMANDER" Label="Commander (CDR)" Graphic="27231.svg" Category="Task">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SECOND_IN_COMMAND_MOD" Label="Second in Command (SIC)" Graphic="27241.svg" Category="Task">
+    <Modifier ID="SECOND_IN_COMMAND" Label="Second in Command (SIC)" Graphic="27241.svg" Category="Task">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DEMOLITION_MOD" Label="Demolition" Graphic="27251.svg" Category="Task">
+    <Modifier ID="DEMOLITION" Label="Demolition" Graphic="27251.svg" Category="Task">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="POLICE_MOD" Label="Police" Graphic="27261.svg" Category="Organization">
+    <Modifier ID="POLICE" Label="Police" Graphic="27261.svg" Category="Organization">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="INDIVIDUAL_MOD" Label="Individual" Graphic="27461.svg" Category="Echelon">
+    <Modifier ID="INDIVIDUAL" Label="Individual" Graphic="27461.svg" Category="Echelon">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TEAM_MOD" Label="Team/Crew" Graphic="27471.svg" Category="Echelon">
+    <Modifier ID="TEAM" Label="Team/Crew" Graphic="27471.svg" Category="Echelon">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SQUAD_MOD" Label="Squad" Graphic="27481.svg" Category="Echelon">
+    <Modifier ID="SQUAD" Label="Squad" Graphic="27481.svg" Category="Echelon">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SECTION_MOD" Label="Section" Graphic="27491.svg" Category="Echelon">
+    <Modifier ID="SECTION" Label="Section" Graphic="27491.svg" Category="Echelon">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="PLATOON_MOD" Label="Platoon/Detachment" Graphic="27501.svg" Category="Echelon">
+    <Modifier ID="PLATOON" Label="Platoon/Detachment" Graphic="27501.svg" Category="Echelon">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="COMPANY_MOD" Label="Company" Graphic="27511.svg" Category="Echelon">
+    <Modifier ID="COMPANY" Label="Company" Graphic="27511.svg" Category="Echelon">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="BATTALION_MOD" Label="Battalion" Graphic="27521.svg" Category="Echelon">
+    <Modifier ID="BATTALION" Label="Battalion" Graphic="27521.svg" Category="Echelon">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="REGIMENT_MOD" Label="Regiment/Group" Graphic="27531.svg" Category="Echelon">
+    <Modifier ID="REGIMENT" Label="Regiment/Group" Graphic="27531.svg" Category="Echelon">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -479,211 +479,211 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
-    <Modifier ID="VIDEO_IMAGERY_MOD" Label="Video Imagery (Combat Camera)" Graphic="27032.svg" Category="Task">
+    <Modifier ID="VIDEO_IMAGERY" Label="Video Imagery (Combat Camera)" Graphic="27032.svg" Category="Task">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="J1_MOD" Label="J1" Graphic="27042.svg" Category="Functional Staff Area">
+    <Modifier ID="J1" Label="J1" Graphic="27042.svg" Category="Functional Staff Area">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="J2_MOD" Label="J2" Graphic="27052.svg" Category="Functional Staff Area">
+    <Modifier ID="J2" Label="J2" Graphic="27052.svg" Category="Functional Staff Area">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="J3_MOD" Label="J3" Graphic="27062.svg" Category="Functional Staff Area">
+    <Modifier ID="J3" Label="J3" Graphic="27062.svg" Category="Functional Staff Area">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="J4_MOD" Label="J4" Graphic="27072.svg" Category="Functional Staff Area">
+    <Modifier ID="J4" Label="J4" Graphic="27072.svg" Category="Functional Staff Area">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="J5_MOD" Label="J5" Graphic="27082.svg" Category="Functional Staff Area">
+    <Modifier ID="J5" Label="J5" Graphic="27082.svg" Category="Functional Staff Area">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="J6_MOD" Label="J6" Graphic="27092.svg" Category="Functional Staff Area">
+    <Modifier ID="J6" Label="J6" Graphic="27092.svg" Category="Functional Staff Area">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="J7_MOD" Label="J7" Graphic="27102.svg" Category="Functional Staff Area">
+    <Modifier ID="J7" Label="J7" Graphic="27102.svg" Category="Functional Staff Area">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="J8_MOD" Label="J8" Graphic="27112.svg" Category="Functional Staff Area">
+    <Modifier ID="J8" Label="J8" Graphic="27112.svg" Category="Functional Staff Area">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="J9_MOD" Label="J9" Graphic="27122.svg" Category="Functional Staff Area">
+    <Modifier ID="J9" Label="J9" Graphic="27122.svg" Category="Functional Staff Area">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OF01_MOD" Label="OF-1" Graphic="27142.svg" Category="Rank">
+    <Modifier ID="OF01" Label="OF-1" Graphic="27142.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OF02_MOD" Label="OF-2" Graphic="27152.svg" Category="Rank">
+    <Modifier ID="OF02" Label="OF-2" Graphic="27152.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OF03_MOD" Label="OF-3" Graphic="27162.svg" Category="Rank">
+    <Modifier ID="OF03" Label="OF-3" Graphic="27162.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OF04_MOD" Label="OF-4" Graphic="27172.svg" Category="Rank">
+    <Modifier ID="OF04" Label="OF-4" Graphic="27172.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OF05_MOD" Label="OF-5" Graphic="27182.svg" Category="Rank">
+    <Modifier ID="OF05" Label="OF-5" Graphic="27182.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OF06_MOD" Label="OF-6" Graphic="27192.svg" Category="Rank">
+    <Modifier ID="OF06" Label="OF-6" Graphic="27192.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OF07_MOD" Label="OF-7" Graphic="27202.svg" Category="Rank">
+    <Modifier ID="OF07" Label="OF-7" Graphic="27202.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OF08_MOD" Label="OF-8" Graphic="27212.svg" Category="Rank">
+    <Modifier ID="OF08" Label="OF-8" Graphic="27212.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OF09_MOD" Label="OF-9" Graphic="27222.svg" Category="Rank">
+    <Modifier ID="OF09" Label="OF-9" Graphic="27222.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OF10_MOD" Label="OF-10" Graphic="27232.svg" Category="Rank">
+    <Modifier ID="OF10" Label="OF-10" Graphic="27232.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OFD_MOD" Label="OF-D" Graphic="27242.svg" Category="Rank">
+    <Modifier ID="OFD" Label="OF-D" Graphic="27242.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OR1_MOD" Label="OR-1" Graphic="27252.svg" Category="Rank">
+    <Modifier ID="OR1" Label="OR-1" Graphic="27252.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OR2_MOD" Label="OR-2" Graphic="27262.svg" Category="Rank">
+    <Modifier ID="OR2" Label="OR-2" Graphic="27262.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OR3_MOD" Label="OR-3" Graphic="27272.svg" Category="Rank">
+    <Modifier ID="OR3" Label="OR-3" Graphic="27272.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OR4_MOD" Label="OR-4" Graphic="27282.svg" Category="Rank">
+    <Modifier ID="OR4" Label="OR-4" Graphic="27282.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OR5_MOD" Label="OR-5" Graphic="27292.svg" Category="Rank">
+    <Modifier ID="OR5" Label="OR-5" Graphic="27292.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OR6_MOD" Label="OR-6" Graphic="27302.svg" Category="Rank">
+    <Modifier ID="OR6" Label="OR-6" Graphic="27302.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OR7_MOD" Label="OR-7" Graphic="27312.svg" Category="Rank">
+    <Modifier ID="OR7" Label="OR-7" Graphic="27312.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OR8_MOD" Label="OR-8" Graphic="27322.svg" Category="Rank">
+    <Modifier ID="OR8" Label="OR-8" Graphic="27322.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OR9_MOD" Label="OR-9" Graphic="27332.svg" Category="Rank">
+    <Modifier ID="OR9" Label="OR-9" Graphic="27332.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="WO1_MOD" Label="WO-1" Graphic="27342.svg" Category="Rank">
+    <Modifier ID="WO1" Label="WO-1" Graphic="27342.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="WO2_MOD" Label="WO-2" Graphic="27352.svg" Category="Rank">
+    <Modifier ID="WO2" Label="WO-2" Graphic="27352.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="WO3_MOD" Label="WO-3" Graphic="27362.svg" Category="Rank">
+    <Modifier ID="WO3" Label="WO-3" Graphic="27362.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="WO4_MOD" Label="WO-4" Graphic="27372.svg" Category="Rank">
+    <Modifier ID="WO4" Label="WO-4" Graphic="27372.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="WO5_MOD" Label="WO-5" Graphic="27382.svg" Category="Rank">
+    <Modifier ID="WO5" Label="WO-5" Graphic="27382.svg" Category="Rank">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>8</DigitTwo>

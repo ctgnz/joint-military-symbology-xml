@@ -242,37 +242,37 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="LEO_MOD" Label="Low Earth Orbit (LEO)" Graphic="05011.svg" Category="Orbit">
+    <Modifier ID="LEO" Label="Low Earth Orbit (LEO)" Graphic="05011.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MEO_MOD" Label="Medium Earth Orbit (MEO)" Graphic="05021.svg" Category="Orbit">
+    <Modifier ID="MEO" Label="Medium Earth Orbit (MEO)" Graphic="05021.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HEO_MOD" Label="High Earth Orbit (HEO)" Graphic="05031.svg" Category="Orbit">
+    <Modifier ID="HEO" Label="High Earth Orbit (HEO)" Graphic="05031.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="GSO_MOD" Label="Geosynchronous Orbit (GSO)" Graphic="05041.svg" Category="Orbit">
+    <Modifier ID="GSO" Label="Geosynchronous Orbit (GSO)" Graphic="05041.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="GEO_MOD" Label="Geostationary Orbit (GEO)" Graphic="05051.svg" Category="Orbit">
+    <Modifier ID="GEO" Label="Geostationary Orbit (GEO)" Graphic="05051.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MO_MOD" Label="Molniya Orbit (MO)" Graphic="05061.svg" Category="Orbit">
+    <Modifier ID="MO" Label="Molniya Orbit (MO)" Graphic="05061.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
@@ -280,67 +280,67 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
-    <Modifier ID="OPTICAL_MOD" Label="Optical" Graphic="05012.svg" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
+    <Modifier ID="OPTICAL" Label="Optical" Graphic="05012.svg" Category="Sensor Type" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="INFRARED_MOD" Label="Infrared" Graphic="05022.svg" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
+    <Modifier ID="INFRARED" Label="Infrared" Graphic="05022.svg" Category="Sensor Type" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RADAR_MOD" Label="Radar" Graphic="05032.svg" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
+    <Modifier ID="RADAR" Label="Radar" Graphic="05032.svg" Category="Sensor Type" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SIGINT_MOD" Label="Signals Intelligence (SIGINT)" Graphic="05042.svg" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
+    <Modifier ID="SIGINT" Label="Signals Intelligence (SIGINT)" Graphic="05042.svg" Category="Sensor Type" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ELECTRONIC_WARFARE_MOD" Label="Electronic Warfare (ASAT)" Graphic="05062.svg" Category="Capability" LimitUseTo="ANTISATELLITEWEAPON">
+    <Modifier ID="ELECTRONIC_WARFARE" Label="Electronic Warfare (ASAT)" Graphic="05062.svg" Category="Capability" LimitUseTo="ANTISATELLITEWEAPON">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HIGH_POWER_MICROWAVE_MOD" Label="High Power Microwave (ASAT)" Graphic="05072.svg" Category="Capability" LimitUseTo="ANTISATELLITEWEAPON">
+    <Modifier ID="HIGH_POWER_MICROWAVE" Label="High Power Microwave (ASAT)" Graphic="05072.svg" Category="Capability" LimitUseTo="ANTISATELLITEWEAPON">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="LASER_MOD" Label="Laser (ASAT)" Graphic="05082.svg" Category="Capability" LimitUseTo="ANTISATELLITEWEAPON">
+    <Modifier ID="LASER" Label="Laser (ASAT)" Graphic="05082.svg" Category="Capability" LimitUseTo="ANTISATELLITEWEAPON">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MINE_MOD" Label="Mine (ASAT)" Graphic="05092.svg" Category="Capability" LimitUseTo="ANTISATELLITEWEAPON">
+    <Modifier ID="MINE" Label="Mine (ASAT)" Graphic="05092.svg" Category="Capability" LimitUseTo="ANTISATELLITEWEAPON">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MAINTENANCE_MOD" Label="Maintenance" Graphic="05102.svg" Category="Capability">
+    <Modifier ID="MAINTENANCE" Label="Maintenance" Graphic="05102.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="REFUEL_MOD" Label="Refuel" Graphic="05102.svg" Category="Capability">
+    <Modifier ID="REFUEL" Label="Refuel" Graphic="05102.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TUG_MOD" Label="Tug" Graphic="05102.svg" Category="Capability">
+    <Modifier ID="TUG" Label="Tug" Graphic="05102.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>

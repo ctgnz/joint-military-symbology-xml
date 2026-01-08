@@ -608,79 +608,79 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="HOUSE_TO_HOUSE_MOD" Label="House-to-House" Graphic="40041.svg" Category="Psychological Operations">
+    <Modifier ID="HOUSE_TO_HOUSE" Label="House-to-House" Graphic="40041.svg" Category="Psychological Operations">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MURDER_MOD" Label="Murder" Graphic="40061.svg" Category="Crime">
+    <Modifier ID="MURDER" Label="Murder" Graphic="40061.svg" Category="Crime">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="WRITTEN_PSYCHOLOGICAL_OPERATIONS_MOD" Label="Written Psychological Operations" Graphic="40091.svg" Category="Psychological Operations">
+    <Modifier ID="WRITTEN_PSYCHOLOGICAL_OPERATIONS" Label="Written Psychological Operations" Graphic="40091.svg" Category="Psychological Operations">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="PIRATE_MOD" Label="Pirate" Graphic="40101.svg" Category="Crime">
+    <Modifier ID="PIRATE" Label="Pirate" Graphic="40101.svg" Category="Crime">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="FALSE_MOD" Label="False" Graphic="40111.svg" Category="IED Category">
+    <Modifier ID="FALSE" Label="False" Graphic="40111.svg" Category="IED Category">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="FIND_MOD" Label="Find" Graphic="40121.svg" Category="IED Category">
+    <Modifier ID="FIND" Label="Find" Graphic="40121.svg" Category="IED Category">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="FOUND_AND_CLEARED_MOD" Label="Found and Cleared" Graphic="40131.svg" Category="IED Category">
+    <Modifier ID="FOUND_AND_CLEARED" Label="Found and Cleared" Graphic="40131.svg" Category="IED Category">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HOAX_DECOY_MOD" Label="Hoax (Decoy)" Graphic="40141.svg" Category="IED Category">
+    <Modifier ID="HOAX_DECOY" Label="Hoax (Decoy)" Graphic="40141.svg" Category="IED Category">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATTEMPTED_MOD" Label="Attempted" Graphic="40151.svg" Category="Incident Qualifier">
+    <Modifier ID="ATTEMPTED" Label="Attempted" Graphic="40151.svg" Category="Incident Qualifier">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="INCIDENT_MOD" Label="Incident" Graphic="40171.svg" Category="Incident Qualifier">
+    <Modifier ID="INCIDENT" Label="Incident" Graphic="40171.svg" Category="Incident Qualifier">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="THEFT_MOD" Label="Theft" Graphic="40181.svg" Category="Crime">
+    <Modifier ID="THEFT" Label="Theft" Graphic="40181.svg" Category="Crime">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="EVICTION_MOD" Label="Eviction" Graphic="40211.svg" Category="Crime">
+    <Modifier ID="EVICTION" Label="Eviction" Graphic="40211.svg" Category="Crime">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RAID_MOD" Label="Raid" Graphic="40221.svg" Category="Crime">
+    <Modifier ID="RAID" Label="Raid" Graphic="40221.svg" Category="Crime">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>2</DigitTwo>

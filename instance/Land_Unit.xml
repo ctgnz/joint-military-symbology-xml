@@ -1244,421 +1244,421 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="TACTICAL_SATELLITE_MOD" Label="Tactical Satellite" Graphic="10011.svg" Category="Mobility">
+    <Modifier ID="TACTICAL_SATELLITE" Label="Tactical Satellite" Graphic="10011.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="AREA_MOD" Label="Area" Graphic="10021.svg" Category="Capability">
+    <Modifier ID="AREA" Label="Area" Graphic="10021.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="BORDER_MOD" Label="Border" Graphic="10051.svg" Category="Capability">
+    <Modifier ID="BORDER" Label="Border" Graphic="10051.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="COMMUNICATIONS_CONTINGENCY_PACKAGE_MOD" Label="Communications Contingency Package" Graphic="10111.svg" Category="Capability">
+    <Modifier ID="COMMUNICATIONS_CONTINGENCY_PACKAGE" Label="Communications Contingency Package" Graphic="10111.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CONSTRUCTION_MOD" Label="Construction" Graphic="10121.svg" Category="Capability">
+    <Modifier ID="CONSTRUCTION" Label="Construction" Graphic="10121.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CROSS_CULTURAL_COMMUNICATION_MOD" Label="Cross Cultural Communication" Graphic="10131.svg" Category="Capability">
+    <Modifier ID="CROSS_CULTURAL_COMMUNICATION" Label="Cross Cultural Communication" Graphic="10131.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DETENTION_MOD" Label="Detention" Graphic="10161.svg" Category="Capability">
+    <Modifier ID="DETENTION" Label="Detention" Graphic="10161.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DIRECT_COMMUNICATIONS_MOD" Label="Direct Communications" Graphic="10171.svg" Category="Capability">
+    <Modifier ID="DIRECT_COMMUNICATIONS" Label="Direct Communications" Graphic="10171.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DIVING_MOD" Label="Diving" Graphic="10181.svg" Category="Capability">
+    <Modifier ID="DIVING" Label="Diving" Graphic="10181.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DIVISION_MOD" Label="Division (Echelon of Support)" Graphic="10191.svg" Category="Capability">
+    <Modifier ID="DIVISION" Label="Division (Echelon of Support)" Graphic="10191.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DOG_MOD" Label="Dog" Graphic="10201.svg" Category="Capability">
+    <Modifier ID="DOG" Label="Dog" Graphic="10201.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DRILLING_MOD" Label="Drilling" Graphic="10211.svg" Category="Capability">
+    <Modifier ID="DRILLING" Label="Drilling" Graphic="10211.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ELECTRO_OPTICAL_MOD" Label="Electro-Optical" Graphic="10221.svg" Category="Capability">
+    <Modifier ID="ELECTRO_OPTICAL" Label="Electro-Optical" Graphic="10221.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ENHANCED_MOD" Label="Enhanced" Graphic="10231.svg" Category="Capability">
+    <Modifier ID="ENHANCED" Label="Enhanced" Graphic="10231.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="FIRE_DIRECTION_CENTER_MOD" Label="Fire Direction Center" Graphic="10251.svg" Category="Capability">
+    <Modifier ID="FIRE_DIRECTION_CENTER" Label="Fire Direction Center" Graphic="10251.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="FORCE_MOD" Label="Force" Graphic="10261.svg" Category="Capability">
+    <Modifier ID="FORCE" Label="Force" Graphic="10261.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="FORWARD_MOD" Label="Forward" Graphic="10271.svg" Category="Capability">
+    <Modifier ID="FORWARD" Label="Forward" Graphic="10271.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="GROUND_STATION_MODULE_MOD" Label="Ground Station Module" Graphic="10281.svg" Category="Capability">
+    <Modifier ID="GROUND_STATION_MODULE" Label="Ground Station Module" Graphic="10281.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="LANDING_SUPPORT_MOD" Label="Landing Support" Graphic="10291.svg" Category="Capability">
+    <Modifier ID="LANDING_SUPPORT" Label="Landing Support" Graphic="10291.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="COMPANY_MOD" Label="Company (Echelon of Support)" Graphic="10301.svg" Category="Capability">
+    <Modifier ID="COMPANY" Label="Company (Echelon of Support)" Graphic="10301.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="METEOROLOGICAL_MOD" Label="Meteorological" Graphic="10321.svg" Category="Capability">
+    <Modifier ID="METEOROLOGICAL" Label="Meteorological" Graphic="10321.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MISSILE_MOD" Label="Missile" Graphic="10341.svg" Category="Capability">
+    <Modifier ID="MISSILE" Label="Missile" Graphic="10341.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MOBILE_ADVISOR_SUPPORT_MOD" Label="Mobile Advisor and Support" Graphic="10351.svg" Category="Capability">
+    <Modifier ID="MOBILE_ADVISOR_SUPPORT" Label="Mobile Advisor and Support" Graphic="10351.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MOBILE_SUBSCRIBER_EQUIPMENT_MOD" Label="Mobile Subscriber Equipment" Graphic="10361.svg" Category="Capability">
+    <Modifier ID="MOBILE_SUBSCRIBER_EQUIPMENT" Label="Mobile Subscriber Equipment" Graphic="10361.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MOBILITY_SUPPORT_MOD" Label="Mobility Support" Graphic="10371.svg" Category="Capability">
+    <Modifier ID="MOBILITY_SUPPORT" Label="Mobility Support" Graphic="10371.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="BATTALION_MOD" Label="Battalion (Echelon of Support)" Graphic="10381.svg" Category="Capability">
+    <Modifier ID="BATTALION" Label="Battalion (Echelon of Support)" Graphic="10381.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MULTINATIONAL_MOD" Label="Multinational" Graphic="10391.svg" Category="Capability">
+    <Modifier ID="MULTINATIONAL" Label="Multinational" Graphic="10391.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MULTINATIONAL_SPECIALIZED_UNIT_MOD" Label="Multinational Specialized Unit" Graphic="10401.svg" Category="Capability">
+    <Modifier ID="MULTINATIONAL_SPECIALIZED_UNIT" Label="Multinational Specialized Unit" Graphic="10401.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MULTIPLE_ROCKET_LAUNCHER_MOD" Label="Multiple Rocket Launcher" Graphic="10411.svg" Category="Capability">
+    <Modifier ID="MULTIPLE_ROCKET_LAUNCHER" Label="Multiple Rocket Launcher" Graphic="10411.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NATO_MEDICAL_ROLE_1_MOD" Label="NATO Medical Role 1" Graphic="10421.svg" Category="Capability">
+    <Modifier ID="NATO_MEDICAL_ROLE_1" Label="NATO Medical Role 1" Graphic="10421.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NATO_MEDICAL_ROLE_2_MOD" Label="NATO Medical Role 2" Graphic="10431.svg" Category="Capability">
+    <Modifier ID="NATO_MEDICAL_ROLE_2" Label="NATO Medical Role 2" Graphic="10431.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NATO_MEDICAL_ROLE_3_MOD" Label="NATO Medical Role 3" Graphic="10441.svg" Category="Capability">
+    <Modifier ID="NATO_MEDICAL_ROLE_3" Label="NATO Medical Role 3" Graphic="10441.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NATO_MEDICAL_ROLE_4_MOD" Label="NATO Medical Role 4" Graphic="10451.svg" Category="Capability">
+    <Modifier ID="NATO_MEDICAL_ROLE_4" Label="NATO Medical Role 4" Graphic="10451.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NAVAL_MOD" Label="Naval" Graphic="10461.svg" Category="Capability">
+    <Modifier ID="NAVAL" Label="Naval" Graphic="10461.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="UNMANNED_AIRCRAFT_SYSTEMS_MOD" Label="Unmanned Aircraft Systems (UAS)" Graphic="10471.svg" Category="Capability">
+    <Modifier ID="UNMANNED_AIRCRAFT_SYSTEMS" Label="Unmanned Aircraft Systems (UAS)" Graphic="10471.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OPERATIONS_MOD" Label="Operations" Graphic="10491.svg" Category="Capability">
+    <Modifier ID="OPERATIONS" Label="Operations" Graphic="10491.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RADAR_MOD" Label="Radar" Graphic="10501.svg" Category="Capability">
+    <Modifier ID="RADAR" Label="Radar" Graphic="10501.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RFID_INTERROGATOR_SENSOR_MOD" Label="Radio Frequency Identification (RFID) Interrogator / Sensor" LabelAlias="RFID Interrogator/Sensor" Graphic="10511.svg" Category="Capability">
+    <Modifier ID="RFID_INTERROGATOR_SENSOR" Label="Radio Frequency Identification (RFID) Interrogator / Sensor" LabelAlias="RFID Interrogator/Sensor" Graphic="10511.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SENSOR_MOD" Label="Sensor" Graphic="10551.svg" Category="Capability">
+    <Modifier ID="SENSOR" Label="Sensor" Graphic="10551.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="WEAPON_MOD" Label="Weapon/Weapons" Graphic="10561.svg" Category="Capability">
+    <Modifier ID="WEAPON" Label="Weapon/Weapons" Graphic="10561.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SIGNALS_INTELLIGENCE_MOD" Label="Signals Intelligence" Graphic="10571.svg" Category="Capability">
+    <Modifier ID="SIGNALS_INTELLIGENCE" Label="Signals Intelligence" Graphic="10571.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SINGLE_ROCKET_LAUNCHER_MOD" Label="Single Rocket Launcher" Graphic="10591.svg" Category="Capability">
+    <Modifier ID="SINGLE_ROCKET_LAUNCHER" Label="Single Rocket Launcher" Graphic="10591.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SMOKE_MOD" Label="Smoke" Graphic="10601.svg" Category="Capability">
+    <Modifier ID="SMOKE" Label="Smoke" Graphic="10601.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>6</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SOUND_RANGING_MOD" Label="Sound Ranging" Graphic="10621.svg" Category="Capability">
+    <Modifier ID="SOUND_RANGING" Label="Sound Ranging" Graphic="10621.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>6</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SURVEY_MOD" Label="Survey" Graphic="10651.svg" Category="Capability">
+    <Modifier ID="SURVEY" Label="Survey" Graphic="10651.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>6</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TACTICAL_EXPLOITATION_MOD" Label="Tactical Exploitation" Graphic="10661.svg" Category="Capability">
+    <Modifier ID="TACTICAL_EXPLOITATION" Label="Tactical Exploitation" Graphic="10661.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>6</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TARGET_ACQUISITION_MOD" Label="Target Acquisition" Graphic="10671.svg" Category="Capability">
+    <Modifier ID="TARGET_ACQUISITION" Label="Target Acquisition" Graphic="10671.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>6</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TOPOGRAPHIC_GEOSPATIAL_MOD" Label="Topographic/Geospatial" Graphic="10681.svg" Category="Capability">
+    <Modifier ID="TOPOGRAPHIC_GEOSPATIAL" Label="Topographic/Geospatial" Graphic="10681.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>6</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="VIDEO_IMAGERY_MOD" Label="Video Imagery (Combat Camera)" Graphic="10701.svg" Category="Capability">
+    <Modifier ID="VIDEO_IMAGERY" Label="Video Imagery (Combat Camera)" Graphic="10701.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MOBILITY_ASSAULT_MOD" Label="Mobility Assault" Graphic="10711.svg" Category="Capability">
+    <Modifier ID="MOBILITY_ASSAULT" Label="Mobility Assault" Graphic="10711.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="AMPHIBIOUS_WARFARE_SHIP_MOD" Label="Amphibious Warfare Ship" Graphic="10721.svg" Category="Capability">
+    <Modifier ID="AMPHIBIOUS_WARFARE_SHIP" Label="Amphibious Warfare Ship" Graphic="10721.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="LOAD_HANDLING_SYSTEM_MOD" Label="Load Handling System (LHS)" Graphic="10731.svg" Category="Capability">
+    <Modifier ID="LOAD_HANDLING_SYSTEM" Label="Load Handling System (LHS)" Graphic="10731.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="PALLETISED_LOAD_SYSTEM_MOD" Label="Palletised Load System (PLS)" Graphic="10741.svg" Category="Capability">
+    <Modifier ID="PALLETISED_LOAD_SYSTEM" Label="Palletised Load System (PLS)" Graphic="10741.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SUPPORT_MOD" Label="Support" LabelAlias="Support 1" Graphic="10771.svg" Category="Capability">
+    <Modifier ID="SUPPORT" Label="Support" LabelAlias="Support 1" Graphic="10771.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ROUTE_RECON_CLEARANCE_MOD" Label="Route, Reconnaissance and Clearing (RRC)" Graphic="10791.svg" Category="Capability">
+    <Modifier ID="ROUTE_RECON_CLEARANCE" Label="Route, Reconnaissance and Clearing (RRC)" Graphic="10791.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NATO_MEDICAL_ROLE_2_BASIC_MOD" Label="NATO Medical Role 2 (Basic)" Graphic="10811.svg" Category="Capability">
+    <Modifier ID="NATO_MEDICAL_ROLE_2_BASIC" Label="NATO Medical Role 2 (Basic)" Graphic="10811.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>8</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NATO_MEDICAL_ROLE_2_ENHANCED_MOD" Label="NATO Medical Role 2 (Enhanced)" Graphic="10821.svg" Category="Capability">
+    <Modifier ID="NATO_MEDICAL_ROLE_2_ENHANCED" Label="NATO Medical Role 2 (Enhanced)" Graphic="10821.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>8</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NATO_MEDICAL_ROLE_2_FORWARD_MOD" Label="NATO Medical Role 2 (Forward)" Graphic="10831.svg" Category="Capability">
+    <Modifier ID="NATO_MEDICAL_ROLE_2_FORWARD" Label="NATO Medical Role 2 (Forward)" Graphic="10831.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>8</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ASSAULT_MOD" Label="Assault" Graphic="10841.svg" Category="Capability">
+    <Modifier ID="ASSAULT" Label="Assault" Graphic="10841.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>8</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CRIMINAL_INVESTIGATION_DIVISION_MOD" Label="Criminal Investigation Division" Graphic="10861.svg" Category="Capability">
+    <Modifier ID="CRIMINAL_INVESTIGATION_DIVISION" Label="Criminal Investigation Division" Graphic="10861.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>8</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DIGITAL_MOD" Label="Digital" Graphic="10871.svg" Category="Capability">
+    <Modifier ID="DIGITAL" Label="Digital" Graphic="10871.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>8</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NETWORK_OPERATIONS_MOD" Label="Network or Network Operations" Graphic="10881.svg" Category="Capability">
+    <Modifier ID="NETWORK_OPERATIONS" Label="Network or Network Operations" Graphic="10881.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>8</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="AIR_TERMINAL_MOD" Label="Air Terminal" Graphic="10891.svg" Category="Capability">
+    <Modifier ID="AIR_TERMINAL" Label="Air Terminal" Graphic="10891.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>8</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="PIPELINE_MOD" Label="Pipeline" Graphic="10901.svg" Category="Capability">
+    <Modifier ID="PIPELINE" Label="Pipeline" Graphic="10901.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>9</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="POSTAL_MOD" Label="Postal" Graphic="10911.svg" Category="Capability">
+    <Modifier ID="POSTAL" Label="Postal" Graphic="10911.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>9</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="INDEPENDENT_COMMAND_MOD" Label="Independent Command" Graphic="10931.svg" Category="Capability">
+    <Modifier ID="INDEPENDENT_COMMAND" Label="Independent Command" Graphic="10931.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>9</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="THEATRE_MOD" Label="Theatre" Graphic="10941.svg" Category="Capability">
+    <Modifier ID="THEATRE" Label="Theatre" Graphic="10941.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>9</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ARMY_THEATRE_ARMY_MOD" Label="Army or Theatre Army" Graphic="10951.svg" Category="Capability">
+    <Modifier ID="ARMY_THEATRE_ARMY" Label="Army or Theatre Army" Graphic="10951.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>9</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CORPS_MOD" Label="Corps" Graphic="10961.svg" Category="Capability">
+    <Modifier ID="CORPS" Label="Corps" Graphic="10961.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>9</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HEADQUARTERS_MOD" Label="Headquarters or Headquarters Element" Graphic="10981.svg" Category="Capability">
+    <Modifier ID="HEADQUARTERS" Label="Headquarters or Headquarters Element" Graphic="10981.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>9</DigitOne>
         <DigitTwo>8</DigitTwo>
@@ -1666,265 +1666,265 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
-    <Modifier ID="ARCTIC_MOD" Label="Arctic" Graphic="10022.svg" Category="Mobility">
+    <Modifier ID="ARCTIC" Label="Arctic" Graphic="10022.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="BATTLE_DAMAGE_REPAIR_MOD" Label="Battle Damage Repair" Graphic="10032.svg" Category="Capability">
+    <Modifier ID="BATTLE_DAMAGE_REPAIR" Label="Battle Damage Repair" Graphic="10032.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CASUALTY_STAGING_MOD" Label="Casualty Staging" Graphic="10052.svg" Category="Close Range and Support">
+    <Modifier ID="CASUALTY_STAGING" Label="Casualty Staging" Graphic="10052.svg" Category="Close Range Support">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CLEARING_MOD" Label="Clearing" Graphic="10062.svg" Category="Capability">
+    <Modifier ID="CLEARING" Label="Clearing" Graphic="10062.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CONTROL_MOD" Label="Control" Graphic="10082.svg" Category="Capability">
+    <Modifier ID="CONTROL" Label="Control" Graphic="10082.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DECONTAMINATION_2_MOD" Label="Decontamination" LabelAlias="Decontamination 2" Graphic="10092.svg" Category="Capability">
+    <Modifier ID="DECONTAMINATION" Label="Decontamination" LabelAlias="Decontamination 2" Graphic="10092.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DEMOLITION_MOD" Label="Demolition" Graphic="10102.svg" Category="Capability">
+    <Modifier ID="DEMOLITION" Label="Demolition" Graphic="10102.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DENTAL_MOD" Label="Dental" Graphic="10112.svg" Category="Capability">
+    <Modifier ID="DENTAL" Label="Dental" Graphic="10112.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DIGITAL_MOD" Label="Digital" Graphic="10122.svg" Category="Capability">
+    <Modifier ID="DIGITAL" Label="Digital" Graphic="10122.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ENHANCED_POSITION_LOCATION_REPORTING_SYSTEM_EPLRS_MOD" Label="Enhanced Position Location Reporting System (EPLRS)" Graphic="10132.svg" Category="Capability">
+    <Modifier ID="ENHANCED_POSITION_LOCATION_REPORTING_SYSTEM_EPLRS" Label="Enhanced Position Location Reporting System (EPLRS)" Graphic="10132.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="EQUIPMENT_MOD" Label="Equipment" Graphic="10142.svg" Category="Capability">
+    <Modifier ID="EQUIPMENT" Label="Equipment" Graphic="10142.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HIGH_ALTITUDE_MOD" Label="High Altitude" Graphic="10162.svg" Category="Capability">
+    <Modifier ID="HIGH_ALTITUDE" Label="High Altitude" Graphic="10162.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="INTERMODAL_MOD" Label="Intermodal" Graphic="10172.svg" Category="Capability">
+    <Modifier ID="INTERMODAL" Label="Intermodal" Graphic="10172.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="INTENSIVE_CARE_MOD" Label="Intensive Care" Graphic="10182.svg" Category="Capability">
+    <Modifier ID="INTENSIVE_CARE" Label="Intensive Care" Graphic="10182.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="LABORATORY_MOD" Label="Laboratory" Graphic="10202.svg" Category="Capability">
+    <Modifier ID="LABORATORY" Label="Laboratory" Graphic="10202.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="LAUNCHER_MOD" Label="Launcher" Graphic="10212.svg" Category="Capability">
+    <Modifier ID="LAUNCHER" Label="Launcher" Graphic="10212.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="LOW_ALTITUDE_MOD" Label="Low Altitude" Graphic="10232.svg" Category="Capability">
+    <Modifier ID="LOW_ALTITUDE" Label="Low Altitude" Graphic="10232.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MEDIUM_ALTITUDE_MOD" Label="Medium Altitude" Graphic="10252.svg" Category="Capability">
+    <Modifier ID="MEDIUM_ALTITUDE" Label="Medium Altitude" Graphic="10252.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HIGH_MEDIUM_ALTITUDE_MOD" Label="High to Medium Altitude" Graphic="10282.svg" Category="Capability">
+    <Modifier ID="HIGH_MEDIUM_ALTITUDE" Label="High to Medium Altitude" Graphic="10282.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MULTI_CHANNEL_MOD" Label="Multi-Channel" Graphic="10292.svg" Category="Capability">
+    <Modifier ID="MULTI_CHANNEL" Label="Multi-Channel" Graphic="10292.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OPTICAL_FLASH_MOD" Label="Optical (Flash)" Graphic="10302.svg" Category="Capability">
+    <Modifier ID="OPTICAL_FLASH" Label="Optical (Flash)" Graphic="10302.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="PACK_ANIMAL_MOD" Label="Pack Animal" Graphic="10312.svg" Category="Capability">
+    <Modifier ID="PACK_ANIMAL" Label="Pack Animal" Graphic="10312.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="PATIENT_EVACUATION_COORDINATION_MOD" Label="Patient Evacuation Coordination" Graphic="10322.svg" Category="Capability">
+    <Modifier ID="PATIENT_EVACUATION_COORDINATION" Label="Patient Evacuation Coordination" Graphic="10322.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="PREVENTIVE_MAINTENANCE_MOD" Label="Preventive Maintenance" Graphic="10332.svg" Category="Capability">
+    <Modifier ID="PREVENTIVE_MAINTENANCE" Label="Preventive Maintenance" Graphic="10332.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="PSYCHOLOGICAL_MOD" Label="Psychological" Graphic="10342.svg" Category="Capability">
+    <Modifier ID="PSYCHOLOGICAL" Label="Psychological" Graphic="10342.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RADIO_RELAY_LOS_MOD" Label="Radio Relay Line of Sight" Graphic="10352.svg" Category="Capability">
+    <Modifier ID="RADIO_RELAY_LOS" Label="Radio Relay Line of Sight" Graphic="10352.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RECOVERY_UNMANNED_SYSTEMS_MOD" Label="Recovery (Unmanned Systems)" Graphic="10372.svg" Category="Capability">
+    <Modifier ID="RECOVERY_UNMANNED_SYSTEMS" Label="Recovery (Unmanned Systems)" Graphic="10372.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RECOVERY_MAINTENANCE_MOD" Label="Recovery (Maintenance)" Graphic="10382.svg" Category="Capability">
+    <Modifier ID="RECOVERY_MAINTENANCE" Label="Recovery (Maintenance)" Graphic="10382.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RESCUE_COORDINATION_CENTER_MOD" Label="Rescue Coordination Center" Graphic="10392.svg" Category="Capability">
+    <Modifier ID="RESCUE_COORDINATION_CENTER" Label="Rescue Coordination Center" Graphic="10392.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RIVERINE_MOD" Label="Riverine" Graphic="10402.svg" Category="Mobility">
+    <Modifier ID="RIVERINE" Label="Riverine" Graphic="10402.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SINGLE_CHANNEL_MOD" Label="Single Channel" Graphic="10412.svg" Category="Capability">
+    <Modifier ID="SINGLE_CHANNEL" Label="Single Channel" Graphic="10412.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="STRATEGIC_MOD" Label="Strategic" Graphic="10442.svg" Category="Capability">
+    <Modifier ID="STRATEGIC" Label="Strategic" Graphic="10442.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SUPPORT_2_MOD" Label="Support" LabelAlias="Support 2" Graphic="10452.svg" Category="Capability">
+    <Modifier ID="SUPPORT" Label="Support" LabelAlias="Support 2" Graphic="10452.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TACTICAL_MOD" Label="Tactical" Graphic="10462.svg" Category="Capability">
+    <Modifier ID="TACTICAL" Label="Tactical" Graphic="10462.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TOWED_MOD" Label="Towed" Graphic="10472.svg" Category="Mobility">
+    <Modifier ID="TOWED" Label="Towed" Graphic="10472.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TROOP_MOD" Label="Troop" Graphic="10482.svg" Category="Capability">
+    <Modifier ID="TROOP" Label="Troop" Graphic="10482.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="VERTICAL_TAKE_OFF_LANDING_VTOL_MOD" Label="Vertical or Short Take-Off and Landing (VTOL/VSTOL)" Graphic="10492.svg" Category="Mobility">
+    <Modifier ID="VERTICAL_TAKE_OFF_LANDING_VTOL" Label="Vertical or Short Take-Off and Landing (VTOL/VSTOL)" Graphic="10492.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="VETERINARY_MOD" Label="Veterinary" Graphic="10502.svg" Category="Capability">
+    <Modifier ID="VETERINARY" Label="Veterinary" Graphic="10502.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HIGH_LOW_ALTITUDE_MOD" Label="High to Low Altitude" Graphic="10522.svg" Category="Capability">
+    <Modifier ID="HIGH_LOW_ALTITUDE" Label="High to Low Altitude" Graphic="10522.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MEDIUM_LOW_ALTITUDE_MOD" Label="Medium to Low Altitude" Graphic="10532.svg" Category="Capability">
+    <Modifier ID="MEDIUM_LOW_ALTITUDE" Label="Medium to Low Altitude" Graphic="10532.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATTACK_2_MOD" Label="Attack" LabelAlias="Attack 2" Graphic="10542.svg" Category="Capability">
+    <Modifier ID="ATTACK" Label="Attack" LabelAlias="Attack 2" Graphic="10542.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="REFUEL_MOD" Label="Refuel" Graphic="10552.svg" Category="Capability">
+    <Modifier ID="REFUEL" Label="Refuel" Graphic="10552.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="UTILITY_2_MOD" Label="Utility" LabelAlias="Utility 2" Graphic="10562.svg" Category="Capability">
+    <Modifier ID="UTILITY" Label="Utility" LabelAlias="Utility 2" Graphic="10562.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="COMBAT_SEARCH_RESCUE_MOD" Label="Combat Search and Rescue" Graphic="10572.svg" Category="Capability">
+    <Modifier ID="COMBAT_SEARCH_RESCUE" Label="Combat Search and Rescue" Graphic="10572.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>7</DigitTwo>

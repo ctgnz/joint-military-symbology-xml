@@ -1211,31 +1211,31 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="EARLY_WARNING_RADAR_MOD" Label="Early Warning Radar" Graphic="15031.svg" Category="Sensor Type">
+    <Modifier ID="EARLY_WARNING_RADAR" Label="Early Warning Radar" Graphic="15031.svg" Category="Sensor Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="INTRUSION_MOD" Label="Intrusion" Graphic="15041.svg" Category="Sensor Type">
+    <Modifier ID="INTRUSION" Label="Intrusion" Graphic="15041.svg" Category="Sensor Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="UPGRADED_EARLY_WARNING_RADAR_MOD" Label="Upgraded Early Warning Radar" Graphic="15071.svg" Category="Sensor Type">
+    <Modifier ID="UPGRADED_EARLY_WARNING_RADAR" Label="Upgraded Early Warning Radar" Graphic="15071.svg" Category="Sensor Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MULTI_PURPOSE_BLADE_MOD" Label="Multi Purpose Blade" Graphic="15121.svg" Category="Engineer Equipment">
+    <Modifier ID="MULTI_PURPOSE_BLADE" Label="Multi Purpose Blade" Graphic="15121.svg" Category="Engineer Equipment">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TANK_WIDTH_MINE_PLOW_MOD" Label="Tank Width Mine Plow" Graphic="15091.svg" Category="Engineer Equipment">
+    <Modifier ID="TANK_WIDTH_MINE_PLOW" Label="Tank Width Mine Plow" Graphic="15091.svg" Category="Engineer Equipment">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -1243,7 +1243,7 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
-    <Modifier ID="TRACTOR_TRAILER_MOD" Label="Tractor Trailer" Graphic="15062.svg" Category="Capability">
+    <Modifier ID="TRACTOR_TRAILER" Label="Tractor Trailer" Graphic="15062.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>

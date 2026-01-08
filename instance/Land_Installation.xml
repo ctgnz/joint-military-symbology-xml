@@ -576,37 +576,37 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="COAL_MOD" Label="Coal" Graphic="20061.svg" Category="Electric Power Type">
+    <Modifier ID="COAL" Label="Coal" Graphic="20061.svg" Category="Electric Power Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="GEOTHERMAL_MOD" Label="Geothermal" Graphic="20071.svg" Category="Electric Power Type">
+    <Modifier ID="GEOTHERMAL" Label="Geothermal" Graphic="20071.svg" Category="Electric Power Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HYDROELECTRIC_MOD" Label="Hydroelectric" Graphic="20081.svg" Category="Electric Power Type">
+    <Modifier ID="HYDROELECTRIC" Label="Hydroelectric" Graphic="20081.svg" Category="Electric Power Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NATURAL_GAS_MOD" Label="Natural Gas" Graphic="20091.svg" Category="Electric Power Type">
+    <Modifier ID="NATURAL_GAS" Label="Natural Gas" Graphic="20091.svg" Category="Electric Power Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CIVILIAN_TELEPHONE_MOD" Label="Civilian Telephone" Graphic="20121.svg" Category="Civilian Telecommunications Type">
+    <Modifier ID="CIVILIAN_TELEPHONE" Label="Civilian Telephone" Graphic="20121.svg" Category="Civilian Telecommunications Type">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CIVILIAN_TELEVISION_MOD" Label="Civilian Television" Graphic="20131.svg" Category="Civilian Telecommunications Type">
+    <Modifier ID="CIVILIAN_TELEVISION" Label="Civilian Television" Graphic="20131.svg" Category="Civilian Telecommunications Type">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -614,49 +614,49 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
-    <Modifier ID="BIOLOGICAL_2_MOD" Label="Biological" Graphic="20012.svg" Category="No Category Listed">
+    <Modifier ID="BIOLOGICAL" Label="Biological" Graphic="20012.svg" Category="None">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CHEMICAL_2_MOD" Label="Chemical" Graphic="20022.svg" Category="No Category Listed">
+    <Modifier ID="CHEMICAL" Label="Chemical" Graphic="20022.svg" Category="None">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NUCLEAR_2_MOD" Label="Nuclear" Graphic="20032.svg" Category="No Category Listed">
+    <Modifier ID="NUCLEAR" Label="Nuclear" Graphic="20032.svg" Category="None">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RADIOLOGICAL_2_MOD" Label="Radiological" Graphic="20042.svg" Category="No Category Listed">
+    <Modifier ID="RADIOLOGICAL" Label="Radiological" Graphic="20042.svg" Category="None">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATOMIC_ENERGY_REACTOR_MOD" Label="Atomic Energy Reactor" Graphic="20052.svg" Category="No Category Listed">
+    <Modifier ID="ATOMIC_ENERGY_REACTOR" Label="Atomic Energy Reactor" Graphic="20052.svg" Category="None">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NUCLEAR_MATERIAL_PRODUCTION_MOD" Label="Nuclear Material Production" Graphic="20062.svg" Category="No Category Listed">
+    <Modifier ID="NUCLEAR_MATERIAL_PRODUCTION" Label="Nuclear Material Production" Graphic="20062.svg" Category="None">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NUCLEAR_MATERIAL_STORAGE_MOD" Label="Nuclear Material Storage" Graphic="20072.svg" Category="No Category Listed">
+    <Modifier ID="NUCLEAR_MATERIAL_STORAGE" Label="Nuclear Material Storage" Graphic="20072.svg" Category="None">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="WEAPONS_GRADE_MOD" Label="Weapons Grade" Graphic="20082.svg" Category="No Category Listed">
+    <Modifier ID="WEAPONS_GRADE" Label="Weapons Grade" Graphic="20082.svg" Category="None">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>

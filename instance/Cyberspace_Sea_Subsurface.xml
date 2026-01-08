@@ -197,13 +197,13 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
-    <Modifier ID="SECURED_MOD" Label="Secured">
+    <Modifier ID="SECURED" Label="Secured">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OPEN_MOD" Label="Open">
+    <Modifier ID="OPEN" Label="Open">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
