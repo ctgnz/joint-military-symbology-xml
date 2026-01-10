@@ -350,7 +350,7 @@
         <Value Name="GS" Label="South Georgia and the South Sandwich Islands" LabelAlias="SGS" Remarks="239" />
         <Value Name="FJ" Label="Fiji" LabelAlias="FJI" Remarks="242" />
         <Value Name="FI" Label="Finland" LabelAlias="FIN" Remarks="246" />
-        <Value Name="SF" Label="Finland" LabelAlias="FIN" Remarks="246" />
+        <Value Name="SF" Label="Suomi (Finland)" LabelAlias="SUO" Remarks="246" />
         <Value Name="AX" Label="Åland Islands" LabelAlias="ALA" Remarks="248" />
         <Value Name="FX" Label="France, Metropolitan" LabelAlias="FXX" Remarks="249" />
         <Value Name="FR" Label="France" LabelAlias="FRA" Remarks="250" />
